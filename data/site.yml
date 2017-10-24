@@ -1,0 +1,27 @@
+site:
+  title: 'Ruby X Elixir Conf Taiwan 2018'
+  description: '眾所矚目的 Ruby X Elixir Conf Taiwan 2018 將在 2018 年 4 月 27 - 28 日於張榮發基金會國際會議中心隆重舉辦，敬請期待！'
+  eventDate: '2018.04.27 - 28'
+  eventLocation_zh: '張榮發基金會國際會議中心'
+  eventLocation_en: |
+    CHANG YUNG-FA FOUNDATION
+    International Convention Center
+    Taipei, Taiwan
+  socialMedia:
+    - name: 'facebook'
+      link: 'https://www.facebook.com/rubyconftw/'
+    - name: 'twitter'
+      link: 'https://twitter.com/rubyconftw'
+    - name: 'ruby'
+      link: 'https://ruby.tw/'
+    - name: 'elixir'
+      link: 'http://elixir.tw/'
+    - name: 'email'
+      link: 'contact@rubyconf.tw'
+  keynote:
+    - name: 'Yukihiro (Matz) Matsumoto'
+      avatar: 'matz.png'
+    - name: 'José Valim'
+      avatar: 'jose-valim.jpg'
+    - name: 'Akira Matsuda'
+      avatar: 'akira-matsuda.jpg'
