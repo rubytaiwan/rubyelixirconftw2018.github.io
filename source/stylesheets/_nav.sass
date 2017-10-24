@@ -1,0 +1,82 @@
+#affixNav
+  +transition(opacity, 0.5s)
+
+  //Navbar Change on Scroll
+  @media (min-width: $screen-md)
+    opacity: 0
+    &.affix-top
+      pointer-events: none
+    &.affix
+      opacity: 1
+
+.navbar-custom
+  background: #fff
+  border-width: 0
+  box-shadow: 0 2px 4px 0 rgba($midnight, 0.3)
+  min-height: 70px
+  margin: 0
+	
+  @media (min-width: $screen-sm)
+
+  .navbar-header
+    padding: 10px 20px
+
+    @media (min-width: $screen-sm)
+      padding: 10px 0
+
+    .navbar-brand
+      display: block
+      +size(auto, 50px)
+      padding: 0
+      margin: 0
+
+    /*Hamburger Menu on Mobile*/
+    .navbar-toggle
+      border-width: 0
+      padding: 0
+      margin: 15px 5px 10px 0
+
+      &:hover, &:visited, &:link, &:active
+        background-color: #fff
+
+  .navbar-collapse
+    border-width: 0
+  
+    .navbar-nav
+      margin: 0 
+
+      li
+
+        a
+          position: relative
+          font-family: Righteous
+          font-size: 18px
+          text-align: center
+          letter-spacing: 1.2px
+          line-height: 42px
+          color: $midnight
+          padding: 0
+
+          @media (min-width: $screen-sm)
+            line-height: 70px
+            margin: 0 10px
+
+          @media (min-width: $screen-md)
+            margin: 0 20px
+
+          &:hover
+            &:after
+              content: ''
+              position: absolute
+              top: 55px
+              left: 50%
+              transform: translateX(-50%) translateY(-50%)
+              +size(40px, 2px)
+              background: linear-gradient(to left, $elixir-dark, $ruby-dark)
+
+        &.register-now a
+          margin: 10px auto
+          line-height: 50px
+
+          @media (min-width: $screen-sm)
+            margin-left: 10px
