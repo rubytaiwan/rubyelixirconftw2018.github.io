@@ -1,5 +1,5 @@
 #affixNav
-  +transition(opacity, 0.5s)
+  transition: opacity 0.5s ease-out
 
   //Navbar Change on Scroll
   @media (min-width: $screen-md)
@@ -49,7 +49,8 @@
 
         a
           position: relative
-          font-family: Righteous
+          font-family: 'Righteous'
+          font-weight: 300
           font-size: 18px
           text-align: center
           letter-spacing: 1.2px
@@ -57,22 +58,26 @@
           color: $midnight
           padding: 0
 
-          @media (min-width: $screen-sm)
-            line-height: 70px
-            margin: 0 10px
-
-          @media (min-width: $screen-md)
-            margin: 0 20px
-
           &:hover
             &:after
               content: ''
               position: absolute
-              top: 55px
+              top: 40px
               left: 50%
               transform: translateX(-50%) translateY(-50%)
               +size(40px, 2px)
               background: linear-gradient(to left, $elixir-dark, $ruby-dark)
+
+          @media (min-width: $screen-sm)
+            line-height: 70px
+            margin: 0 10px
+
+            &:hover
+              &:after
+                top: 55px
+
+          @media (min-width: $screen-md)
+            margin: 0 20px
 
         &.register-now a
           margin: 10px auto

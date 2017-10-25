@@ -43,6 +43,10 @@ $marble: #CFD7DB
   -webkit-background-clip: text
   -webkit-text-fill-color: transparent
 
+.deco
+  +size(20px,12px)
+  margin: 20px auto
+
 /* Button */
 .btn-small
   +size(200px, 50px)
@@ -53,6 +57,7 @@ $marble: #CFD7DB
   overflow: hidden
   transform: translate3d(0, 0, 0)
   transition: all 0.2s ease-out
+  text-align: center
 
   &:before
     content: ''
@@ -79,10 +84,10 @@ $marble: #CFD7DB
     transform: translate3d(0, -3px, 0)
 
   span
-    font-family: Lato-bold
+    font-family: 'Lato'
+    font-weight: bold
     font-size: 18px
     letter-spacing: 1.3px
-    text-align: center
     @extend .font-gradient
 
 .btn-medium
@@ -91,7 +96,8 @@ $marble: #CFD7DB
     height: calc(100% - 6px)
 
   span
-    font-family: Righteous
+    font-family: 'Righteous'
+    font-weight: 300
 
 .btn-large
   @extend .btn-medium
@@ -103,6 +109,18 @@ $marble: #CFD7DB
     line-height: 60px
 
 body
+  background: #fff
 
   a:hover, a:visited, a:link, a:active
     text-decoration: none
+
+  section
+    max-width: 1024px
+    padding-top: 80px
+    margin: 0 auto
+
+    @media (min-width: $screen-sm)
+      padding-top: 100px
+
+    @media (min-width: $screen-md)
+      padding-top: 120px
