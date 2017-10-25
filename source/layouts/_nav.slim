@@ -1,0 +1,19 @@
+nav#affixNav.navbar.navbar-default.navbar-custom.navbar-fixed-top
+  .container
+    .navbar-header.page-scroll
+      a.navbar-brand.page-scroll href="#cover"
+        = inline_svg 'assets/ruby_elixir_conf_logo'
+      button.navbar-toggle data-target="#navbar-collapse" data-toggle="collapse" type="button" 
+        = inline_svg 'assets/navbar_menu'
+
+    #navbar-collapse.collapse.navbar-collapse
+      ul.nav.navbar-nav.navbar-right
+        li
+          a href="#" Program
+        li
+          a href="#" Speakers
+        li
+          a href="#" Sponsors
+        li.register-now
+          a.btn-medium href="#"
+            span Register Now
