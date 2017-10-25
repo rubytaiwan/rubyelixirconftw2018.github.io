@@ -1,0 +1,230 @@
+#cover
+  position: relative
+  padding: 200px 0 100px
+
+  @media (min-width: $screen-sm)
+    padding-bottom: 40px
+
+  .cover-bg 
+    .bg-deco, .bg-image
+      position: absolute
+      transition: all 0.2s ease-out
+
+    /** Deco Elements **/
+    #deco_wave
+      width: 140px
+      top: 975px
+      left: -55px
+
+      @media (min-width: $screen-sm)
+        top: 915px
+        left: 0
+
+      @media (min-width: $screen-md)
+        top: 910px
+        left: 90px
+
+    #deco_wave_gradient
+      height: 150px
+      top: 0
+      right: 10px
+
+      @media (min-width: $screen-sm)
+        height: 180px
+        right: 40px
+
+      @media (min-width: $screen-md)
+        height: 180px
+        right: 55px
+
+    #deco_cross
+      width: 20px
+      top: 100px
+      right: 100px
+
+      @media (min-width: $screen-sm)
+        width: 25px
+        top: 120px
+        right: 180px
+
+      @media (min-width: $screen-md)
+        width: 25px
+        top: 100px
+        right: 250px
+
+    #deco_cross_gradient
+      width: 42px
+      top: 400px
+      left: 80px
+
+      @media (min-width: $screen-md)
+        top: 520px
+        left: 20px
+
+    #deco_oval
+      width: 20px
+      top: 100px
+      left: 40px
+
+      @media (min-width: $screen-md)
+        left: -30px
+
+    #deco_oval_gradient
+      width: 30px
+      top: 300px
+      right: 60px
+
+      @media (min-width: $screen-md)
+        top: 260px
+        right: -40px
+
+    #deco_triangle_gradient
+      width: 42px
+      top: 875px
+      right: 40px
+
+      @media (min-width: $screen-md)
+        top: 875px
+        right: 40px
+
+    .tablet
+      #deco_cross
+        width: 32px
+        top: 670px
+        right: 130px
+
+        @media (min-width: $screen-md)
+          top: 790px
+          right: 140px
+
+    /** Background **/
+    #bg-square
+      +size(150px, 150px)
+      top: 90px
+      left: -30px
+
+      @media (min-width: $screen-sm)
+        +size(200px, 200px)
+        left: 60px
+
+      @media (min-width: $screen-md)
+        +size(300px, 300px)
+        top: 80px
+        left: 30px
+
+    #bg-stripe
+      width: 180px
+      top: 945px
+      right: 0
+
+      @media (min-width: $screen-sm)
+        width: 240px
+        top: 460px
+
+      @media (min-width: $screen-md)
+        width: 360px
+        right: -90px
+
+    #bg-oval
+      display: none
+
+      @media (min-width: $screen-sm)
+        display: block
+        +size(200px, 200px)
+        top: 550px
+        left: -30px
+
+      @media (min-width: $screen-md)
+        +size(300px, 300px)
+        top: 710px
+        left: -150px
+
+  .ruby_elixir_logo
+    width: 100%
+    max-width: 240px
+    text-shadow: 0 1px 1px rgba(0,0,0,0.30)
+    margin: 0 auto
+
+    @media (min-width: $screen-sm)
+      max-width: 320px
+
+  .event
+    margin: 40px auto
+    color: $midnight
+
+    @media (min-width: $screen-sm)
+      margin: 60px auto
+
+    .event-date
+      font-family: Righteous
+      font-size: 24px
+
+      @media (min-width: $screen-sm)
+        font-size: 28px
+
+    .event-location
+      font-size: 16px
+
+      @media (min-width: $screen-sm)
+        font-size: 18px
+
+      &.en
+        font-family: Lato
+        font-weight: bold
+        line-height: 24px
+        letter-spacing: 0.5px
+        white-space: pre
+        margin-bottom: 15px
+
+      &.cht
+        font-family: 'Noto Sans TC'
+        font-weight: 500
+        letter-spacing: 2.5px
+
+  .cfa
+    text-align: center
+
+    .btn-large
+      display: block
+      margin: 0 auto
+      
+      + .btn-large
+        margin-top: 20px
+
+      @media (min-width: $screen-sm)
+        display: inline-block
+
+        + .btn-large
+          margin-top: 0
+          margin-left: 30px
+
+  .social-media
+    text-align: center
+    padding: 0
+    margin: 40px 0 0
+
+    @media (min-width: $screen-sm)
+      margin-top: 60px
+
+    li
+      position: relative
+      padding: 0 5px
+
+      .media
+        display: inline-block
+        +size(40px, 40px)
+
+        .social_btn_color
+          +transition(all, 0.3s)
+        
+        &:hover
+          &.facebook .social_btn_color
+            fill: #3b5998
+          &.twitter .social_btn_color
+            fill: #1da1f2
+          &.ruby .social_btn_color
+            fill: $ruby-dark
+          &.elixir .social_btn_color
+            fill: $elixir-dark
+          &.email .social_btn_color
+            fill: $midnight
