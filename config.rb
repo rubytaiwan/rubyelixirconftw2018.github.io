@@ -35,15 +35,45 @@ set :protocol, 'http://'
 set :host, '2018.rubyconf.tw'
 
 helpers do
-  def inline_svg name
+
+  def root_url
+    config[:protocol] + config[:host] + '/'
+  end
+  
+  def inline_svg(name)
     root = Middleman::Application.root
     file_path = "#{root}/source/images/#{name}.svg"
     return File.read(file_path) if File.exists? (file_path)
     "(not found)"
   end
 
-  def root_url
-    config[:protocol] + config[:host] + '/'
+  def format_date(date)
+    date = Date.parse(date)
+    date.strftime("%b. %d. %Y")
+  end
+
+  def markdown(text)
+    options = {
+      filter_html: true,
+      hard_wrap: true,
+      link_attributes: { target: "_blank" },
+      space_after_headers: true,
+      fenced_code_blocks: true,
+      prettify: true
+    }
+
+    extensions = {
+      autolink: true,
+      superscript: true,
+      highlight: true,
+      no_intra_emphasis: true,
+      disable_indented_code_blocks: true
+    }
+
+    renderer = Redcarpet::Render::HTML.new(options)
+    markdown = Redcarpet::Markdown.new(renderer, extensions)
+
+    markdown.render(text).html_safe
   end
 
 end
