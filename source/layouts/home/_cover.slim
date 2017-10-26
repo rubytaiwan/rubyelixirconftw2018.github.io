@@ -4,11 +4,11 @@ section#cover
     = inline_svg "assets/deco-wave"
     = inline_svg "assets/deco-cross"
     = inline_svg "assets/deco-oval"
-    = inline_svg "assets/deco-triangle_gradient"
     .tablet.visible-sm-block.visible-md-block.visible-lg-block
       = inline_svg "assets/deco-cross"
       = inline_svg "assets/deco-cross_gradient"
       = inline_svg "assets/deco-oval_gradient"
+      = inline_svg "assets/deco-triangle_gradient"
     = inline_svg "assets/bg-square"
     = inline_svg "assets/bg-stripe"
     = inline_svg "assets/bg-oval"
@@ -19,8 +19,7 @@ section#cover
     .event
       h3.event-date.text-center
         = data.site.site.eventDate
-      .deco
-        = inline_svg "assets/deco"
+      = inline_svg "assets/deco"
       h4.event-location.en.text-center
         = data.site.site.eventLocation_en
       h4.event-location.cht.text-center
@@ -37,5 +36,5 @@ section#cover
           = link_to item.link, target: '_blank', class:"media " + item.name  do
             = inline_svg "assets/btn-" + item.name
       li
-        a.media.email href="mailto:contact@rubyconf.tw"
+        a.media.email href="mailto:#{data.site.site.contactEmail}"
           = inline_svg "assets/btn-email"
