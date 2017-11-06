@@ -25,9 +25,9 @@ section#cover
       h4.event-location.cht.text-center
         = data.site.site.eventLocation_zh
     .cfa
-      a.btn-large.register-now href="#"
+      = link_to data.site.site.registerLink, target: '_blank', class:"btn-large register-now" do
         span Register Now
-      a.btn-large.submit-paper href="#"
+      = link_to data.site.site.cfpLink, target: '_blank', class:"btn-large submit-paper" do
         span Submit A Paper
       
     ul.social-media.list-inline

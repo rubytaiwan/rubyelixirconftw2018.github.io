@@ -8,6 +8,8 @@ site:
     International Convention Center
     Taipei, Taiwan
   contactEmail: 'contact@rubyconf.tw'
+  registerLink: ''
+  cfpLink: 'https://rubyelixirconftw.typeform.com/to/zOjJhK'
   socialMedia:
     - name: 'facebook'
       link: 'https://www.facebook.com/rubyconftw/'

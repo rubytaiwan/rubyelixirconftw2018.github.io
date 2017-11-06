@@ -27,14 +27,13 @@ $dark-grey: #777
   /* Old browsers */
   background: $ruby-dark
   /* FF3.6-15 */
-  background: -moz-linear-gradient(-45deg, $ruby-dark 0%, $elixir-dark 100%)
+  background: -moz-linear-gradient($ruby-dark, $elixir-dark)
   /* Chrome10-25,Safari5.1-6 */
-  background: -webkit-linear-gradient(-45deg, $ruby-dark 0%,$elixir-dark 100%)
+  background: -webkit-linear-gradient($ruby-dark, $elixir-dark)
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  background: linear-gradient(135deg, $ruby-dark 0%,$elixir-dark 100%)
+  background: linear-gradient($ruby-dark, $elixir-dark)
   /* IE6-9 fallback on horizontal gradient */
   // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc1d23', endColorstr='#652f8b',GradientType=1 )
-  background-attachment: fixed
 
 .font-gradient
   background: -webkit-linear-gradient($ruby-dark,$elixir-dark)
@@ -66,7 +65,7 @@ $dark-grey: #777
   position: relative
   border-radius: 4px
   border-color: #fff
-  background: linear-gradient(to top, $elixir-dark, $ruby-dark)
+  background: linear-gradient($ruby-dark, $elixir-dark)
   overflow: hidden
   transform: translate3d(0, 0, 0)
   transition: all 0.2s ease-out

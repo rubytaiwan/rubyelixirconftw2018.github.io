@@ -1,4 +1,12 @@
 #news
+  padding-bottom: 60px
+
+  @media (min-width: $screen-sm)
+    padding-bottom: 80px
+
+  @media (min-width: $screen-md)
+    padding-bottom: 100px
+
   .news-list
     @extend .flexbox
     flex-direction: column
@@ -21,7 +29,7 @@
       .news-date
         width: 120px
         height: 30px
-        background: linear-gradient(45deg, $ruby-dark 0%, $elixir-dark 100%)
+        background: linear-gradient($ruby-dark, $elixir-dark)
         text-align: center
 
         span
