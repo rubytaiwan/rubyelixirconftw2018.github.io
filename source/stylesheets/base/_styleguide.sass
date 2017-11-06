@@ -6,6 +6,7 @@ $elixir-light: #AA90C2
 $night: #606b85
 $midnight: #3C4A68
 $marble: #CFD7DB
+$dark-grey: #777
 
 /* Flexbox for Equal Height */
 .flexbox
@@ -14,9 +15,7 @@ $marble: #CFD7DB
   display: -ms-flexbox
   display: -webkit-flex
   display: flex
-
-  -webkit-flex-flow: row wrap
-  justify-content: space-around
+  flex-flow: row wrap
 
 .align-center
   position: absolute
@@ -28,14 +27,13 @@ $marble: #CFD7DB
   /* Old browsers */
   background: $ruby-dark
   /* FF3.6-15 */
-  background: -moz-linear-gradient(-45deg, $ruby-dark 0%, $elixir-dark 100%)
+  background: -moz-linear-gradient($ruby-dark, $elixir-dark)
   /* Chrome10-25,Safari5.1-6 */
-  background: -webkit-linear-gradient(-45deg, $ruby-dark 0%,$elixir-dark 100%)
+  background: -webkit-linear-gradient($ruby-dark, $elixir-dark)
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  background: linear-gradient(135deg, $ruby-dark 0%,$elixir-dark 100%)
+  background: linear-gradient($ruby-dark, $elixir-dark)
   /* IE6-9 fallback on horizontal gradient */
   // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc1d23', endColorstr='#652f8b',GradientType=1 )
-  background-attachment: fixed
 
 .font-gradient
   background: -webkit-linear-gradient($ruby-dark,$elixir-dark)
@@ -43,16 +41,35 @@ $marble: #CFD7DB
   -webkit-background-clip: text
   -webkit-text-fill-color: transparent
 
+#deco
+  +size(20px,12px)
+  display: block
+  margin: 20px auto
+
+/* Font Style*/
+.section-title
+  font-family: Righteous
+  font-size: 42px
+  letter-spacing: 3.5px
+  text-transform: uppercase
+  @extend .font-gradient
+  margin-bottom: 40px
+
+  @media (min-width: $screen-sm)
+    margin-bottom: 60px
+
 /* Button */
 .btn-small
   +size(200px, 50px)
-  display: inline-block
+  display: block
   position: relative
   border-radius: 4px
-  background: linear-gradient(to top, $elixir-dark, $ruby-dark)
+  border-color: #fff
+  background: linear-gradient($ruby-dark, $elixir-dark)
   overflow: hidden
   transform: translate3d(0, 0, 0)
   transition: all 0.2s ease-out
+  text-align: center
 
   &:before
     content: ''
@@ -79,10 +96,11 @@ $marble: #CFD7DB
     transform: translate3d(0, -3px, 0)
 
   span
-    font-family: Lato-bold
-    font-size: 18px
+    font-family: 'Lato'
+    font-weight: bold
+    font-size: 16px
     letter-spacing: 1.3px
-    text-align: center
+    text-transform: uppercase
     @extend .font-gradient
 
 .btn-medium
@@ -91,7 +109,10 @@ $marble: #CFD7DB
     height: calc(100% - 6px)
 
   span
-    font-family: Righteous
+    font-family: 'Righteous'
+    font-weight: 300
+    font-size: 18px
+    text-transform: none
 
 .btn-large
   @extend .btn-medium
@@ -103,6 +124,21 @@ $marble: #CFD7DB
     line-height: 60px
 
 body
+  background: #fff
+
+  @media screen and (max-width: 1024px)
+    overflow-x: hidden
 
   a:hover, a:visited, a:link, a:active
     text-decoration: none
+
+  section
+    max-width: 1024px
+    padding: 80px 10% 0
+    margin: 0 auto
+
+    @media (min-width: $screen-sm)
+      padding-top: 100px
+
+    @media (min-width: $screen-md)
+      padding: 120px 60px

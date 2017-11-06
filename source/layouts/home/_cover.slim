@@ -1,0 +1,40 @@
+section#cover
+  .cover-bg
+    = inline_svg "assets/deco-wave_gradient"
+    = inline_svg "assets/deco-wave"
+    = inline_svg "assets/deco-cross"
+    = inline_svg "assets/deco-oval"
+    .tablet.visible-sm-block.visible-md-block.visible-lg-block
+      = inline_svg "assets/deco-cross"
+      = inline_svg "assets/deco-cross_gradient"
+      = inline_svg "assets/deco-oval_gradient"
+      = inline_svg "assets/deco-triangle_gradient"
+    = inline_svg "assets/bg-square"
+    = inline_svg "assets/bg-stripe"
+    = inline_svg "assets/bg-oval"
+
+  .intro
+    .ruby_elixir_logo
+      = inline_svg "assets/ruby_elixir_conf_logo_alt"
+    .event
+      h3.event-date.text-center
+        = data.site.site.eventDate
+      = inline_svg "assets/deco"
+      h4.event-location.en.text-center
+        = data.site.site.eventLocation_en
+      h4.event-location.cht.text-center
+        = data.site.site.eventLocation_zh
+    .cfa
+      = link_to data.site.site.registerLink, target: '_blank', class:"btn-large register-now" do
+        span Register Now
+      = link_to data.site.site.cfpLink, target: '_blank', class:"btn-large submit-paper" do
+        span Submit A Paper
+      
+    ul.social-media.list-inline
+      - data.site.site.socialMedia.each do |item|
+        li
+          = link_to item.link, target: '_blank', class:"media " + item.name  do
+            = inline_svg "assets/btn-" + item.name
+      li
+        a.media.email href="mailto:#{data.site.site.contactEmail}"
+          = inline_svg "assets/btn-email"

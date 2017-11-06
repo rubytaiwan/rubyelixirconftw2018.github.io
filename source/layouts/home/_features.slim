@@ -1,0 +1,34 @@
+section#features
+  .features
+
+    = link_to '../program', class:"feature program"
+      .feature-card
+        .feature-bg
+          = inline_svg "assets/deco-wave"
+          = inline_svg "assets/deco-cross"
+        .feature-icon
+          = inline_svg "assets/icon_program"
+        .feature-title
+          span.assist Browse the
+          span.main
+            | Program
+            = inline_svg "assets/icon_arrow"
+          span.slash
+            | /
+          span.cht 瀏覽議程
+
+    = link_to '../speakers', class:"feature speakers"
+      .feature-card
+        .feature-bg
+          = inline_svg "assets/deco-wave"
+          = inline_svg "assets/deco-cross"
+        .feature-icon
+          = inline_svg "assets/icon_users"
+        .feature-title
+          span.assist Meet the
+          span.main
+            | Speakers
+            = inline_svg "assets/icon_arrow"
+          span.slash
+            | /
+          span.cht 講者介紹

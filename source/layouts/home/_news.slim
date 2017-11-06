@@ -1,0 +1,75 @@
+section#news
+  h3.section-title News
+
+  .news-list
+    - data.news.news.take(6).each do |post|
+      .news
+        .news-date
+          span = format_date(post.date)
+        - if post.permalink
+          h4.news-title.modaled data-toggle="modal" data-target="##{post.permalink}"
+            = post.title
+        - elsif post.link
+          a.news-title href= post.link target="_blank"
+            = post.title
+        - else
+          h4.news-title
+            = post.title
+        = inline_svg "assets/deco"
+
+        - if post.permalink
+          .modal role="dialog" tabindex="-1" id= post.permalink
+            .modal-dialog role="document"
+              .modal-content
+                .modal-header
+                  button.close aria-label="Close" data-dismiss="modal" type="button"
+                    span aria-hidden="true"  &times;
+                .modal-body
+                  .content
+                    .news-date
+                      span = format_date(post.date)
+                    h4.news-title = post.title
+                    = inline_svg "assets/deco"
+                    .news-content
+                      = markdown(post.content)
+                .modal-footer
+                  button.btn.btn-small type="button" data-dismiss="modal"
+                   span Close
+
+    - data.news.news.drop(6).each do |post|
+      .news.inactive.hidden
+        .news-date
+          span = format_date(post.date)
+        - if post.permalink
+          h4.news-title.modaled data-toggle="modal" data-target="##{post.permalink}"
+            = post.title
+        - elsif post.link
+          a.news-title href= post.link target="_blank"
+            = post.title
+        - else
+          h4.news-title
+            = post.title
+        = inline_svg "assets/deco"
+
+        - if post.permalink
+          .modal role="dialog" tabindex="-1" id= post.permalink
+            .modal-dialog role="document"
+              .modal-content
+                .modal-header
+                  button.close aria-label="Close" data-dismiss="modal" type="button"
+                    span aria-hidden="true"  &times;
+                .modal-body
+                  .content
+                    .news-date
+                      span = format_date(post.date)
+                    h4.news-title = post.title
+                    = inline_svg "assets/deco"
+                    .news-content
+                      = markdown(post.content)
+                .modal-footer
+                  button.btn.btn-small type="button" data-dismiss="modal"
+                   span Close
+
+  - if data.news.news.length > 6
+    button.btn.btn-small#news-more type="button"
+      span More +

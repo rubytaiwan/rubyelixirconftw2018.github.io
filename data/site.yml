@@ -7,6 +7,9 @@ site:
     CHANG YUNG-FA FOUNDATION
     International Convention Center
     Taipei, Taiwan
+  contactEmail: 'contact@rubyconf.tw'
+  registerLink: ''
+  cfpLink: 'https://rubyelixirconftw.typeform.com/to/zOjJhK'
   socialMedia:
     - name: 'facebook'
       link: 'https://www.facebook.com/rubyconftw/'
@@ -16,12 +19,10 @@ site:
       link: 'https://ruby.tw/'
     - name: 'elixir'
       link: 'http://elixir.tw/'
-    - name: 'email'
-      link: 'contact@rubyconf.tw'
-  keynote:
-    - name: 'Yukihiro (Matz) Matsumoto'
-      avatar: 'matz.png'
-    - name: 'José Valim'
-      avatar: 'jose-valim.jpg'
-    - name: 'Akira Matsuda'
-      avatar: 'akira-matsuda.jpg'
+keynote:
+  - name: 'Yukihiro (Matz) Matsumoto'
+    avatar: 'matz.png'
+  - name: 'José Valim'
+    avatar: 'jose-valim.jpg'
+  - name: 'Akira Matsuda'
+    avatar: 'akira-matsuda.jpg'

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" id="bg-square" class="bg-image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 292 292" style="enable-background:new 0 0 292 292;" xml:space="preserve">
+	<title>Backgroubnd/Square</title>
+	<style type="text/css">
+		.filter{fill:url(#bg-gradient);mix-blend-mode: hard-light;}
+		.shadow{filter:url(#bg-shadow);}
+	</style>
+	<defs>
+		<path d="M152.8,3.1l135.6,135.6c3.9,3.9,3.9,10.2,0,14.1L152.8,288.4c-3.9,3.9-10.2,3.9-14.1,0L3.1,152.8c-3.9-3.9-3.9-10.2,0-14.1L138.7,3.1C142.6-0.8,148.9-0.8,152.8,3.1z"/>
+		<clipPath id="square-mask">
+			<path d="M152.8,3.1l135.6,135.6c3.9,3.9,3.9,10.2,0,14.1L152.8,288.4c-3.9,3.9-10.2,3.9-14.1,0L3.1,152.8c-3.9-3.9-3.9-10.2,0-14.1L138.7,3.1C142.6-0.8,148.9-0.8,152.8,3.1z"/>
+		</clipPath>
+		<linearGradient x1="100%" y1="100%" x2="0%" y2="0%" id="bg-gradient">
+				<stop stop-color="#652F8B" offset="0%"></stop>
+				<stop stop-color="#CC1D23" offset="100%"></stop>
+		</linearGradient>
+		<filter x="-3.5%" y="-3.5%" width="107.1%" height="107.1%" filterUnits="objectBoundingBox" id="bg-shadow">
+				<feGaussianBlur stdDeviation="7.5" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+				<feOffset dx="0" dy="0" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+				<feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+				<feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+		</filter>
+	</defs>
+	<image clip-path="url(#square-mask)" width="100%" height="100%" xlink:href="images/assets/cover-taiwan_1.jpg" />
+	<path class="filter" d="M152.8,3.1l135.6,135.6c3.9,3.9,3.9,10.2,0,14.1L152.8,288.4c-3.9,3.9-10.2,3.9-14.1,0L3.1,152.8c-3.9-3.9-3.9-10.2,0-14.1L138.7,3.1C142.6-0.8,148.9-0.8,152.8,3.1z"/>
+	<path class="shadow" d="M152.8,3.1l135.6,135.6c3.9,3.9,3.9,10.2,0,14.1L152.8,288.4c-3.9,3.9-10.2,3.9-14.1,0L3.1,152.8c-3.9-3.9-3.9-10.2,0-14.1L138.7,3.1C142.6-0.8,148.9-0.8,152.8,3.1z"/>
+</svg>
