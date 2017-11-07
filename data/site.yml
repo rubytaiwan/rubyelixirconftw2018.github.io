@@ -20,10 +20,3 @@ site:
       link: 'https://ruby.tw/'
     - name: 'elixir'
       link: 'http://elixir.tw/'
-keynote:
-  - name: 'Yukihiro (Matz) Matsumoto'
-    avatar: 'matz.png'
-  - name: 'José Valim'
-    avatar: 'jose-valim.jpg'
-  - name: 'Akira Matsuda'
-    avatar: 'akira-matsuda.jpg'

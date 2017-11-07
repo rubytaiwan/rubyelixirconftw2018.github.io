@@ -12,3 +12,10 @@
     color: $color
   &:-ms-input-placeholder
     color: $color
+
+=hover-effect($duration, $y-transform)
+  cursor: pointer
+  transform: translate3d(0, 0, 0)
+  transition: all $duration ease-out
+  &:hover
+    transform: translate3d(0, $y-transform, 0)

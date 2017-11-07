@@ -1,0 +1,61 @@
+section#keynotes
+  h3.section-title Keynote Speakers
+
+  .keynote-speakers
+    - data.speakers.keynote.each do |speaker|
+      .speaker.modaled data-toggle="modal" data-target="##{speaker.name.gsub(/[\s()]+/, '-').downcase}"
+        .speaker-avatar
+          = image_tag 'speakers/' + speaker.avatar, class:'speaker-img', alt: speaker.name, title: speaker.name
+        h4.speaker-name = speaker.name
+        span.speaker-title = speaker.title
+        .deco
+          = inline_svg "assets/deco"
+
+      /** Speaker Info **/
+      .modal role="dialog" tabindex="-1" id= speaker.name.gsub(/[\s()]+/, '-').downcase
+        .modal-dialog role="document"
+          .modal-content
+            .modal-header
+              button.close aria-label="Close" data-dismiss="modal" type="button"
+                span aria-hidden="true"  &times;
+            .modal-body
+              article.content
+                .speaker-avatar
+                  = image_tag 'speakers/' + speaker.avatar, class:'speaker-img', alt: speaker.name, title: speaker.name
+                h4.speaker-name = speaker.name
+                span.speaker-title = speaker.title
+                = inline_svg "assets/deco"
+                p.speaker-bio = speaker.bio
+                - if speaker.type = 'ruby'
+                  .speaker-program.ruby
+                    = inline_svg "assets/deco-ruby"
+                    h5.speaker-subject = speaker.subject
+                    = inline_svg "assets/deco"
+                    p.speaker-summary = speaker.summary
+                - elsif speaker.type = 'elixir'
+                  .speaker-program.elixir
+                    = inline_svg "assets/deco-elixir"
+                    h5.speaker-subject = speaker.subject
+                    = inline_svg "assets/deco"
+                    p.speaker-summary = speaker.summary
+
+                ul.speaker-socials.list-inline
+                  - if speaker.urlHome
+                    li
+                      = link_to speaker.urlHome, target: '_blank', class:"media homepage"  do
+                        = inline_svg "assets/btn-home"
+                  - if speaker.urltwitter
+                    li
+                      = link_to speaker.urltwitter, target: '_blank', class:"media twitter"  do
+                        = inline_svg "assets/btn-twitter"
+                  - if speaker.urlGithub
+                    li
+                      = link_to speaker.urlGithub, target: '_blank', class:"media github"  do
+                        = inline_svg "assets/btn-github"
+                
+              .modal-footer
+                button.btn.btn-small type="button" data-dismiss="modal"
+                  span Close
+
+  = link_to '../speakers', target: '_blank', class:"btn btn-small", id:"speakers-more" do
+    span All Speakers +

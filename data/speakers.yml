@@ -1,0 +1,18 @@
+keynote:
+  - name: 'Yukihiro Matsumoto (Matz)'
+    avatar: 'matz.png'
+    type: 'ruby'
+    title: 'Creator of Ruby, Heroku'
+    bio: |-
+      Father of Ruby Programming Language
+    subject: 'Beware of Alpha Syndrome'
+    summary: |-
+      Matz talks about psychological phenomenon of programmers
+    urlHome: http://www.rubyist.net/~matz/
+    urltwitter: http://twitter.com/yukihiro_matz
+    urlGithub: http://github.com/matz
+    videoUrl: https://youtu.be/a8ycBvTzl3Y
+  - name: 'José Valim'
+    avatar: 'jose-valim.jpg'
+  - name: 'Akira Matsuda'
+    avatar: 'akira-matsuda.jpg'
