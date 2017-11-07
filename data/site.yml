@@ -1,6 +1,7 @@
 site:
   title: 'Ruby X Elixir Conf Taiwan 2018'
   description: '眾所矚目的 Ruby X Elixir Conf Taiwan 2018 將在 2018 年 4 月 27 - 28 日於張榮發基金會國際會議中心隆重舉辦，敬請期待！'
+  keywords: '2018,Ruby,Ruby Taiwan,Ruby Conference,Ruby Conf Taiwan,Elixir,Elixir Taiwan,Elixir Conference,Elixir Conf Taiwan,Taiwan,Ruby X Elixir Conf Taiwan 2018'
   eventDate: '2018.04.27 - 28'
   eventLocation_zh: '張榮發基金會國際會議中心'
   eventLocation_en: |
