@@ -9,11 +9,11 @@ nav#affixNav.navbar.navbar-default.navbar-custom.navbar-fixed-top
     #navbar-collapse.collapse.navbar-collapse
       ul.nav.navbar-nav.navbar-right
         li
-          a href="#" Program
+          a href="../program" Program
         li
-          a href="#" Speakers
+          a href="../speakers" Speakers
         li
-          a href="#" Sponsors
+          a href="../sponsors" Sponsors
         li.register-now
-          a.btn-medium href="#"
+          = link_to data.site.site.registerLink, target: '_blank', class:"btn-medium register-now" do
             span Register Now

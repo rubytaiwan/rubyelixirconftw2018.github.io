@@ -1,6 +1,8 @@
 //= require jquery/dist/jquery.min
 //= require bootstrap-sass/assets/javascripts/bootstrap/affix.js
 //= require bootstrap-sass/assets/javascripts/bootstrap/modal.js
+//= require bootstrap-sass/assets/javascripts/bootstrap/collapse.js
+//= require bootstrap-sass/assets/javascripts/bootstrap/transition.js
 //= require fastclick/lib/fastclick.js
 
 var $window = $(window);
