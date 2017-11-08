@@ -120,6 +120,20 @@ $dark-grey: #777
     font-size: 20px
     line-height: 60px
 
+.btn-close
+  display: block
+  @extend .btn-small
+  +size(120px, 40px)
+  background: $marble
+  margin: 0 auto
+
+  span
+    background: #fff
+    -webkit-text-fill-color: $marble
+    font-size: 14px
+    font-weight: 700
+    line-height: 28px
+
 body
   background: #fff
   font-family: 'Lato'
@@ -169,14 +183,3 @@ body
 
         @media (min-width: $screen-sm)
           padding: 0 40px 40px
-        
-        .btn-small
-          +size(120px, 40px)
-          margin: 0 auto
-          span
-            font-size: 14px
-            font-weight: 700
-            line-height: 28px
-
-          @media (min-width: $screen-sm)
-            float: right

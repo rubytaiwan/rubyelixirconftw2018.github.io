@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" id="social_btn_homepage" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" viewBox="0 0 40 40" style="enable-background:new 0 0 40 40;" xml:space="preserve">
+	<style type="text/css">
+		.social_btn_color{fill:#CFD7DB;}
+	</style>
+	<title>Social Button Homepage</title>
+	<path id="btn_homepage" class="social_btn_color" d="M39.5,18.9L21,0.5C20.8,0.2,20.4,0,20,0s-0.8,0.2-1.1,0.5L0.5,18.9c-0.6,0.6-0.6,1.6,0,2.2l18.4,18.4
+		c0.3,0.3,0.7,0.5,1.1,0.5s0.8-0.2,1.1-0.5l18.4-18.4C40.2,20.5,40.2,19.5,39.5,18.9z M27.1,27.1c0,0.4-0.4,0.8-0.8,0.8h-4.7v-4.7
+		h-3.2v4.7h-4.7c-0.4,0-0.8-0.4-0.8-0.8v-5.9c0,0,0,0,0-0.1l7.1-5.8l7.1,5.8c0,0,0,0,0,0.1V27.1z M29.8,20.4l-0.8,0.9
+		c-0.1,0.1-0.2,0.1-0.3,0.1h0c-0.1,0-0.2,0-0.3-0.1L20,14.2l-8.5,7.1c-0.1,0.1-0.2,0.1-0.3,0.1c-0.1,0-0.2-0.1-0.3-0.1l-0.8-0.9
+		c-0.1-0.2-0.1-0.4,0-0.6l8.8-7.4c0.5-0.4,1.4-0.4,1.9,0l3,2.5v-2.4c0-0.2,0.2-0.4,0.4-0.4h2.4c0.2,0,0.4,0.2,0.4,0.4v5l2.7,2.2
+		C29.9,19.9,30,20.2,29.8,20.4z"/>
+</svg>

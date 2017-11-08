@@ -11,8 +11,33 @@ keynote:
     urlHome: http://www.rubyist.net/~matz/
     urltwitter: http://twitter.com/yukihiro_matz
     urlGithub: http://github.com/matz
-    videoUrl: https://youtu.be/a8ycBvTzl3Y
+    slideUrl:
+    videoUrl:
   - name: 'José Valim'
     avatar: 'jose-valim.jpg'
+    type: 'elixir'
+    title: 'Creator of Elixir'
+    bio: |-
+      Father of Elixir Programming Language
+    subject: 'Talk Title'
+    summary: |-
+      Description here
+    urlHome:
+    urltwitter: https://twitter.com/josevalim
+    urlGithub: https://github.com/josevalim
+    slideUrl:
+    videoUrl:
   - name: 'Akira Matsuda'
     avatar: 'akira-matsuda.jpg'
+    type: 'ruby'
+    title: ''
+    bio: |-
+      test
+    subject: 'Talk Title'
+    summary: |-
+      Description here
+    urlHome:
+    urltwitter: https://twitter.com/a_matsuda
+    urlGithub: https://github.com/amatsuda
+    slideUrl:
+    videoUrl:

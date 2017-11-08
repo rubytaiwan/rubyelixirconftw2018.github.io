@@ -4,6 +4,7 @@
     flex-direction: column
     flex-wrap: wrap
     justify-content: center
+    align-items: flex-start
 
     @media (min-width: $screen-sm)
       flex-direction: row
@@ -61,6 +62,18 @@
     font-size: 24px
     font-weight: bold
 
+  .btn-talk
+    +size(120px, 40px)
+    display: inline-block
+    margin: 20px 10px 0
+    
+    span
+      font-size: 14px
+      line-height: 28px
+
+    @media (min-width: $screen-sm)
+      margin-top: 40px
+
   .speaker-socials
     text-align: center
     padding: 0
@@ -78,8 +91,12 @@
           +transition(all, 0.3s)
         
         &:hover
+          &.homepage .social_btn_color
+            fill: $midnight
           &.twitter .social_btn_color
             fill: #1da1f2
+          &.github .social_btn_color
+            fill: #333
 
   /** Customized Modal **/
 
@@ -104,6 +121,10 @@
           padding: 20px 0
           margin: 40px 0
 
+          @media (min-width: $screen-sm)
+            padding: 40px 0
+            margin: 60px 0 40px
+
           &.ruby
             border-top: 1px solid $ruby-light
             border-bottom: 1px solid $ruby-dark
@@ -123,11 +144,7 @@
             position: absolute
             @extend .align-center
             top: 0
-
-    .modal-footer .btn-small
-      @media (min-width: $screen-sm)
-        float: none
         
-  #speakers-more
+  .speakers-more
     display: block
     margin: 0 auto
