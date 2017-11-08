@@ -1,0 +1,58 @@
+keynotes:
+  - name: Yukihiro Matsumoto (Matz)
+    avatar: matz.png
+    type: ruby
+    title: Creator of Ruby, Heroku
+    bio: |-
+      Father of Ruby Programming Language
+    subject: Beware of Alpha Syndrome
+    summary: |-
+      Matz talks about psychological phenomenon of programmers
+    urlHome: http://www.rubyist.net/~matz/
+    urltwitter: http://twitter.com/yukihiro_matz
+    urlGithub: http://github.com/matz
+    slideUrl:
+    videoUrl:
+  - name: José Valim
+    avatar: jose-valim.jpg
+    type: elixir
+    title: Creator of Elixir
+    bio: |-
+      Father of Elixir Programming Language
+    subject: Talk's Title
+    summary: |-
+      Description here
+    urlHome:
+    urltwitter: https://twitter.com/josevalim
+    urlGithub: https://github.com/josevalim
+    slideUrl:
+    videoUrl:
+  - name: Akira Matsuda
+    avatar: akira-matsuda.jpg
+    type: ruby
+    title:
+    bio: |-
+      test
+    subject: Talk's Title
+    summary: |-
+      Description here
+    urlHome:
+    urltwitter: https://twitter.com/a_matsuda
+    urlGithub: https://github.com/amatsuda
+    slideUrl:
+    videoUrl:
+general:
+  - name: Speaker's name
+    avatar: 
+    type: ruby
+    title: Title
+    bio: |-
+      Speakers biography
+    subject: Talks Title
+    summary: |-
+      Description here
+    urlHome:
+    urltwitter:
+    urlGithub:
+    slideUrl:
+    videoUrl:

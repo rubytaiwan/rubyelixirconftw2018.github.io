@@ -25,7 +25,7 @@ section#news
                   button.close aria-label="Close" data-dismiss="modal" type="button"
                     span aria-hidden="true"  &times;
                 .modal-body
-                  .content
+                  article.content
                     .news-date
                       span = format_date(post.date)
                     h4.news-title = post.title
@@ -33,7 +33,7 @@ section#news
                     .news-content
                       = markdown(post.content)
                 .modal-footer
-                  button.btn.btn-small type="button" data-dismiss="modal"
+                  button.btn.btn-close type="button" data-dismiss="modal"
                    span Close
 
     - data.news.news.drop(6).each do |post|
@@ -59,7 +59,7 @@ section#news
                   button.close aria-label="Close" data-dismiss="modal" type="button"
                     span aria-hidden="true"  &times;
                 .modal-body
-                  .content
+                  article.content
                     .news-date
                       span = format_date(post.date)
                     h4.news-title = post.title
@@ -67,7 +67,7 @@ section#news
                     .news-content
                       = markdown(post.content)
                 .modal-footer
-                  button.btn.btn-small type="button" data-dismiss="modal"
+                  button.btn.btn-close type="button" data-dismiss="modal"
                    span Close
 
   - if data.news.news.length > 6

@@ -67,9 +67,8 @@ $dark-grey: #777
   border-color: #fff
   background: linear-gradient($ruby-dark, $elixir-dark)
   overflow: hidden
-  transform: translate3d(0, 0, 0)
-  transition: all 0.2s ease-out
   text-align: center
+  +hover-effect(0.2s, -3px)
 
   &:before
     content: ''
@@ -92,14 +91,12 @@ $dark-grey: #777
     z-index: -3
     opacity: 0
 
-  &:hover
-    transform: translate3d(0, -3px, 0)
-
   span
     font-family: 'Lato'
     font-weight: bold
     font-size: 16px
     letter-spacing: 1.3px
+    line-height: 36px
     text-transform: uppercase
     @extend .font-gradient
 
@@ -123,8 +120,23 @@ $dark-grey: #777
     font-size: 20px
     line-height: 60px
 
+.btn-close
+  display: block
+  @extend .btn-small
+  +size(120px, 40px)
+  background: $marble
+  margin: 0 auto
+
+  span
+    background: #fff
+    -webkit-text-fill-color: $marble
+    font-size: 14px
+    font-weight: 700
+    line-height: 28px
+
 body
   background: #fff
+  font-family: 'Lato'
 
   @media screen and (max-width: 1024px)
     overflow-x: hidden
@@ -142,3 +154,71 @@ body
 
     @media (min-width: $screen-md)
       padding: 120px 60px
+
+  /** Modal Customized**/
+  .modal
+    .modal-dialog
+      margin-top: 80px
+
+      @media screen and (min-width: $screen-sm)
+        width: 80%
+        max-width: 960px
+
+      .modal-content
+        position: relative
+
+        .modal-header
+          position: absolute
+          border-width: 0
+          right: 0
+          padding: 18px
+          z-index: 999
+
+          button.close
+            font-size: 32px
+            
+        .modal-body .content
+
+          img
+            display: block
+            width: 100%
+            max-width: 640px
+            margin: 30px auto
+          h1
+            font-size: 24px
+          h2
+            font-size: 20px
+            margin: 30px 0 20px
+          h3
+            font-size: 18px
+            margin: 30px 0 20px
+          p
+            font-size: 16px
+            line-height: 24px
+          a
+            word-break: break-all
+          blockquote
+            color: $dark-grey
+            font-style: italic
+            margin: 0
+
+          @media (min-width: $screen-sm)
+
+            img
+              width: 80%
+            h1
+              font-size: 28px
+            h2
+              font-size: 24px
+            h3
+              font-size: 20px
+            p
+              font-size: 18px
+              line-height: 28px
+
+      .modal-footer
+        border-width: 0
+        padding-top: 0
+
+        @media (min-width: $screen-sm)
+          padding: 0 40px 40px
