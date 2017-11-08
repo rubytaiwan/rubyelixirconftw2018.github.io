@@ -25,6 +25,7 @@
   .speaker-avatar
     +size(240px, 240px)
     @extend .main-background
+    padding: 8px
     margin: 0 auto
     -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)
     clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)
@@ -34,7 +35,6 @@
       width: 224px
       -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)
       clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)
-      margin: 8px
       transition: all 0.2s ease-out
 
   .speaker-name
@@ -54,7 +54,6 @@
     padding-top: 10px
 
   .speaker-bio, .speaker-summary
-    font-size: 17px
     padding: 0
     margin: 0
 
@@ -115,6 +114,9 @@
 
         .speaker-name
           @extend .font-gradient
+
+        .speaker-img
+          margin: 0
 
         .speaker-program
           position: relative

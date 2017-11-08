@@ -2,7 +2,7 @@ section#keynotes
   h3.section-title Keynote Speakers
 
   .keynote-speakers
-    - data.speakers.keynote.each do |speaker|
+    - data.speakers.keynotes.each do |speaker|
       .speaker.modaled data-toggle="modal" data-target="##{speaker.name.gsub(/[\s()]+/, '-').downcase}"
         .speaker-avatar
           = image_tag 'speakers/' + speaker.avatar, class:'speaker-img', alt: speaker.name, title: speaker.name
@@ -25,7 +25,7 @@ section#keynotes
                 h4.speaker-name = speaker.name
                 span.speaker-title = speaker.title
                 = inline_svg "assets/deco"
-                p.speaker-bio = speaker.bio
+                p.speaker-bio = markdown(speaker.bio)
 
                 /** Talk Info **/
                 - if speaker.type == 'ruby'
@@ -33,7 +33,7 @@ section#keynotes
                     = inline_svg "assets/deco-ruby"
                     h5.speaker-subject = speaker.subject
                     = inline_svg "assets/deco"
-                    p.speaker-summary = speaker.summary
+                    p.speaker-summary = markdown(speaker.summary)
                     - if speaker.slideUrl
                       = link_to speaker.slideUrl, target: '_blank', class:"btn btn-small btn-talk" do
                         span Slide
