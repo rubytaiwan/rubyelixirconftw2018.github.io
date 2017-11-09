@@ -1,0 +1,24 @@
+section#venue
+  h3.section-title Venue
+
+  .venue
+    .venue-img
+      = image_tag 'venue.jpg', alt: data.site.venue.eventLocation_en, title: data.site.venue.eventLocation_en
+    .venue-info
+      .event-location
+        .en
+          = data.site.venue.eventLocation_en
+        .cht.small
+          span.slash
+            | /
+          = data.site.venue.eventLocation_cht
+      .event-address
+        .en
+          = data.site.venue.eventAddress_en
+        .cht.small
+          span.slash
+            | /
+          = data.site.venue.eventAddress_cht
+
+      = link_to data.site.venue.eventGoogleMap, target: '_blank', class:"btn btn-small" do
+        span Google Map +

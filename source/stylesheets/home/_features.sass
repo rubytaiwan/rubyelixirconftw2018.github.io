@@ -11,6 +11,9 @@
     max-width: 1024px
     margin: 0 auto
 
+    @media (min-width: $screen-md) and (max-width: 1024px)
+      margin: 0 40px
+
   .feature
     display: block
     +size(260px, 340px)
@@ -92,7 +95,6 @@
           color: $midnight
 
         .assist, .slash
-          font-weight: bold
           font-size: 24px
 
         .slash
