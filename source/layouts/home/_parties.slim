@@ -1,0 +1,27 @@
+section#parties
+  h3.section-title Parties
+
+  .parties
+
+    - data.site.parties.each do |party|
+
+      .party-ticket
+        .ticket-bg
+          = inline_svg "assets/deco-wave_vertical"
+          = inline_svg "assets/deco-cross"
+          = inline_svg "assets/deco-logo"
+        .party-cover
+          .title = party.session
+          = inline_svg "assets/deco"
+          = inline_svg "assets/main-logotype"
+        .party-info
+          .date = party.date
+          .time = party.time
+          = link_to party.locationLink, class:"location" do
+            = party.location
+          - if party.registerLink
+            = link_to party.registerLink, target: '_blank', class:"btn btn-minimal" do
+              span Register Now
+          - else
+            .btn.btn-minimal.inactive
+              span Free for Attendees

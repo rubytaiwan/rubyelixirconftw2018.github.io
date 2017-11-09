@@ -35,6 +35,18 @@ $dark-grey: #777
   /* IE6-9 fallback on horizontal gradient */
   // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc1d23', endColorstr='#652f8b',GradientType=1 )
 
+.main-background_ruby
+  /* Old browsers */
+  background: $ruby-dark
+  /* FF3.6-15 */
+  background: -moz-linear-gradient($ruby-light, $ruby-dark)
+  /* Chrome10-25,Safari5.1-6 */
+  background: -webkit-linear-gradient($ruby-light, $ruby-dark)
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  background: linear-gradient($ruby-light, $ruby-dark)
+  /* IE6-9 fallback on horizontal gradient */
+  // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc1d23', endColorstr='#652f8b',GradientType=1 )
+
 .font-gradient
   background: -webkit-linear-gradient($ruby-dark,$elixir-dark)
   background-clip: text
@@ -68,6 +80,7 @@ $dark-grey: #777
   background: linear-gradient($ruby-dark, $elixir-dark)
   overflow: hidden
   text-align: center
+  margin: 0 auto
   +hover-effect(0.2s, -3px)
 
   &:before

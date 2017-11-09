@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" id="deco_wave_vertical" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" viewBox="0 0 31 81" style="enable-background:new 0 0 31 81;" xml:space="preserve">
+	<style type="text/css">
+		.deco-dark{fill:none;stroke:#3F4C6B;stroke-linecap:round;}
+	</style>
+	<title>Deco/Colored Wave</title>
+	<path class="deco-dark" d="M9.1,0.5c0,8-8.6,8-8.6,16s8.6,8,8.6,16s-8.6,8-8.6,16s8.6,8,8.6,16s-8.6,8-8.6,16 M19.8,0.5c0,8-8.6,8-8.6,16
+		s8.6,8,8.6,16s-8.6,8-8.6,16s8.6,8,8.6,16s-8.6,8-8.6,15.9 M30.5,0.5c0,8-8.6,8-8.6,16s8.6,8,8.6,16s-8.6,8-8.6,16s8.6,8,8.6,16
+		s-8.6,8-8.6,15.9"/>
+</svg>

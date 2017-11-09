@@ -1,0 +1,83 @@
+#parties
+  .parties
+    @media (min-width: $screen-md) and (max-width: 1024px)
+      margin: 0 40px
+
+  .party-ticket
+    position: relative
+    +size(260px, 510px)
+    margin: 0 auto
+    box-shadow: 0 2px 8px 0 rgba($midnight,0.50)
+
+    @media (min-width: $screen-sm)
+      +size(482px, 280px)
+      
+    .ticket-bg
+      +size(100%, 100%)
+      position: absolute
+      top: 0
+      left: 0
+      overflow: hidden
+
+      #deco_wave_vertical
+        height: 80px
+        position: absolute
+        top: 200px
+        right: 20px
+        z-index: 99
+
+        .deco-line
+          stroke: $midnight
+
+        @media (min-width: $screen-sm)
+          transform: rotate(0deg)
+          top: 155px
+          right: 260px
+
+      #deco_cross
+        width: 24px
+        position: absolute
+        top: 400px
+        right: 20px
+        z-index: 99
+
+        .deco-line
+          stroke: #fff
+          
+        @media (min-width: $screen-sm)
+          top: 20px
+          right: 20px
+
+      #deco_logo
+        position: absolute
+        opacity: 0.2
+        top: 30px
+        left: -40px
+
+    .party-cover
+      position: relative
+      +size(100%, 240px)
+      padding: 40px
+
+      #deco
+        margin: 20px 0 
+        .deco-color
+          fill: $midnight
+
+      #main_logotype
+        position: absolute
+        +size(143px, 37px)
+        left: 40px
+        bottom: 20px
+
+      .title
+        font-family: 'Righteous'
+        font-size: 32px
+        letter-spacing: 0.5px
+        color: $midnight
+
+    .party-info
+      position: relative
+      +size(100%, 270px)
+      @extend .main-background_ruby
+      padding: 40px
