@@ -11,7 +11,7 @@ section#keynotes
         .deco
           = inline_svg "assets/deco"
 
-      /** Speaker Info **/
+      /** Speaker Info (Modal) **/
       .modal role="dialog" tabindex="-1" id= speaker.name.gsub(/[\s()]+/, '-').downcase
         .modal-dialog role="document"
           .modal-content
@@ -28,24 +28,11 @@ section#keynotes
                 p.speaker-bio = markdown(speaker.bio)
 
                 /** Talk Info **/
-                - if speaker.type == 'ruby'
-                  .speaker-program.ruby
-                    = inline_svg "assets/deco-ruby"
-                    h5.speaker-subject = speaker.subject
+                .speaker-program class="#{speaker.type == 'ruby' ? "ruby" : "elixir"}"
+                  .talk-info
+                    .speaker-subject = speaker.subject
                     = inline_svg "assets/deco"
                     p.speaker-summary = markdown(speaker.summary)
-                    - if speaker.slideUrl
-                      = link_to speaker.slideUrl, target: '_blank', class:"btn btn-small btn-talk" do
-                        span Slide
-                    - if speaker.videoUrl
-                      = link_to speaker.videoUrl, target: '_blank', class:"btn btn-small btn-talk" do
-                        span Vedio
-                - elsif speaker.type == 'elixir'
-                  .speaker-program.elixir
-                    = inline_svg "assets/deco-elixir"
-                    h5.speaker-subject = speaker.subject
-                    = inline_svg "assets/deco"
-                    p.speaker-summary = speaker.summary
                     - if speaker.slideUrl
                       = link_to speaker.slideUrl, target: '_blank', class:"btn btn-small btn-talk" do
                         span Slide
