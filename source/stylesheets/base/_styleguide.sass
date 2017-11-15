@@ -32,8 +32,26 @@ $dark-grey: #777
   background: -webkit-linear-gradient($ruby-dark, $elixir-dark)
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   background: linear-gradient($ruby-dark, $elixir-dark)
-  /* IE6-9 fallback on horizontal gradient */
-  // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc1d23', endColorstr='#652f8b',GradientType=1 )
+
+.main-background_ruby
+  /* Old browsers */
+  background: $ruby-dark
+  /* FF3.6-15 */
+  background: -moz-linear-gradient($ruby-light, $ruby-dark)
+  /* Chrome10-25,Safari5.1-6 */
+  background: -webkit-linear-gradient($ruby-light, $ruby-dark)
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  background: linear-gradient($ruby-light, $ruby-dark)
+
+.main-background_elixir
+  /* Old browsers */
+  background: $elixir-dark
+  /* FF3.6-15 */
+  background: -moz-linear-gradient($elixir-light, $elixir-dark)
+  /* Chrome10-25,Safari5.1-6 */
+  background: -webkit-linear-gradient($elixir-light, $elixir-dark)
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  background: linear-gradient($elixir-light, $elixir-dark)
 
 .font-gradient
   background: -webkit-linear-gradient($ruby-dark,$elixir-dark)
@@ -63,33 +81,25 @@ $dark-grey: #777
   +size(200px, 50px)
   display: block
   position: relative
-  border-radius: 4px
-  border-color: #fff
   background: linear-gradient($ruby-dark, $elixir-dark)
+  border: 1px solid #fff
+  border-radius: 6px
+  margin: 0 auto
   overflow: hidden
   text-align: center
   +hover-effect(0.2s, -3px)
 
   &:before
     content: ''
-    position: absolute
-    top: 2px
-    left: 2px
-    +size(calc(100% - 4px), calc(100% - 4px))
-    border-radius: 2px
-    background: #fff
-    z-index: -1
-
-  &:after
-    content: ''
     display: block
     position: absolute
-    top: 0px
-    left: 0px
-    +size(100%, 100%)
-    background: linear-gradient(to top, $elixir-dark, $ruby-dark)
-    z-index: -3
-    opacity: 0
+    border-radius: 3px
+    top: 2px
+    bottom: 2px
+    left: 2px
+    right: 2px
+    background: #fff
+    z-index: -1
 
   span
     font-family: 'Lato'
@@ -102,8 +112,9 @@ $dark-grey: #777
 
 .btn-medium
   @extend .btn-small
+
   &:before
-    height: calc(100% - 6px)
+    bottom: 4px
 
   span
     font-family: 'Righteous'
@@ -114,25 +125,31 @@ $dark-grey: #777
 .btn-large
   @extend .btn-medium
   +size(240px, 60px)
-  &:before
-    height: calc(100% - 7px)
+
   span
     font-size: 20px
     line-height: 60px
 
 .btn-close
-  display: block
-  @extend .btn-small
   +size(120px, 40px)
-  background: $marble
+  display: block
+  position: relative
+  border: 2px solid $marble
+  border-radius: 4px
+  background: #fff
   margin: 0 auto
+  overflow: hidden
+  text-align: center
+  +hover-effect(0.2s, -3px)
 
   span
-    background: #fff
-    -webkit-text-fill-color: $marble
+    font-family: 'Lato'
+    font-weight: bold
     font-size: 14px
-    font-weight: 700
-    line-height: 28px
+    letter-spacing: 1.3px
+    line-height: 26px
+    color: $marble
+    text-transform: uppercase
 
 body
   background: #fff
@@ -150,10 +167,13 @@ body
     margin: 0 auto
 
     @media (min-width: $screen-sm)
-      padding-top: 100px
+      padding: 100px 60px 0
 
     @media (min-width: $screen-md)
-      padding: 120px 60px
+      padding: 120px 60px 0
+    
+    @media (min-width: 1104px)
+      padding: 120px 0 0
 
   /** Modal Customized**/
   .modal

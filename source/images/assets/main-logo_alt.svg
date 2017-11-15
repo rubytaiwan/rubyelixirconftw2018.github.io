@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<svg version="1.1" id="ruby_elixir_conf_logo_alt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 320 284" style="enable-background:new 0 0 320 284;" xml:space="preserve">
-    <style type="text/css">
+<svg version="1.1" id="main_logo_alt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 320 284" style="enable-background:new 0 0 320 284;" xml:space="preserve">
+	<style type="text/css">
 		.midnight{fill:#3F4C6B;}
 		.elixir{fill:url(#elixir_color);}
 		.ruby{fill:url(#ruby_color);}
@@ -8,8 +8,8 @@
 		.logo_ruby{fill:url(#shape_ruby_color);}
 		.logo_elixir{fill:url(#shape_elixir_color);}
 	</style>
-    <title>Ruby Elixir Conf Logo</title>
-    <path id="2018" transform="translate(59.789474, 177.008310)" class="midnight" d="M28.6,19.5c-0.8,0.8-1.8,1.4-2.8,1.9
+	<title>Main Logo main_logo_alt</title>
+	<path id="2018" transform="translate(59.789474, 177.008310)" class="midnight" d="M28.6,19.5c-0.8,0.8-1.8,1.4-2.8,1.9
 	c-1,0.4-2.1,0.6-3.2,0.6c-1.1,0-2.2-0.2-3.2-0.6c-1-0.4-1.9-1-2.8-1.9l-2-2c-0.3-0.3-0.6-0.5-0.9-0.6c-0.3-0.2-0.7-0.2-1.1-0.2
 	c-0.3,0-0.8,0.1-1.1,0.2c-0.3,0.1-0.7,0.3-0.9,0.6l-2,2l9.4,9.4l-4,4L0.5,19.5l6-6c0.8-0.8,1.8-1.4,2.8-1.9c1-0.4,2.1-0.6,3.2-0.6
 	s2.2,0.2,3.2,0.6c1,0.4,1.9,1,2.8,1.9l2,2c0.3,0.3,0.6,0.5,0.9,0.6c0.3,0.1,0.7,0.2,1.1,0.2c0.3,0,0.8-0.1,1.1-0.3s0.7-0.3,0.9-0.7
