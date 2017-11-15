@@ -3,7 +3,7 @@ section#parties
 
   .parties
 
-    - data.site.parties.each do |party|
+    - data.site.parties.each_with_index do |party, index|
 
       .party-ticket
         .ticket-bg
@@ -14,13 +14,14 @@ section#parties
           .title = party.session
           = inline_svg "assets/deco"
           = inline_svg "assets/main-logotype"
-        .party-info
+        .party-info class="#{index.even? ? "ruby" : "elixir"}"
           .date = party.date
-          .time = party.time
-          = link_to party.locationLink, class:"location" do
-            = party.location
+          .time.small = party.time
+          = link_to party.locationLink, target: '_blank', class:"location" do
+            | @
+            span = party.location
           - if party.registerLink
-            = link_to party.registerLink, target: '_blank', class:"btn btn-minimal" do
+            = link_to party.registerLink, target: '_blank', class:"btn btn-minimal register" do
               span Register Now
           - else
             .btn.btn-minimal.inactive
