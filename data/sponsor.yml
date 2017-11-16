@@ -1,0 +1,110 @@
+ruby:
+  - name: Fusion
+    link: http://www.fusiongogo.com/
+    logo: fusion.svg
+    desc: |-
+      Fusion Limited is an Ecommerce Solution Provider and enabler that offers advanced online shopping & payment technology support.
+      Fusion’s vision is to become the top Ecommerce Solution Provider, creating solutions that merchants and consumers love. And our mission is to facilitate merchants in transition to digital age in the world of internet, and empower small to large merchants to utilize Big Data and O2O to succeed in Ecommerce world, with minimal investment. 
+      In addition to providing solutions for merchants, we also offer online marketing services such as advertisement, SEO and social media marketing.
+elixir:
+  - name: Shopmatic
+    link: http://www.fusiongogo.com/
+    logo: shopmatic.svg
+    desc: |-
+ruby_gem:
+  - name: 五倍紅寶石股份有限公司
+    link: http://5xruby.tw/
+    logo: 5xruby.svg
+    desc: |-
+      我們是一群在台灣的 Ruby 程式語言的愛好者，每天的工作都是跟 Ruby/Rails 相關。Ruby on Rails 快速開發的優勢，在國外企業與創業圈極為熱門；而 Ruby 語言本身的自然與優雅簡潔，也讓工程師們工作起來更加快樂。但是，在台灣實際真的有使用 Ruby/Rails 做為主要開發工具的企業卻仍是少數。我們最終的目的，是希望在台灣可以有越來越多的企業能了解或採用 Ruby 這個優雅、有趣，並且極具生產力的程式語言做為主要開發工具，更快速的實現您的想法。
+elixir_hex:
+  - name: Akatsuki
+    link: http://aktsk.com.tw/
+    logo: akatsuki.svg
+    desc: |-
+      Akatsuki, the best mobile game company from Japan has landed in Taiwan!! Our goal is to build better social values and create happiness for the society across the globe, under the ethos “Brightening the world by the power of game.
+platinum:
+  - name: Shopline
+    link: http://bit.ly/2dmb7xK
+    logo: shopline.svg
+    desc: |-
+      Shopline為自助電商平台，整合了前端的網站設計、後台的商品管理，以及完整的金物流系統，為電商賣家提供簡單好操作的架站工具。不僅讓賣家輕鬆快速開設個人化的網路商店，也讓消費者更便利的在手機上購物。在台灣、香港及東南亞已經擁有超過八萬間店家開店並持續成長中。
+      Shopline is a DIY e-commerce platform that empowers merchants in Asia to launch their own standalone online store. Our differentiation lies in our simplistic setup process  native language support  regional payment methods and the fact that the entire experience is optimized for mobile. All shops are completely responsive and adapt to all screen sizes  keeping a consistent customer experience. Our goal is to empower small businesses in Asia with simple-to-use tools that complements the way they do business and allowing them to succeed in e-commerce. The long term vision is to build a complete social e-commerce platform that drives value to both merchants and consumers.
+  - name: Microsoft
+    link: https://www.microsoft.com
+    logo: MS.svg
+    desc: |-
+      在微軟，我們的任務及價值在協助全球各地的使用者及企業用戶實現其目標與願景。
+  - name: Gandi.net
+    link: https://www.gandi.net/
+    logo: gandi.svg
+    desc: |-
+      GANDI 為域名註冊商以及雲端代管服務公司。商品包含免費網站、SSL 憑證、部落格、電子郵件、VPS 專用虛擬伺服器、雲端代管。
+  - name: GitLab
+    link: https://about.gitlab.com/
+    logo: gitlab.svg
+    desc: |-
+      Founded in 2014 and downloaded over a million times, GitLab, Inc. is the leading self-hosted git management platform combining git repository management, issue tracking, version control, code review, continuous integration and continuous deployment into a single application.
+  - name: Shopline
+    link: http://bit.ly/2dmb7xK
+    logo: shopline.svg
+    desc: |-
+      Shopline為自助電商平台，整合了前端的網站設計、後台的商品管理，以及完整的金物流系統，為電商賣家提供簡單好操作的架站工具。不僅讓賣家輕鬆快速開設個人化的網路商店，也讓消費者更便利的在手機上購物。在台灣、香港及東南亞已經擁有超過八萬間店家開店並持續成長中。
+      Shopline is a DIY e-commerce platform that empowers merchants in Asia to launch their own standalone online store. Our differentiation lies in our simplistic setup process  native language support  regional payment methods and the fact that the entire experience is optimized for mobile. All shops are completely responsive and adapt to all screen sizes  keeping a consistent customer experience. Our goal is to empower small businesses in Asia with simple-to-use tools that complements the way they do business and allowing them to succeed in e-commerce. The long term vision is to build a complete social e-commerce platform that drives value to both merchants and consumers.
+  - name: Microsoft
+    link: https://www.microsoft.com
+    logo: MS.svg
+    desc: |-
+      在微軟，我們的任務及價值在協助全球各地的使用者及企業用戶實現其目標與願景。
+gold:
+  - name: Cookpad
+    link: https://cookpad.com
+    logo: cookpad.svg
+    desc: |-
+      尋找及分享家常食譜的最佳地方。
+  - name: Coupa
+    link: http://www.coupa.com/
+    logo: coupa.svg
+    desc: |-
+      Coupa is the cloud platform for business spend; delivering measurable value through real-time spend visibility, control, compliance, and agility.
+  - name: Fastly
+    link: https://www.fastly.com/
+    logo: fastly.svg
+    desc: |-
+      Fastly is the future of content delivery. We&#039;re the only real-time CDN that gives businesses complete control over how they serve content. Sign up and start testing today.
+  - name: Procore
+    link: https://www.procore.com/
+    logo: procore.svg
+    desc: |-
+      Procore Technologies, Inc., the worlds number one most widely used construction management software, helps firms drastically increase project efficiency and accountability by streamlining and mobilizing project communication and documentation. Hundreds of thousands of registered Procore users manage all types of construction projects including industrial plants, office buildings, apartment complexes, university facilities, retail centers, and more.
+  - name: Quipper
+    link: https://www.quipper.com/
+    logo: quipper.svg
+    desc: |-
+      Quipper Video provides online tutorial videos to students who are eager to enhance their knowledge, learn beyond, and prepare for school entrance examinations.
+  - name: Red Panthers
+    link: https://redpanthers.co/
+    logo: red-panthers.svg
+    desc: |-
+      Red Panthers is a Ruby on Rails product development studio hand-crafting applications for clients ranging from single person startup to MNC
+  - name: Travis CI
+    link: https://travis-ci.com/
+    logo: travis-ci.svg
+    desc: |-
+      Travis CI is a hosted, continuous integration service used to build, test and deploy software projects hosted on GitHub or GitHub Enterprise.
+  - name: Treasure Data
+    link: https://www.treasuredata.com/
+    logo: treasure-data.svg
+    desc: |-
+      Treasure Data connects data and teams together with a full suite of tools that automate data collection and processing. Faster than ever before.
+silver:
+  - name: 5FPRO
+    link: https://www.facebook.com/5fpro/
+    logo: 5FPRO.svg
+    desc: |-
+      以 Web Development 為主要業務的軟體公司，透過網路技術的力量來創造社會價值。
+  - name: iCook 愛料理
+    link: https://icook.tw/
+    logo: icook.svg
+    desc: |-
+      iCook 愛料理是全台最大的食譜分享社群，收藏 100,000 道以上的食譜，我們深信料理是一件幸福的事，分享食譜則是分享幸福給更多的人。
