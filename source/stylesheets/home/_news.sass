@@ -1,11 +1,11 @@
 #news
-  padding-bottom: 60px
+  padding-bottom: 80px
 
   @media (min-width: $screen-sm)
-    padding-bottom: 80px
+    padding-bottom: 100px
 
   @media (min-width: $screen-md)
-    padding-bottom: 100px
+    padding-bottom: 120px
 
   .news-list
     @extend .flexbox
@@ -15,8 +15,10 @@
       flex-direction: row
 
     .news
-      margin-bottom: 40px
       width: 100%
+
+      + .news
+        margin-top: 40px
 
       @media (min-width: $screen-sm)
         padding-right: 30px
@@ -74,3 +76,9 @@
 
         .news-content
           padding-top: 20px
+
+  .btn-small
+    margin-top: 40px
+
+    @media (min-width: $screen-sm)
+      margin-top: 60px
