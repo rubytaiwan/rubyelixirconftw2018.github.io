@@ -41,3 +41,9 @@ parties:
     time: 18:00 - 20:30
     location: 張榮發基金會國際會議中心
     locationLink: https://www.google.com/maps/place/張榮發基金會/@25.038668,121.5165528,17z
+footer:
+  rubyTaiwan: https://ruby.tw/
+  elixirTaiwan: http://elixir.tw/
+  twitterAccount: '@rubyconftw'
+  twitterLink: https://twitter.com/rubyconftw
+  facebookLink: facebook.com/rubyconftw/
