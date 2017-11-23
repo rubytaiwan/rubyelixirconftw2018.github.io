@@ -20,9 +20,5 @@ section#parties
           = link_to party.locationLink, target: '_blank', class:"location" do
             | @
             span = party.location
-          - if party.registerLink
-            = link_to party.registerLink, target: '_blank', class:"btn btn-minimal register" do
-              span Register Now
-          - else
-            .btn.btn-minimal.inactive
-              span Free for Attendees
+          = link_to party.registerLink, target: '_blank', class:"btn btn-minimal #{party.registerLink ? "" : "inactive"}", :"title" => "test", :"data-toggle" => "#{party.registerLink ? '' : 'tooltip'}", :"data-placement" => "#{party.registerLink ? '' : 'top'}" do
+            span = party.cfaBtn

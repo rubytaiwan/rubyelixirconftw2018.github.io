@@ -65,6 +65,34 @@ $dark-grey: #777
   margin: 20px auto
 
 /* Font Style*/
+.body-title
+  font-size: 20px
+  font-weight: 700
+  color: $midnight
+
+  @media (min-width: $screen-sm)
+    font-size: 24px
+
+  &.smaller
+    font-size: 18px
+
+    @media (min-width: $screen-sm)
+      font-size: 20px
+
+
+.body-content
+  font-size: 18px
+
+  @media (min-width: $screen-sm)
+    font-size: 20px
+
+  &.smaller
+    font-size: 16px
+
+    @media (min-width: $screen-sm)
+      font-size: 18px
+
+
 .section-title
   font-family: Righteous
   font-size: 42px
@@ -105,7 +133,7 @@ $dark-grey: #777
     font-family: 'Lato'
     font-weight: bold
     font-size: 16px
-    letter-spacing: 1.3px
+    letter-spacing: 1px
     line-height: 36px
     text-transform: uppercase
     @extend .font-gradient
@@ -120,7 +148,6 @@ $dark-grey: #777
     font-family: 'Righteous'
     font-weight: 300
     font-size: 18px
-    text-transform: none
 
 .btn-large
   @extend .btn-medium
@@ -146,7 +173,7 @@ $dark-grey: #777
     font-family: 'Lato'
     font-weight: bold
     font-size: 14px
-    letter-spacing: 1.3px
+    letter-spacing: 1px
     line-height: 26px
     color: $marble
     text-transform: uppercase
@@ -154,6 +181,7 @@ $dark-grey: #777
 body
   background: #fff
   font-family: 'Lato'
+  color: $midnight
 
   @media screen and (max-width: 1024px)
     overflow-x: hidden

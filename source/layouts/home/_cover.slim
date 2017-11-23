@@ -17,20 +17,20 @@ section#cover
     .ruby_elixir_logo
       = inline_svg "assets/main-logo_alt"
     .event
-      h3.event-date.text-center
+      .event-date.text-center
         = data.site.site.eventDate
       = inline_svg "assets/deco"
-      h4.event-location.en.text-center
+      .event-location.en.text-center
         = data.site.site.eventLocation_en
-      h4.event-location.cht.text-center
+      .event-location.cht.text-center
         = data.site.site.eventLocation_cht
-    .cfa
+    .cfa.text-center
       = link_to data.site.site.registerLink, target: '_blank', class:"btn-large register-now" do
         span Register Now
       = link_to data.site.site.cfpLink, target: '_blank', class:"btn-large submit-paper" do
         span Submit A Paper
       
-    ul.social-media.list-inline
+    ul.social-media.list-inline.text-center
       - data.site.site.socialMedia.each do |item|
         li
           = link_to item.link, target: '_blank', class:"media " + item.name  do

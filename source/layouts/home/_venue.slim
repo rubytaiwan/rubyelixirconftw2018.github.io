@@ -6,16 +6,16 @@ section#venue
       = image_tag 'venue.jpg', alt: data.site.venue.eventLocation_en, title: data.site.venue.eventLocation_en
     .venue-info
       .event-location
-        .en
+        .en.body-title
           = data.site.venue.eventLocation_en
-        .cht.small
+        .cht.body-title.smaller
           span.slash
             | /
           = data.site.venue.eventLocation_cht
       .event-address
-        .en
+        .en.body-content
           = data.site.venue.eventAddress_en
-        .cht.small
+        .cht.body-content.smaller
           span.slash
             | /
           = data.site.venue.eventAddress_cht

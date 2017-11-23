@@ -5,7 +5,7 @@ section#news
     - data.news.news.each_with_index do |post, index|
       .news class="#{index > 5 ? "inactive hidden" : ""}"
         .post class="#{post.permalink ? "modaled" : ""} #{post.link ? "active" : ""}" data-toggle="#{post.permalink ? "modal" : ""}" data-target="#{post.permalink ? "##{post.permalink}" : ""}"
-          .news-date
+          .news-date.text-center
             span = format_date(post.date)
           - if post.link
             a.news-title href= post.link target="_blank"

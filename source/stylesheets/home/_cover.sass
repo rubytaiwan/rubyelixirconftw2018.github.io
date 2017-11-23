@@ -166,11 +166,11 @@
       font-size: 16px
 
       @media (min-width: $screen-sm)
-        font-size: 18px
+        font-size: 20px
 
       &.en
         font-weight: bold
-        line-height: 24px
+        line-height: 1.5
         letter-spacing: 0.5px
         white-space: pre
         margin-bottom: 15px
@@ -180,25 +180,21 @@
         font-weight: 500
         letter-spacing: 2.5px
 
-  .cfa
-    text-align: center
+  .cfa .btn-large
+    display: block
+    margin: 0 auto
+    
+    + .btn-large
+      margin-top: 20px
 
-    .btn-large
-      display: block
-      margin: 0 auto
-      
+    @media (min-width: $screen-sm)
+      display: inline-block
+
       + .btn-large
-        margin-top: 20px
-
-      @media (min-width: $screen-sm)
-        display: inline-block
-
-        + .btn-large
-          margin-top: 0
-          margin-left: 30px
+        margin-top: 0
+        margin-left: 30px
 
   .social-media
-    text-align: center
     padding: 0
     margin: 40px 0 0
 
