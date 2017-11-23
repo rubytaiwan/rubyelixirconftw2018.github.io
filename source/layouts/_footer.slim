@@ -1,0 +1,33 @@
+footer#footer
+  .footer
+    .footer-logo
+      = inline_svg 'assets/main-logo'
+    
+    .footer-list
+      ul.nav.main
+        li.modaled data-toggle="modal" data-target="code-of-conduct" Code of Conduct
+        li.modaled data-toggle="modal" data-target="team-members" Team Members
+        li
+          = link_to "Ruby Taiwan", data.site.footer.rubyTaiwan, target: '_blank'
+        li
+          = link_to "Elixir Taiwan", data.site.footer.elixir1Taiwan, target: '_blank'
+      ul.nav.social
+        li 
+          | Twitter
+          = link_to data.site.footer.twitterAccount, data.site.footer.twitterLink, target: '_blank'
+        li 
+          | Facebook
+          = link_to data.site.footer.facebookPage, data.site.footer.facebookLink, target: '_blank'
+        li 
+          | E-mail
+          = mail_to data.site.site.contactEmail, data.site.site.contactEmail
+    
+    .subscription.input-group
+      .title sign up for updates
+      form.subscription-form
+        input.required.form-control placeholder="Your Email Address" name="EMAIL" type="email" required="required"/
+        span.input-group-btn
+          button.btn type="submit" name="subscribe" SIGN UP
+
+  .footer-copyright
+    .copyright.text-center © Ruby X Elixir Conf Taiwan 2018
