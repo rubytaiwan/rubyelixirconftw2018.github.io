@@ -4,8 +4,12 @@
     @extend .flexbox
     padding: 40px 30px
 
+    @media (min-width: $screen-sm)
+      padding: 60px
+
     @media (min-width: 1104px)
       max-width: 1024px
+      padding: 60px 0
       margin: 0 auto
 
     .footer-logo
@@ -36,15 +40,29 @@
           letter-spacing: 0.5px
           padding: 5px 0
 
+          &:active, &:hover, &:visited, &:focus
+            background: $midnight
+
         a
           padding: 0
 
+        &.main
+          @media (min-width: $screen-md)
+            width: 40%
+        
+          li:hover
+            cursor: pointer
+        
         &.social
-          span
+          @media (min-width: $screen-md)
+            width: 60%
+          a
             display: block
+            color: $marble
 
-            a
-              color: $marble
+            @media (min-width: $screen-sm)
+              display: inline
+              padding-left: 15px
 
     .subscription
       width: 100%
@@ -69,6 +87,7 @@
 
         .form-control
           color: #fff
+          letter-spacing: 1px
 
           width: calc(75% - 15px)
           height: 45px

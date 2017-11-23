@@ -14,13 +14,13 @@ footer#footer
       ul.nav.social
         li 
           | Twitter
-          span = link_to data.site.footer.twitterAccount, data.site.footer.twitterLink, target: '_blank'
+          = link_to data.site.footer.twitterAccount, data.site.footer.twitterLink, target: '_blank'
         li 
           | Facebook
-          span = link_to data.site.footer.facebookLink, data.site.footer.facebookLink, target: '_blank'
+          = link_to data.site.footer.facebookPage, data.site.footer.facebookLink, target: '_blank'
         li 
           | E-mail
-          span = link_to data.site.site.contactEmail, data.site.site.contactEmail, target: '_blank'
+          = mail_to data.site.site.contactEmail, data.site.site.contactEmail
     
     .subscription.input-group
       .title sign up for updates
