@@ -6,8 +6,8 @@ section#keynotes
       .speaker.modaled data-toggle="modal" data-target="##{speaker.name.gsub(/[\s()]+/, '-').downcase}"
         .speaker-avatar
           = image_tag 'speakers/' + speaker.avatar, class:'speaker-img', alt: speaker.name, title: speaker.name
-        h4.speaker-name = speaker.name
-        span.speaker-title = speaker.title
+        h4.speaker-name.text-center = speaker.name
+        span.speaker-title.text-center = speaker.title
         .deco
           = inline_svg "assets/deco"
 
@@ -19,11 +19,11 @@ section#keynotes
               button.close aria-label="Close" data-dismiss="modal" type="button"
                 span aria-hidden="true"  &times;
             .modal-body
-              article.content
+              article.content.text-center 
                 .speaker-avatar
                   = image_tag 'speakers/' + speaker.avatar, class:'speaker-img', alt: speaker.name, title: speaker.name
-                h4.speaker-name = speaker.name
-                span.speaker-title = speaker.title
+                h4.speaker-name  = speaker.name
+                span.speaker-title  = speaker.title
                 = inline_svg "assets/deco"
                 p.speaker-bio = markdown(speaker.bio)
 
@@ -32,7 +32,7 @@ section#keynotes
                   .talk-info
                     .speaker-subject = speaker.subject
                     = inline_svg "assets/deco"
-                    p.speaker-summary = markdown(speaker.summary)
+                    = markdown(speaker.summary)
                     - if speaker.slideUrl
                       = link_to speaker.slideUrl, target: '_blank', class:"btn btn-small btn-talk" do
                         span Slide
