@@ -3,22 +3,22 @@ section#venue
 
   .venue
     .venue-img
-      = image_tag 'venue.jpg', alt: data.site.venue.eventLocation_en, title: data.site.venue.eventLocation_en
+      = image_tag 'venue.jpg', alt: data.site.site.eventLocation_en, title: data.site.site.eventLocation_en
     .venue-info
       .event-location
         .en.body-title
-          = data.site.venue.eventLocation_en
+          = data.site.site.eventLocation_en
         .cht.body-title.smaller
           span.slash
             | /
-          = data.site.venue.eventLocation_cht
+          = data.site.site.eventLocation_cht
       .event-address
         .en.body-content
-          = data.site.venue.eventAddress_en
+          = data.site.site.eventAddress_en
         .cht.body-content.smaller
           span.slash
             | /
-          = data.site.venue.eventAddress_cht
+          = data.site.site.eventAddress_cht
 
-      = link_to data.site.venue.eventGoogleMap, target: '_blank', class:"btn btn-small google-map" do
+      = link_to data.site.site.eventGoogleMap, target: '_blank', class:"btn btn-small google-map" do
         span Google Map +
