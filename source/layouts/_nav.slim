@@ -15,5 +15,13 @@ nav#affixNav.navbar.navbar-default.navbar-custom.navbar-fixed-top
         li
           a href="../sponsors" Sponsors
         li.register-now
-          = link_to data.site.site.registerLink, target: '_blank', class:"btn-medium register-now" do
-            span Register Now
+          - if data.site.site.registerLink
+            = link_to data.site.site.registerLink, target: '_blank', class:"btn-medium" do
+              span Register Now
+          - else
+            .coming-soon data-balloon="Coming Soon ✨" data-balloon-pos="up"
+              .btn-medium.visible-xs.inactive
+                span Register Now
+            .coming-soon data-balloon="Coming Soon ✨" data-balloon-pos="down"
+              .btn-medium.hidden-xs.inactive
+                span Register Now

@@ -2,7 +2,6 @@
 //= require bootstrap-sass/assets/javascripts/bootstrap/affix.js
 //= require bootstrap-sass/assets/javascripts/bootstrap/modal.js
 //= require bootstrap-sass/assets/javascripts/bootstrap/collapse.js
-//= require bootstrap-sass/assets/javascripts/bootstrap/tooltip.js
 //= require bootstrap-sass/assets/javascripts/bootstrap/transition.js
 //= require fastclick/lib/fastclick.js
 
@@ -21,8 +20,6 @@ $document.ready(function () {
   $('.navbar-collapse ul li a').click(function(){
     $('.navbar-toggle:visible').click();
   });
-
-  $('[data-toggle="tooltip"]').tooltip()
 
   // Modal URL
   $(window.location.hash).modal('show');

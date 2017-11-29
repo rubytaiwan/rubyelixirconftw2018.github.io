@@ -25,8 +25,13 @@ section#cover
       .event-location.cht.text-center
         = data.site.site.eventLocation_cht
     .cfa.text-center
-      = link_to data.site.site.registerLink, target: '_blank', class:"btn-large register-now" do
-        span Register Now
+      - if data.site.site.registerLink
+        = link_to data.site.site.registerLink, target: '_blank', class:"btn-large register-now" do
+          span Register Now
+      - else
+        .coming-soon data-balloon="Coming Soon ✨" data-balloon-pos="up"
+          .btn-large.register-now.inactive
+            span Register Now
       = link_to data.site.site.cfpLink, target: '_blank', class:"btn-large submit-paper" do
         span Submit A Paper
       
