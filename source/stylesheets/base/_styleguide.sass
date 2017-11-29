@@ -65,8 +65,34 @@ $dark-grey: #777
   margin: 20px auto
 
 /* Font Style*/
+.body-title
+  font-size: 20px
+  color: $midnight
+
+  @media (min-width: $screen-sm)
+    font-size: 24px
+
+  &.smaller
+    font-size: 18px
+
+    @media (min-width: $screen-sm)
+      font-size: 20px
+
+
+.body-content
+  font-size: 18px
+
+  @media (min-width: $screen-sm)
+    font-size: 20px
+
+  &.smaller
+    font-size: 16px
+
+    @media (min-width: $screen-sm)
+      font-size: 18px
+
 .section-title
-  font-family: Righteous
+  font-family: 'Righteous'
   font-size: 42px
   letter-spacing: 3.5px
   text-transform: uppercase
@@ -101,11 +127,12 @@ $dark-grey: #777
     background: #fff
     z-index: -1
 
+  &.inactive
+    cursor:  default
+
   span
-    font-family: 'Lato'
-    font-weight: bold
     font-size: 16px
-    letter-spacing: 1.3px
+    letter-spacing: 1px
     line-height: 36px
     text-transform: uppercase
     @extend .font-gradient
@@ -118,9 +145,7 @@ $dark-grey: #777
 
   span
     font-family: 'Righteous'
-    font-weight: 300
     font-size: 18px
-    text-transform: none
 
 .btn-large
   @extend .btn-medium
@@ -143,17 +168,43 @@ $dark-grey: #777
   +hover-effect(0.2s, -3px)
 
   span
-    font-family: 'Lato'
-    font-weight: bold
     font-size: 14px
-    letter-spacing: 1.3px
+    letter-spacing: 1px
     line-height: 26px
     color: $marble
     text-transform: uppercase
 
+.btn-minimal
+  position: absolute
+  +size(220px, 50px)
+  left: 20px
+  bottom: 20px
+  border: 1px solid #fff
+  border-radius: 4px
+  padding: 13px 0
+  margin: 0 auto
+  font-size: 16px
+  color: #fff
+  letter-spacing: 1px
+  text-align: center
+  text-transform: uppercase
+  +hover-effect(0.3s, -5px)
+
+  &:hover,&:visited, &:link, &:active
+    color: #fff
+
+  &.inactive
+    cursor: default
+
+  @media (min-width: $screen-sm)
+    width: 240px
+    left: 30px
+
 body
   background: #fff
-  font-family: 'Lato'
+  font-family: 'Lato', 'Noto Sans TC', sans-serif
+  font-weight: normal
+  color: $midnight
 
   @media screen and (max-width: 1024px)
     overflow-x: hidden
@@ -235,6 +286,15 @@ body
             p
               font-size: 18px
               line-height: 28px
+
+      .content
+        padding: 20px
+
+        @media (min-width: $screen-sm)
+          padding: 40px
+
+        .news-content
+          padding-top: 20px
 
       .modal-footer
         border-width: 0

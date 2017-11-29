@@ -5,22 +5,35 @@ footer#footer
     
     .footer-list
       ul.nav.main
-        li.modaled data-toggle="modal" data-target="code-of-conduct" Code of Conduct
-        li.modaled data-toggle="modal" data-target="team-members" Team Members
-        li
-          = link_to "Ruby Taiwan", data.site.footer.rubyTaiwan, target: '_blank'
-        li
-          = link_to "Elixir Taiwan", data.site.footer.elixir1Taiwan, target: '_blank'
+        li.modaled data-toggle="modal" data-target="#code-of-conduct" Code of Conduct
+        li.modaled data-toggle="modal" data-target="#team-members" 
+          span data-balloon="Organizing 💡" data-balloon-pos="up" Team Members
+        - data.site.site.socialMedia.drop(2).each do |item|
+          li
+            = link_to item.title, item.link, target: '_blank'
       ul.nav.social
-        li 
-          | Twitter
-          = link_to data.site.footer.twitterAccount, data.site.footer.twitterLink, target: '_blank'
-        li 
-          | Facebook
-          = link_to data.site.footer.facebookPage, data.site.footer.facebookLink, target: '_blank'
+        - data.site.site.socialMedia.take(2).each_with_index do |item, index|
+          li 
+            = ("Twiter" if index == 0) || ("Facebook" if index == 1)
+            = link_to item.title, item.link, target: '_blank'
         li 
           | E-mail
           = mail_to data.site.site.contactEmail, data.site.site.contactEmail
+
+      .modal role="dialog" tabindex="-1" id="code-of-conduct"
+        .modal-dialog role="document"
+          .modal-content
+            .modal-header
+              button.close aria-label="Close" data-dismiss="modal" type="button"
+                span aria-hidden="true"  &times;
+            .modal-body
+              article.content
+                .coc-title Code of Conduct
+                = inline_svg "assets/deco"
+                .coc-content = markdown(data.site.site.coc)
+            .modal-footer
+              button.btn.btn-close type="button" data-dismiss="modal"
+                span Close
     
     .subscription.input-group
       .title sign up for updates

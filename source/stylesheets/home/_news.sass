@@ -7,6 +7,9 @@
   @media (min-width: $screen-md)
     padding-bottom: 120px
 
+  .section-title
+    margin-bottom: 20px
+
   .news-list
     @extend .flexbox
     flex-direction: column
@@ -16,9 +19,7 @@
 
     .news
       width: 100%
-
-      + .news
-        margin-top: 40px
+      margin-top: 40px
 
       @media (min-width: $screen-sm)
         padding-right: 30px
@@ -26,6 +27,7 @@
         width: 50%
 
       @media (min-width: $screen-md)
+        padding-right: 40px
         width: calc(100% / 3)
 
       .post
@@ -38,23 +40,20 @@
     .news-date
       width: 120px
       height: 30px
-      background: linear-gradient($ruby-dark, $elixir-dark)
       text-align: center
+      background: linear-gradient(to right, $ruby-dark, $elixir-dark)
 
       span
         font-family: 'Righteous'
-        font-weight: 300
         font-size: 14px
-        text-transform: uppercase
-        letter-spacing: 1px
         color: #fff
         line-height: 30px
+        letter-spacing: 1px
+        text-transform: uppercase
 
     .news-title
+      @extend .body-title
       display: block
-      font-weight: 500
-      font-size: 20px
-      color: $midnight
       line-height: 1.5
       margin: 20px 0
 
@@ -66,16 +65,6 @@
 
       #deco
         margin: 0 auto
-
-      .content
-        font-family: 'Noto Sans TC'
-        padding: 20px
-
-        @media (min-width: $screen-sm)
-          padding: 40px
-
-        .news-content
-          padding-top: 20px
 
   .btn-small
     margin-top: 40px

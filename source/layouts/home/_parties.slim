@@ -20,9 +20,9 @@ section#parties
           = link_to party.locationLink, target: '_blank', class:"location" do
             | @
             span = party.location
-          - if party.registerLink
-            = link_to party.registerLink, target: '_blank', class:"btn btn-minimal register" do
-              span Register Now
+          - if data.site.site.registerLink
+            = link_to data.site.site.registerLink, target: '_blank', class:"btn-minimal" do
+              = party.cfaBtn
           - else
-            .btn.btn-minimal.inactive
-              span Free for Attendees
+            .btn-minimal.inactive data-balloon="Coming Soon ✨" data-balloon-pos="up"
+              span = party.cfaBtn
