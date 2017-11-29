@@ -2,7 +2,7 @@ section#keynotes
   h3.section-title Keynote Speakers
 
   .keynote-speakers
-    - data.speakers.keynotes.each do |speaker|
+    - data.speaker.keynotes.each do |speaker|
       .speaker.modaled data-toggle="modal" data-target="##{speaker.name.gsub(/[\s()]+/, '-').downcase}"
         .speaker-avatar
           = image_tag 'speakers/' + speaker.avatar, class:'speaker-img', alt: speaker.name, title: speaker.name

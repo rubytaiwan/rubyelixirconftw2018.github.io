@@ -1,0 +1,128 @@
+#footer
+  background: $midnight
+  .footer
+    @extend .flexbox
+    padding: 40px 30px
+
+    @media (min-width: $screen-sm)
+      padding: 60px
+
+    @media (min-width: 1104px)
+      max-width: 1024px
+      padding: 60px 0
+      margin: 0 auto
+
+    .footer-logo
+      width: 100%
+      svg
+        width: 220px
+        
+        .logotype, .logotype_ruby, .logotype_elixir, .deco-color, .logo_frame
+          fill: #fff
+
+    .footer-list
+      @extend .flexbox
+      width: 100%
+
+      @media (min-width: $screen-md)
+        width: 50%
+
+      .nav
+        width: 100%
+        margin-top: 25px
+
+        @media (min-width: $screen-sm)
+          width: 50%
+
+        li, a
+          font-size: 16px
+          color: #fff
+          letter-spacing: 0.5px
+          padding: 5px 0
+
+          &:active, &:hover, &:visited, &:focus
+            background: $midnight
+
+        a
+          padding: 0
+
+        &.main
+          @media (min-width: $screen-md)
+            width: 40%
+        
+          li:hover
+            cursor: pointer
+        
+        &.social
+          @media (min-width: $screen-md)
+            width: 60%
+          a
+            display: block
+            color: $marble
+
+            @media (min-width: $screen-sm)
+              display: inline
+              padding-left: 15px
+
+    .subscription
+      width: 100%
+      margin-top: 30px
+
+      @media (min-width: $screen-md)
+        width: 50%
+
+      .title
+        font-family: 'Righteous'
+        font-size: 20px
+        font-weight: 300
+        letter-spacing: 1px
+        color: #fff
+        text-transform: uppercase
+        margin-bottom: 10px
+
+      .subscription-form
+        @extend .flexbox
+        width: 100%
+        margin: 0 auto
+
+        .form-control
+          color: #fff
+          letter-spacing: 1px
+
+          width: calc(75% - 15px)
+          height: 45px
+          border: 2px solid #fff
+          border-right-width: 0
+          border-radius: 4px 0 0 4px
+          background: transparent
+          +placeholder-color($marble)
+
+        .input-group-btn
+          width: 25%
+          min-width: 80px
+        
+          .btn
+            font-size: 14px
+            color: #fff
+            letter-spacing: 0.8px
+
+            width: 100%
+            height: 45px
+            border: 2px solid #fff
+            border-radius: 0 4px 4px 0
+            background: transparent
+            padding: 10px 0
+            margin-left: 0
+            +transition(background-color, 0.3s)
+
+            &:hover
+              background: #fff
+              color: $midnight
+
+  .footer-copyright
+    background: #364159
+    padding: 20px
+
+    .copyright
+      font-size: 14px
+      color: $marble

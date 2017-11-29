@@ -1,0 +1,95 @@
+#support
+  padding-bottom: 80px
+
+  @media (min-width: $screen-sm)
+    padding-bottom: 100px
+
+  @media (min-width: $screen-md)
+    padding-bottom: 120px
+
+  .support-list
+    @extend .flexbox
+
+    @media (min-width: $screen-sm)
+      flex-direction: row
+    
+    .level-title
+      display: block
+      width: 100%
+      font-family: 'Righteous'
+      font-size: 24px
+      margin-bottom: 20px
+
+      &.ruby, &.ruby_gem
+        color: $ruby-light
+
+      &.elixir, &.elixir_hex
+        color: $elixir-light
+
+      &.platinum
+        color: #B0BEC5
+
+      &.gold
+        color: #FDC689
+
+      &.silver
+        color: #BDBDBD
+
+    .support-link
+      display: block
+      position: relative
+      +size(100%, 100%)
+
+    .logo
+      +size(100%, auto)
+      max-height: 100%
+      @extend .align-center
+
+    .supporter
+      @extend .flexbox
+      width: 100%
+      margin-bottom: 40px
+      
+      &.diamond
+
+        @media (min-width: $screen-sm)
+          margin-bottom: 60px
+
+        @media (min-width: $screen-md)
+          width: 50%
+
+        .support-link
+          max-width: 280px
+          height: 100px
+
+      &.platinum
+
+        @media (min-width: $screen-sm)
+          width: 50%
+
+        @media (min-width: $screen-md)
+          width: calc(100% / 3)
+
+        .support-link
+          max-width: 240px
+          height: 80px
+
+      &.gold, &.silver
+        width: 50%
+
+        @media (min-width: $screen-sm)
+          width: calc(100% / 3)
+
+        @media (min-width: $screen-md)
+          width: 25%
+
+        .support-link
+          max-width: 180px
+          height: 60px
+          margin-right: 20px
+
+  .btn-small
+    margin-top: 40px
+
+    @media (min-width: $screen-sm)
+      margin-top: 60px

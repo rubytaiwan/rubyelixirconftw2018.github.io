@@ -1,0 +1,30 @@
+footer#footer
+  .footer
+    .footer-logo
+      = inline_svg 'assets/main-logo'
+    
+    .footer-list
+      ul.nav.main
+        li.modaled data-toggle="modal" data-target="code-of-conduct" Code of Conduct
+        li.modaled data-toggle="modal" data-target="team-members" Team Members
+        - data.site.site.socialMedia.drop(2).each do |item|
+          li
+            = link_to item.title, item.link, target: '_blank'
+      ul.nav.social
+        - data.site.site.socialMedia.take(2).each_with_index do |item, index|
+          li 
+            = ("Twiter" if index == 0) || ("Facebook" if index == 1)
+            = link_to item.title, item.link, target: '_blank'
+        li 
+          | E-mail
+          = mail_to data.site.site.contactEmail, data.site.site.contactEmail
+    
+    .subscription.input-group
+      .title sign up for updates
+      form.subscription-form
+        input.required.form-control placeholder="Your Email Address" name="EMAIL" type="email" required="required"/
+        span.input-group-btn
+          button.btn type="submit" name="subscribe" SIGN UP
+
+  .footer-copyright
+    .copyright.text-center © Ruby X Elixir Conf Taiwan 2018
