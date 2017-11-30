@@ -35,12 +35,14 @@ footer#footer
               button.btn.btn-close type="button" data-dismiss="modal"
                 span Close
     
-    .subscription.input-group
-      .title sign up for updates
-      form.subscription-form
-        input.required.form-control placeholder="Your Email Address" name="EMAIL" type="email" required="required"/
+    .subscription.input-group#mc_embed_signup
+      .title Sign Up For Updates
+      form.subscription-form#mc-embedded-subscribe-form action="https://rubyconf.us14.list-manage.com/subscribe/post?u=f8697172394cf1829922f9d1e&amp;id=406c3aa7c5" method="post"
+        input.required.form-control#mce-EMAIL placeholder="Your Email Address" name="EMAIL" type="email" required="required"/
+        div aria-hidden="true" style=("position: absolute; left: -5000px;") 
+          input name="b_f8697172394cf1829922f9d1e_406c3aa7c5" tabindex="-1" type="text" value="" /
         span.input-group-btn
-          button.btn type="submit" name="subscribe" SIGN UP
+          button.btn#mc-embedded-subscribe type="submit" name="subscribe" SIGN UP
 
   .footer-copyright
     .copyright.text-center © Ruby X Elixir Conf Taiwan 2018
