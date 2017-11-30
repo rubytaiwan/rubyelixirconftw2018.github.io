@@ -1,6 +1,6 @@
 head
   meta charset="UTF-8"
-  title= data.site.site.title
+  title = current_page.data.title || data.site.site.title
   meta name="description" content= data.site.site.description
   meta name="keywords" content= data.site.site.keywords
   link rel="canonical" href="#{root_url}"
@@ -15,6 +15,7 @@ head
   link rel="apple-touch-icon-precomposed" href=image_path("icon.png")
   link rel="apple-touch-icon-120x120-precomposed" href=image_path("icon.png")
   link rel="icon" size="32x32" href=image_path("icon.png")
+  link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato|Righteous"
   link rel="stylesheet" href="//fonts.googleapis.com/earlyaccess/notosanstc.css"
   link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/balloon-css/0.5.0/balloon.min.css"
 

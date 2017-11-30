@@ -1,7 +1,7 @@
-nav#affixNav.navbar.navbar-default.navbar-custom.navbar-fixed-top
+nav.navbar.navbar-default.navbar-custom.navbar-fixed-top
   .container
     .navbar-header.page-scroll
-      a.navbar-brand.page-scroll href="#cover"
+      a.navbar-brand.page-scroll href="#{root_url}"
         = inline_svg 'assets/main-logo'
       button.navbar-toggle data-target="#navbar-collapse" data-toggle="collapse" type="button" 
         = inline_svg 'assets/navbar-menu'
@@ -9,11 +9,11 @@ nav#affixNav.navbar.navbar-default.navbar-custom.navbar-fixed-top
     #navbar-collapse.collapse.navbar-collapse
       ul.nav.navbar-nav.navbar-right
         li
-          a href="../program" Program
+          a href="./program.html" Program
         li
-          a href="../speakers" Speakers
+          a href="./speakers.html" Speakers
         li
-          a href="../sponsors" Sponsors
+          a href="./sponsors.html" Sponsors
         li.register-now
           - if data.site.site.registerLink
             = link_to data.site.site.registerLink, target: '_blank', class:"btn-medium" do
