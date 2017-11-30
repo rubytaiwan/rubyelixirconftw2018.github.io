@@ -78,7 +78,6 @@ $dark-grey: #777
     @media (min-width: $screen-sm)
       font-size: 20px
 
-
 .body-content
   font-size: 18px
 
@@ -132,6 +131,7 @@ $dark-grey: #777
 
   span
     font-size: 16px
+    font-weight: bold
     letter-spacing: 1px
     line-height: 36px
     text-transform: uppercase
@@ -139,12 +139,14 @@ $dark-grey: #777
 
 .btn-medium
   @extend .btn-small
+  border-width: 0
 
   &:before
     bottom: 4px
 
   span
     font-family: 'Righteous'
+    font-weight: normal
     font-size: 18px
 
 .btn-large
