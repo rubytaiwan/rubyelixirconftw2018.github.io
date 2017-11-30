@@ -58,7 +58,7 @@
           color: $midnight
           padding: 0
 
-          &:hover
+          &:hover, &.active
             &:after
               content: ''
               position: absolute
@@ -68,13 +68,16 @@
               +size(40px, 2px)
               background: linear-gradient(to left, $elixir-dark, $ruby-dark)
 
+          &.active
+            pointer-events: none
+
           @media (min-width: $screen-sm)
             line-height: 70px
             margin: 0 10px
 
-            &:hover
+            &:hover, &.active
               &:after
-                top: 55px
+                top: 56px
 
           @media (min-width: $screen-md)
             margin: 0 20px

@@ -3,6 +3,7 @@
 //= require bootstrap-sass/assets/javascripts/bootstrap/modal.js
 //= require bootstrap-sass/assets/javascripts/bootstrap/collapse.js
 //= require bootstrap-sass/assets/javascripts/bootstrap/transition.js
+//= require jquery.easing/js/jquery.easing.min.js
 //= require fastclick/lib/fastclick.js
 
 var $window = $(window);
@@ -10,12 +11,31 @@ var $document = $(document);
 
 $document.ready(function () {
 
+  // Enable FastClick
+	FastClick.attach(document.body);
+
   // Navbar
-  $('#affixNav').affix({
-    offset: {
-      top: 100
-    }
-  });
+  if(window.location.pathname == "/"){
+    $('.navbar').attr('id', 'affixNav');
+    $('#affixNav').affix({
+      offset: {
+        top: 100
+      }
+    });
+    $('a.navbar-brand').bind('click', function(event) {
+      var $anchor = $(this);
+      $('html, body').stop().animate({
+        scrollTop: 0
+      }, 1000, 'easeInOutExpo');
+      event.preventDefault();
+    });
+  }
+
+  if(window.location.pathname != "/"){
+    var currentPage = window.location.pathname;
+    var $anchor = $("a[href='" + currentPage +"']");
+    $anchor.addClass("active");
+  }
 
   $('.navbar-collapse ul li a').click(function(){
     $('.navbar-toggle:visible').click();
