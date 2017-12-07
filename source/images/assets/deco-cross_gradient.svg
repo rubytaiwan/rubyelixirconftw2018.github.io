@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<svg version="1.1" id="deco_cross_gradient" class="bg-deco" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+<svg version="1.1" class="deco_cross_gradient bg-deco" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 42 42" style="enable-background:new 0 0 42 42;" xml:space="preserve">
 	<style type="text/css">
-		.deco-line-gradient{fill:none;stroke-width:2}
-		.cross{stroke:url(#deco-gradient_cross)}
+		.gradient_cross{stroke:url(#deco-gradient_cross)}
 	</style>
-	<title>Deco/Cross</title>
+	<title>Deco/Gradient Cross</title>
 	<linearGradient id="deco-gradient_cross" gradientUnits="userSpaceOnUse" x1="21" y1="42" x2="21" y2="21">
 		<stop  offset="0" style="stop-color:#652F8B"/>
 		<stop  offset="1" style="stop-color:#CC1D23"/>
 	</linearGradient>
-	<path class="cross deco-line-gradient" d="M1,21h40 M21,1v40"/>
+	<path class="deco-line gradient_cross" d="M1,21h40 M21,1v40"/>
 </svg>

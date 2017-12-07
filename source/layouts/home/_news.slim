@@ -2,38 +2,39 @@ section#news
   .section-title News
 
   .news-list
-    - data.news.news.each_with_index do |post, index|
-      .news class="#{index > 5 ? "inactive hidden" : ""}"
-        .post class="#{post.permalink ? "modaled" : ""} #{post.link ? "active" : ""}" data-toggle="#{post.permalink ? "modal" : ""}" data-target="#{post.permalink ? "##{post.permalink}" : ""}"
-          .news-date
-            span = format_date(post.date)
-          - if post.link
-            a.news-title href= post.link target="_blank"
-              span = post.title
-          - else
-            .news-title
-              span = post.title
-          = inline_svg "assets/deco"
+    - if data.news.news
+      - data.news.news.each_with_index do |post, index|
+        .news class="#{index > 5 ? "inactive hidden" : ""}"
+          .post class="#{post.permalink ? "modaled" : ""} #{post.link ? "active" : ""}" data-toggle="#{post.permalink ? "modal" : ""}" data-target="#{post.permalink ? "##{post.permalink}" : ""}"
+            .news-date
+              span = format_date(post.date)
+            - if post.link
+              a.news-title href= post.link target="_blank"
+                span = post.title
+            - else
+              .news-title
+                span = post.title
+            = inline_svg "assets/deco"
 
-        - if post.permalink
-          .modal role="dialog" tabindex="-1" id= post.permalink
-            .modal-dialog role="document"
-              .modal-content
-                .modal-header
-                  button.close aria-label="Close" data-dismiss="modal" type="button"
-                    span aria-hidden="true"  &times;
-                .modal-body
-                  article.content
-                    .news-date
-                      span = format_date(post.date)
-                    .news-title = post.title
-                    = inline_svg "assets/deco"
-                    .news-content
-                      = markdown(post.content)
-                .modal-footer
-                  button.btn.btn-close type="button" data-dismiss="modal"
-                    span Close
+          - if post.permalink
+            .modal role="dialog" tabindex="-1" id= post.permalink
+              .modal-dialog role="document"
+                .modal-content
+                  .modal-header
+                    button.close aria-label="Close" data-dismiss="modal" type="button"
+                      span aria-hidden="true"  &times;
+                  .modal-body
+                    article.content
+                      .news-date
+                        span = format_date(post.date)
+                      .news-title = post.title
+                      = inline_svg "assets/deco"
+                      .news-content
+                        = markdown(post.content)
+                  .modal-footer
+                    button.btn.btn-close type="button" data-dismiss="modal"
+                      span Close
 
-  - if data.news.news.length > 6
-    button.btn.btn-small#news-more type="button"
-      span More +
+      - if data.news.news.length > 6
+        button.btn.btn-small#news-more type="button"
+          span More +

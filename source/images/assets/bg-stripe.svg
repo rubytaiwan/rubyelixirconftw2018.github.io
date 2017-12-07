@@ -3,15 +3,15 @@
 	 viewBox="0 0 420 234" style="enable-background:new 0 0 420 234;" xml:space="preserve">
 	<title>Backgroubnd/Stripe</title>
 	<style type="text/css">
-		.filter{fill:url(#bg-gradient);mix-blend-mode: hard-light;}
-		.shadow{filter:url(#bg-shadow);}
+		.filter-stripe{fill:url(#bg-gradient_stripe);mix-blend-mode: hard-light;}
+		.shadow-stripe{filter:url(#bg-shadow);}
 	</style>
 	<defs>
 		<path d="M4,0h416v93.3H4l0,0c-2.2,0-4-1.8-4-4V4l0,0C0,1.8,1.8,0,4,0L4,0z M74,105h346v70H74c-2.2,0-4-1.8-4-4v-62C70,106.8,71.8,105,74,105z M144,186.7h276v46.7H144c-2.2,0-4-1.8-4-4v-38.7C140,188.5,141.8,186.7,144,186.7z"/>
 		<clipPath id="stripe-mask">
 			<path d="M4,0h416v93.3H4l0,0c-2.2,0-4-1.8-4-4V4l0,0C0,1.8,1.8,0,4,0L4,0z M74,105h346v70H74c-2.2,0-4-1.8-4-4v-62C70,106.8,71.8,105,74,105z M144,186.7h276v46.7H144c-2.2,0-4-1.8-4-4v-38.7C140,188.5,141.8,186.7,144,186.7z"/>
 		</clipPath>
-		<linearGradient x1="100%" y1="100%" x2="0%" y2="0%" id="bg-gradient">
+		<linearGradient x1="100%" y1="100%" x2="0%" y2="0%" id="bg-gradient_stripe">
 				<stop stop-color="#652F8B" offset="0%"></stop>
 				<stop stop-color="#CC1D23" offset="100%"></stop>
 		</linearGradient>
@@ -23,6 +23,6 @@
 		</filter>
 	</defs>
 	<image clip-path="url(#stripe-mask)" width="100%" height="100%" xlink:href="images/assets/cover-taiwan_2.jpg" />
-	<path class="filter" d="M4,0h416v93.3H4l0,0c-2.2,0-4-1.8-4-4V4l0,0C0,1.8,1.8,0,4,0L4,0z M74,105h346v70H74c-2.2,0-4-1.8-4-4v-62C70,106.8,71.8,105,74,105z M144,186.7h276v46.7H144c-2.2,0-4-1.8-4-4v-38.7C140,188.5,141.8,186.7,144,186.7z"/>
-	<path class="shadow" d="M4,0h416v93.3H4l0,0c-2.2,0-4-1.8-4-4V4l0,0C0,1.8,1.8,0,4,0L4,0z M74,105h346v70H74c-2.2,0-4-1.8-4-4v-62C70,106.8,71.8,105,74,105z M144,186.7h276v46.7H144c-2.2,0-4-1.8-4-4v-38.7C140,188.5,141.8,186.7,144,186.7z"/>
+	<path class="filter-stripe" d="M4,0h416v93.3H4l0,0c-2.2,0-4-1.8-4-4V4l0,0C0,1.8,1.8,0,4,0L4,0z M74,105h346v70H74c-2.2,0-4-1.8-4-4v-62C70,106.8,71.8,105,74,105z M144,186.7h276v46.7H144c-2.2,0-4-1.8-4-4v-38.7C140,188.5,141.8,186.7,144,186.7z"/>
+	<path class="shadow-stripe" d="M4,0h416v93.3H4l0,0c-2.2,0-4-1.8-4-4V4l0,0C0,1.8,1.8,0,4,0L4,0z M74,105h346v70H74c-2.2,0-4-1.8-4-4v-62C70,106.8,71.8,105,74,105z M144,186.7h276v46.7H144c-2.2,0-4-1.8-4-4v-38.7C140,188.5,141.8,186.7,144,186.7z"/>
 </svg>

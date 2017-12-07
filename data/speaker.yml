@@ -5,9 +5,8 @@ keynotes:
     title: Creator of Ruby, Heroku
     bio: |-
       Father of Ruby Programming Language
-    subject: Beware of Alpha Syndrome
+    subject:
     summary: |-
-      Matz talks about psychological phenomenon of programmers
     urlHome: http://www.rubyist.net/~matz/
     urltwitter: http://twitter.com/yukihiro_matz
     urlGithub: http://github.com/matz
@@ -19,9 +18,8 @@ keynotes:
     title: Creator of Elixir, Plataformatec
     bio: |-
       Father of Elixir Programming Language
-    subject: Talk's Title
+    subject: 
     summary: |-
-      Description here
     urlHome:
     urltwitter: https://twitter.com/josevalim
     urlGithub: https://github.com/josevalim
@@ -32,10 +30,8 @@ keynotes:
     type: ruby
     title: Committer of Ruby and Rails
     bio: |-
-      test
-    subject: Talk's Title
+    subject: 
     summary: |-
-      Description here
     urlHome:
     urltwitter: https://twitter.com/a_matsuda
     urlGithub: https://github.com/amatsuda

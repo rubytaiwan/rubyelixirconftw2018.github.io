@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<svg version="1.1" id="deco_wave" class="bg-deco" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+<svg version="1.1" class="deco_wave bg-deco" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 141.5 54.1" style="enable-background:new 0 0 141.5 54.1;" xml:space="preserve">
-	<style type="text/css">
-		.deco-line{fill:none;stroke:#CFD7DB;stroke-width:2;stroke-linecap:round;}
-	</style>
-	<title>Wave</title>
+	<title>Deco/Wave</title>
 	<path class="deco-line" d="M1,38.2c14,0,14,14.9,27.9,14.9s14-14.9,27.9-14.9s14,14.9,27.9,14.9s14-14.9,27.9-14.9s14,14.9,27.9,14.9
 		M1,19.6c14,0,14,14.9,27.9,14.9s14-14.9,27.9-14.9s14,14.9,27.9,14.9s14-14.9,27.9-14.9s14,14.9,27.9,14.9 M1,1
 		c14,0,14,14.9,27.9,14.9S42.9,1,56.8,1s14,14.9,27.9,14.9S98.7,1,112.6,1s14,14.9,27.9,14.9"/>

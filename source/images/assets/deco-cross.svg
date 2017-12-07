@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-	<svg version="1.1" id="deco_cross" class="bg-deco" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+<svg version="1.1" class="deco_cross bg-deco" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 		viewBox="0 0 34 34" style="enable-background:new 0 0 34 34;" xml:space="preserve">
-	<style type="text/css">
-		.deco-line{fill:none;stroke:#CFD7DB;stroke-width:2;stroke-linecap:square;}
-	</style>
 	<title>Deco/Cross</title>
 	<path class="deco-line" d="M1.6,17h30.7 M17,1.6v30.7"/>
 </svg>
