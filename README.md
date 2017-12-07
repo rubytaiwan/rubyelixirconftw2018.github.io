@@ -5,7 +5,7 @@ Ruby X Elixir Conf Taiwan 2018
 
 - middleman 4.2.1
 ```
-gem install middleman
+$ gem install middleman
 
 ```
 
