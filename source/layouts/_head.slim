@@ -1,26 +1,51 @@
 head
-  meta charset="UTF-8"
-  title = current_page.data.title || data.site.site.title
-  meta name="description" content= data.site.site.description
-  meta name="keywords" content= data.site.site.keywords
+  meta charset="utf-8"
+  meta http-equiv="x-ua-compatible" content="ie=edge"
+  meta name="viewport" content="width=device-width, initial-scale=1, ,minimum-scale=1.0, maximum-scale=1.0, shrink-to-fit=no"
+  title =current_page.data.title || data.site.site.title
+  meta name="description" content=data.site.site.description
+  meta name="keywords" content=data.site.site.keywords
+  meta name="google" content="notranslate"
   link rel="canonical" href="#{root_url}"
 
-  meta property="og:title" content= data.site.site.title
-  meta property="og:description" content= data.site.site.description
-  meta property="og:type" content="website"
+  /! Favicons
+  link rel="apple-touch-icon" sizes="57x57" href=image_path("apple-icon-57x57.png")
+  link rel="apple-touch-icon" sizes="60x60" href=image_path("apple-icon-60x60.png")
+  link rel="apple-touch-icon" sizes="72x72" href=image_path("apple-icon-72x72.png")
+  link rel="apple-touch-icon" sizes="76x76" href=image_path("apple-icon-76x76.png")
+  link rel="apple-touch-icon" sizes="114x114" href=image_path("apple-icon-114x114.png")
+  link rel="apple-touch-icon" sizes="120x120" href=image_path("apple-icon-120x120.png")
+  link rel="apple-touch-icon" sizes="144x144" href=image_path("apple-icon-144x144.png")
+  link rel="apple-touch-icon" sizes="152x152" href=image_path("apple-icon-152x152.png")
+  link rel="apple-touch-icon" sizes="180x180" href=image_path("apple-icon-180x180.png")
+  link rel="icon" sizes="192x192" type="image/png" href=image_path("android-icon-192x192.png")
+  link rel="icon" sizes="96x96" type="image/png" href=image_path("favicon-96x96.png")
+  link rel="icon" sizes="32x32" type="image/png" href=image_path("favicon-32x32.png")
+  link rel="icon" sizes="16x16" type="image/png" href=image_path("favicon-16x16.png")
+  link rel="manifest" href=image_path("manifest.json")
+  meta name="msapplication-TileColor" content="#ffffff"
+  meta name="msapplication-TileImage" content="/ms-icon-144x144.png"
+  meta name="theme-color" content="#ffffff"
+  
+  /! Facebook Open Graph
   meta property="og:url" content="#{root_url}"
-  meta property="og:image" content="#{root_url}images/og_image.png"
-  link rel="shortcut icon" href=image_path("icon.png")
-  link rel="apple-touch-icon" href=image_path("icon.png")
-  link rel="apple-touch-icon-precomposed" href=image_path("icon.png")
-  link rel="apple-touch-icon-120x120-precomposed" href=image_path("icon.png")
-  link rel="icon" size="32x32" href=image_path("icon.png")
+  meta property="og:type" content="website"
+  meta property="og:title" content=data.site.site.title
+  meta property="og:image" content=image_path("og_image.png")
+  meta property="og:description" content=data.site.site.description
+  meta property="og:site_name" ccontent=data.site.site.title
+
+  /! Twitter Card
+  meta name="twitter:card" content="summary"
+  meta name="twitter:site" content="@rubyconftw"
+  meta name="twitter:creator" content="@rubyconftw"
+  meta name="twitter:url" content="#{root_url}"
+  meta name="twitter:title" content=data.site.site.title
+  meta name="twitter:description" content=data.site.site.description
+
   link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato|Righteous"
   link rel="stylesheet" href="//fonts.googleapis.com/earlyaccess/notosanstc.css"
   link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/balloon-css/0.5.0/balloon.min.css"
-
-  meta content="IE=edge" http-equiv="X-UA-Compatible"
-  meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport"
 
   = stylesheet_link_tag :main
   = javascript_include_tag :main
