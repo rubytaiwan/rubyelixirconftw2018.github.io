@@ -8,18 +8,21 @@ Ruby X Elixir Conf Taiwan 2018
 
 ## Development
 
-Install dependencies
+### Install dependencies
 ```
 $ bundle install
 $ bower install
 ```
 
-Starting Server
+### Starting Server
 ```
 $ middleman
 ```
 
-Deploy
+### Deploy
+```
+$ middleman deploy
+```
 
 ## Update
 
