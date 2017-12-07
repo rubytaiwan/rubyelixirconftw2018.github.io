@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<svg version="1.1" id="deco_triangle_gradient" class="bg-deco" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+<svg version="1.1" class="deco_triangle_gradient bg-deco" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 46 39" style="enable-background:new 0 0 46 39;" xml:space="preserve">
 	<style type="text/css">
-		.deco-line-gradient{fill:none;stroke-width:2;}
-		.triangle{stroke:url(#deco-gradient_triangle)}
+		.gradient_triangle{stroke:url(#deco-gradient_triangle)}
 	</style>
-	<title>Deco/Triangle</title>
+	<title>Deco/Gradient Triangle</title>
 	<linearGradient id="deco-gradient_triangle" gradientUnits="userSpaceOnUse" x1="-171.03" y1="213.7795" x2="-172.03" y2="214.7795" gradientTransform="matrix(42 0 0 -36 7218 7742)">
 		<stop  offset="0" style="stop-color:#652F8B"/>
 		<stop  offset="1" style="stop-color:#CC1D23"/>
 	</linearGradient>
-	<polygon class="triangle deco-line-gradient" points="23,2 44,38 2,38 "/>
+	<polygon class="deco-line gradient_triangle" points="23,2 44,38 2,38 "/>
 </svg>

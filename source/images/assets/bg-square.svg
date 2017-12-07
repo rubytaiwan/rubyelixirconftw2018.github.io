@@ -3,19 +3,19 @@
 	 viewBox="0 0 292 292" style="enable-background:new 0 0 292 292;" xml:space="preserve">
 	<title>Backgroubnd/Square</title>
 	<style type="text/css">
-		.filter{fill:url(#bg-gradient);mix-blend-mode: hard-light;}
-		.shadow{filter:url(#bg-shadow);}
+		.filter-square{fill:url(#bg-gradient_square);mix-blend-mode: hard-light;}
+		.shadow-square{filter:url(#bg-shadow_square);}
 	</style>
 	<defs>
 		<path d="M152.8,3.1l135.6,135.6c3.9,3.9,3.9,10.2,0,14.1L152.8,288.4c-3.9,3.9-10.2,3.9-14.1,0L3.1,152.8c-3.9-3.9-3.9-10.2,0-14.1L138.7,3.1C142.6-0.8,148.9-0.8,152.8,3.1z"/>
 		<clipPath id="square-mask">
 			<path d="M152.8,3.1l135.6,135.6c3.9,3.9,3.9,10.2,0,14.1L152.8,288.4c-3.9,3.9-10.2,3.9-14.1,0L3.1,152.8c-3.9-3.9-3.9-10.2,0-14.1L138.7,3.1C142.6-0.8,148.9-0.8,152.8,3.1z"/>
 		</clipPath>
-		<linearGradient x1="100%" y1="100%" x2="0%" y2="0%" id="bg-gradient">
+		<linearGradient x1="100%" y1="100%" x2="0%" y2="0%" id="bg-gradient_square">
 				<stop stop-color="#652F8B" offset="0%"></stop>
 				<stop stop-color="#CC1D23" offset="100%"></stop>
 		</linearGradient>
-		<filter x="-3.5%" y="-3.5%" width="107.1%" height="107.1%" filterUnits="objectBoundingBox" id="bg-shadow">
+		<filter x="-3.5%" y="-3.5%" width="107.1%" height="107.1%" filterUnits="objectBoundingBox" id="bg-shadow_square">
 				<feGaussianBlur stdDeviation="7.5" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
 				<feOffset dx="0" dy="0" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
 				<feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
@@ -23,6 +23,6 @@
 		</filter>
 	</defs>
 	<image clip-path="url(#square-mask)" width="100%" height="100%" xlink:href="images/assets/cover-taiwan_1.jpg" />
-	<path class="filter" d="M152.8,3.1l135.6,135.6c3.9,3.9,3.9,10.2,0,14.1L152.8,288.4c-3.9,3.9-10.2,3.9-14.1,0L3.1,152.8c-3.9-3.9-3.9-10.2,0-14.1L138.7,3.1C142.6-0.8,148.9-0.8,152.8,3.1z"/>
-	<path class="shadow" d="M152.8,3.1l135.6,135.6c3.9,3.9,3.9,10.2,0,14.1L152.8,288.4c-3.9,3.9-10.2,3.9-14.1,0L3.1,152.8c-3.9-3.9-3.9-10.2,0-14.1L138.7,3.1C142.6-0.8,148.9-0.8,152.8,3.1z"/>
+	<path class="filter-square" d="M152.8,3.1l135.6,135.6c3.9,3.9,3.9,10.2,0,14.1L152.8,288.4c-3.9,3.9-10.2,3.9-14.1,0L3.1,152.8c-3.9-3.9-3.9-10.2,0-14.1L138.7,3.1C142.6-0.8,148.9-0.8,152.8,3.1z"/>
+	<path class="shadow-square" d="M152.8,3.1l135.6,135.6c3.9,3.9,3.9,10.2,0,14.1L152.8,288.4c-3.9,3.9-10.2,3.9-14.1,0L3.1,152.8c-3.9-3.9-3.9-10.2,0-14.1L138.7,3.1C142.6-0.8,148.9-0.8,152.8,3.1z"/>
 </svg>

@@ -4,7 +4,10 @@ Ruby X Elixir Conf Taiwan 2018
 ## Framework
 
 - middleman 4.2.1
-`gem install middleman`
+```
+gem install middleman
+
+```
 
 ## Development
 

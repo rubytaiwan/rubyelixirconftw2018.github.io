@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="30px" height="20px" viewBox="0 0 30 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-	<title>Menu</title>
+	<title>Navbar Menu</title>
 	<linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="main_gradient">
 		<stop stop-color="#652F8B" offset="0%"></stop>
 		<stop stop-color="#CC1D23" offset="100%"></stop>

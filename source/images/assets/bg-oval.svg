@@ -3,19 +3,19 @@
 	 viewBox="0 0 300 300" style="enable-background:new 0 0 300 300;" xml:space="preserve">
 	<title>Backgroubnd/Oval</title>
 	<style type="text/css">
-		.filter{fill:url(#bg-gradient);mix-blend-mode: hard-light;}
-		.shadow{filter:url(#bg-shadow);}
+		.filter-oval{fill:url(#bg-gradient_oval);mix-blend-mode: hard-light;}
+		.shadow-oval{filter:url(#bg-shadow_oval);}
 	</style>
 	<defs>
 		<circle cx="150" cy="150" r="150"/>
 		<clipPath id="oval-mask">
 			<circle cx="150" cy="150" r="150"/>
 		</clipPath>
-		<linearGradient x1="100%" y1="100%" x2="0%" y2="0%" id="bg-gradient">
+		<linearGradient x1="100%" y1="100%" x2="0%" y2="0%" id="bg-gradient_oval">
 				<stop stop-color="#652F8B" offset="0%"></stop>
 				<stop stop-color="#CC1D23" offset="100%"></stop>
 		</linearGradient>
-		<filter x="-3.5%" y="-3.5%" width="107.1%" height="107.1%" filterUnits="objectBoundingBox" id="bg-shadow">
+		<filter x="-3.5%" y="-3.5%" width="107.1%" height="107.1%" filterUnits="objectBoundingBox" id="bg-shadow_oval">
 				<feGaussianBlur stdDeviation="7.5" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
 				<feOffset dx="0" dy="0" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
 				<feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
@@ -23,6 +23,6 @@
 		</filter>
 	</defs>
 	<image clip-path="url(#oval-mask)" width="100%" height="100%" xlink:href="images/assets/cover-taiwan_3.jpg" />
-	<circle class="filter" cx="150" cy="150" r="150"/>
-	<circle class="shadow" cx="150" cy="150" r="150"/>
+	<circle class="filter-oval" cx="150" cy="150" r="150"/>
+	<circle class="shadow-oval" cx="150" cy="150" r="150"/>
 </svg>

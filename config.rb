@@ -94,7 +94,6 @@ end
 
 activate :deploy do |deploy|
   deploy.deploy_method = :git
-  deploy.build_before = true
 end
 
 activate :sprockets
