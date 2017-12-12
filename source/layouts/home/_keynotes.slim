@@ -1,13 +1,13 @@
 section#keynotes
-  .section-title Keynote Speakers
+  h2.section-title Keynote Speakers
 
   .keynote-speakers
     - data.speaker.keynotes.each do |speaker|
       .speaker.modaled data-toggle="modal" data-target="##{speaker.name.gsub(/[\s()]+/, '-').downcase}"
         .speaker-avatar
           = image_tag 'speakers/' + speaker.avatar, class:'speaker-img', alt: speaker.name, title: speaker.name
-        h4.speaker-name.text-center = speaker.name
-        span.speaker-title.text-center = speaker.title
+        h3.speaker-name.text-center = speaker.name
+        h4.speaker-title.text-center = speaker.title
         .deco
           = inline_svg "assets/deco"
 
@@ -22,8 +22,8 @@ section#keynotes
               article.content.text-center 
                 .speaker-avatar
                   = image_tag 'speakers/' + speaker.avatar, class:'speaker-img', alt: speaker.name, title: speaker.name
-                h4.speaker-name  = speaker.name
-                span.speaker-title  = speaker.title
+                h3.speaker-name  = speaker.name
+                h4.speaker-title  = speaker.title
                 = inline_svg "assets/deco"
                 p.speaker-bio = markdown(speaker.bio)
 
@@ -31,7 +31,7 @@ section#keynotes
                 .speaker-program class="#{speaker.type == 'ruby' ? "ruby" : "elixir"}"
                   .talk-info
                     - if speaker.subject
-                      .speaker-subject = speaker.subject
+                      h5.speaker-subject = speaker.subject
                       = inline_svg "assets/deco"
                       = markdown(speaker.summary)
                     - else
