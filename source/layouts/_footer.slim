@@ -10,12 +10,12 @@ footer#footer
           span data-balloon="Organizing 💡" data-balloon-pos="up" Team Members
         - data.site.site.socialMedia.drop(2).each do |item|
           li
-            = link_to item.title, item.link, target: '_blank'
+            = link_to item.title, item.link, target: '_blank', rel:'noopener noreferrer'
       ul.nav.social
         - data.site.site.socialMedia.take(2).each_with_index do |item, index|
           li 
             = ("Twiter" if index == 0) || ("Facebook" if index == 1)
-            = link_to item.title, item.link, target: '_blank'
+            = link_to item.title, item.link, target: '_blank', rel:'noopener noreferrer'
         li 
           | E-mail
           = mail_to data.site.site.contactEmail, data.site.site.contactEmail

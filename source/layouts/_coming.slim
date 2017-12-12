@@ -1,5 +1,5 @@
 section#coming
   .section-title.text-center Coming Soon
   .cfa.text-center
-    = link_to current_page.data.cfaLink || data.site.site.cfpLink , target: '_blank', class:"btn-large submit-paper" do
+    = link_to current_page.data.cfaLink || data.site.site.cfpLink , target: '_blank', rel:'noopener noreferrer', class:"btn-large submit-paper" do
       span = current_page.data.cfa

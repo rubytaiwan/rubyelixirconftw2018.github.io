@@ -11,6 +11,12 @@ var $document = $(document);
 
 $document.ready(function () {
 
+  WebFont.load({
+    google: {
+      families: ['Lato', 'Righteous']
+    }
+  });
+
   // Enable FastClick
 	FastClick.attach(document.body);
 
