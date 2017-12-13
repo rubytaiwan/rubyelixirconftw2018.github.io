@@ -171,7 +171,7 @@
   .event
     margin: 40px auto
     color: $midnight
-    animation: puff-in-hor 1s cubic-bezier(0.470, 0.000, 0.745, 0.715) .8s both
+    animation: fade-in 1.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) .8s both
 
     @media (min-width: $screen-sm)
       margin: 60px auto
@@ -203,8 +203,7 @@
         letter-spacing: 2.5px
 
   .cfa
-    opacity: 0
-    animation: fade-in 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.5s forwards
+    animation: fade-in 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.5s both
   
     .btn-large
       display: block
@@ -221,8 +220,7 @@
   .social-media
     padding: 0
     margin: 40px 0 0
-    opacity: 0
-    animation: fade-in 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.8s forwards
+    animation: fade-in 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.8s both
 
     @media (min-width: $screen-sm)
       margin-top: 60px
@@ -262,16 +260,6 @@
       transform: scale(0)
     100%
       transform: scale(1)
-
-  @keyframes puff-in-hor
-    0%
-      transform: scaleX(2)
-      filter: blur(2px)
-      opacity: 0
-    100%
-      transform: scaleX(1)
-      filter: blur(0px)
-      opacity: 1
 
   @keyframes linearmovX
     100%

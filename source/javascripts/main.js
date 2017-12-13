@@ -67,7 +67,6 @@ $document.ready(function () {
   window.sr = ScrollReveal();
   sr.reveal('.reveal');
 
-
   // Toggle More New
   var hidden = $('.news').hasClass('hidden')
 
