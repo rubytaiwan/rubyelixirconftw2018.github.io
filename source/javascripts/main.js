@@ -5,6 +5,7 @@
 //= require bootstrap-sass/assets/javascripts/bootstrap/transition.js
 //= require jquery.easing/js/jquery.easing.min.js
 //= require fastclick/lib/fastclick.js
+//= require scrollreveal/dist/scrollreveal.min.js
 
 var $window = $(window);
 var $document = $(document);
@@ -61,6 +62,11 @@ $document.ready(function () {
   $('.modal').on('hidden.bs.modal', function () {
       revertToOriginalURL();
   });
+
+  // Scroll Reveal
+  window.sr = ScrollReveal();
+  sr.reveal('.reveal');
+
 
   // Toggle More New
   var hidden = $('.news').hasClass('hidden')
