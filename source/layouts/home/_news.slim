@@ -27,7 +27,7 @@ section#news
                     article.content
                       .news-date
                         span = format_date(post.date)
-                      .news-title = post.title
+                      h3.news-title = post.title
                       = inline_svg "assets/deco"
                       .news-content
                         = markdown(post.content)
