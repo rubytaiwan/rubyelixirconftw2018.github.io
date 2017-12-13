@@ -171,7 +171,7 @@
   .event
     margin: 40px auto
     color: $midnight
-    animation: slide-in-elliptic-top-fwd .8s cubic-bezier(0.250, 0.460, 0.450, 0.940) .8s both
+    animation: puff-in-hor 1s cubic-bezier(0.470, 0.000, 0.745, 0.715) .8s both
 
     @media (min-width: $screen-sm)
       margin: 60px auto
@@ -263,14 +263,14 @@
     100%
       transform: scale(1)
 
-  @keyframes slide-in-elliptic-top-fwd
+  @keyframes puff-in-hor
     0%
-      transform: translateY(-600px) rotateX(-30deg) scale(0)
-      transform-origin: 50% 100%
+      transform: scaleX(2)
+      filter: blur(2px)
       opacity: 0
     100%
-      transform: translateY(0) rotateX(0) scale(1)
-      transform-origin: 50% 1400px
+      transform: scaleX(1)
+      filter: blur(0px)
       opacity: 1
 
   @keyframes linearmovX
