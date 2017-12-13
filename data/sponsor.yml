@@ -3,5 +3,31 @@ elixir:
 ruby_gem:
 elixir_hex:
 platinum:
+  - name: 'SHOPLINE'
+    logo: 'shopline.svg'
+    link: https://shopline.tw/
+    desc: |-
+      SHOPLINE 主要產品為電商自助平台，整合網站設計、商品管理和金物流系統，為電商賣家提供簡單上手的架站工具。自 2013 年創辦以來，已經有超過 80,000 名來自香港、台灣、東南亞等地的商家使用 SHOPLINE 的服務，讓 SHOPLINE 成為在亞洲市場的行業領軍者。
+      SHOPLINE 提供了一個功能齊全的品牌開店配套，讓商家可以輕鬆架設功能完善的個人化網路商店，並專注提供用戶體驗。店主不僅在短時間內就可以獲得對應所有流動裝置的獨立網店，更可以同時擁有專業的訂單管理系統、多元化的物流及支付網關、風格多樣的店舖設計、強大的增值服務模式、本地語言及客戶服務支持與數據流量分析等後台管理工具。
+      2014 美國 500 Startups 第十屆新創團隊
+      2015 香港資訊及通訊科技獎--最佳資訊科技初創企業（商業市場）優異證書
+      2016 阿里巴巴集團「香港創業者基金」首批名單
+      2017 成為Google大中華區第一個電商合作夥伴
 gold:
+  - name: 'Incubit, Inc.'
+    logo: 'incubit.svg'
+    link: http://incubit.co.jp/
+    desc: |-
+      來自日本並擁有國際化團隊的 AI 新創公司。在 2016 年於 IBM Watson 駭客松獲頒優勝後，陸續與醫療 / 農業 / 機器人 / 教育以及電商等產業合作整合人工智慧並替客戶創造商業價值。
+      自 2017 年已成為 Nvidia 合作夥伴並將投入更多於 IoT 及影像的開發專案。
+      
+      A Japanese startup focusing in AI solution integration. Our members came from globally, and after won the first price in 2016 IBM Watson hackathon, Incubit already cooperated with companies from several industries such as medical / agriculture / robotics / education and E-commerce to integrate AI solutions to create new value to their business.
+      In 2017, Incubit became a partner with Nvidia and will contribute more in IoT and video solutions.
 silver:
+  - name: 'Speee, Inc.'
+    logo: 'speee.svg'
+    link: https://speee.jp/
+    desc: |-
+      Speee has a mission to "Contribute to growth of society by creating new service which has an impact on our world" and deliver high added value through both Business-to-Business and Business-to-Consumer services.
+      We invited Mr.Yukihiro Matsumoto, who invented Ruby, as an engineering adviser and Mr.Masahiro Ihara, who had been working for Cookpad as an engineering manager, to reform our engineering department's system and organization structure.
+      We are now aiming to become "Speee as a technology company".

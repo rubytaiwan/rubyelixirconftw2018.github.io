@@ -24,3 +24,62 @@
 
   &.dark
     stroke: $midnight
+
+// Animation
+
+.main_logo_alt
+  animation: tracking 1.2s cubic-bezier(0.680, -0.550, 0.265, 1.550) forwards
+
+  @keyframes tracking
+    50%
+      transform: translate(0, 80%)
+    100%
+      transform: translate(0, 0)
+
+  .logo, .alt_logotype_ruby, .alt_logotype_elixir, .conf_taiwan_2018
+    transform-origin: 50% 50%
+
+  .logo
+    animation: rotate-center 1.2s cubic-bezier(0.680, -0.550, 0.265, 1.550) both
+
+    @keyframes rotate-center
+      0%
+        transform: rotate(0)
+      100%
+        transform: rotate(360deg)
+        opacity: 1
+
+  .alt_logotype_ruby
+    animation: roll-in-left .8s cubic-bezier(0.860, 0.000, 0.070, 1.000) .8s both
+
+    @keyframes roll-in-left
+      0%
+        transform: translateX(-800px) rotate(-540deg)
+        opacity: 0
+      100%
+        transform: translateX(0) rotate(0deg)
+        opacity: 1
+
+  .alt_logotype_elixir
+    animation: roll-in-right .8s cubic-bezier(0.860, 0.000, 0.070, 1.000) .8s both
+
+    @keyframes roll-in-right
+      0%
+        transform: translateX(800px) rotate(540deg)
+        opacity: 0
+      100%
+        transform: translateX(0) rotate(0deg)
+        opacity: 1
+
+  .conf_taiwan_2018
+    animation: swing-in-bottom-fwd 1.5s cubic-bezier(0.175, 0.885, 0.320, 1.275) 1.2s both
+
+    @keyframes swing-in-bottom-fwd
+      0%
+        transform: rotateX(100deg)
+        transform-origin: bottom
+        opacity: 0
+      100%
+        transform: rotateX(0)
+        transform-origin: bottom
+        opacity: 1
