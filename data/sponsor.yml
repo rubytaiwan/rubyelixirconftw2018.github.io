@@ -3,6 +3,11 @@ elixir:
 ruby_gem:
 elixir_hex:
 platinum:
+  - name: 'Cyberbiz'
+    logo: 'cyberbiz.svg'
+    link: https://www.cyberbiz.co
+    desc: |-
+      Cyberbiz 提供一站式［新零售］解決方案，協助店家快速架設品牌官網，並提供智慧倉儲以及實體店面O2O服務，全面整合［線上+線下+物流］。
   - name: 'SHOPLINE'
     logo: 'shopline.svg'
     link: https://shopline.tw/
@@ -24,6 +29,10 @@ gold:
       A Japanese startup focusing in AI solution integration. Our members came from globally, and after won the first price in 2016 IBM Watson hackathon, Incubit already cooperated with companies from several industries such as medical / agriculture / robotics / education and E-commerce to integrate AI solutions to create new value to their business.
       In 2017, Incubit became a partner with Nvidia and will contribute more in IoT and video solutions.
 silver:
+  - name: '黃碼科技有限公司 Goldenio Technology'
+    logo: 'goldenio.svg'
+    link: http://goldenio.com/
+    desc: |-
   - name: 'Speee, Inc.'
     logo: 'speee.svg'
     link: https://speee.jp/
