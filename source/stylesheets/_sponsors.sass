@@ -1,4 +1,4 @@
-#support
+.support
   padding-bottom: 80px
 
   @media (min-width: $screen-sm)
@@ -7,87 +7,27 @@
   @media (min-width: $screen-md)
     padding-bottom: 120px
 
-  .support-list
-    @extend .flexbox
+  .level-title
+    display: block
+    width: 100%
+    font-family: 'Righteous'
+    font-size: 24px
+    margin-bottom: 20px
 
-    @media (min-width: $screen-sm)
-      flex-direction: row
-    
-    .level-title
-      display: block
-      width: 100%
-      font-family: 'Righteous'
-      font-size: 24px
-      margin-bottom: 20px
+    &.ruby, &.ruby_gem
+      color: $ruby-light
 
-      &.ruby, &.ruby_gem
-        color: $ruby-light
+    &.elixir, &.elixir_hex
+      color: $elixir-light
 
-      &.elixir, &.elixir_hex
-        color: $elixir-light
+    &.platinum
+      color: $platinum
 
-      &.platinum
-        color: #B0BEC5
+    &.gold
+      color: $gold
 
-      &.gold
-        color: #FDC689
-
-      &.silver
-        color: #BDBDBD
-
-    .support-link
-      display: block
-      position: relative
-      +size(100%, 100%)
-      +hover-effect(0.3s, -5px)
-
-    .logo
-      +size(100%, auto)
-      max-height: 100%
-      @extend .align-center
-
-    .supporter
-      @extend .flexbox
-      width: 100%
-      margin-bottom: 40px
-      
-      &.diamond
-
-        @media (min-width: $screen-sm)
-          margin-bottom: 60px
-
-        @media (min-width: $screen-md)
-          width: 50%
-
-        .support-link
-          max-width: 280px
-          max-height: 100px
-
-      &.platinum
-
-        @media (min-width: $screen-sm)
-          width: 50%
-
-        @media (min-width: $screen-md)
-          width: calc(100% / 3)
-
-        .support-link
-          +size(100%, 120px)
-          max-width: 240px
-
-      &.gold, &.silver
-        width: 50%
-
-        @media (min-width: $screen-sm)
-          width: calc(100% / 3)
-
-        @media (min-width: $screen-md)
-          width: 25%
-
-        .support-link
-          +size(100%, 120px)
-          max-width: 160px
-          margin-right: 20px
+    &.silver
+      color: $silver
 
   .tba
     font-family: 'Lato'
@@ -99,3 +39,144 @@
 
   .btn-small
     margin-top: 40px
+
+    @media (min-width: $screen-sm)
+      margin-top: 60px
+
+  .support-list
+    @extend .flexbox
+
+    @media (min-width: $screen-sm)
+      flex-direction: row
+
+    .supporter
+      width: 100%
+      margin-bottom: 40px
+      
+      .supporter-logo
+        display: block
+        position: relative
+        +size(100%, 100%)
+        +hover-effect(0.3s, -5px)
+
+        .logo
+          +size(100%, auto)
+          max-height: 100%
+          @extend .align-center
+        
+      &.diamond .supporter-logo
+        +size(100%, 180px)
+            
+      &.platinum .supporter-logo
+        +size(100%, 160px)
+
+      &.gold .supporter-logo, &.silver .supporter-logo
+        +size(100%, 120px)
+
+    &.sidepage
+
+      .level-title
+        margin-left: 20px
+    
+      .supporter
+        @extend .flexbox
+        align-content: flex-start
+        padding: 20px
+        border-radius: 4px
+        margin: 0 20px 40px
+
+        @media (min-width: $screen-sm)
+          padding: 40px
+
+        &.ruby
+          border: 1px solid $ruby-light
+
+        &.elixir
+          border: 1px solid $elixir-light
+
+        &.platinum
+          border: 1px solid $platinum
+
+        &.gold
+          border: 1px solid $gold
+
+        &.silver
+          border: 1px solid $silver
+
+        .supporter-name
+          @extend .body-title
+          font-family: 'Lato'
+          font-weight: 700
+          letter-spacing: 1.5px
+          width: 100%
+
+        .supporter-link
+          @extend .body-content
+          display: block
+          color: $marble
+          margin-bottom: 20px
+
+        .supporter-desc
+          @extend .body-content
+          white-space: pre-wrap
+
+        &.diamond
+
+          @media (min-width: $screen-md)
+            .supporter-logo, .supporter-info
+              width: 50%
+        
+          .logo
+            max-width: 320px
+              
+        &.platinum
+
+          @media (min-width: $screen-md)
+            width: calc(50% - 40px)
+
+          .logo
+            max-width: 240px
+
+        &.gold, &.silver
+
+          @media (min-width: $screen-sm)
+            width: calc(50% - 40px)
+
+          @media (min-width: $screen-md)
+            width: calc(100% / 3 - 40px)
+            
+          .logo
+            max-width: 160px
+    
+    &.partial .supporter
+
+      &.diamond
+
+        @media (min-width: $screen-md)
+          width: 50%
+
+        .supporter-logo
+          max-width: 320px
+
+      &.platinum
+
+        @media (min-width: $screen-sm)
+          width: 50%
+
+        @media (min-width: $screen-md)
+          width: calc(100% / 3)
+
+        .supporter-logo
+          max-width: 240px
+
+      &.gold, &.silver
+        width: 50%
+
+        @media (min-width: $screen-sm)
+          width: calc(100% / 3)
+
+        @media (min-width: $screen-md)
+          width: 25%
+
+        .supporter-logo
+          max-width: 160px
