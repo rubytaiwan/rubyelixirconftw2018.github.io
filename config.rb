@@ -31,7 +31,7 @@ page '/*.txt', layout: false
 # Methods defined in the helpers block are available in templates
 # https://middlemanapp.com/basics/helper-methods/
 
-set :protocol, 'http://'
+set :protocol, 'https://'
 set :host, '2018.rubyconf.tw'
 
 helpers do
