@@ -29,6 +29,12 @@ gold:
       A Japanese startup focusing in AI solution integration. Our members came from globally, and after won the first price in 2016 IBM Watson hackathon, Incubit already cooperated with companies from several industries such as medical / agriculture / robotics / education and E-commerce to integrate AI solutions to create new value to their business.
       In 2017, Incubit became a partner with Nvidia and will contribute more in IoT and video solutions.
 silver:
+  - name: 'MySQL'
+    logo: 'mysql.svg'
+    link: https://www.mysql.com/
+    desc: |-
+      MySQL is the world's most popular OS database. With its proven performance, reliability and ease-of-use, MySQL has become the leading database choice for web-based applications, used by high profile web properties including Facebook, Twitter, YouTube, Yahoo! and more. Additionally, it is an extremely popular choice as embedded database, distributed by over 3,000 ISVs & OEMs. To organizations in need of an open source, ACID-compliant transactional database delivering real-time in-memory performance and 99.999 percent availability, Oracle offers MySQL Cluster.
+      Oracle drives MySQL innovation, constantly improving MySQL solutions and delivering new capabilities to power next generation web, cloud, mobile and embedded applications. 
   - name: '黃碼科技有限公司 Goldenio Technology'
     logo: 'goldenio.svg'
     link: http://goldenio.com/
