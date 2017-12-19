@@ -3,11 +3,9 @@ keynotes:
     avatar: matz.jpg
     type: ruby
     title: Creator of Ruby, Heroku
-    bio: |-
-      Father of Ruby Programming Language
     subject:
     summary: |-
-    urlHome: http://www.rubyist.net/~matz/
+    urlHome:
     urltwitter: http://twitter.com/yukihiro_matz
     urlGithub: http://github.com/matz
     slideUrl:
@@ -16,8 +14,6 @@ keynotes:
     avatar: jose-valim.jpg
     type: elixir
     title: Creator of Elixir, Plataformatec
-    bio: |-
-      Father of Elixir Programming Language
     subject: 
     summary: |-
     urlHome:
@@ -29,7 +25,6 @@ keynotes:
     avatar: akira-matsuda.jpg
     type: ruby
     title: Committer of Ruby and Rails
-    bio: |-
     subject: 
     summary: |-
     urlHome:
@@ -38,17 +33,36 @@ keynotes:
     slideUrl:
     videoUrl:
 general:
-  - name: Speaker's name
-    avatar: 
+  - name: Yukihiro Matsumoto (Matz)
+    avatar: matz.jpg
     type: ruby
-    title: Title
-    bio: |-
-      Speakers biography
-    subject: Talks Title
+    title: Creator of Ruby, Heroku
+    subject:
     summary: |-
-      Description here
     urlHome:
-    urltwitter:
-    urlGithub:
+    urltwitter: http://twitter.com/yukihiro_matz
+    urlGithub: http://github.com/matz
+    slideUrl:
+    videoUrl:
+  - name: José Valim
+    avatar: jose-valim.jpg
+    type: elixir
+    title: Creator of Elixir, Plataformatec
+    subject: 
+    summary: |-
+    urlHome:
+    urltwitter: https://twitter.com/josevalim
+    urlGithub: https://github.com/josevalim
+    slideUrl:
+    videoUrl:
+  - name: Akira Matsuda
+    avatar: akira-matsuda.jpg
+    type: ruby
+    title: Committer of Ruby and Rails
+    subject: 
+    summary: |-
+    urlHome:
+    urltwitter: https://twitter.com/a_matsuda
+    urlGithub: https://github.com/amatsuda
     slideUrl:
     videoUrl:
