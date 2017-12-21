@@ -29,14 +29,6 @@
     &.silver
       color: $silver
 
-  .tba
-    font-family: 'Lato'
-    font-weight: bold
-    font-size: 28px
-    letter-spacing: 2px
-    width: 100%
-    margin-bottom: 40px
-
   .btn-small
     margin-top: 40px
 
@@ -46,9 +38,6 @@
   .support-list
     @extend .flexbox
 
-    @media (min-width: $screen-sm)
-      flex-direction: row
-
     .supporter
       width: 100%
       margin-bottom: 40px
@@ -56,6 +45,7 @@
       .supporter-logo
         display: block
         position: relative
+        align-self: center
         +size(100%, 100%)
         +hover-effect(0.3s, -5px)
 
@@ -76,17 +66,19 @@
     &.sidepage
 
       .level-title
-        margin-left: 20px
+        @media (min-width: $screen-sm)
+          margin-left: 20px
     
       .supporter
         @extend .flexbox
         align-content: flex-start
         padding: 20px
         border-radius: 4px
-        margin: 0 20px 40px
+        margin-bottom: 40px
 
         @media (min-width: $screen-sm)
           padding: 40px
+          margin: 0 20px 40px
 
         &.ruby
           border: 1px solid $ruby-light
@@ -104,7 +96,6 @@
           border: 1px solid $silver
 
         .supporter-name
-          @extend .body-title
           font-family: 'Lato'
           font-weight: 700
           letter-spacing: 1.5px
