@@ -3,62 +3,7 @@ section#keynotes
 
   .keynote-speakers
     - data.speaker.keynotes.each do |speaker|
-      .speaker.modaled data-toggle="modal" data-target="##{speaker.name.gsub(/[\s()]+/, '-').downcase}"
-        .speaker-avatar
-          = image_tag 'speakers/' + speaker.avatar, class:'speaker-img', alt: speaker.name, title: speaker.name
-        h3.speaker-name.body-title.text-center = speaker.name
-        h4.speaker-title.body-content.smaller.text-center = speaker.title
-        = inline_svg "assets/deco"
-
-      /** Speaker Info (Modal) **/
-      .modal role="dialog" tabindex="-1" id= speaker.name.gsub(/[\s()]+/, '-').downcase
-        .modal-dialog role="document"
-          .modal-content
-            .modal-header
-              button.close aria-label="Close" data-dismiss="modal" type="button"
-                span aria-hidden="true"  &times;
-            .modal-body
-              .content
-                .speaker-info
-                  .speaker-avatar
-                    = image_tag 'speakers/' + speaker.avatar, class:'speaker-img', alt: speaker.name, title: speaker.name
-                  .speaker-name.body-title.text-center = speaker.name
-                  .speaker-title.body-content.smaller.text-center = speaker.title
-                  = inline_svg "assets/deco"
-                  /** Socila Media **/
-                  ul.speaker-socials.list-inline
-                    - if speaker.urlHome
-                      li
-                        = link_to speaker.urlHome, target: '_blank', rel:'noopener noreferrer', class:"media homepage"  do
-                          = inline_svg "assets/btn-homepage"
-                    - if speaker.urltwitter
-                      li
-                        = link_to speaker.urltwitter, target: '_blank', rel:'noopener noreferrer', class:"media twitter"  do
-                          = inline_svg "assets/btn-twitter"
-                    - if speaker.urlGithub
-                      li
-                        = link_to speaker.urlGithub, target: '_blank', rel:'noopener noreferrer', class:"media github"  do
-                          = inline_svg "assets/btn-github"
-
-                /** Talk Info **/
-                .speaker-program class="#{speaker.type == 'ruby' ? "ruby" : "elixir"}"
-                  - if speaker.subject
-                    .speaker-subject.body-title.text-center = speaker.subject
-                    = inline_svg "assets/deco"
-                    .body-content
-                      = markdown(speaker.summary)
-                  - else
-                    .tba.text-center TBA
-                  - if speaker.slideUrl
-                    = link_to speaker.slideUrl, target: '_blank', rel:'noopener noreferrer', class:"btn btn-small btn-talk" do
-                      span Slide
-                  - if speaker.videoUrl
-                    = link_to speaker.videoUrl, target: '_blank', rel:'noopener noreferrer', class:"btn btn-small btn-talk" do
-                      span Vedio
-                
-              .modal-footer
-                button.btn.btn-close type="button" data-dismiss="modal"
-                  span Close
+      = partial('layouts/_speakerBlock', locals: { speaker: speaker } )
 
   = link_to '../speakers', class:"btn btn-small speakers-more" do
     span All Speakers +

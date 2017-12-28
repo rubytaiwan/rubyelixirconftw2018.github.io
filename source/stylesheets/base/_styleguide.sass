@@ -11,14 +11,16 @@ $platinum: #B0BEC5
 $gold: #FDC689
 $silver: #BDBDBD
 
-/* Flexbox for Equal Height */
+/* Flexbox */
 .flexbox
-  display: -webkit-box
-  display: -moz-box
-  display: -ms-flexbox
-  display: -webkit-flex
   display: flex
   flex-flow: row wrap
+
+/* Grid */
+.grid
+  display: grid
+  justify-items: stretch
+  align-items: stretch
 
 .align-center
   position: absolute
@@ -64,20 +66,8 @@ $silver: #BDBDBD
 
 /* Font Style*/
 .body-title
-  font-size: 20px
-  color: $midnight
-
-  @media (min-width: $screen-sm)
-    font-size: 24px
-
-  &.smaller
-    font-size: 18px
-
-    @media (min-width: $screen-sm)
-      font-size: 20px
-
-.body-content
   font-size: 18px
+  color: $midnight
 
   @media (min-width: $screen-sm)
     font-size: 20px
@@ -87,6 +77,18 @@ $silver: #BDBDBD
 
     @media (min-width: $screen-sm)
       font-size: 18px
+
+.body-content
+  font-size: 16px
+
+  @media (min-width: $screen-sm)
+    font-size: 18px
+
+  &.smaller
+    font-size: 14px
+
+    @media (min-width: $screen-sm)
+      font-size: 16px
 
 .section-title
   font-family: 'Righteous'
@@ -167,13 +169,19 @@ $silver: #BDBDBD
   +size(120px, 40px)
   display: block
   position: relative
-  border: 2px solid $marble
+  border: 1px solid $marble
   border-radius: 4px
   background: #fff
   margin: 0 auto
   overflow: hidden
   text-align: center
   +hover-effect(0.2s, -3px)
+
+  &:hover
+    background: $marble
+
+    span
+      color: #fff
 
   span
     font-size: 14px
