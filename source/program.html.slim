@@ -3,6 +3,85 @@ title: Program | Ruby X Elixir Conf Taiwan 2018
 cfa: Submit A Paper
 ---
 .main
-  h1.hidden = current_page.data.title
-  = partial 'layouts/coming'
+  section#program
+    h1.section-title Program
+
+    .schedule.sidepage
+
+      ul.schedule-header.nav.navbar-nav
+        li.active
+          a.btn-large href="#dayOne"
+            span Day 1 @ Fri, Apr. 27
+        li
+          a.btn-large href="#dayTwo"
+            span Day 2 @ Sat, Apr. 28
+
+      .schedule-table
+      
+        .table-header.hidden-xs
+          .period
+            p.body-content PERIOD
+          .agenda
+            p.body-title
+              | 1001 Auditorium
+          .agenda
+            p.body-title
+              | 1002 Auditorium
+
+        / Day One
+        .table-body.active#dayOne
+          - data.program.dayOne.each do |item|
+            .session class="#{item.type == "event" ? "merge" : ""}"
+              .period
+                p.body-content
+                  = item.period
+                  - if item.duration ?
+                    span.duration.body-content.smaller
+                      | &lpar;&nbsp;
+                      = item.duration
+                      | &nbsp;&rpar;
+              - if item.agenda ?
+                .agenda
+                  p.body-content.event = item.agenda
+                .agenda.hidden-xs
+              - else
+                .agenda
+                  - find_speaker_by(item.speakerOne) do |speaker|
+                    = partial('layouts/_programBlock', locals: { speaker: speaker } )
+                - if item.speakerTwo ?
+                  .agenda
+                    - find_speaker_by(item.speakerTwo) do |speaker|
+                      = partial('layouts/_programBlock', locals: { speaker: speaker } )
+                - else
+                  .agenda.hidden-xs
+
+        / Day Two
+        .table-body#dayTwo
+          - data.program.dayTwo.each do |item|
+            .session class="#{item.type == "event" ? "merge" : ""}"
+              .period
+                p.body-content
+                  = item.period
+                  - if item.duration ?
+                    span.duration.body-content.smaller
+                      | &lpar;&nbsp;
+                      = item.duration
+                      | &nbsp;&rpar;
+              - if item.agenda ?
+                .agenda
+                  p.body-content.event = item.agenda
+                .agenda.hidden-xs
+              - else
+                .agenda
+                  - find_speaker_by(item.speakerOne) do |speaker|
+                    = partial('layouts/_programBlock', locals: { speaker: speaker } )
+                - if item.speakerTwo ?
+                  .agenda
+                    - find_speaker_by(item.speakerTwo) do |speaker|
+                      = partial('layouts/_programBlock', locals: { speaker: speaker } )
+                - else
+                  .agenda.hidden-xs
+      
+        .interpretation.body-content We offer simultaneous interpretation service (Chinese to English) on all Chinese sessions.
+
   = partial 'layouts/sponsors'

@@ -76,6 +76,10 @@ helpers do
     markdown.render(text).html_safe
   end
 
+  def find_speaker_by(name, &block)
+    yield data.speaker.general.find { |speaker| speaker['name'] == name }
+  end
+
 end
 
 # Build-specific configuration
