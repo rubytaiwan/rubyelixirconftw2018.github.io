@@ -1,4 +1,4 @@
-.speaker.modaled data-toggle="modal" data-target="##{speaker.name.gsub(/[\s()]+/, '-').downcase}"
+.speaker.modaled data-toggle="modal" data-target="##{speaker.name.gsub(/[\s()]+/, '-').gsub(/[-]$/, '').downcase.unicode_normalize(:nfkd).encode('ASCII', replace: '')}"
   .speaker-avatar
     = image_tag 'speakers/' + speaker.avatar, class:'speaker-img', alt: speaker.name, title: speaker.name
   .speaker-simpleinfo
@@ -14,7 +14,7 @@
       span.tag.elixir Elixir
 
 /** Speaker Info (Modal) **/
-.modal role="dialog" tabindex="-1" id= speaker.name.gsub(/[\s()]+/, '-').downcase
+.modal role="dialog" tabindex="-1" id= speaker.name.gsub(/[\s()]+/, '-').gsub(/[-]$/, '').downcase.unicode_normalize(:nfkd).encode('ASCII', replace: '')
   .modal-dialog role="document"
     .modal-content
       .modal-header
