@@ -3,6 +3,8 @@ keynotes:
     avatar: matz.jpg
     type: ruby
     title: Creator of Ruby, Heroku
+    bio: |-
+      The creator of Ruby, Matz works for Heroku and the Ruby Assocation to improve everything Ruby.
     subject:
     summary: |-
     urlHome:
@@ -14,6 +16,8 @@ keynotes:
     avatar: jose-valim.jpg
     type: elixir
     title: Creator of Elixir, Plataformatec
+    bio: |-
+      Plataformatec co-founder and creator of Elixir Lang. I have signed off from Twitter indefinitely, RTs are automated.
     subject: 
     summary: |-
     urlHome:
@@ -25,6 +29,8 @@ keynotes:
     avatar: akira-matsuda.jpg
     type: ruby
     title: Committer of Ruby and Rails
+    bio: |-
+      Rails committer. Ruby committer. amatsuda on GitHub. Creator of Kaminari. Founder of Asakusa.rb. Chief organizer of RubyKaigi. A Ruby Hero in Tokyo.
     subject: 
     summary: |-
     urlHome:
@@ -36,7 +42,10 @@ general:
   - name: Yukihiro Matsumoto (Matz)
     avatar: matz.jpg
     type: ruby
+    lang: en
     title: Creator of Ruby, Heroku
+    bio: |-
+      The creator of Ruby, Matz works for Heroku and the Ruby Assocation to improve everything Ruby.
     subject:
     summary: |-
     urlHome:
@@ -47,8 +56,11 @@ general:
   - name: José Valim
     avatar: jose-valim.jpg
     type: elixir
+    lang: en
     title: Creator of Elixir, Plataformatec
-    subject: 
+    bio: |-
+      Plataformatec co-founder and creator of Elixir Lang. I have signed off from Twitter indefinitely, RTs are automated.
+    subject: Beware of Alpha Syndrome
     summary: |-
     urlHome:
     urltwitter: https://twitter.com/josevalim
@@ -58,8 +70,11 @@ general:
   - name: Akira Matsuda
     avatar: akira-matsuda.jpg
     type: ruby
+    lang: en
     title: Committer of Ruby and Rails
-    subject: 
+    bio: |-
+      Rails committer. Ruby committer. amatsuda on GitHub. Creator of Kaminari. Founder of Asakusa.rb. Chief organizer of RubyKaigi. A Ruby Hero in Tokyo.
+    subject: Beware of Alpha Syndrome of Alpha Syndrome
     summary: |-
     urlHome:
     urltwitter: https://twitter.com/a_matsuda
