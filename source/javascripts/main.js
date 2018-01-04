@@ -68,6 +68,22 @@ $document.ready(function () {
   window.sr = ScrollReveal();
   sr.reveal('.reveal');
 
+  // Scroll Up
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 100) {
+      $('.scrollup').fadeIn();
+    } else {
+      $('.scrollup').fadeOut();
+    }
+  });
+  
+  $('.scrollup').click(function () {
+    $("html, body").animate({
+      scrollTop: 0
+    }, 600, 'easeInOutExpo');
+    return false;
+  });
+
   // Toggle More New
   var hidden = $('.news').hasClass('hidden')
 
