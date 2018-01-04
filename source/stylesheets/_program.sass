@@ -4,7 +4,25 @@
 
     .interpretation
       letter-spacing: 0.5px
+      line-height: 2
       padding: 20px 0 15px
+      border-top: 3px solid $marble
+
+      .service-link
+        display: block
+        color: $midnight
+        background: rgba($marble, 0.5)
+        border-radius: 4px
+        padding: 6px 12px
+        margin: 0 5px
+        transition: all 0.2s ease-out
+
+        @media (min-width: $screen-sm)
+          display: inline-block
+
+        &:hover
+          background: $midnight
+          color: #fff
 
     /** Days Tab **/
     .schedule-header
@@ -82,6 +100,7 @@
 
       .period p
         font-family: 'Righteous'
+        font-size: 18px
 
       .table-header
         @extend .grid
@@ -89,7 +108,7 @@
         grid-template-rows: 1fr
         grid-gap: 1px
         background: $marble
-        border-bottom: 2px solid $marble
+        border-bottom: 3px solid $marble
 
         p
           @extend .font-gradient
@@ -98,9 +117,8 @@
 
       .table-body
         display: none
-        grid-gap: 2px
+        grid-gap: 3px
         background: $marble
-        border-bottom: 2px solid $marble
 
         &.active
           @extend .grid
@@ -123,15 +141,41 @@
             @media (min-width: $screen-sm)
               grid-template-columns: 150px 1fr
 
+            .hidden-xs
+              display: none
+          
+          .agenda
+            padding: 20px
+
+          .venue
+            align-self: center
+
+            @media (min-width: $screen-sm)
+              display: none
+
+            span
+              +size(80px, 30px)
+              border-radius: 4px
+              font-family: 'Righteous'
+              font-size: 16px
+              color: #fff
+              line-height: 30px
+              margin: 0 auto 20px
+
+              &.main
+                background: $gold
+              &.sub
+                background: $platinum
+
     /**  Speaker Customized Layout **/
     .speaker
       @extend .flexbox
       justify-content: center
-      padding: 20px
       margin-bottom: 0
 
       @media (min-width: $screen-sm)
         width: 100%
+        padding: 20px
 
       .speaker-avatar
         align-self: center

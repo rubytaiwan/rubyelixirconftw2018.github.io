@@ -33,7 +33,7 @@ cfa: Submit A Paper
           - data.program.dayOne.each do |item|
             .session class="#{item.type == "event" ? "merge" : ""}"
               .period
-                p.body-content
+                p
                   = item.period
                   - if item.duration ?
                     span.duration.body-content.smaller
@@ -42,14 +42,20 @@ cfa: Submit A Paper
                       | &nbsp;&rpar;
               - if item.agenda ?
                 .agenda
+                  .venue
+                    span.main 1001
                   p.body-content.event = item.agenda
                 .agenda.hidden-xs
               - else
                 .agenda
+                  .venue
+                    span.main 1001
                   - find_speaker_by(item.speakerOne) do |speaker|
                     = partial('layouts/_programBlock', locals: { speaker: speaker } )
                 - if item.speakerTwo ?
                   .agenda
+                    .venue
+                      span.sub 1002
                     - find_speaker_by(item.speakerTwo) do |speaker|
                       = partial('layouts/_programBlock', locals: { speaker: speaker } )
                 - else
@@ -60,7 +66,7 @@ cfa: Submit A Paper
           - data.program.dayTwo.each do |item|
             .session class="#{item.type == "event" ? "merge" : ""}"
               .period
-                p.body-content
+                p
                   = item.period
                   - if item.duration ?
                     span.duration.body-content.smaller
@@ -69,19 +75,29 @@ cfa: Submit A Paper
                       | &nbsp;&rpar;
               - if item.agenda ?
                 .agenda
+                  .venue
+                    span.main 1001
                   p.body-content.event = item.agenda
                 .agenda.hidden-xs
               - else
                 .agenda
+                  .venue
+                    span.main 1001
                   - find_speaker_by(item.speakerOne) do |speaker|
                     = partial('layouts/_programBlock', locals: { speaker: speaker } )
                 - if item.speakerTwo ?
                   .agenda
+                    .venue
+                      span.sub 1002
                     - find_speaker_by(item.speakerTwo) do |speaker|
                       = partial('layouts/_programBlock', locals: { speaker: speaker } )
                 - else
                   .agenda.hidden-xs
       
-        .interpretation.body-content We offer simultaneous interpretation service (Chinese to English) on all Chinese sessions.
+        - if data.site.site.interpretationLink ?
+          .interpretation.body-content 
+            | We offer&nbsp;
+            = link_to "Simultaneous Interpretation Service", data.site.site.interpretationLink, target: '_blank', rel:'noopener noreferrer', class:"service-link"
+            | &nbsp;(Chinese to English) on all Chinese sessions.
 
   = partial 'layouts/sponsors'
