@@ -51,5 +51,12 @@ section.reveal.support
           = link_to sponsor.link, target: '_blank', rel:'noopener noreferrer', class:"supporter-logo" do
             = image_tag 'sponsors/' + sponsor.logo, class:'logo', alt: sponsor.name, title: sponsor.desc
 
+    - if data.sponsor.partner
+      .level-title.partner Partner
+      - data.sponsor.partner.each do |sponsor|
+        .supporter.partner
+          = link_to sponsor.link, target: '_blank', rel:'noopener noreferrer', class:"supporter-logo" do
+            = image_tag 'sponsors/' + sponsor.logo, class:'logo', alt: sponsor.name, title: sponsor.desc
+
   = link_to data.site.site.supportLink, target: '_blank', rel:'noopener noreferrer', class:"btn btn-small" do
     span Support Us +

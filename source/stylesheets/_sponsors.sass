@@ -29,6 +29,9 @@
     &.silver
       color: $silver
 
+    &.partner
+      color: $dark-grey
+
   .btn-small
     margin-top: 40px
 
@@ -60,8 +63,9 @@
       &.platinum .supporter-logo
         +size(100%, 140px)
 
-      &.gold .supporter-logo, &.silver .supporter-logo
-        +size(100%, 120px)
+      &.gold, &.silver, &.partner
+        .supporter-logo
+          +size(100%, 120px)
 
     &.sidepage
 
@@ -94,6 +98,9 @@
 
         &.silver
           border: 1px solid $silver
+
+        &.partner
+          border: 1px solid $dark-grey
 
         .supporter-name
           font-family: 'Lato'
@@ -128,7 +135,7 @@
           .logo
             max-width: 240px
 
-        &.gold, &.silver
+        &.gold, &.silver, &.partner
 
           @media (min-width: $screen-sm)
             width: calc(50% - 40px)
@@ -160,7 +167,7 @@
         .supporter-logo
           max-width: 240px
 
-      &.gold, &.silver
+      &.gold, &.silver, &.partner
         width: 50%
 
         @media (min-width: $screen-sm)

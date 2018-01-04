@@ -39,6 +39,7 @@ silver:
     logo: 'goldenio.svg'
     link: http://goldenio.com/
     desc: |-
+      黃碼科技致力於開發好維護的網站系統，提供網站系統規劃與開發，網站中長期維護，多團隊專案合作等服務。在生物資料處理方面，也提供資料庫規劃與維護，分析系統規劃與開發，客製化分析程式等服務。
   - name: 'Speee, Inc.'
     logo: 'speee.svg'
     link: https://speee.jp/
@@ -46,3 +47,9 @@ silver:
       Speee has a mission to "Contribute to growth of society by creating new service which has an impact on our world" and deliver high added value through both Business-to-Business and Business-to-Consumer services.
       We invited Mr.Yukihiro Matsumoto, who invented Ruby, as an engineering adviser and Mr.Masahiro Ihara, who had been working for Cookpad as an engineering manager, to reform our engineering department's system and organization structure.
       We are now aiming to become "Speee as a technology company".
+partner:
+  - name: '五倍紅寶石股份有限公司'
+    logo: '5xruby.svg'
+    link: https://5xruby.tw/
+    desc: |-
+      「五倍紅寶石」是由幾位台灣 Ruby 社群的朋友共同成立的一家公司，希望透過教育訓練、企業培訓等講座，將 Ruby 推廣到校園、企業、開發者。提供的服務包括：程式教育訓練、企業技術培訓與諮詢、活動場地租借與專案委托製作。
