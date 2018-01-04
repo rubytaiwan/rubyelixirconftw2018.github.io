@@ -126,6 +126,29 @@
       font-size: 14px
       color: $marble
 
+  .scrollup
+    @extend .main-background
+    display: none
+    +size(40px, 40px)
+    position: fixed
+    bottom: 40px
+    right: 20px
+    z-index: 9999
+    text-align: center
+    padding-top: 12px
+    border-radius: 100%
+    box-shadow: 0 2px 8px 0 rgba($midnight, 0.5)
+
+    @media (min-width: $screen-sm)
+      right: 5%
+
+    .icon_arrow
+      width: 20px
+      transform: rotate(-90deg)
+
+      .dark
+        stroke: #fff
+
   #code-of-conduct
 
     .coc-title
