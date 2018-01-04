@@ -133,7 +133,7 @@
     position: fixed
     bottom: 40px
     right: 20px
-    z-index: 9999
+    z-index: 1030
     text-align: center
     padding-top: 12px
     border-radius: 100%
@@ -149,11 +149,52 @@
       .dark
         stroke: #fff
 
-  #code-of-conduct
+  #team-members
+    .team-members
+      @extend .flexbox
 
-    .coc-title
-      @extend .body-title
-      
-    .coc-content
-      @extend .body-content
-      white-space: pre-wrap
+    .member
+      width: 100%
+
+      + .member
+        padding-top: 20px
+
+      @media (min-width: $screen-sm)
+        width: 50%
+        min-height: 150px
+
+        + .member
+          padding-top: 0
+
+      @media (min-width: $screen-md)
+        width: calc(100% / 3)
+
+    .member-name
+      padding: 10px 0
+    
+    .member-title
+      color: $marble
+
+    .member-socials
+      text-align: center
+      padding: 0
+      margin: 0
+
+      li
+        position: relative
+        padding: 10px 5px 0
+
+        .media
+          display: inline-block
+          +size(30px, 30px)
+
+          .social_btn_color
+            +transition(all, 0.3s)
+
+          &:hover
+            &.homepage .social_btn_color
+              fill: $midnight
+            &.twitter .social_btn_color
+              fill: #1da1f2
+            &.github .social_btn_color
+              fill: #333
