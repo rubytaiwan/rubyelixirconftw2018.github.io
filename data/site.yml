@@ -65,9 +65,9 @@ teamMember:
     urlGithub: https://github.com/taiansu
   - name: 'Mickey Chen'
     title: 'Organizer'
-    urlHome:
-    urltwitter:
-    urlGithub:
+    urlHome: http://yuchunc.github.io/resume/
+    urltwitter: https://twitter.com/yuchunc
+    urlGithub: https://github.com/yuchunc
   - name: 'Keddie Huang'
     title: 'Event Producer'
     urltwitter: https://twitter.com/Huang_Keddie
