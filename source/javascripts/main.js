@@ -7,8 +7,11 @@
 //= require fastclick/lib/fastclick.js
 //= require scrollreveal/dist/scrollreveal.min.js
 
-var $window = $(window);
 var $document = $(document);
+
+$(function(){
+  document.body.className += "loaded";
+});
 
 $document.ready(function () {
 
