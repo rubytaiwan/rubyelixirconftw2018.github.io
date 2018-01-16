@@ -40,6 +40,10 @@ silver:
     link: http://goldenio.com/
     desc: |-
       黃碼科技致力於開發好維護的網站系統，提供網站系統規劃與開發，網站中長期維護，多團隊專案合作等服務。在生物資料處理方面，也提供資料庫規劃與維護，分析系統規劃與開發，客製化分析程式等服務。
+  - name: 'Skymizer'
+    logo: 'skymizer.svg'
+    link: https://skymizer.com/
+    desc: |-
   - name: 'Speee, Inc.'
     logo: 'speee.svg'
     link: https://speee.jp/
