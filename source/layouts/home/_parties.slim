@@ -1,5 +1,5 @@
-section#parties
-  .section-title Parties
+section.reveal#parties
+  h2.section-title Parties
 
   .parties
 
@@ -17,11 +17,11 @@ section#parties
         .party-info class="#{index.even? ? "ruby" : "elixir"}"
           .date = party.date
           .time.small = party.time
-          = link_to party.locationLink, target: '_blank', class:"location" do
+          = link_to party.locationLink, target: '_blank', rel:'noopener noreferrer', class:"location" do
             | @
             span = party.location
           - if data.site.site.registerLink
-            = link_to data.site.site.registerLink, target: '_blank', class:"btn-minimal" do
+            = link_to data.site.site.registerLink, target: '_blank', rel:'noopener noreferrer', class:"btn-minimal" do
               = party.cfaBtn
           - else
             .btn-minimal.inactive data-balloon="Coming Soon ✨" data-balloon-pos="up"

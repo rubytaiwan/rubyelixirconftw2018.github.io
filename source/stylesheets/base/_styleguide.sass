@@ -7,15 +7,20 @@ $night: #606b85
 $midnight: #3C4A68
 $marble: #CFD7DB
 $dark-grey: #777
+$platinum: #B0BEC5
+$gold: #FDC689
+$silver: #BDBDBD
 
-/* Flexbox for Equal Height */
+/* Flexbox */
 .flexbox
-  display: -webkit-box
-  display: -moz-box
-  display: -ms-flexbox
-  display: -webkit-flex
   display: flex
   flex-flow: row wrap
+
+/* Grid */
+.grid
+  display: grid
+  justify-items: stretch
+  align-items: stretch
 
 .align-center
   position: absolute
@@ -61,20 +66,8 @@ $dark-grey: #777
 
 /* Font Style*/
 .body-title
-  font-size: 20px
-  color: $midnight
-
-  @media (min-width: $screen-sm)
-    font-size: 24px
-
-  &.smaller
-    font-size: 18px
-
-    @media (min-width: $screen-sm)
-      font-size: 20px
-
-.body-content
   font-size: 18px
+  color: $midnight
 
   @media (min-width: $screen-sm)
     font-size: 20px
@@ -84,6 +77,18 @@ $dark-grey: #777
 
     @media (min-width: $screen-sm)
       font-size: 18px
+
+.body-content
+  font-size: 16px
+
+  @media (min-width: $screen-sm)
+    font-size: 18px
+
+  &.smaller
+    font-size: 14px
+
+    @media (min-width: $screen-sm)
+      font-size: 16px
 
 .section-title
   font-family: 'Righteous'
@@ -95,6 +100,14 @@ $dark-grey: #777
 
   @media (min-width: $screen-sm)
     margin-bottom: 60px
+
+.tba
+  font-family: 'Lato'
+  font-weight: bold
+  font-size: 28px
+  letter-spacing: 2px
+  width: 100%
+  margin-bottom: 40px
 
 /* Button */
 .btn-small
@@ -156,13 +169,19 @@ $dark-grey: #777
   +size(120px, 40px)
   display: block
   position: relative
-  border: 2px solid $marble
+  border: 1px solid $marble
   border-radius: 4px
   background: #fff
   margin: 0 auto
   overflow: hidden
   text-align: center
   +hover-effect(0.2s, -3px)
+
+  &:hover
+    background: $marble
+
+    span
+      color: #fff
 
   span
     font-size: 14px
@@ -197,11 +216,44 @@ $dark-grey: #777
     width: 240px
     left: 30px
 
+/** Animation **/
+@keyframes fade-in
+  0%
+    opacity: 0
+  100%
+    opacity: 1
+
+@keyframes scale-in-center
+  0%
+    transform: scale(0)
+  100%
+    transform: scale(1)
+
+@keyframes linearmovX
+  100%
+    transform: translateX(-50%)
+
+@keyframes linearmovY
+  100%
+    transform: translateY(-50%)
+
+@keyframes heartbeat
+  0%
+    transform: scale(1.1)
+  50%
+    transform: scale(0.8)
+  100%
+    transform: scale(1.1)
+
 body
   background: #fff
   font-family: 'Lato', 'Noto Sans TC', sans-serif
   font-weight: normal
   color: $midnight
+  opacity: 0
+
+  &.loaded
+    animation: fade-in 1s forwards
 
   @media screen and (max-width: 1024px)
     overflow-x: hidden
@@ -263,6 +315,10 @@ body
           p
             font-size: 16px
             line-height: 24px
+            white-space: pre-wrap
+
+            + p
+              margin-top: 20px
           a
             word-break: break-all
           blockquote
@@ -298,4 +354,4 @@ body
         padding-top: 0
 
         @media (min-width: $screen-sm)
-          padding: 0 40px 40px
+          padding: 0 40px 25px

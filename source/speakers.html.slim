@@ -3,5 +3,13 @@ title: Speakers | Ruby X Elixir Conf Taiwan 2018
 cfa: Submit A Paper
 ---
 .main
-  = partial 'layouts/coming'
+  section#speakers
+    h1.section-title Speakers
+
+    .speaker-list.sidepage
+      - data.speaker.general.each do |speaker|
+        = partial('layouts/_speakerBlock', locals: { speaker: speaker } )
+
+    .section-title.text-center.tba More TBA
+
   = partial 'layouts/sponsors'

@@ -1,5 +1,5 @@
-section#venue
-  .section-title Venue
+section.reveal#venue
+  h2.section-title Venue
 
   .venue
     .venue-img
@@ -20,5 +20,5 @@ section#venue
             | /
           = data.site.site.eventAddress_cht
 
-      = link_to data.site.site.eventGoogleMap, target: '_blank', class:"btn btn-small google-map" do
+      = link_to data.site.site.eventGoogleMap, target: '_blank', rel:'noopener noreferrer', class:"btn btn-small google-map" do
         span Google Map +

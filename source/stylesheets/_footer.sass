@@ -126,11 +126,75 @@
       font-size: 14px
       color: $marble
 
-  #code-of-conduct
+  .scrollup
+    @extend .main-background
+    display: none
+    +size(40px, 40px)
+    position: fixed
+    bottom: 40px
+    right: 20px
+    z-index: 1030
+    text-align: center
+    padding-top: 12px
+    border-radius: 100%
+    box-shadow: 0 2px 8px 0 rgba($midnight, 0.5)
 
-    .coc-title
-      @extend .body-title
-      
-    .coc-content
-      @extend .body-content
-      white-space: pre-wrap
+    @media (min-width: $screen-sm)
+      right: 5%
+
+    .icon_arrow
+      width: 20px
+      transform: rotate(-90deg)
+
+      .dark
+        stroke: #fff
+
+  #team-members
+    .team-members
+      @extend .flexbox
+
+    .member
+      width: 100%
+
+      + .member
+        padding-top: 20px
+
+      @media (min-width: $screen-sm)
+        width: 50%
+        min-height: 150px
+
+        + .member
+          padding-top: 0
+
+      @media (min-width: $screen-md)
+        width: calc(100% / 3)
+
+    .member-name
+      padding: 10px 0
+    
+    .member-title
+      color: $marble
+
+    .member-socials
+      text-align: center
+      padding: 0
+      margin: 0
+
+      li
+        position: relative
+        padding: 10px 5px 0
+
+        .media
+          display: inline-block
+          +size(30px, 30px)
+
+          .social_btn_color
+            +transition(all, 0.3s)
+
+          &:hover
+            &.homepage .social_btn_color
+              fill: $midnight
+            &.twitter .social_btn_color
+              fill: #1da1f2
+            &.github .social_btn_color
+              fill: #333

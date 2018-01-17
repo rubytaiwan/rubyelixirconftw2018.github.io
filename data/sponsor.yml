@@ -3,5 +3,57 @@ elixir:
 ruby_gem:
 elixir_hex:
 platinum:
+  - name: 'Cyberbiz'
+    logo: 'cyberbiz.svg'
+    link: https://www.cyberbiz.co
+    desc: |-
+      Cyberbiz 提供一站式［新零售］解決方案，協助店家快速架設品牌官網，並提供智慧倉儲以及實體店面O2O服務，全面整合［線上+線下+物流］。
+  - name: 'SHOPLINE'
+    logo: 'shopline.svg'
+    link: https://shopline.tw/
+    desc: |-
+      SHOPLINE 主要產品為電商自助平台，整合網站設計、商品管理和金物流系統，為電商賣家提供簡單上手的架站工具。自 2013 年創辦以來，已經有超過 80,000 名來自香港、台灣、東南亞等地的商家使用 SHOPLINE 的服務，讓 SHOPLINE 成為在亞洲市場的行業領軍者。
+      SHOPLINE 提供了一個功能齊全的品牌開店配套，讓商家可以輕鬆架設功能完善的個人化網路商店，並專注提供用戶體驗。店主不僅在短時間內就可以獲得對應所有流動裝置的獨立網店，更可以同時擁有專業的訂單管理系統、多元化的物流及支付網關、風格多樣的店舖設計、強大的增值服務模式、本地語言及客戶服務支持與數據流量分析等後台管理工具。
+      2014 美國 500 Startups 第十屆新創團隊
+      2015 香港資訊及通訊科技獎--最佳資訊科技初創企業（商業市場）優異證書
+      2016 阿里巴巴集團「香港創業者基金」首批名單
+      2017 成為Google大中華區第一個電商合作夥伴
 gold:
+  - name: 'Incubit, Inc.'
+    logo: 'incubit.svg'
+    link: http://incubit.co.jp/
+    desc: |-
+      來自日本並擁有國際化團隊的 AI 新創公司。在 2016 年於 IBM Watson 駭客松獲頒優勝後，陸續與醫療 / 農業 / 機器人 / 教育以及電商等產業合作整合人工智慧並替客戶創造商業價值。
+      自 2017 年已成為 Nvidia 合作夥伴並將投入更多於 IoT 及影像的開發專案。
+      
+      A Japanese startup focusing in AI solution integration. Our members came from globally, and after won the first price in 2016 IBM Watson hackathon, Incubit already cooperated with companies from several industries such as medical / agriculture / robotics / education and E-commerce to integrate AI solutions to create new value to their business.
+      In 2017, Incubit became a partner with Nvidia and will contribute more in IoT and video solutions.
 silver:
+  - name: 'MySQL'
+    logo: 'mysql.svg'
+    link: https://www.mysql.com/
+    desc: |-
+      MySQL is the world's most popular OS database. With its proven performance, reliability and ease-of-use, MySQL has become the leading database choice for web-based applications, used by high profile web properties including Facebook, Twitter, YouTube, Yahoo! and more. Additionally, it is an extremely popular choice as embedded database, distributed by over 3,000 ISVs & OEMs. To organizations in need of an open source, ACID-compliant transactional database delivering real-time in-memory performance and 99.999 percent availability, Oracle offers MySQL Cluster.
+      Oracle drives MySQL innovation, constantly improving MySQL solutions and delivering new capabilities to power next generation web, cloud, mobile and embedded applications. 
+  - name: '黃碼科技有限公司 Goldenio Technology'
+    logo: 'goldenio.svg'
+    link: http://goldenio.com/
+    desc: |-
+      黃碼科技致力於開發好維護的網站系統，提供網站系統規劃與開發，網站中長期維護，多團隊專案合作等服務。在生物資料處理方面，也提供資料庫規劃與維護，分析系統規劃與開發，客製化分析程式等服務。
+  - name: 'Skymizer'
+    logo: 'skymizer.svg'
+    link: https://skymizer.com/
+    desc: |-
+  - name: 'Speee, Inc.'
+    logo: 'speee.svg'
+    link: https://speee.jp/
+    desc: |-
+      Speee has a mission to "Contribute to growth of society by creating new service which has an impact on our world" and deliver high added value through both Business-to-Business and Business-to-Consumer services.
+      We invited Mr.Yukihiro Matsumoto, who invented Ruby, as an engineering adviser and Mr.Masahiro Ihara, who had been working for Cookpad as an engineering manager, to reform our engineering department's system and organization structure.
+      We are now aiming to become "Speee as a technology company".
+partner:
+  - name: '五倍紅寶石股份有限公司'
+    logo: '5xruby.svg'
+    link: https://5xruby.tw/
+    desc: |-
+      「五倍紅寶石」是由幾位台灣 Ruby 社群的朋友共同成立的一家公司，希望透過教育訓練、企業培訓等講座，將 Ruby 推廣到校園、企業、開發者。提供的服務包括：程式教育訓練、企業技術培訓與諮詢、活動場地租借與專案委托製作。

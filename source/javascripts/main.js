@@ -5,11 +5,21 @@
 //= require bootstrap-sass/assets/javascripts/bootstrap/transition.js
 //= require jquery.easing/js/jquery.easing.min.js
 //= require fastclick/lib/fastclick.js
+//= require scrollreveal/dist/scrollreveal.min.js
 
-var $window = $(window);
 var $document = $(document);
 
+$(function(){
+  document.body.className += "loaded";
+});
+
 $document.ready(function () {
+
+  WebFont.load({
+    google: {
+      families: ['Lato', 'Righteous']
+    }
+  });
 
   // Enable FastClick
 	FastClick.attach(document.body);
@@ -54,6 +64,26 @@ $document.ready(function () {
 
   $('.modal').on('hidden.bs.modal', function () {
       revertToOriginalURL();
+  });
+
+  // Scroll Reveal
+  window.sr = ScrollReveal();
+  sr.reveal('.reveal');
+
+  // Scroll Up
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 100) {
+      $('.scrollup').fadeIn();
+    } else {
+      $('.scrollup').fadeOut();
+    }
+  });
+  
+  $('.scrollup').click(function () {
+    $("html, body").animate({
+      scrollTop: 0
+    }, 600, 'easeInOutExpo');
+    return false;
   });
 
   // Toggle More New

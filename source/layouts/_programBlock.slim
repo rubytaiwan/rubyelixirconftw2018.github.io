@@ -1,0 +1,66 @@
+.speaker.modaled data-toggle="modal" data-target="##{speaker.name.gsub(/[\s()]+/, '-').gsub(/[-]$/, '').downcase.unicode_normalize(:nfkd).encode('ASCII', replace: '')}"
+  .speaker-avatar
+    = image_tag 'speakers/' + speaker.avatar, class:'speaker-img', alt: speaker.name, title: speaker.name
+  .speaker-simpleinfo
+    .speaker-subject.body-title.text-center = speaker.subject
+    .speaker-name.body-content.text-center = speaker.name
+    - if speaker.lang == "en"
+      span.tag.lang EN
+    - else
+      span.tag.lang CHT
+    - if speaker.type == "ruby"
+      span.tag.ruby Ruby
+    - elsif speaker.type == "elixir"
+      span.tag.elixir Elixir
+
+/** Speaker Info (Modal) **/
+.modal role="dialog" tabindex="-1" id= speaker.name.gsub(/[\s()]+/, '-').gsub(/[-]$/, '').downcase.unicode_normalize(:nfkd).encode('ASCII', replace: '')
+  .modal-dialog role="document"
+    .modal-content
+      .modal-header
+        button.close aria-label="Close" data-dismiss="modal" type="button"
+          span aria-hidden="true"  &times;
+      .modal-body
+        .content
+          .speaker-info
+            .speaker-avatar
+              = image_tag 'speakers/' + speaker.avatar, class:'speaker-img', alt: speaker.name, title: speaker.name
+            .speaker-name.body-title.text-center = speaker.name
+            .speaker-title.body-content.smaller.text-center = speaker.title
+            = inline_svg "assets/deco"
+            .speaker-bio.body-content.smaller = speaker.bio
+            /** Socila Media **/
+            ul.speaker-socials.list-inline
+              - if speaker.urlHome
+                li
+                  = link_to speaker.urlHome, target: '_blank', rel:'noopener noreferrer', class:"media homepage"  do
+                    = inline_svg "assets/btn-homepage"
+              - if speaker.urltwitter
+                li
+                  = link_to speaker.urltwitter, target: '_blank', rel:'noopener noreferrer', class:"media twitter"  do
+                    = inline_svg "assets/btn-twitter"
+              - if speaker.urlGithub
+                li
+                  = link_to speaker.urlGithub, target: '_blank', rel:'noopener noreferrer', class:"media github"  do
+                    = inline_svg "assets/btn-github"
+
+          /** Talk Info **/
+          .speaker-program class="#{speaker.type == 'ruby' ? "ruby" : "elixir"}"
+            - if speaker.subject
+              .speaker-subject.body-title.text-center = speaker.subject
+              = inline_svg "assets/deco"
+              .body-content
+                = markdown(speaker.summary)
+            - else
+              .tba.text-center TBA
+            .assests
+              - if speaker.slideUrl
+                = link_to speaker.slideUrl, target: '_blank', rel:'noopener noreferrer', class:"btn" do
+                  span Slide
+              - if speaker.videoUrl
+                = link_to speaker.videoUrl, target: '_blank', rel:'noopener noreferrer', class:"btn" do
+                  span Vedio
+            
+        .modal-footer
+          button.btn.btn-close type="button" data-dismiss="modal"
+            span Close

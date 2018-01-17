@@ -1,5 +1,5 @@
 section#news
-  .section-title News
+  h2.section-title News
 
   .news-list
     - if data.news.news
@@ -9,7 +9,7 @@ section#news
             .news-date
               span = format_date(post.date)
             - if post.link
-              a.news-title href= post.link target="_blank"
+              a.news-title href= post.link target="_blank" rel="noopener noreferrer"
                 span = post.title
             - else
               .news-title
@@ -27,7 +27,7 @@ section#news
                     article.content
                       .news-date
                         span = format_date(post.date)
-                      .news-title = post.title
+                      h3.news-title = post.title
                       = inline_svg "assets/deco"
                       .news-content
                         = markdown(post.content)

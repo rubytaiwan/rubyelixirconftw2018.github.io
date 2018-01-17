@@ -6,16 +6,15 @@ footer#footer
     .footer-list
       ul.nav.main
         li.modaled data-toggle="modal" data-target="#code-of-conduct" Code of Conduct
-        li.modaled data-toggle="modal" data-target="#team-members" 
-          span data-balloon="Organizing 💡" data-balloon-pos="up" Team Members
+        li.modaled data-toggle="modal" data-target="#team-members" Team Members
         - data.site.site.socialMedia.drop(2).each do |item|
           li
-            = link_to item.title, item.link, target: '_blank'
+            = link_to item.title, item.link, target: '_blank', rel:'noopener noreferrer'
       ul.nav.social
         - data.site.site.socialMedia.take(2).each_with_index do |item, index|
           li 
             = ("Twiter" if index == 0) || ("Facebook" if index == 1)
-            = link_to item.title, item.link, target: '_blank'
+            = link_to item.title, item.link, target: '_blank', rel:'noopener noreferrer'
         li 
           | E-mail
           = mail_to data.site.site.contactEmail, data.site.site.contactEmail
@@ -27,10 +26,42 @@ footer#footer
               button.close aria-label="Close" data-dismiss="modal" type="button"
                 span aria-hidden="true"  &times;
             .modal-body
-              article.content
-                .coc-title Code of Conduct
+              .content
+                .coc-title.body-title.text-center Code of Conduct
                 = inline_svg "assets/deco"
-                .coc-content = markdown(data.site.site.coc)
+                .coc-content.body-content = markdown(data.site.coc)
+            .modal-footer
+              button.btn.btn-close type="button" data-dismiss="modal"
+                span Close
+
+      .modal role="dialog" tabindex="-1" id="team-members"
+        .modal-dialog role="document"
+          .modal-content
+            .modal-header
+              button.close aria-label="Close" data-dismiss="modal" type="button"
+                span aria-hidden="true"  &times;
+            .modal-body
+              .content
+                .team-title.body-title.text-center Team Members
+                = inline_svg "assets/deco"
+                .team-members
+                  - data.site.teamMember.each do |member|
+                    .member
+                      .member-name.body-title.text-center = member.name
+                      .member-title.body-content.text-center = member.title
+                      ul.member-socials.list-inline
+                        - if member.urlHome
+                          li
+                            = link_to member.urlHome, target: '_blank', rel:'noopener noreferrer', class:"media homepage"  do
+                              = inline_svg "assets/btn-homepage"
+                        - if member.urltwitter
+                          li
+                            = link_to member.urltwitter, target: '_blank', rel:'noopener noreferrer', class:"media twitter"  do
+                              = inline_svg "assets/btn-twitter"
+                        - if member.urlGithub
+                          li
+                            = link_to member.urlGithub, target: '_blank', rel:'noopener noreferrer', class:"media github"  do
+                              = inline_svg "assets/btn-github"
             .modal-footer
               button.btn.btn-close type="button" data-dismiss="modal"
                 span Close
@@ -43,6 +74,9 @@ footer#footer
           input name="b_f8697172394cf1829922f9d1e_406c3aa7c5" tabindex="-1" type="text" value="" /
         span.input-group-btn
           button.btn#mc-embedded-subscribe type="submit" name="subscribe" SIGN UP
+
+  a.scrollup href="#" 
+    = inline_svg "assets/icon_arrow"
 
   .footer-copyright
     .copyright.text-center © Ruby X Elixir Conf Taiwan 2018

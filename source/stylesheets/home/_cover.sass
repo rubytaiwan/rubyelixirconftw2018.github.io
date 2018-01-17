@@ -8,13 +8,13 @@
   .cover-bg 
     .bg-deco, .bg-image
       position: absolute
-      transition: all 0.2s ease-out
 
     /** Deco Elements **/
     .deco_cross
       width: 20px
       top: 100px
       right: 100px
+      animation: fade-in .8s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.3s both, heartbeat 2s ease-in-out infinite both
 
       @media (min-width: $screen-sm)
         width: 25px
@@ -30,14 +30,23 @@
       width: 20px
       top: 100px
       left: 40px
+      display: none
+      animation: fade-in .8s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.5s both, heartbeat 2s ease-in-out infinite both
 
+      @media (min-width: $screen-sm)
+        display: block
+      
       @media (min-width: $screen-md)
         left: -30px
 
     .deco_wave
-      width: 140px
+      width: 150px
       top: 975px
       left: -55px
+      animation: fade-in .8s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2.9s both
+
+      .sinewave
+        animation: linearmovX 10s linear infinite alternate
 
       @media (min-width: $screen-sm)
         top: 915px
@@ -51,6 +60,10 @@
       height: 150px
       top: 0
       right: 10px
+      animation: fade-in .8s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2.5s both
+
+      .sinewave
+        animation: linearmovY 10s linear infinite alternate
 
       @media (min-width: $screen-sm)
         height: 180px
@@ -64,6 +77,7 @@
       width: 42px
       top: 400px
       left: 80px
+      animation: fade-in .8s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2s both, heartbeat 2s ease-in-out infinite 1.2s both
 
       @media (min-width: $screen-md)
         top: 520px
@@ -73,6 +87,7 @@
       width: 30px
       top: 300px
       right: 60px
+      animation: fade-in .8s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2.5s both, heartbeat 2s ease-in-out infinite .8s both
 
       @media (min-width: $screen-md)
         top: 260px
@@ -82,6 +97,7 @@
       width: 42px
       top: 875px
       right: 40px
+      animation: fade-in .8s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2.8s both, heartbeat 2s ease-in-out infinite .5s both
 
       @media (min-width: $screen-md)
         top: 875px
@@ -92,6 +108,7 @@
         width: 32px
         top: 670px
         right: 130px
+        animation: fade-in .8s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2s both, heartbeat 2s ease-in-out infinite 1s both
 
         @media (min-width: $screen-md)
           top: 790px
@@ -102,6 +119,7 @@
       +size(150px, 150px)
       top: 90px
       left: -30px
+      animation: scale-in-center .6s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2.3s both
 
       @media (min-width: $screen-sm)
         +size(200px, 200px)
@@ -116,6 +134,7 @@
       width: 180px
       top: 945px
       right: 0
+      animation: scale-in-center .7s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2.4s both
 
       @media (min-width: $screen-sm)
         width: 240px
@@ -133,6 +152,7 @@
         +size(200px, 200px)
         top: 550px
         left: -30px
+        animation: scale-in-center .8s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2.5s both
 
       @media (min-width: $screen-md)
         +size(300px, 300px)
@@ -151,9 +171,11 @@
   .event
     margin: 40px auto
     color: $midnight
+    animation: fade-in 1.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.3s both
 
     @media (min-width: $screen-sm)
       margin: 60px auto
+      margin-top: 40px
 
     .event-date
       font-family: 'Righteous'
@@ -181,6 +203,7 @@
         letter-spacing: 2.5px
 
   .cfa
+    animation: fade-in 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2s both
   
     .btn-large
       display: block
@@ -197,6 +220,7 @@
   .social-media
     padding: 0
     margin: 40px 0 0
+    animation: fade-in 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2.3s both
 
     @media (min-width: $screen-sm)
       margin-top: 60px
