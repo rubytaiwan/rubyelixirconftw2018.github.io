@@ -40,6 +40,11 @@ silver:
     link: http://goldenio.com/
     desc: |-
       黃碼科技致力於開發好維護的網站系統，提供網站系統規劃與開發，網站中長期維護，多團隊專案合作等服務。在生物資料處理方面，也提供資料庫規劃與維護，分析系統規劃與開發，客製化分析程式等服務。
+  - name: 'Cardinal Blue Software, Inc.'
+    logo: 'piccollage.svg'
+    link: http://piccollage.com/
+    desc: |-
+      Party with your photos! PicCollage is a top photo app for iOS and Android with over 150 million downloads. It lets you make collages with images, text, stickers, GIFs, and videos, and share with friends and followers. We are building a community of millions of people who create, remix and share visual content in fun and novel ways. PicCollage brings photos and people together.
   - name: 'Skymizer'
     logo: 'skymizer.svg'
     link: https://skymizer.com/
