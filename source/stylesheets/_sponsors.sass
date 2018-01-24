@@ -57,14 +57,27 @@
 
         .logo
           height: 100%
+
+      &.ruby .supporter
+
+        .logo
+          max-width: 100%
+
+        @media (min-width: $screen-sm)
+
+          .logo
+            max-width: 320px
             
       &.platinum .supporter
+
+        .logo
+          max-width: 100%
         
         @media (min-width: $screen-sm)
           width: 50%
 
-        .logo
-          max-width: 280px
+          .logo
+            max-width: 280px
 
       &.gold .supporter
 
@@ -107,6 +120,13 @@
 
         &.ruby
           border: 1px solid $ruby-light
+
+          .logo
+            max-width: 100%
+
+          @media (min-width: $screen-sm)
+            .logo
+              max-width: 320px
 
         &.elixir
           border: 1px solid $elixir-light
