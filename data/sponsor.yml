@@ -1,7 +1,3 @@
-ruby:
-elixir:
-ruby_gem:
-elixir_hex:
 platinum:
   - name: 'Cyberbiz'
     logo: 'cyberbiz.svg'
@@ -57,6 +53,12 @@ silver:
       Speee has a mission to "Contribute to growth of society by creating new service which has an impact on our world" and deliver high added value through both Business-to-Business and Business-to-Consumer services.
       We invited Mr.Yukihiro Matsumoto, who invented Ruby, as an engineering adviser and Mr.Masahiro Ihara, who had been working for Cookpad as an engineering manager, to reform our engineering department's system and organization structure.
       We are now aiming to become "Speee as a technology company".
+party:
+  - name: 'GitHub'
+    logo: 'github.svg'
+    link: https://github.com/
+    desc: |-
+      GitHub is how people build software. With a community of more than 10 million people, developers can discover, use, and contribute to over 25 million projects using a powerful collaborative development workflow.
 partner:
   - name: '五倍紅寶石股份有限公司'
     logo: '5xruby.svg'
