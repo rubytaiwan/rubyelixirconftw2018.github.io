@@ -23,6 +23,13 @@ platinum:
       2016 阿里巴巴集團「香港創業者基金」首批名單
       2017 成為Google大中華區第一個電商合作夥伴
 gold:
+  - name: 'Diing Inc.'
+    logo: 'diing.svg'
+    link: https://www.diing.com/
+    desc: |-
+      我們是科技狂熱份子，希望能夠重新塑造人們與這世界互動的方式，如果你對物聯網與區塊鏈感興趣，歡迎加入我們！ join@diing.com
+
+      Fascinated by the IoT and blockchain-based technologies? Interested in building great products to reshaped the way we interact with the world around us? If so, we want you. 💪 join@diing.com
   - name: 'Incubit, Inc.'
     logo: 'incubit.svg'
     link: http://incubit.co.jp/
