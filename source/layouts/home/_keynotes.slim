@@ -2,8 +2,9 @@ section#keynotes
   h2.section-title Keynote Speakers
 
   .keynote-speakers
-    - data.speaker.keynotes.each do |speaker|
-      = partial('layouts/_speakerBlock', locals: { speaker: speaker } )
+    - data.speaker.each do |speaker|
+      - if speaker.keynote ?
+        = partial('layouts/_speakerBlock', locals: { speaker: speaker } )
 
   = link_to '../speakers', class:"btn btn-small speakers-more" do
     span All Speakers +

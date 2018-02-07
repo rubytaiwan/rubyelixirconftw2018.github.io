@@ -19,17 +19,17 @@
 
   /** Speaker Info **/
   .speaker-avatar
-    +size(240px, 240px)
+    +size(200px, 200px)
     @extend .main-background
-    padding: 8px
+    padding: 6px
     margin: 0 auto
-    -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)
-    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)
+    -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)
 
     .speaker-img
-      width: 224px
-      -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)
-      clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)
+      width: 188px
+      -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)
+      clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)
       transition: all 0.2s ease-out
 
   .speaker-name
@@ -101,6 +101,9 @@
             padding: 0 10px
             margin-bottom: 30px
 
+            p
+              font-size: 16px
+
             @media (min-width: $screen-sm)
               padding: 0 40px
 
@@ -110,7 +113,7 @@
         .speaker-program
           @extend .flexbox
           justify-content: center
-          align-content: center
+          align-content: flex-start
           width: 100%
           padding: 40px 20px
           margin: 30px 0
@@ -131,7 +134,7 @@
 
           @media (min-width: $screen-sm)
             margin: 40px 0
-            padding: 40px
+            padding: 60px 40px 40px
 
           @media (min-width: $screen-md)
             width: calc(60% - 60px)
@@ -141,7 +144,21 @@
           .speaker-subject
             width: 100%
             font-weight: bold
+            letter-spacing: 0.5px
             color: #fff
+
+          .speaker-summery 
+          
+            p
+              font-size: 16px
+              letter-spacing: 0.5px
+
+            a
+              color: #fff
+              border-bottom: 1px dotted #fff
+
+              &:hover
+                color: $marble
 
           .assests
             @extend .flexbox
@@ -168,7 +185,3 @@
 
               @media (min-width: $screen-md)
                 margin-top: 40px
-
-          .tba
-            align-self: center
-            margin-bottom: 0

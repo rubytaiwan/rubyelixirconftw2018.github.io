@@ -7,9 +7,7 @@ cfa: Submit A Paper
     h1.section-title Speakers
 
     .speaker-list.sidepage
-      - data.speaker.general.each do |speaker|
+      - data.speaker.each do |speaker|
         = partial('layouts/_speakerBlock', locals: { speaker: speaker } )
-
-    .section-title.text-center.tba More TBA
 
   = partial 'layouts/sponsors'
