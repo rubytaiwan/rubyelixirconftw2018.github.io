@@ -11,8 +11,5 @@ cfa: Submit A Paper
         = partial('layouts/_speakerBlock', locals: { speaker: speaker } )
 
     .section-title.text-center.tba More TBA
-    .cfa.text-center
-      = link_to current_page.data.cfaLink || data.site.site.cfpLink , target: '_blank', rel:'noopener noreferrer', class:"btn-large submit-paper" do
-        span = current_page.data.cfa
 
   = partial 'layouts/sponsors'

@@ -2,54 +2,14 @@ section.reveal.support
   h2.section-title Sponsors
 
   .support-list.partial
-    - if data.sponsor.ruby
-      - data.sponsor.ruby.each do |sponsor|
-        .supporter.diamond
-          .level-title.ruby Ruby
-          = link_to sponsor.link, target: '_blank', rel:'noopener noreferrer', class:"supporter-logo" do
-            = image_tag 'sponsors/' + sponsor.logo, class:'logo', alt: sponsor.name, title: sponsor.desc
-          
-    - if data.sponsor.elixir
-      - data.sponsor.elixir.each do |sponsor|
-        .supporter.diamond
-          .level-title.elixir Elixir
-          = link_to sponsor.link, target: '_blank', rel:'noopener noreferrer', class:"supporter-logo" do
-            = image_tag 'sponsors/' + sponsor.logo, class:'logo', alt: sponsor.name, title: sponsor.desc
-
-    - if data.sponsor.ruby_gem
-      - data.sponsor.ruby_gem.each do |sponsor|
-        .supporter.diamond
-          .level-title.ruby_gem Gem
-          = link_to sponsor.link, target: '_blank', rel:'noopener noreferrer', class:"supporter-logo" do
-            = image_tag 'sponsors/' + sponsor.logo, class:'logo', alt: sponsor.name, title: sponsor.desc
-
-    - if data.sponsor.elixir_hex
-      - data.sponsor.elixir_hex.each do |sponsor|
-        .supporter.diamond
-          .level-title.elixir_hex Hex
-          = link_to sponsor.link, target: '_blank', rel:'noopener noreferrer', class:"supporter-logo" do
-            = image_tag 'sponsors/' + sponsor.logo, class:'logo', alt: sponsor.name, title: sponsor.desc
-
-    - if data.sponsor.platinum
-      .level-title.platinum Platinum
-      - data.sponsor.platinum.each do |sponsor|
-        .supporter.platinum
-          = link_to sponsor.link, target: '_blank', rel:'noopener noreferrer', class:"supporter-logo" do
-            = image_tag 'sponsors/' + sponsor.logo, class:'logo', alt: sponsor.name, title: sponsor.desc
-
-    - if data.sponsor.gold
-      .level-title.gold Gold
-      - data.sponsor.gold.each do |sponsor|
-        .supporter.gold
-          = link_to sponsor.link, target: '_blank', rel:'noopener noreferrer', class:"supporter-logo" do
-            = image_tag 'sponsors/' + sponsor.logo, class:'logo', alt: sponsor.name, title: sponsor.desc
-
-    - if data.sponsor.silver
-      .level-title.silver Silver
-      - data.sponsor.silver.each do |sponsor|
-        .supporter.silver
-          = link_to sponsor.link, target: '_blank', rel:'noopener noreferrer', class:"supporter-logo" do
-            = image_tag 'sponsors/' + sponsor.logo, class:'logo', alt: sponsor.name, title: sponsor.desc
+    - data.sponsor.each do |level|
+      - level.take(1).each do |title|
+        .support-block class="#{title}"
+          .level-title class="#{title}" #{title.capitalize}
+          - level.drop(1).each do |supporter|
+            - supporter.each do |sponsor|
+              = link_to sponsor.link, target: '_blank', rel:'noopener noreferrer', class:"supporter" do
+                = image_tag 'sponsors/' + sponsor.logo, class:'logo', alt: sponsor.name, title: sponsor.desc
 
   = link_to data.site.site.supportLink, target: '_blank', rel:'noopener noreferrer', class:"btn btn-small" do
     span Support Us +

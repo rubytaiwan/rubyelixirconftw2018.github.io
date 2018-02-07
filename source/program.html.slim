@@ -1,6 +1,5 @@
 ---
 title: Program | Ruby X Elixir Conf Taiwan 2018
-cfa: Submit A Paper
 ---
 .main
   section#program
@@ -18,7 +17,7 @@ cfa: Submit A Paper
 
       .schedule-table
       
-        .table-header.hidden-xs
+        .table-header.hidden-xs.hidden-sm
           .period
             p.body-content PERIOD
           .agenda
@@ -27,72 +26,40 @@ cfa: Submit A Paper
           .agenda
             p.body-title
               | 1002 Auditorium
+          .agenda
+            p.body-title
+              | 1003 Auditorium
 
-        / Day One
-        .table-body.active#dayOne
-          - data.program.dayOne.each do |item|
-            .session class="#{item.type == "event" ? "merge" : ""}"
-              .period
-                p
-                  = item.period
-                  - if item.duration ?
-                    span.duration.body-content.smaller
-                      | &lpar;&nbsp;
-                      = item.duration
-                      | &nbsp;&rpar;
-              - if item.agenda ?
-                .agenda
-                  .venue
-                    span.main 1001
-                  p.body-content.event = item.agenda
-                .agenda.hidden-xs
-              - else
-                .agenda
-                  .venue
-                    span.main 1001
-                  - find_speaker_by(item.speakerOne) do |speaker|
-                    = partial('layouts/_programBlock', locals: { speaker: speaker } )
-                - if item.speakerTwo ?
+        - ['dayOne', 'dayTwo'].each_with_index do |day, index|
+          .table-body id="#{day}" class="#{index == 0 ? "active" : ""}"
+            - data.program.send(day).each do |item|
+              .session class="#{item.type == "event" ? "merge" : ""}#{item.type == "break" ? "merge break" : ""}"
+                .period
+                  p
+                    = item.period
+                / Agenda /
+                - if item.agenda ?
+                  .agenda
+                    p.body-content.event = item.agenda
+                / Speakers /
+                - else
                   .agenda
                     .venue
-                      span.sub 1002
-                    - find_speaker_by(item.speakerTwo) do |speaker|
+                      span.main 1001
+                    - find_speaker_by(item.speakerOne) do |speaker|
                       = partial('layouts/_programBlock', locals: { speaker: speaker } )
-                - else
-                  .agenda.hidden-xs
-
-        / Day Two
-        .table-body#dayTwo
-          - data.program.dayTwo.each do |item|
-            .session class="#{item.type == "event" ? "merge" : ""}"
-              .period
-                p
-                  = item.period
-                  - if item.duration ?
-                    span.duration.body-content.smaller
-                      | &lpar;&nbsp;
-                      = item.duration
-                      | &nbsp;&rpar;
-              - if item.agenda ?
-                .agenda
-                  .venue
-                    span.main 1001
-                  p.body-content.event = item.agenda
-                .agenda.hidden-xs
-              - else
-                .agenda
-                  .venue
-                    span.main 1001
-                  - find_speaker_by(item.speakerOne) do |speaker|
-                    = partial('layouts/_programBlock', locals: { speaker: speaker } )
-                - if item.speakerTwo ?
-                  .agenda
-                    .venue
-                      span.sub 1002
-                    - find_speaker_by(item.speakerTwo) do |speaker|
-                      = partial('layouts/_programBlock', locals: { speaker: speaker } )
-                - else
-                  .agenda.hidden-xs
+                  - if item.speakerTwo ?
+                    .agenda
+                      .venue
+                        span.sub 1002
+                      - find_speaker_by(item.speakerTwo) do |speaker|
+                        = partial('layouts/_programBlock', locals: { speaker: speaker } )
+                  - if item.speakerThree ?
+                    .agenda
+                      .venue
+                        span.sub 1003
+                      - find_speaker_by(item.speakerThree) do |speaker|
+                        = partial('layouts/_programBlock', locals: { speaker: speaker } )
       
         - if data.site.site.interpretationLink ?
           .interpretation.body-content 

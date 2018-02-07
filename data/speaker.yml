@@ -60,7 +60,7 @@ general:
     title: Creator of Elixir, Plataformatec
     bio: |-
       Plataformatec co-founder and creator of Elixir Lang. I have signed off from Twitter indefinitely, RTs are automated.
-    subject: Beware of Alpha Syndrome
+    subject:
     summary: |-
     urlHome:
     urltwitter: https://twitter.com/josevalim
@@ -74,7 +74,7 @@ general:
     title: Committer of Ruby and Rails
     bio: |-
       Rails committer. Ruby committer. amatsuda on GitHub. Creator of Kaminari. Founder of Asakusa.rb. Chief organizer of RubyKaigi. A Ruby Hero in Tokyo.
-    subject: Beware of Alpha Syndrome of Alpha Syndrome
+    subject:
     summary: |-
     urlHome:
     urltwitter: https://twitter.com/a_matsuda

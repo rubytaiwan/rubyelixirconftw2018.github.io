@@ -1,0 +1,28 @@
+dayOne:
+  - period: 9:00 am
+    type: event
+    agenda: Registration
+  - period: 9:50 am
+    type: event
+    agenda: Opening
+  - period: 10:00 am
+    speakerOne: Yukihiro Matsumoto (Matz)
+    speakerTwo: José Valim
+    speakerThree: Akira Matsuda
+  - period: 11:00 pm
+    type: break
+    agenda: Break
+dayTwo:
+  - period: 9:00 am
+    type: event
+    agenda: Registration 2
+  - period: 9:50 am
+    type: event
+    agenda: Opening 2
+  - period: 10:00 am
+    speakerOne: Yukihiro Matsumoto (Matz)
+    speakerTwo: José Valim
+    speakerThree: Akira Matsuda
+  - period: 11:00 pm
+    type: break
+    agenda: Break

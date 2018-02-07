@@ -1,6 +1,13 @@
 news:
-  - title: 'Calling for Speaker'
-    date: 2017/12/07
-    permalink: 'calling-for-speaker'
+  - title: "First round of CFP result has been sent"
+    date: "2018/01/17"
+    permalink: "first-round-of-CFP-result-has-been-sent"
+    content: |-
+      We are pleased to announce the session committee has already reviewed all 72 proposals and sent the first round of the CFP result.
+
+      我們很高興宣布 72 份稿件已審查完畢，並於今日個別發送第一波入選名單。
+  - title: "Calling for Speaker"
+    date: "2017/12/07"
+    permalink: "calling-for-speaker"
     content: |-
       We are calling for speaker now, send you proposals at https://cfp.rubyconf.tw/activities/2018

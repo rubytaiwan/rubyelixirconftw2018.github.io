@@ -1,7 +1,11 @@
 ruby:
-elixir:
-ruby_gem:
-elixir_hex:
+  - name: 'honestbee'
+    logo: 'honestbee.svg'
+    link: https://www.honestbee.tw/
+    desc: |-
+      honestbee誠實蜜蜂的總部位於新加坡，已在亞洲八個國家（日本、香港、新加坡、馬來西亞、印尼、泰國、台灣、菲律賓）推出生鮮熟食外送服務，是目前亞洲最大的生鮮雜貨線上代採購與熟食快送平台，台灣服務範圍已經涵蓋雙北地區、新竹市及竹北地區、台中、高雄。 
+
+      自2015年進入台灣以來，透過在亞洲八個國家的服務經驗，不斷與消費者溝通聽取意見，希望能夠不斷進步，為消費者帶來更好的使用體驗，致力成為消費者生活最好的幫手。
 platinum:
   - name: 'Cyberbiz'
     logo: 'cyberbiz.svg'
@@ -19,6 +23,13 @@ platinum:
       2016 阿里巴巴集團「香港創業者基金」首批名單
       2017 成為Google大中華區第一個電商合作夥伴
 gold:
+  - name: 'Diing Inc.'
+    logo: 'diing.svg'
+    link: https://www.diing.com/
+    desc: |-
+      我們是科技狂熱份子，希望能夠重新塑造人們與這世界互動的方式，如果你對物聯網與區塊鏈感興趣，歡迎加入我們！ join@diing.com
+
+      Fascinated by the IoT and blockchain-based technologies? Interested in building great products to reshaped the way we interact with the world around us? If so, we want you. 💪 join@diing.com
   - name: 'Incubit, Inc.'
     logo: 'incubit.svg'
     link: http://incubit.co.jp/
@@ -39,6 +50,17 @@ silver:
     logo: 'goldenio.svg'
     link: http://goldenio.com/
     desc: |-
+      黃碼科技致力於開發好維護的網站系統，提供網站系統規劃與開發，網站中長期維護，多團隊專案合作等服務。在生物資料處理方面，也提供資料庫規劃與維護，分析系統規劃與開發，客製化分析程式等服務。
+  - name: 'Cardinal Blue Software, Inc.'
+    logo: 'piccollage.svg'
+    link: http://piccollage.com/
+    desc: |-
+      Party with your photos! PicCollage is a top photo app for iOS and Android with over 150 million downloads. It lets you make collages with images, text, stickers, GIFs, and videos, and share with friends and followers. We are building a community of millions of people who create, remix and share visual content in fun and novel ways. PicCollage brings photos and people together.
+  - name: 'Skymizer'
+    logo: 'skymizer.svg'
+    link: https://skymizer.com/
+    desc: |-
+      Skymizer 是頂尖的編譯與虛擬化技術團隊，幫助深度學習與數位貨幣應用的客戶建立各式的虛擬機器與編譯器，縮短 time-to-market 時間；產品為 C/C++ Intelligent Compiler，藉由獨到的編譯器與機器學習技術，幫助軟體團隊自動化的強化軟體品質、增加軟體效能。
   - name: 'Speee, Inc.'
     logo: 'speee.svg'
     link: https://speee.jp/
@@ -46,3 +68,15 @@ silver:
       Speee has a mission to "Contribute to growth of society by creating new service which has an impact on our world" and deliver high added value through both Business-to-Business and Business-to-Consumer services.
       We invited Mr.Yukihiro Matsumoto, who invented Ruby, as an engineering adviser and Mr.Masahiro Ihara, who had been working for Cookpad as an engineering manager, to reform our engineering department's system and organization structure.
       We are now aiming to become "Speee as a technology company".
+party:
+  - name: 'GitHub'
+    logo: 'github.svg'
+    link: https://github.com/
+    desc: |-
+      GitHub is how people build software. With a community of more than 10 million people, developers can discover, use, and contribute to over 25 million projects using a powerful collaborative development workflow.
+partner:
+  - name: '五倍紅寶石股份有限公司'
+    logo: '5xruby.svg'
+    link: https://5xruby.tw/
+    desc: |-
+      「五倍紅寶石」是由幾位台灣 Ruby 社群的朋友共同成立的一家公司，希望透過教育訓練、企業培訓等講座，將 Ruby 推廣到校園、企業、開發者。提供的服務包括：程式教育訓練、企業技術培訓與諮詢、活動場地租借與專案委托製作。
