@@ -1,7 +1,7 @@
 - name: 'Yukihiro Matsumoto (Matz)'
   avatar: 'speakers/matz.jpg'
-  urltwitter: http://twitter.com/yukihiro_matz
-  urlGithub: http://github.com/matz
+  urltwitter: https://twitter.com/yukihiro_matz
+  urlGithub: https://github.com/matz
   keynote:  ''
   type: ruby
   lang: en
@@ -34,6 +34,46 @@
     Rails committer. Ruby committer. amatsuda on GitHub. Creator of Kaminari. Founder of Asakusa.rb. Chief organizer of RubyKaigi. A Ruby Hero in Tokyo.
   subject:
   summary: |-
+- name: 'Aotoki Tsuruya'
+  avatar: https://cfp.rubyconf.tw/uploads/user/photo/7/icon-256.png
+  urltwitter: https://twitter.com/elct9620
+  urlGithub: https://github.com/elct9620
+  type: ruby
+  lang: en
+  title: 'Rails Developer, 5xruby.tw'
+  bio: |-
+    五倍紅寶石的 Ruby 開發者，特技是挖坑。
+  subject: 'How the Rubyist use Blockchain'
+  summary: |-
+    The cryptocurrency becomes popular in recent years. As a Rubyist, how can we deal with this technology? This talk will discuss blockchain, show an example using Ethereum's `geth` to direct operate blockchain and demo how to develop blockchain application.
+- name: 'Christopher Adams'
+  avatar: https://avatars.githubusercontent.com/u/60711?v=3
+  urlGithub: https://github.com/christopheradams
+  urlHome: https://christopheradams.io
+  type: elixir
+  lang: en
+  bio: |-
+    Christopher Adams is a writer, publisher, and software developer. He works on free software and free culture, and specializes in photography and web technologies.
+    He is the maintainer of the community-driven Elixir Style Guide.
+  subject: 'Unplugging the Web with Elixir'
+  summary: |-
+    Elixir has benefited from extensive prior art in the design of web application packages and frameworks, coming out of the rich ecosystems of both Erlang and Ruby. The benefits have been both direct and low-level in the case of Erlang (building on top of the Cowboy HTTP server), and indirect and high-level in the case of Ruby (drawing on Sinatra and Rails). All of these influenes have come together in the Phoenix Framework.
+
+    Although Phoenix touts itself as a MVC framework, it is not strictly limited to the Model-View-Controller pattern. In fact, MVC is a simplistic shorthand that elides rather than clarifies Phoenix&#39;s full potential.
+
+    This talk will peel back Phoenix&#39;s many layers and deconstruct its underlying asumptions. It will explore alternative patterns and architectural styles that can be used productively in Elixir web development.
+- name: 'Damir Svrtan'
+  avatar: https://avatars.githubusercontent.com/u/1437202?v=3
+  urlGithub: https://github.com/DamirSvrtan
+  type: ruby
+  lang: en
+  bio:
+    Damir is a Rails Team Lead at Infinum, a software agency based in Croatia. He is a strong advocate of clean coding, automated testing and passionate about constant improvement. On top of that, he is an organizer of Ruby Meetups in Zagreb, a regular blogger, conference speaker, open source lover and contributor.
+  subject: 'Building Serverless Ruby Bots'
+  summary: |-
+    Want to build a Bot without the hassle of provisioning and managing servers? Amazon’s got a service for that and it’s called AWS Lambda - it executes your code only when needed, scales automatically and you pay only for the compute time you consume.
+
+    There’s one problem with Lambda - it doesn’t support Ruby! Let’s checkout multiple options on how to build a Ruby Bot and package it into an executable which you can run on any machine without the need to actually have Ruby installed.
 - name: 'Delton Ding'
   avatar: https://avatars.githubusercontent.com/u/2303500?v=3
   urlGithub: https://github.com/dsh0416
@@ -46,6 +86,51 @@
     We&#39;ve been debating on the concurrency solution of Ruby for several years. Numerous custom &quot;evented&quot; drivers have been built, but for most of these projects, developers are required to think in the &quot;evented&quot; way to get things work properly, which not only breaks the elegance of Ruby programming, but also greatly increases the complexity of the refactoring process.
 
     We will then think in Ruby, looking for the solution to make your whole web application &quot;evented&quot; with great meta-programming features of Ruby language itself. So that, you could still concentrate on your business models while programming as usual, but the performance may boost to 5 times faster or more without any hesitation.
+- name: 'Emma Haruka Iwao'
+  avatar: https://avatars.githubusercontent.com/u/166481?v=3
+  urlGithub: https://github.com/yuryu
+  type: ruby
+  lang: en
+  bio: |-
+    Emma is a developer advocate for Google Cloud Platform, focusing on application developers experience. She is trying to make Cloud adorable for everyone through events, demos, and online content. Emma was a site reliability engineer at mobile game company companies before coming to Google. Besides software engineering, shes likes games, traveling, and eating delicious food. She has also been working with the Rails Girls community in Japan and teaching Rails to future developers.
+  subject: '12-Factor Rails App and Kubernetes'
+  summary: |-
+    The Twelve-Factor App is a guideline for modern web app development. Kubernetes is an open-source project for container management that gives you great flexibility around application deployments. With containers and Kubernetes, you can deploy and rollback a version, scale out to hundreds of nodes, copy the same configuration to multiple prod, staging, and dev environments, manage deployments through API, and so on.
+
+    This talk will review each of the twelve factors using a simple Rails application as an example and see how Kubernetes helps you run your Rails application. Experience with containers is not required.
+- name: 'Eric Hodel'
+  avatar: https://avatars.githubusercontent.com/u/9831?v=3
+  urlGithub: https://github.com/drbrain
+  type: ruby
+  lang: en
+  title: 'Fastly'
+  bio: |-
+    Eric Hodel is a ruby committer and maintainer of many gems. He works at Fastly building developer tools that allow his coworkers to work on distributed teams with minimum difficulty.
+
+    Ezekiel Templin has worked with people to build systems using networked computers for most of the last 20 years. He also works at Fastly building developer and deployment tools.
+  subject: Devly, a multi-service development environment
+  summary: |-
+    Writing a system alone is hard. Building a system with other people is harder. Building many systems with many people is hardest.
+
+    As our company has grown, we have tried many approaches to user-friendly, shared development environments and learned what works and what doesn&#39;t. We incorporated what we learned into a tool called devly. Devly is used to develop products at Fastly that span many services written in different languages.
+
+    We learned that the design of our tools must be guided by how teams work and communicate. To respond to these needs, Devly allows self-service, control, and safety so that developers can focus on their work.
+- name: 'Faust Dehng'
+  avatar: 'speakers/faust_dehng.jpg'
+  urlGithub: https://github.com/faustdehng
+  type: elixir
+  lang: cht
+  title: 'Senior Executive Coach, Gammatech'
+  bio: |-
+    1962-,
+    Elixir fans,
+    senior executive  coach  of Gammatech
+  subject: 'Elixir on raspberry - a practice for remote control'
+  summary: |-
+    This topic is used to demonstrate that Elixir works fine on the raspberry pi. I develop a generalized player on raspberry named QBox, and use Elixir to build the web server, and then, any web browser can control the product remotely. This system works fine, and, therefore, I think it is helpful for a person who wants to develop applications alike. Because this application almost includes all features of raspberry interfaces (besides GPIO), such as wifi, Bluetooth, touch screen, USB, database, voice, HDMI, so, it is a good practice to demonstrate the abilities about Elixir on raspberry. My goals in this talk are:
+    1) present it works,
+    2) appreciate to the forum, it is very helpful to me in developing,
+    3) announce a resource (me), I am glad to provide my experience to any person interested.
 - name: 'Harisankar P S'
   avatar: https://cfp.rubyconf.tw/uploads/user/photo/39/coderhs-profile.jpg
   urltwitter: https://twitter.com/coderhs
@@ -58,27 +143,6 @@
   subject: 'Embracing failures to prevent meltdown'
   summary: |-
     Its better to appologize to one user for the app being down for one request rather than to appologize to 100 user for the app being slow. Circuit breakers are an age old technology which we use to save our hour from burning down, even if we are inconvenienced about it breaking light to one part of the house, we are going to use the same concept to make sure that one faulty code or small instantaneous increase in load doesn&#39;t bring down the application.
-- name: 'Michael Kohl'
-  avatar: https://avatars.githubusercontent.com/u/47985?v=3
-  urlGithub: https://github.com/citizen428
-  type: ruby
-  lang: en
-  bio: |-
-    Michael Kohl got interested in computers at the young age of 12. Since then, he has worked in systems administration, systems engineering and devops, Linux consulting, IT security and software development. He’s a programming language enthusiast who’s especially enamored with functional programming languages, but also has a long-standing love affair with Ruby which started around 2003. Michael currently serves as CTO of Lockstap Labs and is based in Bangkok, Thailand.
-  subject: 'Sanity on Rails (and more)'
-  summary: |-
-    As web applications grow in scale and complexity, people start realizing that many parts of their domain-specific code do not fit neatly into Rails’ MVC structure. In recent years certain patterns emerged that try to rectify this situation and this talk tried to shed some light on them. Additionally it will explore some of the newer additions to the Ruby web development scene, like Hanami and dry-rb.
-- name: 'lulalala'
-  avatar: https://avatars.githubusercontent.com/u/366910?v=3
-  urlGithub: https://github.com/lulalala
-  type: ruby
-  lang: en
-  title: 'Listia'
-  bio: |-
-    I am a happy rubyist and an anime otaku. I make ruby gems, Rails imageboards, doujinshi&#39;s and likes to travel around the world.
-  subject: 'ActiveModel::Errors and AdequateErrors'
-  summary: |-
-    There are many use cases where the ActiveModel::Errors interface is tedious to use, such as message formatting and testing. This talk presents these cases, and explains why the limitation can be simply solved by taking an object-oriented approach, which results in the AdequateErrors gem. The gem&#39;s implementation is explained, and the talk will showcase examples on how it can make your coding life easier.
 - name: 'Hiroshi SHIBATA'
   avatar: https://cfp.rubyconf.tw/uploads/user/photo/148/5VQgsZwF_400x400.jpg
   urltwitter: https://twitter.com/hsbt
@@ -100,16 +164,6 @@
     Therefore, Ruby has a lot of build options for linking shared libraries, changing program name, and others. It’s a too complex thing. I will describe these details.
 
     In finally, I will introduce what kind of things inside ruby-build as a famous build tool for Ruby. It has a mechanism of building. I will explain these mechanism. After that, You can choose a best environment and options for your ruby experiences used ruby-build and Ruby packages.
-- name: 'Kelsey Pedersen'
-  avatar: https://avatars.githubusercontent.com/u/6691925?v=3
-  urlGithub: https://github.com/kelseypedersen
-  type: ruby
-  lang: en
-  bio: |-
-    Kelsey Pedersen is a software engineer at Stitch Fix on the styling engineering team. She builds internal software used by our stylists to curate clothes for our clients. She works cross-functionally with our styling community and data science team to build new features to better assist our stylists. She had a past life in sales and as a Division I rower at UC Berkeley.
-  subject: 'Augmenting Human Decision Making with Data Science'
-  summary: |-
-    Humans and data science are flawed on their own. Humans lack the ability to process large volumes of information. Machines lack intuition, empathy, and nuance. You’ll learn how to guide users of expert-use systems by applying data science to their user experience. Layering data science within our systems allows us to take advantage of the human-touch while leveraging our large datasets. In this talk, you’ll learn the process for sprinkling data science into your applications, the challenges we have faced along the way, and how to measure the business impact.
 - name: 'Hsuancheng Chen'
   avatar: https://avatars.githubusercontent.com/u/4186736?v=3
   urlGithub: https://github.com/poligen
@@ -120,55 +174,6 @@
   subject: 'The little schemer can write better recursion in Elixir'
   summary: |-
     Elixir is a functional programming, but if you want to build a strong foundation in it, you have to understand the recursion and pattern matching. The best way to do it is to practice again and again. Here comes the little schemer to practice all the recursion.
-- name: 'Faust Dehng'
-  avatar: 'speakers/faust_dehng.jpg'
-  urlGithub: https://github.com/faustdehng
-  type: elixir
-  lang: cht
-  title: 'Senior Executive Coach, Gammatech'
-  bio: |-
-    1962-,
-    Elixir fans,
-    senior executive  coach  of Gammatech
-  subject: 'Elixir on raspberry - a practice for remote control'
-  summary: |-
-    This topic is used to demonstrate that Elixir works fine on the raspberry pi. I develop a generalized player on raspberry named QBox, and use Elixir to build the web server, and then, any web browser can control the product remotely. This system works fine, and, therefore, I think it is helpful for a person who wants to develop applications alike. Because this application almost includes all features of raspberry interfaces (besides GPIO), such as wifi, Bluetooth, touch screen, USB, database, voice, HDMI, so, it is a good practice to demonstrate the abilities about Elixir on raspberry. My goals in this talk are:
-    1) present it works,
-    2) appreciate to the forum, it is very helpful to me in developing,
-    3) announce a resource (me), I am glad to provide my experience to any person interested.
-- name: 'Liang-Chi Tseng'
-  avatar: https://cfp.rubyconf.tw/uploads/user/photo/147/Henry.jpg
-  urltwitter: https://twitter.com/lctseng
-  urlGithub: https://github.com/lctseng
-  type: ruby
-  lang: cht
-  title: 'Engineer, 5xruby.tw'
-  bio: |-
-    五倍紅寶石的 Rails 工程師兼系統工程師，不折不扣的橘貓派，除了工作外的興趣是使用最擅長的 Ruby 語言製作遊戲，目前製作中最大的遊戲專案「[白色十一月：軍官之歌](https://www.facebook.com/white2012november/)」已經超過十萬行程式碼，在臉書上擁有數千的粉絲。
-  subject: 'Rails Gem 「Apartment」 很恐怖不要用，但如果你已經用在上線產品上了，一定要來聽聽看：\b整併十三萬個 \bschema 的血淚史'
-  summary: |-
-    具有 multi-tenant 功能的網頁應用程式日漸普及，例如各式論壇與電子商務平台等等。為了方便開發這樣的應用程式，各大網頁製作框架都有提供類似的套件供快速建置 multi-tenant 的應用。在 Rails 的世界中，「Apartment」便是一個常見的 multi-tenant 套件。Apartment 可以選擇透過使用多個資料庫或者是多個 PostgreSQL schema，來達成不同 tenant 的資料隔離。然而，任何再好用的套件，在使用程度超過一定限度之後，所帶來的後遺症往往都會超過其所帶來的效益，Apartment 也不例外。
-
-    在這次的演講中，我會分享我如何拯救某個因過度使用 Apartment 導致差點癱瘓資料庫系統的專案，包含整個事件前後所發生的大小徵兆與對應的解決方案。
-- name: 'Tetsushi Awano'
-  avatar: 'speakers/tetsushi_awano.jpg'
-  urlGithub: https://github.com/tetsushiawano
-  type: ruby
-  lang: en
-  title: 'DevOps Engineer, Rakuten Inc.'
-  bio: |-
-    Tetsushi Awano joined Rakuten Travel in April 2012. Since 2016, I joined the DevOps team to support DevOps activity within the organisation. My hobby is cycling and having 環島 (Round trip around Taiwan) twice by bicycle. I am passionate about creating software which improves the productivity of the organisation.
-
-    I was introduced to Ruby when I was lab student at Aoyama Gakuin University, Software Lab. The professor was Ruby commiter. Since joining Rakuten Travel in 2012, I was coding Java but started to use Ruby again from 2016.
-  subject: 'How Ruby has dramatically improved the productivity of developers in Rakuten Travel'
-  summary: |-
-    When DevOps team was established in 2016, development teams in Rakuten Travel were working in silos. Development teams had had separate development processes (build-automation tool, release-automation tool, site-operation tool). Also the development environment which all teams used together had infrastructure restrictions and development processes which slowed down the development in the organization level.
-
-    DevOps team talked with each development teams and found issues to solve. Then DevOps team standardised the development processes by delivering software in the topic of System/Application Data Centralisation, Multiple Development Environment, High Availability, Data Visualisation, Table Definition Management. Most of our software is written in Ruby. After 2 years of DevOps activity, all development teams follow the standardised development process. Also, operational processes such as release automation and site operation are now consolidated to 1 team. As a result the productivity of our organisation improved dramatically.
-
-    In the process of developing software, DevOps team faced many issues. As many members did not have a developer background, we did not write unit-test for our Rails application. So we learned how to write rspec testcases and also introduced guard to achive TDD. Then, as the number of our Rails application increased, many duplicated codes exist such as getting server related information from cross-company internal API. So we learned to package duplicated code into rubygems and store it in internal gem repositories. When we faced a performance issue in our program, we tried to solve it by using multi-threading function. However Ruby was unfit for it and we ended up using Java instead.
-
-    Another important part of this DevOps activity was to adapt the standardised software to each development team. Development teams had their own development processes which were already efficient for them. So when we tried to adapt the software, while most development teams were supportive, some were not. In the latter case, we had to do many of the heavy lifting such as making code changes to the product code and testing products on our own. The most difficult part was actually creating testcases and executing testcases which are normally responsible by other development teams. This is mentally tough but very challenging part of DevOps activity.
 - name: 'Jake Morrison'
   avatar: https://avatars.githubusercontent.com/u/113785?v=3
   urlGithub: https://github.com/reachfh
@@ -181,82 +186,35 @@
   subject: 'Incrementally migrating large apps to Phoenix'
   summary: |-
     This talk covers the process of incrementally migrating a large application to Phoenix, covering some specific issues that may come up when migrating from Ruby on Rails.
-- name: 'Stan Lo'
-  avatar: "https://avatars.githubusercontent.com/u/5079556?v=3"
-  urlGithub: https://github.com/st0012
+- name: 'John Lin'
+  avatar: https://avatars.githubusercontent.com/u/529248?v=3
+  urlGithub: https://github.com/johnlinvc
+  urlHome: http://johnlin.vc
   type: ruby
-  lang: en
-  bio: |-
-    Creator of [goby-lang](https://github.com/goby-Lang/goby)
-    Love Go, Ruby, Rails and Boxing.
-    Currently working at @ticketsolvers
-  subject: 'What would your own version of Ruby look like?'
-  summary: |-
-    I believe most of us love Ruby, but I also believe most of us don&#39;t think Ruby it&#39;s perfect. So what&#39;d your own version of Ruby look like if you can create your own one?
-
-    As some of you may know, I created a language called Goby about a year ago. It&#39;s largely inspired by Ruby, and looks very similar to it. But it also have some design choices different than Ruby or have some unique features that Ruby doesn&#39;t have.
-    In this talk I&#39;m going to discuss some important things we should focus on when designing a language. And I will also share the design choices made when developing Goby, as well as the philosophy behind these choices.
-- name: 'Aotoki Tsuruya'
-  avatar: https://cfp.rubyconf.tw/uploads/user/photo/7/icon-256.png
-  urltwitter: https://twitter.com/elct9620
-  urlGithub: https://github.com/elct9620
-  type: ruby
-  lang: en
-  title: 'Rails Developer, 5xruby.tw'
-  bio: |-
-    野生的 Ruby 開發者，特技是挖坑。
-  subject: 'How the Rubyist use Blockchain'
-  summary: |-
-    The cryptocurrency becomes popular in recent years. As a Rubyist, how can we deal with this technology? This talk will discuss blockchain, show an example using Ethereum's `geth` to direct operate blockchain and demo how to develop blockchain application.
-- name: 'Sihui Huang'
-  avatar: https://cfp.rubyconf.tw/uploads/user/photo/177/sihui_huang_rubyconf.png
-  urltwitter: https://twitter.com/sihui_io
-  urlGithub: https://github.com/Sihui
-  title: 'Payment Engineer, Gusto'
-  type: ruby
-  lang: en
-  bio: |-
-    Sihui spends most of her time writing, reading, and blogging about software.
-    She enjoys learning and talking about [software design](http://www.sihui.io/design-patterns/), [refactoring](http://www.sihui.io/code-smell-cheat-sheet/) and [Ruby](http://www.sihui.io/procs-in-ruby-p1/).
-    She works at [Gusto](https://gusto.com/) and blogs at [sihui.io](http://www.sihui.io/)
-    Her favorite answers to all questions are: “It depends”, “I don’t know”, and “Does it matter?”
-  subject: 'Moving millions of dollars daily with Ruby while still able to sleep at night.'
-  summary: |-
-    It’s incredibly fulfilling to know your code makes a difference. But, when your code needs to move millions of dollars daily, it can be terrifying. Imagine how dreadful it is when you find a small bug that cost hundreds of millions of dollars.
-    I’m on the payment engineering team at [Gusto](https://gusto.com/). We build systems that move money for people’s payrolls: money people depend their lives on.
-    Come and hear me share how we build systems striving for correctness and robustness with Sidekiq and Slack bots. You will learn about best practices and engineering principles we distilled from past <strong>expensive</strong> lessons. They give us confidence in our code so we can sleep well at night.
-- name: 'PastLeo'
-  avatar: https://cfp.rubyconf.tw/uploads/user/photo/166/PastLeoAvatar_hacker-01.png
-  urlGithub: https://github.com/pastleo
-  urlHome: https://pastleo.me
-  type: elixir
   lang: cht
-  title: 'Rails Developer, 5xruby.tw'
   bio: |-
-    對電腦的一切事物有興趣，從電腦硬體、作業系統以及網路到程式、網站前後端，甚至智慧型手機刷機皆有涉略。
-  subject: '占用您半小時左右的時間，應該可以讓您對 Elixir 產生一些興趣'
+    Lead Engineer at iCHEF. Ruby lover. Full-stack developer. [ErRuby](https://github.com/johnlinvc/erruby) developer. Organizer of Swift Taipei. iOS developer. FP lover.
+  subject: 'The Unsung Command Line Ruby'
   summary: |-
-    其實我也只是出入茅廬，我 17 年才開始接觸 Elixir ，但是它有一些有趣的 feature 讓我深深著迷XDD
-    後來因為維護的專案其中有個 Document Store 大改版，所以就獲得這個機會脫離 Ruby 跟 JS 寫點純資料處理的程式，一寫就寫了一兩個月，應該是有把 Elixir 的幾個 key feature 都用上了。
-    我來分享一些我愛上 Elixir 的幾個功能，一些 Elixir 採取跟 Ruby 不同的策略，一些從 OOP 跳來 Functional programming 的心得，一些實務上用起來的感覺。
-    如果你還不了解 Elixir ，不妨來聽聽看，說不定能讓你對 Elixir 產生一些興趣~
-- name: 'Eric Hodel'
-  avatar: https://avatars.githubusercontent.com/u/9831?v=3
-  urlGithub: https://github.com/drbrain
+    How many times did you run <code>ruby</code> directly except <code>ruby -v</code> for checking version?
+    Ruby was the descendent of Perl, inherited many handy command line features.
+    Such as easy file reading, various global variables and executing directly without file.
+    Let&#39;s explore all sorts of little known Ruby Command Line features.
+
+    除了用 <code>ruby -v</code> 來檢查版本之外， 你曾經在 command line 直接執行過 Ruby 嗎?
+    Ruby 作為 Perl 的接班人，延續了許多好用的 command line 功能。
+    像是方便的讀取檔案，各種實用的預設變數，不用檔案直接執行程式碼。
+    讓我們一起來探索各種鮮為人知的 Ruby 功能。
+- name: 'Kelsey Pedersen'
+  avatar: https://avatars.githubusercontent.com/u/6691925?v=3
+  urlGithub: https://github.com/kelseypedersen
   type: ruby
   lang: en
-  title: 'Fastly'
   bio: |-
-    Eric Hodel is a ruby committer and maintainer of many gems. He works at Fastly building developer tools that allow his coworkers to work on distributed teams with minimum difficulty.
-
-    Ezekiel Templin has worked with people to build systems using networked computers for most of the last 20 years. He also works at Fastly building developer and deployment tools.
-  subject: Devly, a multi-service development environment
+    Kelsey Pedersen is a software engineer at Stitch Fix on the styling engineering team. She builds internal software used by our stylists to curate clothes for our clients. She works cross-functionally with our styling community and data science team to build new features to better assist our stylists. She had a past life in sales and as a Division I rower at UC Berkeley.
+  subject: 'Augmenting Human Decision Making with Data Science'
   summary: |-
-    Writing a system alone is hard. Building a system with other people is harder. Building many systems with many people is hardest.
-
-    As our company has grown, we have tried many approaches to user-friendly, shared development environments and learned what works and what doesn&#39;t. We incorporated what we learned into a tool called devly. Devly is used to develop products at Fastly that span many services written in different languages.
-
-    We learned that the design of our tools must be guided by how teams work and communicate. To respond to these needs, Devly allows self-service, control, and safety so that developers can focus on their work.
+    Humans and data science are flawed on their own. Humans lack the ability to process large volumes of information. Machines lack intuition, empathy, and nuance. You’ll learn how to guide users of expert-use systems by applying data science to their user experience. Layering data science within our systems allows us to take advantage of the human-touch while leveraging our large datasets. In this talk, you’ll learn the process for sprinkling data science into your applications, the challenges we have faced along the way, and how to measure the business impact.
 - name: 'Kevin Kimball'
   avatar: https://avatars.githubusercontent.com/u/6886483?v=3
   urlGithub: https://github.com/kevinkimball
@@ -267,18 +225,65 @@
   subject: 'Integrating Ruby and Elixir Apps in Production'
   summary: |-
     Le Tote has been using Elixir in production for over 2 years. In this talk, I&#39;ll touch on the practical problems and suggestions resulting from integrating Ruby on Rails and Elixir/Phoenix. I&#39;ll focus primarily on the technology with a few notes on team dynamics and infrastructure. I&#39;ll speak from the perspective of a Ruby developer who is new to, but interested in Elixir, and also a team lead managing both Ruby and Elixir developers.
-- name: 'Damir Svrtan'
-  avatar: https://avatars.githubusercontent.com/u/1437202?v=3
-  urlGithub: https://github.com/DamirSvrtan
+- name: 'Koichi Sasada'
+  avatar: https://avatars.githubusercontent.com/u/9558?v=3"
+  urlGithub: https://github.com/ko1
   type: ruby
   lang: en
-  bio:
-    Damir is a Rails Team Lead at Infinum, a software agency based in Croatia. He is a strong advocate of clean coding, automated testing and passionate about constant improvement. On top of that, he is an organizer of Ruby Meetups in Zagreb, a regular blogger, conference speaker, open source lover and contributor.
-  subject: 'Building Serverless Ruby Bots'
+  bio: |-
+    Koichi Sasada is a programmer, mainly developing Ruby interpreter (CRuby/MRI).
+    He received Ph.D (Information Science and Technology) from the University of Tokyo,2007.
+    He became a faculty of University of Tokyo (Assistant associate 2006-2008, Assistant professor 2008-2012). After the 13 years life in university, he had joined a member of Matz&#39;s team in Heroku, Inc. Now he is a member of Cookpad Inc (engineer).
+    He is also a director of Ruby Association.
+  subject: Progress report of "Ruby 3 Concurrency"
   summary: |-
-    Want to build a Bot without the hassle of provisioning and managing servers? Amazon’s got a service for that and it’s called AWS Lambda - it executes your code only when needed, scales automatically and you pay only for the compute time you consume.
-
-    There’s one problem with Lambda - it doesn’t support Ruby! Let’s checkout multiple options on how to build a Ruby Bot and package it into an executable which you can run on any machine without the need to actually have Ruby installed.
+    One of the Ruby 3 goals is &quot;better concurrency support&quot;.
+    I will talk about the progress report of this goal. I had proposed new concurrency abstraction at RubyKaigi 2016, RubyConf 2016. Our new abstraction is safer than <code>Thread</code> and can run in parallel. This presentation will introduce concepts of our new abstraction and will show demonstration with preliminary implementation.
+- name: 'Liang-Chi Tseng'
+  avatar: https://cfp.rubyconf.tw/uploads/user/photo/147/Henry.jpg
+  urltwitter: https://twitter.com/lctseng
+  urlGithub: https://github.com/lctseng
+  type: ruby
+  lang: cht
+  title: 'Engineer, 5xruby.tw'
+  bio: |-
+    五倍紅寶石的 Rails 工程師兼系統工程師，不折不扣的橘貓派，除了工作外的興趣是使用最擅長的 Ruby 語言製作遊戲，目前製作中最大的遊戲專案「[白色十一月：軍官之歌](https://www.facebook.com/white2012november/)」已經超過十萬行程式碼，在臉書上擁有數千的粉絲。
+  subject: 'Never use Apartment gem on a large-scale project: how to merge hundreds of schemas on production servers.'
+  summary: |-
+    There are more and more web applications with multi-tenant features these days. Such as online forums and e-commerce stores. To accelerate the development, major web frameworks often have multi-tenant plugins for fast-developing prototypes. The gem "Apartment" is the most representative one for Rails applications. It provides fast and isolated multi-tenant environments by making use of PostgreSQL schema functionality. However, when the number of schemas is too large, the drawbacks of using multi-schema database often outweigh the advantages it brings. In this talk, I will share my experience on using Apartment on a production project with hundreds of schemas, and how I save the system from being paralyzed by the huge number of schemas.
+- name: 'lulalala'
+  avatar: https://avatars.githubusercontent.com/u/366910?v=3
+  urlGithub: https://github.com/lulalala
+  type: ruby
+  lang: en
+  title: 'Listia'
+  bio: |-
+    I am a happy rubyist and an anime otaku. I make ruby gems, Rails imageboards, doujinshi&#39;s and likes to travel around the world.
+  subject: 'ActiveModel::Errors and AdequateErrors'
+  summary: |-
+    There are many use cases where the ActiveModel::Errors interface is tedious to use, such as message formatting and testing. This talk presents these cases, and explains why the limitation can be simply solved by taking an object-oriented approach, which results in the AdequateErrors gem. The gem&#39;s implementation is explained, and the talk will showcase examples on how it can make your coding life easier.
+- name: Manic Chuang
+  avatar: https://cfp.rubyconf.tw/uploads/user/photo/184/Avatar.jpg
+  urlGithub: https://github.com/manic
+  urltwitter: https://twitter.com/maniclf
+  type: ruby
+  lang: en
+  title: 'CTO, Hoshiru'
+  bio: |-
+    Rails Developer for 7+ years. Love testing, refactoring, making process better  every day. Love cats.
+  subject: 'Real Life: Acceptance Testing in a Rails Application'
+  summary: |-
+    We all know what the acceptance testing is. However it is difficult to really adopt this into your real-life work. I want to show you how I introduce this technique and solve the problems.
+- name: 'Michael Kohl'
+  avatar: https://avatars.githubusercontent.com/u/47985?v=3
+  urlGithub: https://github.com/citizen428
+  type: ruby
+  lang: en
+  bio: |-
+    Michael Kohl got interested in computers at the young age of 12. Since then, he has worked in systems administration, systems engineering and devops, Linux consulting, IT security and software development. He’s a programming language enthusiast who’s especially enamored with functional programming languages, but also has a long-standing love affair with Ruby which started around 2003. Michael currently serves as CTO of Lockstap Labs and is based in Bangkok, Thailand.
+  subject: 'Sanity on Rails (and more)'
+  summary: |-
+    As web applications grow in scale and complexity, people start realizing that many parts of their domain-specific code do not fit neatly into Rails’ MVC structure. In recent years certain patterns emerged that try to rectify this situation and this talk tried to shed some light on them. Additionally it will explore some of the newer additions to the Ruby web development scene, like Hanami and dry-rb.
 - name: 'ohr486'
   avatar: https://avatars.githubusercontent.com/u/1396992?v=3
   urlTwitter: http://twitter.com/ohrdev
@@ -298,6 +303,21 @@
     Large scale chat service has many problems.
     I’m developing game platform and large scale chat service with elixir/phoenix.
     In this talk, I’ll talk about our huge scale pubsub architecture and some problems encountered and solutions.
+- name: 'PastLeo'
+  avatar: https://cfp.rubyconf.tw/uploads/user/photo/166/PastLeoAvatar_hacker-01.png
+  urlGithub: https://github.com/pastleo
+  urlHome: https://pastleo.me
+  type: elixir
+  lang: cht
+  title: 'Rails Developer, 5xruby.tw'
+  bio: |-
+    對電腦的一切事物有興趣，從電腦硬體、作業系統以及網路到程式、網站前後端，甚至智慧型手機刷機皆有涉略。
+  subject: 'Not familiar with Elixir? Let me do a simple intro in 30 minutes'
+  summary: |-
+    I am a new beginner in Elixir too, actually. I first came across Elixir in early 2017, after a short taste,  some of its features immediately interested me :)
+    Then there comes a big refactor for the maintaining project and a document store migration is required. I had the chance use Elixir in action and play with all its key features for a few months.
+    I will introduce what I love about Elixir, different philosophy between Elixir and Ruby, and how to jump from the world of object-oriented to the functional world. Last but not least, I will also demonstrate some real-world example in this talk.
+    If you haven't give Elixir a try, I hope this talk will enlighten you with some new ideas!
 - name: 'Sakura ITOYANAGI'
   avatar: https://cfp.rubyconf.tw/uploads/user/photo/180/sakura.jpg
   urlGithub: https://github.com/aycabta
@@ -311,40 +331,38 @@
   summary: |-
     [RDoc](https://github.com/ruby/rdoc) has some steps for generating documents. First, lexical analysis for Ruby code. Second, parsing methods, classes, documentation comments and others from lexical items, and creating their objects. Third, building HTML and lexical analysis again for syntax highlighting of documented code. I&#39;ll introduce the internal steps of RDoc.
     I&#39;ll introduce modern Ruby lexical analyzer and parser for documentation.
-- name: Yuichiro MASUI
-  avatar: https://cfp.rubyconf.tw/uploads/user/photo/182/IMG_5772_copy.jpg
-  urlGithub: https://github.com/masuidrive
-  urltwitter: https://twitter.com/masuidrive
+- name: 'Sihui Huang'
+  avatar: https://cfp.rubyconf.tw/uploads/user/photo/177/sihui_huang_rubyconf.png
+  urltwitter: https://twitter.com/sihui_io
+  urlGithub: https://github.com/Sihui
+  title: 'Payment Engineer, Gusto'
   type: ruby
   lang: en
-  title: 'CTO, Toreta, Inc.'
   bio: |-
-    I&#39;m Yuichiro MASUI. a.k.a. @masuidrive. CTO and co-founder of Toreta, Inc. Ruby on Rails and iOS developer. ex-Appcelarati. I really love programming and bath(Furo in Japanese). So many friends call me &quot;Furo-grammer&quot;
-  subject: 'Rails loves React'
+    Sihui spends most of her time writing, reading, and blogging about software.
+    She enjoys learning and talking about [software design](http://www.sihui.io/design-patterns/), [refactoring](http://www.sihui.io/code-smell-cheat-sheet/) and [Ruby](http://www.sihui.io/procs-in-ruby-p1/).
+    She works at [Gusto](https://gusto.com/) and blogs at [sihui.io](http://www.sihui.io/)
+    Her favorite answers to all questions are: “It depends”, “I don’t know”, and “Does it matter?”
+  subject: 'Moving millions of dollars daily with Ruby while still able to sleep at night.'
   summary: |-
-    In Rails 5.1, webpacker gem now directly supports Javascript front-end framework such as React and Angular.
-    However, I am running React on the Docker environment without webpacker gem.
-    React has many advantages for making dynamic views.
-    Especially, One way flow provided by React is similar structure with Rails data flow.
-    So It&#39;s easy to understanding for server side engineers.
-
-    In this session, I will explain the purpose of using React in View, Pros &amp; Cons.
-- name: 'Christopher Adams'
-  avatar: http://avatars.githubusercontent.com/u/60711?v=3
-  urlGithub: https://github.com/christopheradams
-  urlHome: https://christopheradams.io
-  type: elixir
+    It’s incredibly fulfilling to know your code makes a difference. But, when your code needs to move millions of dollars daily, it can be terrifying. Imagine how dreadful it is when you find a small bug that cost hundreds of millions of dollars.
+    I’m on the payment engineering team at [Gusto](https://gusto.com/). We build systems that move money for people’s payrolls: money people depend their lives on.
+    Come and hear me share how we build systems striving for correctness and robustness with Sidekiq and Slack bots. You will learn about best practices and engineering principles we distilled from past <strong>expensive</strong> lessons. They give us confidence in our code so we can sleep well at night.
+- name: 'Stan Lo'
+  avatar: https://avatars.githubusercontent.com/u/5079556?v=3
+  urlGithub: https://github.com/st0012
+  type: ruby
   lang: en
   bio: |-
-    Christopher Adams is a writer, publisher, and software developer. He works on free software and free culture, and specializes in photography and web technologies.
-    He is the maintainer of the community-driven Elixir Style Guide.
-  subject: 'Unplugging the Web with Elixir'
+    Creator of [goby-lang](https://github.com/goby-Lang/goby)
+    Love Go, Ruby, Rails and Boxing.
+    Currently working at @ticketsolvers
+  subject: 'What would your own version of Ruby look like?'
   summary: |-
-    Elixir has benefited from extensive prior art in the design of web application packages and frameworks, coming out of the rich ecosystems of both Erlang and Ruby. The benefits have been both direct and low-level in the case of Erlang (building on top of the Cowboy HTTP server), and indirect and high-level in the case of Ruby (drawing on Sinatra and Rails). All of these influenes have come together in the Phoenix Framework.
+    I believe most of us love Ruby, but I also believe most of us don&#39;t think Ruby it&#39;s perfect. So what&#39;d your own version of Ruby look like if you can create your own one?
 
-    Although Phoenix touts itself as a MVC framework, it is not strictly limited to the Model-View-Controller pattern. In fact, MVC is a simplistic shorthand that elides rather than clarifies Phoenix&#39;s full potential.
-
-    This talk will peel back Phoenix&#39;s many layers and deconstruct its underlying asumptions. It will explore alternative patterns and architectural styles that can be used productively in Elixir web development.
+    As some of you may know, I created a language called Goby about a year ago. It&#39;s largely inspired by Ruby, and looks very similar to it. But it also have some design choices different than Ruby or have some unique features that Ruby doesn&#39;t have.
+    In this talk I&#39;m going to discuss some important things we should focus on when designing a language. And I will also share the design choices made when developing Goby, as well as the philosophy behind these choices.
 - name: 'Takashi Kokubun'
   avatar: https://avatars.githubusercontent.com/u/3138447?v=3"
   urlGithub: https://github.com/k0kubun
@@ -356,18 +374,38 @@
   summary: |-
     In Ruby 2.6, we&#39;re planning to merge JIT compiler to MRI experimentally.
     In this talk, you&#39;ll see how it&#39;s going, and how it performs better.
-- name: Manic Chuang
-  avatar: https://cfp.rubyconf.tw/uploads/user/photo/184/Avatar.jpg
-  urlGithub: https://github.com/manic
-  urltwitter: https://twitter.com/maniclf
+- name: 'Tetsushi Awano'
+  avatar: 'speakers/tetsushi_awano.jpg'
+  urlGithub: https://github.com/tetsushiawano
   type: ruby
   lang: en
-  title: 'CTO, Hoshiru'
+  title: 'DevOps Engineer, Rakuten Inc.'
   bio: |-
-    Rails Developer for 7+ years. Love testing, refactoring, making process better  every day. Love cats.
-  subject: 'Real Life: Acceptance Testing in a Rails Application'
+    Tetsushi Awano joined Rakuten Travel in April 2012. Since 2016, I joined the DevOps team to support DevOps activity within the organisation. My hobby is cycling and having 環島 (Round trip around Taiwan) twice by bicycle. I am passionate about creating software which improves the productivity of the organisation.
+
+    I was introduced to Ruby when I was lab student at Aoyama Gakuin University, Software Lab. The professor was Ruby commiter. Since joining Rakuten Travel in 2012, I was coding Java but started to use Ruby again from 2016.
+  subject: 'How Ruby has dramatically improved the productivity of developers in Rakuten Travel'
   summary: |-
-    We all know what the acceptance testing is. However it is difficult to really adopt this into your real-life work. I want to show you how I introduce this technique and solve the problems.
+    When DevOps team was established in 2016, development teams in Rakuten Travel were working in silos. Development teams had had separate development processes (build-automation tool, release-automation tool, site-operation tool). Also the development environment which all teams used together had infrastructure restrictions and development processes which slowed down the development in the organization level.
+
+    DevOps team talked with each development teams and found issues to solve. Then DevOps team standardised the development processes by delivering software in the topic of System/Application Data Centralisation, Multiple Development Environment, High Availability, Data Visualisation, Table Definition Management. Most of our software is written in Ruby. After 2 years of DevOps activity, all development teams follow the standardised development process. Also, operational processes such as release automation and site operation are now consolidated to 1 team. As a result the productivity of our organisation improved dramatically.
+
+    In the process of developing software, DevOps team faced many issues. As many members did not have a developer background, we did not write unit-test for our Rails application. So we learned how to write rspec testcases and also introduced guard to achive TDD. Then, as the number of our Rails application increased, many duplicated codes exist such as getting server related information from cross-company internal API. So we learned to package duplicated code into rubygems and store it in internal gem repositories. When we faced a performance issue in our program, we tried to solve it by using multi-threading function. However Ruby was unfit for it and we ended up using Java instead.
+
+    Another important part of this DevOps activity was to adapt the standardised software to each development team. Development teams had their own development processes which were already efficient for them. So when we tried to adapt the software, while most development teams were supportive, some were not. In the latter case, we had to do many of the heavy lifting such as making code changes to the product code and testing products on our own. The most difficult part was actually creating testcases and executing testcases which are normally responsible by other development teams. This is mentally tough but very challenging part of DevOps activity.
+- name: 'vzvu3k6k'
+  avatar: https://avatars.githubusercontent.com/u/2227862?v=3
+  urlGithub: https://github.com/vzvu3k6k
+  urltwitter: https://twitter.com/vzvu3k6k
+  type: ruby
+  lang: en
+  bio: |-
+    I&#39;ve enjoyed Ruby for 7 years and work as a Rails and JavaScript programmer in Japan. Learning Chinese for RubyConf Taiwan!
+  subject: "Boost Your Daily Development with Ruby's AST Toolchains"
+  summary: |-
+    Ruby has toolchains to parse Ruby code into abstract syntax trees (ASTs) and process. Software such as [an IDE](http://rubykaigi.org/2017/presentations/mtsmfm.html), [a linter](http://rubykaigi.org/2017/presentations/p_ck_.html) or [a formatter](https://github.com/ruby-formatter/rufo)) is buit on them.
+    But do you know these toolchains can be useful for <em>your own daily</em> development?
+    This talk will show you how to boost your development with AST toolchains.
 - name: 'Yevhenii Kurtov'
   avatar: https://avatars.githubusercontent.com/u/1539532?v=3
   urlGithub: https://github.com/lessless
@@ -392,61 +430,21 @@
     The talk itself will consist of two parts: technical and non-technical both of which will underpin key points in implementing changes and will contain practical takeaways for a small-mid sized teams/projects.
     
     Noteworthy, some technics and conclusions were recognized and now going through the implementation evaluation on the larger, 200 KLOC RoR codebase.
-- name: 'Koichi Sasada'
-  avatar: https://avatars.githubusercontent.com/u/9558?v=3"
-  urlGithub: https://github.com/ko1
+- name: 'Yuichiro MASUI'
+  avatar: https://cfp.rubyconf.tw/uploads/user/photo/182/IMG_5772_copy.jpg
+  urlGithub: https://github.com/masuidrive
+  urltwitter: https://twitter.com/masuidrive
   type: ruby
   lang: en
+  title: 'CTO, Toreta, Inc.'
   bio: |-
-    Koichi Sasada is a programmer, mainly developing Ruby interpreter (CRuby/MRI).
-    He received Ph.D (Information Science and Technology) from the University of Tokyo,2007.
-    He became a faculty of University of Tokyo (Assistant associate 2006-2008, Assistant professor 2008-2012). After the 13 years life in university, he had joined a member of Matz&#39;s team in Heroku, Inc. Now he is a member of Cookpad Inc (engineer).
-    He is also a director of Ruby Association.
-  subject: Progress report of "Ruby 3 Concurrency"
+    I&#39;m Yuichiro MASUI. a.k.a. @masuidrive. CTO and co-founder of Toreta, Inc. Ruby on Rails and iOS developer. ex-Appcelarati. I really love programming and bath(Furo in Japanese). So many friends call me &quot;Furo-grammer&quot;
+  subject: 'Rails loves React'
   summary: |-
-    One of the Ruby 3 goals is &quot;better concurrency support&quot;.
-    I will talk about the progress report of this goal. I had proposed new concurrency abstraction at RubyKaigi 2016, RubyConf 2016. Our new abstraction is safer than <code>Thread</code> and can run in parallel. This presentation will introduce concepts of our new abstraction and will show demonstration with preliminary implementation.
-- name: 'Emma Haruka Iwao'
-  avatar: https://avatars.githubusercontent.com/u/166481?v=3
-  urlGithub: https://github.com/yuryu
-  type: ruby
-  lang: en
-  bio: |-
-    Emma is a developer advocate for Google Cloud Platform, focusing on application developers experience. She is trying to make Cloud adorable for everyone through events, demos, and online content. Emma was a site reliability engineer at mobile game company companies before coming to Google. Besides software engineering, shes likes games, traveling, and eating delicious food. She has also been working with the Rails Girls community in Japan and teaching Rails to future developers.
-  subject: '12-Factor Rails App and Kubernetes'
-  summary: |-
-    The Twelve-Factor App is a guideline for modern web app development. Kubernetes is an open-source project for container management that gives you great flexibility around application deployments. With containers and Kubernetes, you can deploy and rollback a version, scale out to hundreds of nodes, copy the same configuration to multiple prod, staging, and dev environments, manage deployments through API, and so on.
+    In Rails 5.1, webpacker gem now directly supports Javascript front-end framework such as React and Angular.
+    However, I am running React on the Docker environment without webpacker gem.
+    React has many advantages for making dynamic views.
+    Especially, One way flow provided by React is similar structure with Rails data flow.
+    So It&#39;s easy to understanding for server side engineers.
 
-    This talk will review each of the twelve factors using a simple Rails application as an example and see how Kubernetes helps you run your Rails application. Experience with containers is not required.
-- name: 'John Lin'
-  avatar: https://avatars.githubusercontent.com/u/529248?v=3
-  urlGithub: https://github.com/johnlinvc
-  urlHome: http://johnlin.vc
-  type: ruby
-  lang: cht
-  bio: |-
-    Lead Engineer at iCHEF. Ruby lover. Full-stack developer. [ErRuby](https://github.com/johnlinvc/erruby) developer. Organizer of Swift Taipei. iOS developer. FP lover.
-  subject: 'The Unsung Command Line Ruby'
-  summary: |-
-    How many times did you run <code>ruby</code> directly except <code>ruby -v</code> for checking version?
-    Ruby was the descendent of Perl, inherited many handy command line features.
-    Such as easy file reading, various global variables and executing directly without file.
-    Let&#39;s explore all sorts of little known Ruby Command Line features.
-
-    除了用 <code>ruby -v</code> 來檢查版本之外， 你曾經在 command line 直接執行過 Ruby 嗎?
-    Ruby 作為 Perl 的接班人，延續了許多好用的 command line 功能。
-    像是方便的讀取檔案，各種實用的預設變數，不用檔案直接執行程式碼。
-    讓我們一起來探索各種鮮為人知的 Ruby 功能。
-- name: 'vzvu3k6k'
-  avatar: https://avatars.githubusercontent.com/u/2227862?v=3
-  urlGithub: https://github.com/vzvu3k6k
-  urltwitter: https://twitter.com/vzvu3k6k
-  type: ruby
-  lang: en
-  bio: |-
-    I&#39;ve enjoyed Ruby for 7 years and work as a Rails and JavaScript programmer in Japan. Learning Chinese for RubyConf Taiwan!
-  subject: "Boost Your Daily Development with Ruby's AST Toolchains"
-  summary: |-
-    Ruby has toolchains to parse Ruby code into abstract syntax trees (ASTs) and process. Software such as [an IDE](http://rubykaigi.org/2017/presentations/mtsmfm.html), [a linter](http://rubykaigi.org/2017/presentations/p_ck_.html) or [a formatter](https://github.com/ruby-formatter/rufo)) is buit on them.
-    But do you know these toolchains can be useful for <em>your own daily</em> development?
-    This talk will show you how to boost your development with AST toolchains.
+    In this session, I will explain the purpose of using React in View, Pros &amp; Cons.
