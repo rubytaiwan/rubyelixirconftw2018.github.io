@@ -128,9 +128,9 @@
   subject: 'Elixir on raspberry - a practice for remote control'
   summary: |-
     This topic is used to demonstrate that Elixir works fine on the raspberry pi. I develop a generalized player on raspberry named QBox, and use Elixir to build the web server, and then, any web browser can control the product remotely. This system works fine, and, therefore, I think it is helpful for a person who wants to develop applications alike. Because this application almost includes all features of raspberry interfaces (besides GPIO), such as wifi, Bluetooth, touch screen, USB, database, voice, HDMI, so, it is a good practice to demonstrate the abilities about Elixir on raspberry. My goals in this talk are:
-    1) present it works,
-    2) appreciate to the forum, it is very helpful to me in developing,
-    3) announce a resource (me), I am glad to provide my experience to any person interested.
+    (1) present it works,
+    (2) appreciate to the forum, it is very helpful to me in developing,
+    (3) announce a resource (me), I am glad to provide my experience to any person interested.
 - name: 'Harisankar P S'
   avatar: https://cfp.rubyconf.tw/uploads/user/photo/39/coderhs-profile.jpg
   urltwitter: https://twitter.com/coderhs
@@ -215,6 +215,23 @@
   subject: 'Augmenting Human Decision Making with Data Science'
   summary: |-
     Humans and data science are flawed on their own. Humans lack the ability to process large volumes of information. Machines lack intuition, empathy, and nuance. You’ll learn how to guide users of expert-use systems by applying data science to their user experience. Layering data science within our systems allows us to take advantage of the human-touch while leveraging our large datasets. In this talk, you’ll learn the process for sprinkling data science into your applications, the challenges we have faced along the way, and how to measure the business impact.
+- name: 'Kenta Murata'
+  avatar: https://www.gravatar.com/avatar/7cca11c5257fda526eeb4b1ada28f904?s=1134
+  urltwitter: https://twitter.com/mrkn
+  urlGithub: https://github.com/mrkn
+  type: ruby
+  lang: en
+  title: 'A CRuby committe.'
+  bio: |-
+    A CRuby committer and a researcher at Speee, Inc. I'm currently focusing on making Ruby a data-science-ready programming language.
+  subject: 'PyCall Workshop'
+  summary: |-
+    In this workshop, you can learn the following four topics.
+
+    (1) Introduction to the data tools for Ruby
+    (2) How to use pycall to integrate your Ruby scripts and Python's data tools
+    (3) Using Ruby for machine learning
+    (4) Summary and how to join the development of data tools
 - name: 'Kevin Kimball'
   avatar: https://avatars.githubusercontent.com/u/6886483?v=3
   urlGithub: https://github.com/kevinkimball

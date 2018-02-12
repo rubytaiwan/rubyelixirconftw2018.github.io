@@ -86,18 +86,21 @@ dayTwo:
   - period: 1:30 pm
     speakerOne: 'Faust Dehng'
     speakerTwo: 'Manic Chuang'
+    speakerThree: 'Kenta Murata'
   - period: 2:10 pm
     type: break
     agenda: Break
   - period: 2:15 pm
     speakerOne: 'Koichi Sasada'
     speakerTwo: 'Harisankar P S'
+    speakerThree: 'Kenta Murata'
   - period: 2:55 pm
     type: event
     agenda: Tea Break
   - period: 3:25 pm
     speakerOne: 'John Lin'
     speakerTwo: 'Yuichiro MASUI'
+    speakerThree: 'Kenta Murata'
   - period: 4:05 pm
     type: break
     agenda: Break
