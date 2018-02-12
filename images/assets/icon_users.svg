@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" class="icon_users" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 60 50" style="enable-background:new 0 0 60 50;" xml:space="preserve">
+	<style type="text/css">
+		.icon_gradient{fill:url(#icon_gradient);}
+	</style>
+	<title>Icon/Users</title>
+	<linearGradient id="icon_gradient" gradientUnits="userSpaceOnUse" x1="-555.0833" y1="436.97" x2="-555.0833" y2="437.97" gradientTransform="matrix(60 0 0 -50 33335 21898.5)">
+		<stop  offset="0" style="stop-color:#652F8B"/>
+		<stop  offset="1" style="stop-color:#CC1D23"/>
+	</linearGradient>
+	<path class="icon_gradient" d="M58.5,50c-0.8,0-1.4-0.6-1.4-1.4v-5.2c0-4.1-2.8-7.7-6.7-8.8c-0.8-0.2-1.2-1-1-1.7
+		c0.2-0.8,1-1.2,1.7-1c5.2,1.3,8.9,6,8.9,11.5v5.2C59.9,49.4,59.3,50,58.5,50z M42.9,50c-0.8,0-1.4-0.6-1.4-1.4v-5.2
+		c0-4.9-4-9.1-9-9.1H11.8c-4.9,0-9,4-9,9.1v5.2c0,0.8-0.6,1.4-1.4,1.4S0,49.4,0,48.6v-5.2c0-6.6,5.3-11.9,11.8-11.9h20.8
+		c6.5,0,11.8,5.3,11.8,11.9v5.2C44.3,49.4,43.7,50,42.9,50z M22.2,23.8c-6.5,0-11.8-5.3-11.8-11.9S15.7,0,22.2,0s11.8,5.3,11.8,11.9
+		S28.7,23.8,22.2,23.8z M22.2,2.9c-4.9,0-9,4-9,9.1s4,9.1,9,9.1s9-4,9-9.1S27.1,2.9,22.2,2.9z M40.3,23.5c-0.6,0-1.2-0.4-1.4-1.1
+		c-0.2-0.8,0.3-1.5,1-1.7c3.2-0.8,5.6-3.3,6.5-6.6c1.2-4.8-1.7-9.8-6.5-11c-0.8-0.2-1.2-1-1-1.7c0.2-0.8,1-1.2,1.7-1
+		c6.3,1.6,10.1,8.2,8.5,14.5c-1.1,4.2-4.3,7.5-8.5,8.6C40.5,23.5,40.4,23.5,40.3,23.5z"/>
+</svg>

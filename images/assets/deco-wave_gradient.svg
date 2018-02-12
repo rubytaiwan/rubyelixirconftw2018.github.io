@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" class="deco_wave_gradient bg-deco" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 65 150" style="enable-background:new 0 0 65 300;" xml:space="preserve">
+	<style type="text/css">
+		.gradient_wave{stroke:url(#deco-gradient_wave)}
+	</style>
+	<linearGradient id="deco-gradient_wave" gradientUnits="userSpaceOnUse" x1="34.3775" y1="119.777" x2="34.3775" y2="59.5077">
+		<stop  offset="0" style="stop-color:#652F8B"/>
+		<stop  offset="1" style="stop-color:#CC1D23"/>
+	</linearGradient>
+	<path class="deco-line gradient_wave sinewave" d="M42.5,0c0,16.7-20,16.7-20,33.3c0,16.7,20,16.7,20,33.3c0,16.7-20,16.7-20,33.3c0,16.7,20,16.7,20,33.3
+		c0,16.7-20,16.7-20,33.3c0,16.7,20,16.7,20,33.3c0,16.7-20,16.7-20,33.3c0,16.7,20,16.7,20,33.3s-20,16.7-20,33.3 M62.5,0
+		c0,16.7-20,16.7-20,33.3c0,16.7,20,16.7,20,33.3c0,16.7-20,16.7-20,33.3c0,16.7,20,16.7,20,33.3c0,16.7-20,16.7-20,33.3
+		c0,16.7,20,16.7,20,33.3c0,16.7-20,16.7-20,33.3c0,16.7,20,16.7,20,33.3s-20,16.7-20,33.3 M22.5,0c0,16.7-20,16.7-20,33.3
+		c0,16.7,20,16.7,20,33.3c0,16.7-20,16.7-20,33.3c0,16.7,20,16.7,20,33.3c0,16.7-20,16.7-20,33.3c0,16.7,20,16.7,20,33.3
+		c0,16.7-20,16.7-20,33.3c0,16.7,20,16.7,20,33.3s-20,16.7-20,33.3"/>
+</svg>

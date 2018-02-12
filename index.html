@@ -1,0 +1,1531 @@
+<!DOCTYPE html><html><head><meta charset="utf-8" /><meta content="ie=edge" http-equiv="x-ua-compatible" /><meta content="width=device-width, initial-scale=1, ,minimum-scale=1.0, maximum-scale=1.0, shrink-to-fit=no" name="viewport" /><title>Ruby X Elixir Conf Taiwan 2018</title><meta content="眾所矚目的 Ruby X Elixir Conf Taiwan 2018 將在 2018 年 4 月 27 - 28 日於張榮發基金會國際會議中心隆重舉辦，敬請期待！" name="description" /><meta content="2018,Ruby,Ruby Taiwan,Ruby Conference,Ruby Conf Taiwan,Elixir,Elixir Taiwan,Elixir Conference,Elixir Conf Taiwan,Taiwan,Ruby X Elixir Conf Taiwan 2018" name="keywords" /><meta content="notranslate" name="google" /><link href="https://2018.rubyconf.tw/" rel="canonical" /><!--Favicons--><link href="https://2018.rubyconf.tw/images/apple-touch-icon-57x57.png" rel="apple-touch-icon" sizes="57x57" /><link href="https://2018.rubyconf.tw/images/apple-touch-icon-60x60.png" rel="apple-touch-icon" sizes="60x60" /><link href="https://2018.rubyconf.tw/images/apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes="72x72" /><link href="https://2018.rubyconf.tw/images/apple-touch-icon-76x76.png" rel="apple-touch-icon" sizes="76x76" /><link href="https://2018.rubyconf.tw/images/apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes="114x114" /><link href="https://2018.rubyconf.tw/images/apple-touch-icon-120x120.png" rel="apple-touch-icon" sizes="120x120" /><link href="https://2018.rubyconf.tw/images/apple-touch-icon-144x144.png" rel="apple-touch-icon" sizes="144x144" /><link href="https://2018.rubyconf.tw/images/apple-touch-icon-152x152.png" rel="apple-touch-icon" sizes="152x152" /><link href="https://2018.rubyconf.tw/images/apple-touch-icon-180x180.png" rel="apple-touch-icon" sizes="180x180" /><link href="https://2018.rubyconf.tw/images/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png" /><link href="https://2018.rubyconf.tw/images/android-chrome-192x192.png" rel="icon" sizes="192x192" type="image/png" /><link href="https://2018.rubyconf.tw/images/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png" /><link href="https://2018.rubyconf.tw/images/manifest.json" rel="manifest" /><link color="#3c4a68" href="https://2018.rubyconf.tw/images/safari-pinned-tab.svg" rel="mask-icon" /><link href="https://2018.rubyconf.tw/images/favicon.ico" rel="shortcut icon" /><meta content="#3c4a68" name="msapplication-TileColor" /><meta content="https://2018.rubyconf.tw/images/mstile-144x144.png" name="msapplication-TileImage" /><meta content="https://2018.rubyconf.tw/images/browserconfig.xml" name="msapplication-config" /><meta content="#ffffff" name="theme-color" /><!--Facebook Open Graph--><meta content="174126862200" property="fb:app_id" /><meta content="https://2018.rubyconf.tw/" property="og:url" /><meta content="website" property="og:type" /><meta content="Ruby X Elixir Conf Taiwan 2018" property="og:title" /><meta content="https://2018.rubyconf.tw/images/og_image.png" property="og:image" /><meta content="眾所矚目的 Ruby X Elixir Conf Taiwan 2018 將在 2018 年 4 月 27 - 28 日於張榮發基金會國際會議中心隆重舉辦，敬請期待！" property="og:description" /><meta content="Ruby X Elixir Conf Taiwan 2018" property="og:site_name" /><!--Twitter Card--><meta content="summary" name="twitter:card" /><meta content="@rubyconftw" name="twitter:site" /><meta content="@rubyconftw" name="twitter:creator" /><meta content="https://2018.rubyconf.tw/" name="twitter:url" /><meta content="Ruby X Elixir Conf Taiwan 2018" name="twitter:title" /><meta content="眾所矚目的 Ruby X Elixir Conf Taiwan 2018 將在 2018 年 4 月 27 - 28 日於張榮發基金會國際會議中心隆重舉辦，敬請期待！" name="twitter:description" /><meta content="https://2018.rubyconf.tw/images/twitter_card.jpg" name="twitter:image" /><link href="//fonts.googleapis.com/earlyaccess/notosanstc.css" rel="stylesheet" /><link href="//cdnjs.cloudflare.com/ajax/libs/balloon-css/0.5.0/balloon.min.css" rel="stylesheet" /><script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script><link href="stylesheets/main.css" rel="stylesheet" /><script src="javascripts/main.js"></script></head><body><nav class="navbar navbar-default navbar-custom navbar-fixed-top"><div class="container"><div class="navbar-header page-scroll"><a class="navbar-brand page-scroll" href="https://2018.rubyconf.tw/"><?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" class="main_logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 183 50" style="enable-background:new 0 0 183 50;" xml:space="preserve">
+	<style type="text/css">
+		.logotype_ruby{fill:url(#logotype_ruby_gradient);}
+		.logotype_elixir{fill:url(#logotype_elixir_gradient);}
+		.logo_frame{fill:url(#logo_frame_gradient);}
+	</style>
+	<title>Main Logo</title>
+	<g class="logotype">
+		<g class="conf_taiwan_2018">
+			<g class="conf">
+				<path class="logotype-color" d="M51.8,40.5c-0.6,0.5-1.2,0.9-2,1.1c-0.7,0.3-1.5,0.4-2.2,0.4c-0.6,0-1.2-0.1-1.7-0.2
+					c-0.5-0.2-1.1-0.4-1.5-0.7c-0.5-0.3-0.9-0.6-1.3-1c-0.4-0.4-0.7-0.8-1-1.3c-0.3-0.5-0.5-1-0.7-1.5c-0.2-0.5-0.2-1.1-0.2-1.7
+					c0-0.6,0.1-1.2,0.2-1.7c0.2-0.6,0.4-1.1,0.7-1.5c0.3-0.5,0.6-0.9,1-1.3c0.4-0.4,0.8-0.7,1.3-1c0.5-0.3,1-0.5,1.5-0.7
+					c0.5-0.2,1.1-0.2,1.7-0.2c0.8,0,1.5,0.1,2.2,0.4c0.7,0.3,1.4,0.6,2,1.2l-1.3,2.2c-0.4-0.4-0.8-0.7-1.3-0.9
+					c-0.5-0.2-1-0.3-1.6-0.3c-0.6,0-1.1,0.1-1.6,0.3c-0.5,0.2-0.9,0.5-1.3,0.8c-0.4,0.4-0.6,0.8-0.9,1.3c-0.2,0.5-0.3,1-0.3,1.5
+					c0,0.5,0.1,1.1,0.3,1.5c0.2,0.5,0.5,0.9,0.9,1.3c0.4,0.4,0.8,0.6,1.3,0.9c0.5,0.2,1,0.3,1.6,0.3c0.5,0,1.1-0.1,1.6-0.3
+					c0.5-0.2,0.9-0.5,1.3-0.9L51.8,40.5z"/>
+				<path class="logotype-color" d="M61.7,37.1c0,0.7-0.1,1.3-0.4,1.9c-0.2,0.6-0.6,1.1-1,1.6c-0.4,0.4-0.9,0.8-1.5,1c-0.6,0.3-1.2,0.4-1.9,0.4
+					c-0.7,0-1.3-0.1-1.9-0.4c-0.6-0.3-1.1-0.6-1.5-1c-0.4-0.4-0.8-1-1-1.6c-0.2-0.6-0.4-1.3-0.4-1.9c0-0.7,0.1-1.4,0.4-2
+					c0.2-0.6,0.6-1.1,1-1.6c0.4-0.4,0.9-0.8,1.5-1c0.6-0.2,1.2-0.4,1.9-0.4c0.7,0,1.3,0.1,1.9,0.4c0.6,0.2,1.1,0.6,1.5,1
+					c0.4,0.4,0.8,1,1,1.6C61.6,35.7,61.7,36.3,61.7,37.1z M59.3,37.1c0-0.4-0.1-0.7-0.2-1c-0.1-0.3-0.3-0.6-0.5-0.8
+					c-0.2-0.2-0.5-0.4-0.8-0.5c-0.3-0.1-0.6-0.2-0.9-0.2s-0.6,0.1-0.9,0.2c-0.3,0.1-0.5,0.3-0.7,0.5c-0.2,0.2-0.4,0.5-0.5,0.8
+					c-0.1,0.3-0.2,0.7-0.2,1c0,0.4,0.1,0.7,0.2,1c0.1,0.3,0.3,0.6,0.5,0.8c0.2,0.2,0.5,0.4,0.7,0.5c0.3,0.1,0.6,0.2,0.9,0.2
+					s0.6-0.1,0.9-0.2c0.3-0.1,0.5-0.3,0.8-0.5c0.2-0.2,0.4-0.5,0.5-0.8C59.2,37.8,59.3,37.5,59.3,37.1z"/>
+				<path class="logotype-color" d="M65.1,41.8h-2.4v-9.3h0.6l0.8,0.9c0.4-0.3,0.8-0.6,1.3-0.8c0.5-0.2,1-0.3,1.5-0.3c0.6,0,1.1,0.1,1.6,0.3
+					s0.9,0.5,1.3,0.9c0.4,0.4,0.7,0.8,0.9,1.3c0.2,0.5,0.3,1,0.3,1.6v5.3h-2.4v-5.3c0-0.2,0-0.5-0.1-0.7c-0.1-0.2-0.2-0.4-0.4-0.6
+					c-0.2-0.2-0.4-0.3-0.6-0.4c-0.2-0.1-0.4-0.1-0.7-0.1c-0.2,0-0.5,0-0.7,0.1c-0.2,0.1-0.4,0.2-0.6,0.4c-0.2,0.2-0.3,0.4-0.4,0.6
+					c-0.1,0.2-0.1,0.4-0.1,0.7V41.8z"/>
+				<path class="logotype-color" d="M75.4,41.8h-2.4v-7h-1.2v-2.4h1.2V32c0-0.6,0.1-1.1,0.3-1.6c0.2-0.5,0.5-0.9,0.9-1.3
+					c0.4-0.4,0.8-0.7,1.3-0.9s1-0.3,1.6-0.3H79v2.4h-1.8c-0.3,0-0.5,0-0.7,0.1c-0.2,0.1-0.4,0.2-0.6,0.4c-0.2,0.2-0.3,0.3-0.4,0.6
+					c-0.1,0.2-0.1,0.5-0.1,0.7v0.4h2.9v2.4h-2.9V41.8z"/>
+			</g>
+			<g class="taiwan">
+				<path class="logotype-color" d="M89.9,41.9h-2.5v-10h-3.8v-2.5h10v2.5h-3.7V41.9z"/>
+				<path class="logotype-color" d="M102.3,41.9h-0.6l-0.9-1.3c-0.2,0.2-0.5,0.4-0.7,0.6c-0.3,0.2-0.5,0.3-0.8,0.5c-0.3,0.1-0.6,0.2-0.9,0.3
+					C98.1,42,97.8,42,97.5,42c-0.7,0-1.3-0.1-1.9-0.3c-0.6-0.2-1.1-0.5-1.5-1c-0.4-0.4-0.8-0.9-1-1.5c-0.2-0.6-0.4-1.3-0.4-2.1
+					c0-0.7,0.1-1.4,0.4-2c0.2-0.6,0.6-1.1,1-1.6c0.4-0.4,0.9-0.8,1.5-1c0.6-0.2,1.2-0.4,1.9-0.4c0.3,0,0.6,0,0.9,0.1
+					c0.3,0.1,0.6,0.2,0.9,0.3c0.3,0.1,0.5,0.3,0.8,0.5c0.3,0.2,0.5,0.4,0.7,0.6l0.9-1.1h0.6V41.9z M99.9,37.1c0-0.3-0.1-0.6-0.2-0.9
+					c-0.1-0.3-0.3-0.6-0.5-0.8c-0.2-0.2-0.5-0.4-0.8-0.6c-0.3-0.1-0.6-0.2-0.9-0.2s-0.6,0.1-0.9,0.2c-0.3,0.1-0.5,0.3-0.7,0.5
+					c-0.2,0.2-0.4,0.5-0.5,0.8c-0.1,0.3-0.2,0.7-0.2,1.1s0.1,0.8,0.2,1.1c0.1,0.3,0.3,0.6,0.5,0.8c0.2,0.2,0.5,0.4,0.7,0.5
+					c0.3,0.1,0.6,0.2,0.9,0.2s0.6-0.1,0.9-0.2c0.3-0.1,0.5-0.3,0.8-0.6c0.2-0.2,0.4-0.5,0.5-0.8C99.8,37.8,99.9,37.4,99.9,37.1z"/>
+				<path class="logotype-color" d="M106.9,30c0,0.2,0,0.4-0.1,0.6c-0.1,0.2-0.2,0.4-0.3,0.5c-0.1,0.1-0.3,0.3-0.5,0.3c-0.2,0.1-0.4,0.1-0.6,0.1
+					c-0.2,0-0.4,0-0.6-0.1c-0.2-0.1-0.4-0.2-0.5-0.3c-0.1-0.1-0.3-0.3-0.3-0.5c-0.1-0.2-0.1-0.4-0.1-0.6c0-0.2,0-0.4,0.1-0.6
+					c0.1-0.2,0.2-0.4,0.3-0.5c0.1-0.1,0.3-0.3,0.5-0.3c0.2-0.1,0.4-0.1,0.6-0.1c0.2,0,0.4,0,0.6,0.1c0.2,0.1,0.4,0.2,0.5,0.3
+					c0.1,0.1,0.3,0.3,0.3,0.5C106.9,29.6,106.9,29.8,106.9,30z M106.5,41.9h-2.4v-9.3h2.4V41.9z"/>
+				<path class="logotype-color" d="M120.1,38.5c0,0.5-0.1,0.9-0.3,1.4c-0.2,0.4-0.4,0.8-0.8,1.1c-0.3,0.3-0.7,0.6-1.1,0.8
+					c-0.4,0.2-0.9,0.3-1.4,0.3c-0.4,0-0.9-0.1-1.3-0.2c-0.4-0.2-0.8-0.4-1.1-0.7c-0.3,0.3-0.7,0.5-1.1,0.7c-0.4,0.2-0.8,0.2-1.3,0.2
+					c-0.5,0-1-0.1-1.4-0.3c-0.4-0.2-0.8-0.4-1.1-0.8c-0.3-0.3-0.6-0.7-0.8-1.1c-0.2-0.4-0.3-0.9-0.3-1.4v-5.9h2.4v5.9
+					c0,0.2,0,0.3,0.1,0.5c0.1,0.1,0.1,0.3,0.3,0.4c0.1,0.1,0.2,0.2,0.4,0.3c0.1,0.1,0.3,0.1,0.5,0.1c0.2,0,0.3,0,0.5-0.1
+					c0.1-0.1,0.3-0.1,0.4-0.3c0.1-0.1,0.2-0.2,0.3-0.4c0.1-0.1,0.1-0.3,0.1-0.5v-5.9h2.4v5.9c0,0.2,0,0.3,0.1,0.5
+					c0.1,0.1,0.1,0.3,0.3,0.4c0.1,0.1,0.2,0.2,0.4,0.3c0.1,0.1,0.3,0.1,0.5,0.1s0.3,0,0.5-0.1c0.1-0.1,0.3-0.1,0.4-0.3
+					c0.1-0.1,0.2-0.2,0.3-0.4c0.1-0.1,0.1-0.3,0.1-0.5v-5.9h2.4V38.5z"/>
+				<path class="logotype-color" d="M130.9,41.9h-0.6l-0.9-1.3c-0.2,0.2-0.5,0.4-0.7,0.6c-0.3,0.2-0.5,0.3-0.8,0.5c-0.3,0.1-0.6,0.2-0.9,0.3
+					c-0.3,0.1-0.6,0.1-0.9,0.1c-0.7,0-1.3-0.1-1.9-0.3c-0.6-0.2-1.1-0.5-1.5-1c-0.4-0.4-0.8-0.9-1-1.5s-0.4-1.3-0.4-2.1
+					c0-0.7,0.1-1.4,0.4-2c0.2-0.6,0.6-1.1,1-1.6c0.4-0.4,0.9-0.8,1.5-1c0.6-0.2,1.2-0.4,1.9-0.4c0.3,0,0.6,0,0.9,0.1
+					c0.3,0.1,0.6,0.2,0.9,0.3c0.3,0.1,0.5,0.3,0.8,0.5c0.3,0.2,0.5,0.4,0.7,0.6l0.9-1.1h0.6V41.9z M128.5,37.1c0-0.3-0.1-0.6-0.2-0.9
+					c-0.1-0.3-0.3-0.6-0.5-0.8c-0.2-0.2-0.5-0.4-0.8-0.6c-0.3-0.1-0.6-0.2-0.9-0.2s-0.6,0.1-0.9,0.2c-0.3,0.1-0.5,0.3-0.7,0.5
+					c-0.2,0.2-0.4,0.5-0.5,0.8c-0.1,0.3-0.2,0.7-0.2,1.1s0.1,0.8,0.2,1.1c0.1,0.3,0.3,0.6,0.5,0.8c0.2,0.2,0.5,0.4,0.7,0.5
+					c0.3,0.1,0.6,0.2,0.9,0.2s0.6-0.1,0.9-0.2c0.3-0.1,0.5-0.3,0.8-0.6c0.2-0.2,0.4-0.5,0.5-0.8C128.4,37.8,128.5,37.4,128.5,37.1z"
+					/>
+				<path class="logotype-color" d="M134.7,41.9h-2.4v-9.3h0.6l0.8,0.9c0.4-0.3,0.8-0.6,1.3-0.8c0.5-0.2,1-0.3,1.5-0.3c0.6,0,1.1,0.1,1.6,0.3
+					c0.5,0.2,0.9,0.5,1.3,0.9c0.4,0.4,0.7,0.8,0.9,1.3c0.2,0.5,0.3,1,0.3,1.6v5.3h-2.4v-5.3c0-0.2,0-0.5-0.1-0.7
+					c-0.1-0.2-0.2-0.4-0.4-0.6c-0.2-0.2-0.4-0.3-0.6-0.4c-0.2-0.1-0.4-0.1-0.7-0.1c-0.2,0-0.5,0-0.7,0.1c-0.2,0.1-0.4,0.2-0.6,0.4
+					s-0.3,0.4-0.4,0.6c-0.1,0.2-0.1,0.4-0.1,0.7V41.9z"/>
+			</g>
+			<g class="year">
+				<path class="logotype-color" d="M155,33.1c0,0.5-0.1,1-0.3,1.5c-0.2,0.5-0.5,0.9-0.8,1.2c-0.3,0.3-0.7,0.6-1.2,0.8s-0.9,0.3-1.5,0.3H150
+					c-0.2,0-0.3,0-0.5,0.1s-0.3,0.2-0.4,0.3c-0.1,0.1-0.2,0.2-0.3,0.4c-0.1,0.2-0.1,0.3-0.1,0.5v1.2h5.9v2.5h-8.4v-3.7
+					c0-0.5,0.1-1,0.3-1.5c0.2-0.5,0.5-0.9,0.8-1.2c0.3-0.3,0.7-0.6,1.2-0.8c0.5-0.2,0.9-0.3,1.5-0.3h1.3c0.2,0,0.3,0,0.5-0.1
+					s0.3-0.2,0.4-0.3c0.1-0.1,0.2-0.2,0.3-0.4c0.1-0.2,0.1-0.3,0.1-0.5s0-0.3-0.1-0.5c-0.1-0.2-0.2-0.3-0.3-0.4
+					c-0.1-0.1-0.2-0.2-0.4-0.3c-0.2-0.1-0.3-0.1-0.5-0.1h-4.5v-2.5h4.5c0.5,0,1,0.1,1.5,0.3c0.5,0.2,0.9,0.5,1.2,0.8
+					c0.3,0.3,0.6,0.7,0.8,1.2C154.9,32.1,155,32.6,155,33.1z"/>
+				<path class="logotype-color" d="M166.4,35.6c0,1.2-0.1,2.2-0.4,3s-0.6,1.5-1.1,2s-1,0.9-1.6,1.1c-0.6,0.2-1.3,0.3-1.9,0.3
+					c-0.7,0-1.3-0.1-1.9-0.3c-0.6-0.2-1.1-0.6-1.6-1.1c-0.5-0.5-0.8-1.2-1.1-2c-0.3-0.8-0.4-1.8-0.4-3c0-1.2,0.1-2.2,0.4-3
+					c0.3-0.8,0.6-1.5,1.1-2c0.5-0.5,1-0.9,1.6-1.1c0.6-0.2,1.3-0.3,1.9-0.3c0.7,0,1.3,0.1,1.9,0.3c0.6,0.2,1.1,0.6,1.6,1.1
+					c0.5,0.5,0.8,1.2,1.1,2S166.4,34.5,166.4,35.6z M164,35.6c0-1.4-0.2-2.4-0.7-3.1c-0.5-0.7-1.1-1-1.9-1c-0.8,0-1.5,0.3-1.9,1
+					c-0.5,0.7-0.7,1.7-0.7,3.1c0,1.4,0.2,2.4,0.7,3.1c0.5,0.7,1.1,1,1.9,1c0.4,0,0.8-0.1,1.1-0.2c0.3-0.2,0.6-0.4,0.8-0.8
+					c0.2-0.3,0.4-0.8,0.5-1.3C163.9,36.9,164,36.3,164,35.6z"/>
+				<path class="logotype-color" d="M171.5,41.9H169v-10h-1.2v-2.5h3.7V41.9z"/>
+				<path class="logotype-color" d="M180.7,35.6l2-2c0.2-0.2,0.3-0.5,0.3-0.8c0-0.3-0.1-0.6-0.3-0.8l-3.3-3.3c-0.2-0.2-0.5-0.3-0.8-0.3
+					c-0.3,0-0.6,0.1-0.8,0.3l-3.3,3.3c-0.2,0.2-0.3,0.5-0.3,0.8c0,0.3,0.1,0.6,0.3,0.8l2,2l-2,2c-0.2,0.2-0.3,0.5-0.3,0.8
+					c0,0.3,0.1,0.6,0.3,0.8l3.3,3.3c0.2,0.2,0.5,0.3,0.8,0.3c0.3,0,0.6-0.1,0.8-0.3l3.3-3.3c0.2-0.2,0.3-0.5,0.3-0.8
+					c0-0.3-0.1-0.6-0.3-0.8L180.7,35.6z M176.6,32.9l2-2l2,2l-2,2L176.6,32.9z M178.6,36.4l2,2l-2,2l-2-2L178.6,36.4z"/>
+			</g>
+		</g>
+		<linearGradient id="logotype_ruby_gradient" gradientUnits="userSpaceOnUse" x1="62.7912" y1="24.9891" x2="62.7912" y2="8.3764">
+			<stop  offset="0" style="stop-color:#CB1D23"/>
+			<stop  offset="0.194" style="stop-color:#CC2126"/>
+			<stop  offset="0.3949" style="stop-color:#D02E30"/>
+			<stop  offset="0.5991" style="stop-color:#D64240"/>
+			<stop  offset="0.8042" style="stop-color:#DE5F56"/>
+			<stop  offset="1" style="stop-color:#E88271"/>
+		</linearGradient>
+		<path class="logotype_ruby logotype_ruby" d="M45.1,21.4h-2.5V8.9h5c0.5,0,0.9,0.1,1.3,0.2c0.4,0.1,0.8,0.3,1.2,0.5c0.4,0.2,0.7,0.5,1,0.8
+			c0.3,0.3,0.6,0.6,0.8,1c0.2,0.4,0.4,0.8,0.5,1.2c0.1,0.4,0.2,0.9,0.2,1.3c0,0.4-0.1,0.8-0.2,1.3c-0.1,0.4-0.3,0.8-0.5,1.2
+			c-0.2,0.4-0.4,0.7-0.7,1c-0.3,0.3-0.6,0.6-1,0.8l1.4,3.3H49l-1.1-2.5l-2.8,0V21.4z M45.1,11.4v5h2.5c0.3,0,0.7-0.1,1-0.2
+			s0.6-0.3,0.8-0.5c0.2-0.2,0.4-0.5,0.5-0.8c0.1-0.3,0.2-0.6,0.2-1c0-0.3-0.1-0.7-0.2-1c-0.1-0.3-0.3-0.6-0.5-0.8
+			c-0.2-0.2-0.5-0.4-0.8-0.5c-0.3-0.1-0.6-0.2-1-0.2H45.1z M61,20.3c-0.2,0.2-0.4,0.3-0.6,0.5c-0.2,0.2-0.4,0.3-0.7,0.4
+			c-0.2,0.1-0.5,0.2-0.7,0.3c-0.3,0.1-0.5,0.1-0.8,0.1c-0.6,0-1.1-0.1-1.6-0.3s-0.9-0.5-1.3-0.9c-0.4-0.4-0.7-0.8-0.9-1.4
+			c-0.2-0.5-0.3-1.1-0.3-1.8v-5.2h2.4v5.2c0,0.3,0,0.6,0.1,0.8c0.1,0.2,0.2,0.5,0.4,0.6c0.2,0.2,0.4,0.3,0.6,0.4
+			c0.2,0.1,0.5,0.1,0.7,0.1c0.2,0,0.5-0.1,0.7-0.2c0.2-0.1,0.4-0.3,0.6-0.4c0.2-0.2,0.3-0.4,0.4-0.6c0.1-0.2,0.1-0.5,0.1-0.7v-5.2
+			h2.4v9.3h-0.6L61,20.3z M77,25v-2.4l1.3,0c0.2,0,0.5,0,0.7-0.1c0.2-0.1,0.4-0.2,0.6-0.3c0.2-0.1,0.3-0.3,0.5-0.5
+			c0.1-0.2,0.3-0.4,0.3-0.6c-0.3,0.1-0.5,0.2-0.8,0.3c-0.3,0.1-0.5,0.2-0.8,0.2c-0.6,0-1.1-0.1-1.6-0.3s-0.9-0.5-1.3-0.9
+			c-0.4-0.4-0.7-0.8-0.9-1.4c-0.2-0.5-0.3-1.1-0.3-1.8v-5.2H77v5.2c0,0.3,0,0.6,0.1,0.9c0.1,0.2,0.2,0.5,0.4,0.6
+			c0.2,0.2,0.4,0.3,0.6,0.4c0.2,0.1,0.5,0.1,0.7,0.1c0.2,0,0.5-0.1,0.7-0.2c0.2-0.1,0.4-0.3,0.6-0.4c0.2-0.2,0.3-0.4,0.4-0.6
+			c0.1-0.2,0.1-0.5,0.1-0.7v-5.2H83v8.2c0,0.7-0.1,1.3-0.4,1.8c-0.2,0.6-0.6,1.1-1,1.5c-0.4,0.4-0.9,0.8-1.5,1
+			c-0.6,0.2-1.2,0.4-1.8,0.4L77,25z M73,14.7c-0.2-0.6-0.6-1.1-1-1.6c-0.4-0.4-0.9-0.8-1.5-1c-0.6-0.2-1.2-0.4-1.9-0.4
+			c-0.2,0-0.4,0-0.7,0.1c-0.2,0-0.4,0.1-0.7,0.2c-0.2,0.1-0.4,0.2-0.6,0.3c-0.2,0.1-0.3,0.3-0.5,0.4V8.4h-2.4v8.3
+			c0,0.7,0.1,1.4,0.4,2c0.2,0.6,0.6,1.1,1,1.6c0.4,0.4,0.9,0.8,1.5,1c0.6,0.2,1.2,0.4,1.9,0.4c0.7,0,1.3-0.1,1.9-0.4
+			c0.6-0.2,1.1-0.6,1.5-1c0.4-0.4,0.8-1,1-1.6c0.2-0.6,0.4-1.3,0.4-2C73.3,16,73.2,15.3,73,14.7z M68.6,19.2l-2.7-2.9l1.3-1.5H70
+			l1.3,1.5L68.6,19.2z"/>
+		<linearGradient id="logotype_elixir_gradient" gradientUnits="userSpaceOnUse" x1="116.7219" y1="21.3671" x2="116.7219" y2="6.8366">
+			<stop  offset="0" style="stop-color:#65308A"/>
+			<stop  offset="0.1991" style="stop-color:#68348C"/>
+			<stop  offset="0.4054" style="stop-color:#714194"/>
+			<stop  offset="0.615" style="stop-color:#7F55A0"/>
+			<stop  offset="0.8255" style="stop-color:#9472B1"/>
+			<stop  offset="1" style="stop-color:#A990C2"/>
+		</linearGradient>
+		<path class="logotype_elixir logotype_elixir" d="M106.4,21.4h-8.6V8.9h8.6v2.5h-6.1v2.5h4.1v2.5h-4.1v2.5h6.1V21.4z M110.3,21.4h-2.4v-13h2.4
+			V21.4z M114.9,9.5c0,0.2,0,0.4-0.1,0.6c-0.1,0.2-0.2,0.4-0.3,0.5c-0.1,0.1-0.3,0.3-0.5,0.3c-0.2,0.1-0.4,0.1-0.6,0.1
+			s-0.4,0-0.6-0.1c-0.2-0.1-0.4-0.2-0.5-0.3c-0.1-0.1-0.3-0.3-0.3-0.5c-0.1-0.2-0.1-0.4-0.1-0.6c0-0.2,0-0.4,0.1-0.6
+			c0.1-0.2,0.2-0.4,0.3-0.5c0.1-0.1,0.3-0.3,0.5-0.3c0.2-0.1,0.4-0.1,0.6-0.1s0.4,0,0.6,0.1c0.2,0.1,0.4,0.2,0.5,0.3
+			c0.1,0.1,0.3,0.3,0.3,0.5C114.9,9.1,114.9,9.3,114.9,9.5z M114.5,21.4h-2.4V12h2.4V21.4z M127.8,8.6c0.7,0.7,0.6,1.2,0.5,1.7
+			c-0.2,0.7-0.9,0.9-1.5,0.8c-0.8-0.1-1.3-0.7-1.1-1.8c0.1-0.8,0.8-2,1.5-2.4C127.1,7.6,127.3,8.1,127.8,8.6z M125,21.4H122l-1.9-2.9
+			l-1.9,2.9h-2.9l3.4-4.8l-3.4-4.6h2.9l1.9,2.7L122,12h2.9l-3.4,4.6L125,21.4z M128.2,21.4h-2.4V12h2.4V21.4z M131.7,21.4h-2.4V12
+			h0.6l0.8,1.1c0.4-0.3,0.8-0.6,1.3-0.8c0.5-0.2,1-0.3,1.5-0.3h2.1v2.4h-2.1c-0.2,0-0.5,0-0.7,0.1c-0.2,0.1-0.4,0.2-0.6,0.4
+			c-0.2,0.2-0.3,0.4-0.4,0.6c-0.1,0.2-0.1,0.5-0.1,0.7V21.4z"/>
+		<path class="deco-color" d="M90.7,20.7c-0.1,0-0.1,0-0.2-0.1l-2.9-2.9c-0.1-0.1-0.1-0.1-0.1-0.2c0-0.1,0-0.1,0.1-0.2l2.2-2.2L87.6,13
+			c-0.1-0.1-0.1-0.1-0.1-0.2c0-0.1,0-0.1,0.1-0.2l2.9-2.9c0.1-0.1,0.3-0.1,0.4,0l2.9,2.9c0.1,0.1,0.1,0.1,0.1,0.2
+			c0,0.1,0,0.1-0.1,0.2l-2.2,2.2l2.2,2.2c0.1,0.1,0.1,0.1,0.1,0.2c0,0.1,0,0.1-0.1,0.2l-2.9,2.9C90.8,20.7,90.8,20.7,90.7,20.7z"/>
+	</g>
+	<g class="logo">
+		<linearGradient id="logo_frame_gradient" gradientUnits="userSpaceOnUse" x1="14.186" y1="50" x2="14.186" y2="-1.818989e-12">
+			<stop  offset="0" style="stop-color:#3B4A69"/>
+			<stop  offset="1" style="stop-color:#606B85"/>
+		</linearGradient>
+		<path class="logo_frame" d="M14.2,50c-0.3,0-0.6-0.1-0.9-0.4L0.4,36.7C0.1,36.5,0,36.2,0,35.8c0-0.3,0.1-0.6,0.4-0.9l10-9.9l-10-9.9
+			C0.1,14.8,0,14.5,0,14.2c0-0.3,0.1-0.6,0.4-0.9L13.3,0.4c0.5-0.5,1.3-0.5,1.8,0L28,13.3c0.2,0.2,0.4,0.6,0.4,0.9
+			c0,0.3-0.1,0.6-0.4,0.9L18,25l10,9.9c0.2,0.2,0.4,0.6,0.4,0.9c0,0.3-0.1,0.6-0.4,0.9L15.1,49.6C14.8,49.9,14.5,50,14.2,50z
+			M2,35.8L14.2,48l12.2-12.2l-10-9.9C16.2,25.6,16,25.3,16,25c0-0.3,0.1-0.6,0.4-0.9l10-9.9L14.2,2L2,14.2l10,9.9
+			c0.5,0.5,0.5,1.3,0,1.8L2,35.8z"/>
+		<path class="logo_ruby logotype_ruby" d="M19.1,10.6H9.2L5.8,14l8.4,8.4l8.4-8.4L19.1,10.6z M19.2,15.2l-0.4-1.1l-1-0.4l1-0.4l0.4-1.1
+			l0.4,1.1l1,0.4l-1,0.4L19.2,15.2z"/>
+		<path class="logo_elixir logotype_elixir" d="M14.5,27.3c-0.1,1.7,0.5,2.9,1.5,4c1.5,1.7,1.5,2.9,1.1,3.8c-0.5,1.6-2.2,2.1-3.6,1.9
+			c-1.8-0.3-2.9-1.7-2.5-4.1C11.4,31,12.9,28.4,14.5,27.3z M15.9,40.6c-1.6-0.1-2.1-1.6-4-1.6c-2.1,0-2.9,1.3-2.9,1.3l5.1,5.1
+			l5.1-5.1C18.2,39.6,17.3,40.7,15.9,40.6z"/>
+	</g>
+</svg>
+</a><button class="navbar-toggle" data-target="#navbar-collapse" data-toggle="collapse" type="button"><?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="20px" viewBox="0 0 30 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title>Navbar Menu</title>
+	<linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="main_gradient">
+		<stop stop-color="#652F8B" offset="0%"></stop>
+		<stop stop-color="#CC1D23" offset="100%"></stop>
+	</linearGradient>
+	<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+		<g transform="translate(-270.000000, -25.000000)" fill="url(#main_gradient)">
+			<path d="M270.36036,26.9181586 C270.24024,26.7988059 270.15015,26.6751925 270.09009,26.5473146 C270.03003,26.4194367 270,26.2702481 270,26.0997442 C270,25.9462908 270.03003,25.8013647 270.09009,25.6649616 C270.15015,25.5285586 270.24024,25.4092077 270.36036,25.3069054 C270.480481,25.2046031 270.62062,25.1278775 270.780781,25.0767263 C270.940942,25.0255752 271.11111,25 271.291291,25 L298.708709,25 C298.88889,25 299.059058,25.0255752 299.219219,25.0767263 C299.37938,25.1278775 299.519519,25.2046031 299.63964,25.3069054 C299.75976,25.4092077 299.84985,25.5285586 299.90991,25.6649616 C299.96997,25.8013647 300,25.9462908 300,26.0997442 C300,26.2702481 299.96997,26.4194367 299.90991,26.5473146 C299.84985,26.6751925 299.75976,26.7988059 299.63964,26.9181586 C299.519519,27.0204609 299.37938,27.0971864 299.219219,27.1483376 C299.059058,27.1994887 298.88889,27.2250639 298.708709,27.2250639 L271.291291,27.2250639 C271.11111,27.2250639 270.940942,27.1994887 270.780781,27.1483376 C270.62062,27.0971864 270.480481,27.0204609 270.36036,26.9181586 Z M299.63964,34.2071611 C299.75976,34.3094634 299.84985,34.4288143 299.90991,34.5652174 C299.96997,34.7016205 300,34.8465465 300,35 C300,35.1534535 299.96997,35.2983795 299.90991,35.4347826 C299.84985,35.5711857 299.75976,35.6905366 299.63964,35.7928389 C299.519519,35.8951412 299.37938,35.9718668 299.219219,36.0230179 C299.059058,36.0741691 298.88889,36.0997442 298.708709,36.0997442 L271.291291,36.0997442 C271.11111,36.0997442 270.940942,36.0741691 270.780781,36.0230179 C270.62062,35.9718668 270.480481,35.8951412 270.36036,35.7928389 C270.24024,35.6905366 270.15015,35.5711857 270.09009,35.4347826 C270.03003,35.2983795 270,35.1534535 270,35 C270,34.8465465 270.03003,34.7016205 270.09009,34.5652174 C270.15015,34.4288143 270.24024,34.3094634 270.36036,34.2071611 C270.480481,34.1048588 270.62062,34.0281332 270.780781,33.9769821 C270.940942,33.9258309 271.11111,33.9002558 271.291291,33.9002558 L298.708709,33.9002558 C298.88889,33.9002558 299.059058,33.9258309 299.219219,33.9769821 C299.37938,34.0281332 299.519519,34.1048588 299.63964,34.2071611 Z M299.63964,43.0818414 C299.75976,43.1841437 299.84985,43.3034946 299.90991,43.4398977 C299.96997,43.5763008 300,43.7212269 300,43.8746803 C300,44.0451841 299.96997,44.1943728 299.90991,44.3222506 C299.84985,44.4501285 299.75976,44.5737419 299.63964,44.6930946 C299.519519,44.7953969 299.37938,44.8721225 299.219219,44.9232737 C299.059058,44.9744248 298.88889,45 298.708709,45 L271.291291,45 C271.11111,45 270.940942,44.9744248 270.780781,44.9232737 C270.62062,44.8721225 270.480481,44.7953969 270.36036,44.6930946 C270.24024,44.5737419 270.15015,44.4501285 270.09009,44.3222506 C270.03003,44.1943728 270,44.0451841 270,43.8746803 C270,43.7212269 270.03003,43.5763008 270.09009,43.4398977 C270.15015,43.3034946 270.24024,43.1841437 270.36036,43.0818414 C270.480481,42.9795391 270.62062,42.9028136 270.780781,42.8516624 C270.940942,42.8005113 271.11111,42.7749361 271.291291,42.7749361 L298.708709,42.7749361 C298.88889,42.7749361 299.059058,42.8005113 299.219219,42.8516624 C299.37938,42.9028136 299.519519,42.9795391 299.63964,43.0818414 Z" id="menu"></path>
+		</g>
+	</g>
+</svg></button></div><div class="collapse navbar-collapse" id="navbar-collapse"><ul class="nav navbar-nav navbar-right"><li><a href="/program">Program</a></li><li><a href="/speakers">Speakers</a></li><li><a href="/sponsors">Sponsors</a></li><li class="register-now"><div class="coming-soon" data-balloon="Coming Soon ✨" data-balloon-pos="up"><div class="btn-medium visible-xs inactive"><span>Register Now</span></div></div><div class="coming-soon" data-balloon="Coming Soon ✨" data-balloon-pos="down"><div class="btn-medium hidden-xs inactive"><span>Register Now</span></div></div></li></ul></div></div></nav><div class="main"><section id="cover"><h1 class="hidden">Ruby X Elixir Conf Taiwan 2018</h1><div class="cover-bg"><?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" class="deco_wave_gradient bg-deco" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 65 150" style="enable-background:new 0 0 65 300;" xml:space="preserve">
+	<style type="text/css">
+		.gradient_wave{stroke:url(#deco-gradient_wave)}
+	</style>
+	<linearGradient id="deco-gradient_wave" gradientUnits="userSpaceOnUse" x1="34.3775" y1="119.777" x2="34.3775" y2="59.5077">
+		<stop  offset="0" style="stop-color:#652F8B"/>
+		<stop  offset="1" style="stop-color:#CC1D23"/>
+	</linearGradient>
+	<path class="deco-line gradient_wave sinewave" d="M42.5,0c0,16.7-20,16.7-20,33.3c0,16.7,20,16.7,20,33.3c0,16.7-20,16.7-20,33.3c0,16.7,20,16.7,20,33.3
+		c0,16.7-20,16.7-20,33.3c0,16.7,20,16.7,20,33.3c0,16.7-20,16.7-20,33.3c0,16.7,20,16.7,20,33.3s-20,16.7-20,33.3 M62.5,0
+		c0,16.7-20,16.7-20,33.3c0,16.7,20,16.7,20,33.3c0,16.7-20,16.7-20,33.3c0,16.7,20,16.7,20,33.3c0,16.7-20,16.7-20,33.3
+		c0,16.7,20,16.7,20,33.3c0,16.7-20,16.7-20,33.3c0,16.7,20,16.7,20,33.3s-20,16.7-20,33.3 M22.5,0c0,16.7-20,16.7-20,33.3
+		c0,16.7,20,16.7,20,33.3c0,16.7-20,16.7-20,33.3c0,16.7,20,16.7,20,33.3c0,16.7-20,16.7-20,33.3c0,16.7,20,16.7,20,33.3
+		c0,16.7-20,16.7-20,33.3c0,16.7,20,16.7,20,33.3s-20,16.7-20,33.3"/>
+</svg>
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" class="deco_wave bg-deco" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 150 65" style="enable-background:new 0 0 300 65;" xml:space="preserve">
+	<path class="deco-line sinewave" d="M0,22.5c16.7,0,16.7,20,33.3,20c16.7,0,16.7-20,33.3-20c16.7,0,16.7,20,33.3,20c16.7,0,16.7-20,33.3-20
+		c16.7,0,16.7,20,33.3,20c16.7,0,16.7-20,33.3-20c16.7,0,16.7,20,33.3,20c16.7,0,16.7-20,33.3-20s16.7,20,33.3,20 M0,2.5
+		c16.7,0,16.7,20,33.3,20c16.7,0,16.7-20,33.3-20c16.7,0,16.7,20,33.3,20c16.7,0,16.7-20,33.3-20c16.7,0,16.7,20,33.3,20
+		c16.7,0,16.7-20,33.3-20c16.7,0,16.7,20,33.3,20c16.7,0,16.7-20,33.3-20s16.7,20,33.3,20 M0,42.5c16.7,0,16.7,20,33.3,20
+		c16.7,0,16.7-20,33.3-20c16.7,0,16.7,20,33.3,20c16.7,0,16.7-20,33.3-20c16.7,0,16.7,20,33.3,20c16.7,0,16.7-20,33.3-20
+		c16.7,0,16.7,20,33.3,20c16.7,0,16.7-20,33.3-20s16.7,20,33.3,20"/>
+</svg>
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" class="deco_cross bg-deco" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+		viewBox="0 0 34 34" style="enable-background:new 0 0 34 34;" xml:space="preserve">
+	<title>Deco/Cross</title>
+	<path class="deco-line" d="M1.6,17h30.7 M17,1.6v30.7"/>
+</svg>
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" class="deco_oval bg-deco" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 22 22" style="enable-background:new 0 0 22 22;" xml:space="preserve">
+	<title>Deco/Oval</title>
+	<circle class="deco-line" cx="11" cy="11" r="10"/>
+</svg>
+<div class="tablet visible-sm-block visible-md-block visible-lg-block"><?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" class="deco_cross bg-deco" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+		viewBox="0 0 34 34" style="enable-background:new 0 0 34 34;" xml:space="preserve">
+	<title>Deco/Cross</title>
+	<path class="deco-line" d="M1.6,17h30.7 M17,1.6v30.7"/>
+</svg>
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" class="deco_cross_gradient bg-deco" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 42 42" style="enable-background:new 0 0 42 42;" xml:space="preserve">
+	<style type="text/css">
+		.gradient_cross{stroke:url(#deco-gradient_cross)}
+	</style>
+	<title>Deco/Gradient Cross</title>
+	<linearGradient id="deco-gradient_cross" gradientUnits="userSpaceOnUse" x1="21" y1="42" x2="21" y2="21">
+		<stop  offset="0" style="stop-color:#652F8B"/>
+		<stop  offset="1" style="stop-color:#CC1D23"/>
+	</linearGradient>
+	<path class="deco-line gradient_cross" d="M1,21h40 M21,1v40"/>
+</svg>
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" class="deco_oval_gradient bg-deco" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
+	<style type="text/css">
+		.gradient_oval{stroke:url(#deco-gradient_oval)}
+	</style>
+	<title>Deco/Gradient Oval</title>
+	<linearGradient id="deco-gradient_oval" gradientUnits="userSpaceOnUse" x1="-175.9" y1="209.9" x2="-176.9" y2="210.9" gradientTransform="matrix(30 0 0 -30 5308 6328)">
+		<stop  offset="0" style="stop-color:#652F8B"/>
+		<stop  offset="1" style="stop-color:#CC1D23"/>
+	</linearGradient>
+	<circle class="deco-line gradient_oval" cx="16" cy="16" r="15"/>
+</svg><?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" class="deco_triangle_gradient bg-deco" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 46 39" style="enable-background:new 0 0 46 39;" xml:space="preserve">
+	<style type="text/css">
+		.gradient_triangle{stroke:url(#deco-gradient_triangle)}
+	</style>
+	<title>Deco/Gradient Triangle</title>
+	<linearGradient id="deco-gradient_triangle" gradientUnits="userSpaceOnUse" x1="-171.03" y1="213.7795" x2="-172.03" y2="214.7795" gradientTransform="matrix(42 0 0 -36 7218 7742)">
+		<stop  offset="0" style="stop-color:#652F8B"/>
+		<stop  offset="1" style="stop-color:#CC1D23"/>
+	</linearGradient>
+	<polygon class="deco-line gradient_triangle" points="23,2 44,38 2,38 "/>
+</svg>
+</div><?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" id="bg-square" class="bg-image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 292 292" style="enable-background:new 0 0 292 292;" xml:space="preserve">
+	<title>Backgroubnd/Square</title>
+	<style type="text/css">
+		.filter-square{fill:url(#bg-gradient_square);mix-blend-mode: hard-light;}
+		.shadow-square{filter:url(#bg-shadow_square);}
+	</style>
+	<defs>
+		<path d="M152.8,3.1l135.6,135.6c3.9,3.9,3.9,10.2,0,14.1L152.8,288.4c-3.9,3.9-10.2,3.9-14.1,0L3.1,152.8c-3.9-3.9-3.9-10.2,0-14.1L138.7,3.1C142.6-0.8,148.9-0.8,152.8,3.1z"/>
+		<clipPath id="square-mask">
+			<path d="M152.8,3.1l135.6,135.6c3.9,3.9,3.9,10.2,0,14.1L152.8,288.4c-3.9,3.9-10.2,3.9-14.1,0L3.1,152.8c-3.9-3.9-3.9-10.2,0-14.1L138.7,3.1C142.6-0.8,148.9-0.8,152.8,3.1z"/>
+		</clipPath>
+		<linearGradient x1="100%" y1="100%" x2="0%" y2="0%" id="bg-gradient_square">
+				<stop stop-color="#652F8B" offset="0%"></stop>
+				<stop stop-color="#CC1D23" offset="100%"></stop>
+		</linearGradient>
+		<filter x="-3.5%" y="-3.5%" width="107.1%" height="107.1%" filterUnits="objectBoundingBox" id="bg-shadow_square">
+				<feGaussianBlur stdDeviation="7.5" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+				<feOffset dx="0" dy="0" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+				<feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+				<feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+		</filter>
+	</defs>
+	<image clip-path="url(#square-mask)" width="100%" height="100%" xlink:href="images/assets/cover-taiwan_1.jpg" />
+	<path class="filter-square" d="M152.8,3.1l135.6,135.6c3.9,3.9,3.9,10.2,0,14.1L152.8,288.4c-3.9,3.9-10.2,3.9-14.1,0L3.1,152.8c-3.9-3.9-3.9-10.2,0-14.1L138.7,3.1C142.6-0.8,148.9-0.8,152.8,3.1z"/>
+	<path class="shadow-square" d="M152.8,3.1l135.6,135.6c3.9,3.9,3.9,10.2,0,14.1L152.8,288.4c-3.9,3.9-10.2,3.9-14.1,0L3.1,152.8c-3.9-3.9-3.9-10.2,0-14.1L138.7,3.1C142.6-0.8,148.9-0.8,152.8,3.1z"/>
+</svg>
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" id="bg-stripe" class="bg-image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 420 234" style="enable-background:new 0 0 420 234;" xml:space="preserve">
+	<title>Backgroubnd/Stripe</title>
+	<style type="text/css">
+		.filter-stripe{fill:url(#bg-gradient_stripe);mix-blend-mode: hard-light;}
+		.shadow-stripe{filter:url(#bg-shadow);}
+	</style>
+	<defs>
+		<path d="M4,0h416v93.3H4l0,0c-2.2,0-4-1.8-4-4V4l0,0C0,1.8,1.8,0,4,0L4,0z M74,105h346v70H74c-2.2,0-4-1.8-4-4v-62C70,106.8,71.8,105,74,105z M144,186.7h276v46.7H144c-2.2,0-4-1.8-4-4v-38.7C140,188.5,141.8,186.7,144,186.7z"/>
+		<clipPath id="stripe-mask">
+			<path d="M4,0h416v93.3H4l0,0c-2.2,0-4-1.8-4-4V4l0,0C0,1.8,1.8,0,4,0L4,0z M74,105h346v70H74c-2.2,0-4-1.8-4-4v-62C70,106.8,71.8,105,74,105z M144,186.7h276v46.7H144c-2.2,0-4-1.8-4-4v-38.7C140,188.5,141.8,186.7,144,186.7z"/>
+		</clipPath>
+		<linearGradient x1="100%" y1="100%" x2="0%" y2="0%" id="bg-gradient_stripe">
+				<stop stop-color="#652F8B" offset="0%"></stop>
+				<stop stop-color="#CC1D23" offset="100%"></stop>
+		</linearGradient>
+		<filter x="-3.5%" y="-3.5%" width="107.1%" height="107.1%" filterUnits="objectBoundingBox" id="bg-shadow">
+				<feGaussianBlur stdDeviation="7.5" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+				<feOffset dx="0" dy="0" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+				<feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+				<feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+		</filter>
+	</defs>
+	<image clip-path="url(#stripe-mask)" width="100%" height="100%" xlink:href="images/assets/cover-taiwan_2.jpg" />
+	<path class="filter-stripe" d="M4,0h416v93.3H4l0,0c-2.2,0-4-1.8-4-4V4l0,0C0,1.8,1.8,0,4,0L4,0z M74,105h346v70H74c-2.2,0-4-1.8-4-4v-62C70,106.8,71.8,105,74,105z M144,186.7h276v46.7H144c-2.2,0-4-1.8-4-4v-38.7C140,188.5,141.8,186.7,144,186.7z"/>
+	<path class="shadow-stripe" d="M4,0h416v93.3H4l0,0c-2.2,0-4-1.8-4-4V4l0,0C0,1.8,1.8,0,4,0L4,0z M74,105h346v70H74c-2.2,0-4-1.8-4-4v-62C70,106.8,71.8,105,74,105z M144,186.7h276v46.7H144c-2.2,0-4-1.8-4-4v-38.7C140,188.5,141.8,186.7,144,186.7z"/>
+</svg>
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" id="bg-oval" class="bg-image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 300 300" style="enable-background:new 0 0 300 300;" xml:space="preserve">
+	<title>Backgroubnd/Oval</title>
+	<style type="text/css">
+		.filter-oval{fill:url(#bg-gradient_oval);mix-blend-mode: hard-light;}
+		.shadow-oval{filter:url(#bg-shadow_oval);}
+	</style>
+	<defs>
+		<circle cx="150" cy="150" r="150"/>
+		<clipPath id="oval-mask">
+			<circle cx="150" cy="150" r="150"/>
+		</clipPath>
+		<linearGradient x1="100%" y1="100%" x2="0%" y2="0%" id="bg-gradient_oval">
+				<stop stop-color="#652F8B" offset="0%"></stop>
+				<stop stop-color="#CC1D23" offset="100%"></stop>
+		</linearGradient>
+		<filter x="-3.5%" y="-3.5%" width="107.1%" height="107.1%" filterUnits="objectBoundingBox" id="bg-shadow_oval">
+				<feGaussianBlur stdDeviation="7.5" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+				<feOffset dx="0" dy="0" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+				<feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+				<feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+		</filter>
+	</defs>
+	<image clip-path="url(#oval-mask)" width="100%" height="100%" xlink:href="images/assets/cover-taiwan_3.jpg" />
+	<circle class="filter-oval" cx="150" cy="150" r="150"/>
+	<circle class="shadow-oval" cx="150" cy="150" r="150"/>
+</svg>
+</div><div class="intro"><div class="ruby_elixir_logo"><?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" class="main_logo_alt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 320 284" style="enable-background:new 0 0 320 284;" xml:space="preserve">
+	<style type="text/css">
+		.alt_logotype_ruby{fill:url(#alt_logotype_ruby_gradient);}
+		.alt_logotype_elixir{fill:url(#alt_logotype_elixir_gradient);}
+		.alt_logo_frame{fill:url(#alt_logo_frame_gradient);}
+		.alt_logo_ruby{fill:url(#alt_logo_ruby_gradient);}
+		.alt_logo_elixir{fill:url(#alt_logo_elixir_gradient);}
+	</style>
+	<title>Main Logo Alt</title>
+	<g class="conf_taiwan_2018 swing-in-bottom-fwd">
+		<path class="year logotype-color" d="M89.6,196.2c-0.8,0.8-1.7,1.4-2.8,1.9c-1,0.4-2.1,0.6-3.2,0.6c-1.1,0-2.1-0.2-3.1-0.6
+		c-1-0.4-1.9-1-2.8-1.8l-2-2c-0.3-0.3-0.6-0.5-0.9-0.6c-0.3-0.1-0.7-0.2-1-0.2c-0.4,0-0.7,0.1-1,0.2s-0.6,0.3-0.9,0.6l-2,2l9.3,9.4
+		l-3.9,4L62,196.2l5.9-6c0.8-0.8,1.7-1.4,2.8-1.8c1-0.4,2.1-0.6,3.2-0.6c1.1,0,2.1,0.2,3.1,0.6c1,0.4,1.9,1,2.8,1.9l2,2
+		c0.3,0.3,0.6,0.5,0.9,0.6c0.3,0.1,0.7,0.2,1,0.2c0.4,0,0.7-0.1,1.1-0.2c0.3-0.1,0.7-0.4,0.9-0.6c0.3-0.3,0.5-0.6,0.6-0.9
+		c0.1-0.3,0.2-0.7,0.2-1.1c0-0.4-0.1-0.7-0.2-1.1c-0.1-0.3-0.3-0.7-0.6-0.9l-7-7.1l3.9-4l7,7.1c0.8,0.8,1.4,1.8,1.8,2.8
+		c0.4,1,0.6,2.1,0.6,3.2c0,1.1-0.2,2.1-0.6,3.2C91,194.4,90.4,195.3,89.6,196.2z M103.6,218.3c-1.9,1.9-3.7,3.3-5.4,4.2
+		s-3.3,1.4-4.8,1.5c-1.5,0.1-2.9-0.2-4.2-0.8c-1.3-0.6-2.5-1.5-3.6-2.6s-1.9-2.3-2.5-3.6c-0.6-1.3-0.8-2.8-0.8-4.3
+		c0.1-1.5,0.6-3.1,1.5-4.9c0.9-1.7,2.2-3.5,4.1-5.4c1.9-1.9,3.7-3.3,5.4-4.2c1.7-0.9,3.3-1.4,4.8-1.5c1.5-0.1,2.9,0.2,4.2,0.8
+		c1.3,0.6,2.5,1.5,3.6,2.6c1.1,1.1,1.9,2.3,2.5,3.6c0.6,1.3,0.8,2.8,0.8,4.3c-0.1,1.5-0.6,3.2-1.4,4.9
+		C106.8,214.6,105.5,216.4,103.6,218.3z M99.9,214.5c2.2-2.2,3.5-4.2,3.8-6c0.3-1.8-0.1-3.4-1.5-4.7c-1.3-1.3-2.8-1.8-4.6-1.4
+		c-1.8,0.3-3.8,1.6-6,3.9c-2.2,2.2-3.5,4.2-3.8,6c-0.3,1.8,0.1,3.3,1.4,4.6c0.7,0.7,1.4,1.1,2.1,1.4c0.8,0.3,1.6,0.3,2.5,0.1
+		c0.9-0.2,1.8-0.6,2.8-1.2C97.7,216.5,98.8,215.6,99.9,214.5z M101.9,236.4l-3.9-4l15.8-15.9l-2-2l3.9-4l5.9,6L101.9,236.4z
+		M126.1,241.1h6.2c0.7,0,1.3-0.3,1.8-0.7c0.5-0.5,0.7-1.1,0.7-1.8l0-10.5c0-0.7-0.3-1.3-0.7-1.8c-0.5-0.5-1.1-0.7-1.8-0.7l-10.4,0
+		c-0.7,0-1.3,0.3-1.8,0.7c-0.5,0.5-0.7,1.1-0.7,1.8v6.3l-6.2,0c-0.7,0-1.3,0.3-1.8,0.7c-0.5,0.5-0.7,1.1-0.7,1.8l0,10.5
+		c0,0.7,0.3,1.3,0.7,1.8c0.5,0.5,1.1,0.7,1.8,0.7l10.4,0c0.7,0,1.3-0.3,1.8-0.7c0.5-0.5,0.7-1.1,0.7-1.8V241.1z M124,230.2l6.2,0
+		l0,6.2l-6.2,0L124,230.2z M121.5,239l0,6.2l-6.2,0l0-6.2L121.5,239z"/>
+		<path class="conf logotype-color" d="M172.9,268.6c-0.1,1.7-0.5,3.4-1.3,4.9c-0.7,1.6-1.7,3-2.9,4.2c-0.9,0.9-2,1.7-3.1,2.4
+		c-1.1,0.6-2.3,1.1-3.5,1.4c-1.2,0.3-2.4,0.5-3.7,0.5c-1.2,0-2.5-0.2-3.7-0.5c-1.2-0.3-2.4-0.8-3.5-1.4c-1.1-0.6-2.1-1.4-3.1-2.4
+		s-1.7-2-2.3-3.1c-0.6-1.1-1.1-2.3-1.4-3.5c-0.3-1.2-0.5-2.4-0.5-3.7c0-1.3,0.2-2.5,0.5-3.7c0.3-1.2,0.8-2.4,1.4-3.5
+		c0.6-1.1,1.4-2.1,2.3-3.1c1.2-1.2,2.6-2.2,4.2-2.9c1.6-0.7,3.2-1.1,4.9-1.3l1.3,5.6c-1.2,0-2.4,0.2-3.5,0.6c-1.1,0.5-2.1,1.1-3,2
+		c-0.9,0.9-1.5,1.9-2,3s-0.6,2.2-0.7,3.4c0,1.1,0.2,2.3,0.6,3.4c0.4,1.1,1.1,2.1,1.9,3c0.9,0.9,1.8,1.5,2.9,1.9s2.2,0.6,3.3,0.6
+		c1.1,0,2.2-0.2,3.3-0.7s2.1-1.1,2.9-2c0.9-0.9,1.5-1.9,2-3c0.5-1.1,0.7-2.3,0.6-3.5L172.9,268.6z M183.1,247.4
+		c1.1,1.1,1.9,2.3,2.5,3.7c0.6,1.4,0.8,2.7,0.9,4.1c0,1.4-0.2,2.7-0.7,4.1c-0.5,1.3-1.3,2.5-2.3,3.6c-1,1-2.2,1.8-3.5,2.3
+		c-1.3,0.5-2.7,0.8-4,0.8c-1.4,0-2.7-0.3-4.1-0.9s-2.6-1.4-3.7-2.5c-1.1-1.1-2-2.4-2.5-3.7c-0.6-1.4-0.8-2.7-0.9-4.1
+		c0-1.4,0.2-2.7,0.8-4.1c0.5-1.3,1.3-2.5,2.3-3.5c1-1.1,2.2-1.9,3.5-2.4c1.3-0.5,2.6-0.8,4-0.8c1.4,0,2.7,0.3,4.1,0.9
+		C180.6,245.3,181.9,246.2,183.1,247.4z M179.3,251.2c-0.6-0.6-1.3-1.1-1.9-1.4c-0.7-0.3-1.4-0.5-2.1-0.5c-0.7,0-1.4,0.1-2,0.4
+		c-0.6,0.3-1.2,0.7-1.7,1.2c-0.5,0.5-0.9,1.1-1.2,1.7c-0.3,0.6-0.4,1.3-0.4,2c0,0.7,0.2,1.4,0.5,2.1c0.3,0.7,0.7,1.3,1.4,1.9
+		c0.6,0.6,1.2,1,1.9,1.3c0.7,0.3,1.4,0.5,2.1,0.5c0.7,0,1.4-0.1,2-0.3c0.7-0.2,1.2-0.6,1.8-1.2s0.9-1.1,1.2-1.8
+		c0.3-0.7,0.4-1.3,0.4-2c0-0.7-0.2-1.4-0.5-2.1C180.3,252.4,179.9,251.8,179.3,251.2z M196,249.5l-3.8,3.8l-14.7-14.8l0.9-0.9
+		l2.7,0.2c0.1-1.2,0.3-2.3,0.8-3.4c0.5-1.1,1.1-2,2-2.9c0.9-0.9,1.9-1.6,3.1-2s2.3-0.7,3.5-0.7c1.2,0,2.4,0.2,3.5,0.7
+		c1.1,0.5,2.2,1.2,3.1,2.1l8.4,8.5l-3.8,3.8l-8.4-8.5c-0.4-0.4-0.8-0.7-1.3-0.9s-1-0.3-1.5-0.3c-0.5,0-1,0.1-1.5,0.3
+		c-0.5,0.2-0.9,0.5-1.3,0.9c-0.4,0.4-0.7,0.8-0.9,1.3c-0.2,0.5-0.3,1-0.3,1.5c0,0.5,0.1,1,0.3,1.5c0.2,0.5,0.5,0.9,0.9,1.3
+		L196,249.5z M212.2,233.1l-3.8,3.8l-11-11.1l-1.8,1.8l-3.7-3.8l1.8-1.8l-0.7-0.7c-0.9-0.9-1.6-1.9-2-3.1c-0.5-1.2-0.7-2.3-0.7-3.5
+		c0-1.2,0.2-2.4,0.7-3.5s1.1-2.2,2-3.1l2.8-2.8l3.7,3.8l-2.8,2.8c-0.4,0.4-0.7,0.9-0.9,1.3c-0.2,0.5-0.3,1-0.3,1.5
+		c0,0.5,0.1,1,0.3,1.5c0.2,0.5,0.5,0.9,0.9,1.4l0.7,0.7l4.6-4.6l3.7,3.8l-4.6,4.6L212.2,233.1z"/>
+		<path class="taiwan logotype-color" d="M237.6,207.5l-3.9,4l-15.8-15.9l-5.9,6l-3.9-4l15.8-15.9l3.9,4l-5.9,6L237.6,207.5z M257.1,187.8
+		l-0.9,0.9l-3.5-0.6c0,0.7-0.1,1.4-0.2,2c-0.1,0.7-0.3,1.4-0.5,2c-0.2,0.7-0.5,1.3-0.9,1.9c-0.3,0.6-0.8,1.1-1.2,1.6
+		c-1,1-2.2,1.8-3.4,2.4c-1.3,0.6-2.6,0.9-3.9,0.9c-1.3,0-2.7-0.3-4.1-0.8c-1.4-0.6-2.6-1.5-3.9-2.7c-1.1-1.2-2-2.4-2.6-3.8
+		c-0.6-1.4-0.8-2.7-0.9-4.1c0-1.4,0.3-2.7,0.8-4c0.5-1.3,1.3-2.5,2.3-3.5c0.5-0.5,1-0.9,1.6-1.2c0.6-0.4,1.2-0.6,1.9-0.9
+		c0.7-0.2,1.3-0.4,2-0.5c0.7-0.1,1.4-0.2,2-0.2l-0.3-3.2l0.9-0.9L257.1,187.8z M245.8,184.1c-0.5-0.5-1.1-0.9-1.8-1.2
+		c-0.7-0.3-1.4-0.4-2.1-0.5c-0.7,0-1.4,0.1-2.1,0.3c-0.7,0.2-1.3,0.6-1.8,1.1c-0.5,0.5-0.9,1.1-1.2,1.7c-0.3,0.6-0.4,1.3-0.4,2
+		c0,0.7,0.2,1.4,0.5,2.1c0.3,0.7,0.8,1.4,1.4,2c0.6,0.6,1.3,1.1,2,1.4c0.7,0.3,1.4,0.5,2,0.5c0.7,0,1.3-0.1,2-0.4
+		c0.6-0.3,1.2-0.7,1.7-1.2c0.5-0.5,0.9-1.1,1.1-1.8c0.2-0.7,0.3-1.4,0.3-2.1c0-0.7-0.2-1.4-0.5-2.1
+		C246.7,185.2,246.3,184.6,245.8,184.1z M245.7,161.6c0.3,0.4,0.6,0.7,0.8,1.2c0.2,0.4,0.3,0.9,0.2,1.3c0,0.5-0.1,0.9-0.3,1.4
+		c-0.2,0.4-0.4,0.8-0.8,1.2c-0.3,0.4-0.7,0.6-1.2,0.8c-0.4,0.2-0.9,0.3-1.3,0.3c-0.4,0-0.9-0.1-1.3-0.3c-0.4-0.2-0.8-0.4-1.2-0.8
+		c-0.3-0.3-0.6-0.7-0.8-1.2c-0.2-0.4-0.3-0.9-0.3-1.3c0-0.5,0.1-0.9,0.3-1.3c0.2-0.4,0.4-0.8,0.8-1.2c0.3-0.4,0.7-0.6,1.2-0.8
+		c0.4-0.2,0.9-0.3,1.3-0.3c0.5,0,0.9,0.1,1.3,0.3C244.9,161,245.3,161.3,245.7,161.6z M263.7,181.1l-3.8,3.8l-14.7-14.8l3.8-3.8
+		L263.7,181.1z M279.8,154.2c0.8,0.8,1.3,1.7,1.7,2.6c0.4,1,0.6,2,0.6,3c0,1-0.2,2-0.6,3c-0.4,1-1,1.9-1.8,2.7
+		c-0.7,0.7-1.5,1.3-2.4,1.7c-0.9,0.4-1.8,0.6-2.8,0.7c0,1-0.3,1.9-0.7,2.8c-0.4,0.9-0.9,1.7-1.6,2.4c-0.8,0.8-1.7,1.4-2.6,1.8
+		c-1,0.4-2,0.6-3,0.6c-1,0-2-0.2-3-0.6c-1-0.4-1.8-1-2.6-1.8l-9.4-9.4l3.7-3.8l9.4,9.4c0.3,0.3,0.5,0.5,0.9,0.6
+		c0.3,0.1,0.6,0.2,1,0.2c0.3,0,0.7-0.1,1-0.2c0.3-0.1,0.6-0.3,0.9-0.6c0.3-0.3,0.5-0.6,0.6-0.9c0.1-0.3,0.2-0.7,0.2-1
+		c0-0.3-0.1-0.7-0.2-1c-0.1-0.3-0.3-0.6-0.6-0.9l-9.4-9.4l3.7-3.8l9.4,9.4c0.3,0.3,0.5,0.5,0.9,0.6c0.3,0.1,0.7,0.2,1,0.2
+		c0.3,0,0.7-0.1,1-0.2c0.3-0.1,0.6-0.3,0.9-0.6s0.5-0.6,0.6-0.9c0.1-0.3,0.2-0.7,0.2-1c0-0.3-0.1-0.7-0.2-1
+		c-0.1-0.3-0.3-0.6-0.6-0.9l-9.4-9.4l3.7-3.8L279.8,154.2z M302.1,142.4l-0.9,0.9l-3.5-0.6c0,0.7-0.1,1.4-0.2,2
+		c-0.1,0.7-0.3,1.4-0.5,2c-0.2,0.7-0.5,1.3-0.9,1.9c-0.3,0.6-0.8,1.1-1.2,1.6c-1,1-2.2,1.8-3.4,2.4c-1.3,0.6-2.6,0.9-3.9,0.9
+		c-1.3,0-2.7-0.3-4.1-0.8c-1.4-0.6-2.6-1.5-3.9-2.7c-1.1-1.2-2-2.4-2.6-3.8c-0.6-1.4-0.8-2.7-0.9-4.1c0-1.4,0.3-2.7,0.8-4
+		c0.5-1.3,1.3-2.5,2.3-3.5c0.5-0.5,1-0.9,1.6-1.2s1.2-0.6,1.9-0.9c0.7-0.2,1.3-0.4,2-0.5c0.7-0.1,1.4-0.2,2-0.2l-0.3-3.2l0.9-0.9
+		L302.1,142.4z M290.8,138.7c-0.5-0.5-1.1-0.9-1.8-1.2c-0.7-0.3-1.4-0.4-2.1-0.5c-0.7,0-1.4,0.1-2.1,0.3c-0.7,0.2-1.3,0.6-1.8,1.1
+		c-0.5,0.5-0.9,1.1-1.2,1.7c-0.3,0.6-0.4,1.3-0.4,2c0,0.7,0.2,1.4,0.5,2.1c0.3,0.7,0.8,1.4,1.4,2c0.6,0.6,1.3,1.1,2,1.4
+		c0.7,0.3,1.4,0.5,2,0.5c0.7,0,1.3-0.1,2-0.4c0.6-0.3,1.2-0.7,1.7-1.2c0.5-0.5,0.9-1.1,1.1-1.8c0.2-0.7,0.3-1.4,0.3-2.1
+		c0-0.7-0.2-1.4-0.5-2.1C291.8,139.8,291.4,139.2,290.8,138.7z M308.1,136.4l-3.7,3.8l-14.7-14.8l0.9-0.9l2.7,0.2
+		c0.1-1.2,0.3-2.3,0.8-3.4c0.5-1.1,1.1-2,2-2.9c0.9-0.9,1.9-1.6,3.1-2c1.1-0.5,2.3-0.7,3.5-0.7c1.2,0,2.4,0.2,3.5,0.7
+		c1.1,0.5,2.2,1.1,3.1,2.1l8.4,8.5l-3.7,3.8l-8.4-8.5c-0.4-0.4-0.8-0.7-1.3-0.9c-0.5-0.2-1-0.3-1.5-0.3c-0.5,0-1,0.1-1.5,0.3
+		c-0.5,0.2-0.9,0.5-1.3,0.9c-0.4,0.4-0.7,0.8-0.9,1.3c-0.2,0.5-0.3,1-0.3,1.5s0.1,1,0.3,1.5c0.2,0.5,0.5,0.9,0.9,1.3L308.1,136.4z"
+		/>
+	</g>
+	<g class="logotype">
+		<linearGradient id="alt_logotype_ruby_gradient" gradientUnits="userSpaceOnUse" x1="966.176" y1="-285.9514" x2="966.176" y2="-335.7051" gradientTransform="matrix(0.7071 -0.7071 0.7071 0.7071 -401.9659 1045.5944)">
+			<stop  offset="0" style="stop-color:#C02224"/>
+			<stop  offset="0.1794" style="stop-color:#C12726"/>
+			<stop  offset="0.3653" style="stop-color:#C4332B"/>
+			<stop  offset="0.5543" style="stop-color:#C94435"/>
+			<stop  offset="0.7453" style="stop-color:#D05947"/>
+			<stop  offset="0.9361" style="stop-color:#DA7463"/>
+			<stop  offset="1" style="stop-color:#DE7F6F"/>
+		</linearGradient>
+		<path class="alt_logotype_ruby roll-in-left" d="M34.2,190.4l-5.3,5.3L2.5,169.1l10.6-10.7c1-1,2-1.8,3.2-2.4c1.1-0.7,2.3-1.1,3.6-1.5
+			c1.2-0.3,2.5-0.5,3.8-0.5c1.3,0,2.6,0.2,3.8,0.5c1.2,0.3,2.4,0.8,3.6,1.5c1.1,0.7,2.2,1.5,3.2,2.4c0.9,0.9,1.7,1.9,2.3,3
+			c0.6,1.1,1.1,2.2,1.5,3.5c0.4,1.2,0.5,2.4,0.6,3.7c0,1.3-0.1,2.5-0.4,3.8l9.8,4l-5.6,5.7l-7.6-3l-5.9,6L34.2,190.4z M13.1,169.1
+			l10.6,10.7l5.3-5.3c0.7-0.7,1.3-1.6,1.6-2.5c0.4-0.9,0.5-1.9,0.5-2.8c0-1-0.2-1.9-0.6-2.8c-0.4-0.9-0.9-1.8-1.6-2.5
+			c-0.7-0.7-1.5-1.3-2.5-1.7c-0.9-0.4-1.9-0.6-2.8-0.6s-1.9,0.2-2.8,0.5s-1.7,0.9-2.5,1.6L13.1,169.1z M65.3,154.4
+			c0,0.8-0.1,1.6-0.3,2.4c-0.1,0.8-0.3,1.6-0.6,2.3c-0.3,0.7-0.6,1.5-1,2.1c-0.4,0.7-0.9,1.3-1.4,1.9c-1.2,1.2-2.6,2.2-4.1,2.8
+			c-1.5,0.6-3,1-4.6,1c-1.6,0-3.2-0.3-4.8-1c-1.6-0.7-3.1-1.7-4.5-3.2l-10.9-11l5-5.1l10.9,11c0.7,0.7,1.4,1.2,2.1,1.5
+			c0.7,0.3,1.4,0.5,2.1,0.5c0.7,0,1.4-0.1,2-0.4c0.6-0.3,1.2-0.7,1.8-1.2c0.5-0.5,0.9-1.1,1.1-1.8c0.2-0.7,0.3-1.4,0.3-2.2
+			c0-0.7-0.2-1.5-0.5-2.2c-0.3-0.7-0.7-1.3-1.2-1.8l-10.9-11l5-5.1l19.7,19.9l-1.2,1.2L65.3,154.4z M109,130.2l-5.1-5.1l2.8-2.8
+			c0.5-0.5,0.9-1.1,1.2-1.7c0.3-0.6,0.5-1.3,0.6-1.9c0.1-0.7,0.1-1.4,0-2c-0.1-0.7-0.3-1.4-0.5-2c-0.3,0.8-0.6,1.6-1,2.4
+			c-0.3,0.8-0.8,1.5-1.4,2.1c-1.2,1.2-2.6,2.2-4.1,2.8s-3,1-4.6,1c-1.6,0-3.2-0.3-4.8-1c-1.6-0.7-3.1-1.7-4.5-3.2l-10.9-11l5-5.1
+			l10.9,11c0.7,0.7,1.4,1.2,2.1,1.5c0.7,0.3,1.4,0.5,2.1,0.5s1.4-0.1,2-0.4c0.6-0.3,1.2-0.7,1.7-1.2c0.5-0.5,0.9-1.1,1.1-1.8
+			c0.2-0.7,0.3-1.4,0.3-2.2c0-0.7-0.2-1.5-0.5-2.2c-0.3-0.7-0.7-1.3-1.2-1.8L89.3,95l5.1-5.1l17.2,17.4c1.4,1.4,2.4,3,3.1,4.8
+			s1,3.6,1,5.4c0,1.8-0.4,3.6-1,5.4c-0.7,1.8-1.7,3.3-3.1,4.7L109,130.2z M78.8,116.8c-1.8-0.7-3.6-1.1-5.5-1.2c-1.8,0-3.6,0.3-5.4,1
+			c-1.7,0.7-3.3,1.8-4.7,3.2c-0.5,0.5-0.9,1-1.3,1.6c-0.4,0.6-0.7,1.2-1,1.8c-0.3,0.6-0.5,1.3-0.6,1.9c-0.1,0.7-0.1,1.3-0.1,1.9
+			l-9.2-9.3l-5,5.1l17.5,17.7c1.5,1.5,3.2,2.7,5,3.4c1.8,0.7,3.6,1.1,5.5,1.1c1.8,0,3.6-0.3,5.4-1.1c1.7-0.7,3.3-1.8,4.7-3.2
+			c1.4-1.4,2.5-3,3.2-4.7c0.7-1.7,1.1-3.5,1.1-5.4c0-1.8-0.4-3.7-1.1-5.5c-0.7-1.8-1.9-3.5-3.4-5.1C82.3,118.7,80.6,117.5,78.8,116.8z
+			M79,135.6l-11.9-0.4l-0.4-5.9l6-6l5.8,0.4L79,135.6z"/>
+		<linearGradient id="alt_logotype_elixir_gradient" gradientUnits="userSpaceOnUse" x1="1155.6155" y1="-395.0706" x2="1155.6155" y2="-439.096" gradientTransform="matrix(0.7071 -0.7071 0.7071 0.7071 -273.2614 1195.9261)">
+			<stop  offset="0" style="stop-color:#612E82"/>
+			<stop  offset="0.181" style="stop-color:#633284"/>
+			<stop  offset="0.3686" style="stop-color:#6A3B89"/>
+			<stop  offset="0.5592" style="stop-color:#764B91"/>
+			<stop  offset="0.7518" style="stop-color:#86629F"/>
+			<stop  offset="0.9443" style="stop-color:#9D82B4"/>
+			<stop  offset="1" style="stop-color:#A58DBB"/>
+		</linearGradient>
+		<path class="alt_logotype_elixir roll-in-right" d="M242.6,121.2l-18.1,18.3L198,112.9l18.1-18.3l5.3,5.3l-12.8,12.9l5.3,5.3l8.7-8.8
+		l5.3,5.3l-8.7,8.8l5.3,5.3l12.8-12.9L242.6,121.2z M250.8,112.9l-5.1,5.1l-27.6-27.8l5.1-5.1L250.8,112.9z M235.5,77.8
+		c0.5,0.5,0.8,1,1,1.6c0.2,0.6,0.3,1.2,0.3,1.8c0,0.6-0.1,1.2-0.4,1.8c-0.2,0.6-0.6,1.1-1.1,1.6c-0.5,0.5-1,0.8-1.6,1.1
+		c-0.6,0.2-1.2,0.4-1.8,0.4c-0.6,0-1.2-0.1-1.8-0.3c-0.6-0.2-1.1-0.6-1.6-1c-0.5-0.5-0.8-1-1-1.6c-0.2-0.6-0.4-1.2-0.4-1.8
+		c0-0.6,0.1-1.2,0.4-1.8c0.2-0.6,0.6-1.1,1.1-1.6c0.5-0.5,1-0.8,1.6-1.1c0.6-0.2,1.2-0.4,1.8-0.4c0.6,0,1.2,0.1,1.8,0.3
+		C234.5,77,235,77.3,235.5,77.8z M259.7,103.9l-5.1,5.1l-19.7-19.9L240,84L259.7,103.9z M260.7,48.4c3,0.2,4,1.3,4.6,2.5
+		c1,1.9-0.1,3.9-1.6,5c-1.9,1.4-4.3,1.2-6.1-1.5c-1.5-2.1-2.5-5.9-2-8.4C257.1,47.8,258.6,48.3,260.7,48.4z M281.7,81.8l-6.2,6.2
+		l-10-2.1l2.1,10.1l-6.2,6.2l-2.9-17.5l-16.9-2.5l6.2-6.2l9.6,1.7l-1.7-9.7l6.2-6.2l2.5,17.1L281.7,81.8z M288.6,74.8l-5.1,5.1
+		l-19.7-19.9l5.1-5.1L288.6,74.8z M295.9,67.4l-5,5.1l-19.7-19.9l1.2-1.2l4,0.7c0.1-1.6,0.4-3.1,1.1-4.5c0.6-1.4,1.5-2.7,2.6-3.8
+		l4.4-4.5l5,5.1l-4.4,4.5c-0.5,0.5-0.9,1.1-1.2,1.8c-0.3,0.7-0.4,1.4-0.4,2c0,0.7,0.1,1.4,0.4,2c0.3,0.7,0.7,1.3,1.2,1.8L295.9,67.4z
+		"/>
+	</g>
+	<g class="logo rotate-center">
+		<linearGradient id="alt_logo_frame_gradient" gradientUnits="userSpaceOnUse" x1="156.1897" y1="223.3393" x2="156.1897" y2="2">
+			<stop  offset="0" style="stop-color:#3A4967"/>
+			<stop  offset="1" style="stop-color:#5F6A83"/>
+		</linearGradient>
+		<path class="alt_logo_frame" d="M156.2,223.3c-1.4,0-2.8-0.5-3.9-1.6l-56.7-57.2c-1-1-1.6-2.4-1.6-3.9
+		c0-1.5,0.6-2.9,1.6-3.9l43.7-44l-43.7-44c-1-1-1.6-2.4-1.6-3.9c0-1.5,0.6-2.9,1.6-3.9l56.7-57.2c2.1-2.2,5.6-2.2,7.8,0l56.7,57.2
+		c1,1,1.6,2.4,1.6,3.9c0,1.5-0.6,2.9-1.6,3.9l-43.7,44l43.7,44c1,1,1.6,2.4,1.6,3.9c0,1.5-0.6,2.9-1.6,3.9l-56.7,57.2
+		C159,222.8,157.6,223.3,156.2,223.3z M102.8,160.6l53.4,53.8l53.4-53.8l-43.7-44c-1-1-1.6-2.4-1.6-3.9c0-1.5,0.6-2.9,1.6-3.9
+		l43.6-44l-53.4-53.8l-53.4,53.8l43.7,44c2.1,2.2,2.1,5.7,0,7.8L102.8,160.6z"/>
+		<linearGradient id="alt_logo_ruby_gradient" gradientUnits="userSpaceOnUse" x1="156.1897" y1="100.8628" x2="156.1897" y2="48.7272">
+			<stop  offset="0" style="stop-color:#C02224"/>
+			<stop  offset="0.1794" style="stop-color:#C12726"/>
+			<stop  offset="0.3653" style="stop-color:#C4332B"/>
+			<stop  offset="0.5543" style="stop-color:#C94435"/>
+			<stop  offset="0.7453" style="stop-color:#D05947"/>
+			<stop  offset="0.9361" style="stop-color:#DA7463"/>
+			<stop  offset="1" style="stop-color:#DE7F6F"/>
+		</linearGradient>
+		<path class="alt_logo_ruby" d="M177.9,48.7h-43.5l-15,15.1l36.7,37l36.7-37L177.9,48.7z M178,69.3l-1.7-4.9l-4.6-2l4.6-2
+			l1.7-4.9l1.7,4.9l4.4,2l-4.4,2L178,69.3z"/>
+		<linearGradient id="alt_logo_elixir_gradient" gradientUnits="userSpaceOnUse" x1="156.1897" y1="203.2483" x2="156.1897" y2="122.8813">
+			<stop  offset="0" style="stop-color:#612E82"/>
+			<stop  offset="0.181" style="stop-color:#633284"/>
+			<stop  offset="0.3686" style="stop-color:#6A3B89"/>
+			<stop  offset="0.5592" style="stop-color:#764B91"/>
+			<stop  offset="0.7518" style="stop-color:#86629F"/>
+			<stop  offset="0.9443" style="stop-color:#9D82B4"/>
+			<stop  offset="1" style="stop-color:#A58DBB"/>
+		</linearGradient>
+		<path class="alt_logo_elixir" d="M157.6,122.9c-0.4,7.7,2.1,12.6,6.8,17.9c6.8,7.6,6.4,12.7,4.9,17
+			c-2.3,6.9-9.6,9.1-15.6,8.3c-7.8-1.1-12.9-7.5-11.1-18.2C144,139.3,150.7,127.8,157.6,122.9z M163.9,181.6c-6.8-0.6-9.4-6.9-17.5-7
+			c-9.4-0.1-12.6,5.9-12.6,5.9l22.5,22.7l22.4-22.6C174,177.4,169.8,182.1,163.9,181.6z"/>
+	</g>
+</svg>
+</div><div class="event tracking-in-expand"><div class="event-date text-center">APR 27 - 28, 2018</div><?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" class="main-deco" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20 12" style="enable-background:new 0 0 20 12;" xml:space="preserve">
+  <title>Main Deco</title>
+  <path class="deco-color" d="M0,6c0-0.1,0-0.3,0.1-0.4l5.2-5.5C5.4,0.1,5.5,0,5.7,0C5.8,0,5.9,0.1,6,0.1l4,4.2l4-4.2
+	C14.1,0.1,14.2,0,14.3,0c0.1,0,0.3,0.1,0.4,0.1l5.2,5.5c0.2,0.2,0.2,0.6,0,0.7l-5.2,5.5C14.6,12,14.5,12,14.3,12s-0.3-0.1-0.4-0.1
+	l-4-4.2l-4,4.2C5.9,12,5.8,12,5.7,12s-0.3-0.1-0.4-0.1L0.1,6.4C0,6.3,0,6.1,0,6z"></path>
+</svg><div class="event-location en text-center">CHANG YUNG-FA FOUNDATION
+International Convention Center
+Taipei, Taiwan
+</div><div class="event-location cht text-center">張榮發基金會國際會議中心</div></div><div class="cfa text-center"><div class="coming-soon" data-balloon="Coming Soon ✨" data-balloon-pos="up"><div class="btn-large register-now inactive"><span>Register Now</span></div></div></div><ul class="social-media list-inline text-center"><li><a href="https://twitter.com/rubyconftw" target="_blank" rel="noopener noreferrer" class="media twitter"><?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 40 40" style="enable-background:new 0 0 40 40;" xml:space="preserve">
+	<title>Social Button/Twitter</title>
+	<path class="social_btn_color" d="M39.5,18.9c0.7,0.6,0.7,1.6,0,2.2L21.1,39.5C20.8,39.8,20.4,40,20,40c-0.4,0-0.8-0.2-1.1-0.5
+		L0.5,21.1c-0.6-0.6-0.6-1.6,0-2.2L18.9,0.5C19.2,0.2,19.6,0,20,0c0.4,0,0.8,0.2,1.1,0.5L39.5,18.9z M29.3,14.2
+		c-0.7,0.3-1.4,0.5-2.2,0.6c0.8-0.5,1.4-1.2,1.7-2.1c-0.7,0.4-1.6,0.8-2.4,0.9c-0.7-0.7-1.7-1.2-2.8-1.2c-2.1,0-3.8,1.7-3.8,3.8
+		c0,0.3,0,0.6,0.1,0.9c-3.2-0.2-6-1.7-7.9-4c-0.3,0.6-0.5,1.2-0.5,1.9c0,1.3,0.7,2.5,1.7,3.2c-0.6,0-1.2-0.2-1.7-0.5v0
+		c0,1.9,1.3,3.4,3.1,3.8c-0.3,0.1-0.7,0.1-1,0.1c-0.2,0-0.5,0-0.7-0.1c0.5,1.5,1.9,2.6,3.6,2.7c-1.3,1-3,1.6-4.7,1.6
+		c-0.3,0-0.6,0-0.9,0c1.7,1.1,3.7,1.7,5.9,1.7c7,0,10.9-5.8,10.9-10.9c0-0.2,0-0.3,0-0.5C28.2,15.7,28.8,15,29.3,14.2z"></path>
+</svg></a></li><li><a href="https://www.facebook.com/rubyconftw/" target="_blank" rel="noopener noreferrer" class="media facebook"><?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 40 40" style="enable-background:new 0 0 40 40;" xml:space="preserve">
+  <title>Social Button/Facebook</title>
+  <path class="social_btn_color" d="M39.5,18.9c0.7,0.6,0.7,1.6,0,2.2L21.1,39.5C20.8,39.8,20.4,40,20,40s-0.8-0.2-1.1-0.5
+	L0.5,21.1c-0.6-0.6-0.6-1.6,0-2.2L18.9,0.5C19.2,0.2,19.6,0,20,0s0.8,0.2,1.1,0.5L39.5,18.9z M24.7,10.8c-0.3,0-1.4-0.1-2.6-0.1
+	c-2.6,0-4.4,1.6-4.4,4.5v2.5h-3v3.4h3v8.8h3.5v-8.8h2.9l0.5-3.4h-3.4v-2.2c0-1,0.3-1.7,1.7-1.7h1.8V10.8z"></path>
+</svg></a></li><li><a href="https://ruby.tw/" target="_blank" rel="noopener noreferrer" class="media ruby"><?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 40 40" style="enable-background:new 0 0 40 40;" xml:space="preserve">
+	<title>Social Button/Ruby</title>
+	<path class="social_btn_color" d="M39.5,18.9L21.1,0.5C20.8,0.2,20.4,0,20,0l0,0c-0.4,0-0.8,0.2-1.1,0.5L0.5,18.9
+	c-0.6,0.6-0.6,1.6,0,2.2l18.4,18.4c0.3,0.3,0.7,0.5,1.1,0.5l0,0c0.4,0,0.8-0.2,1.1-0.5l18.4-18.4l0,0C40.2,20.5,40.2,19.5,39.5,18.9
+	z M20,29.3L9.7,19l4.2-4.2h12.2l4.2,4.2L20,29.3z"></path>
+</svg></a></li><li><a href="https://elixir.tw/" target="_blank" rel="noopener noreferrer" class="media elixir"><?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 40 40" style="enable-background:new 0 0 40 40;" xml:space="preserve">
+	<title>Social Button/Elixir</title>
+	<path class="social_btn_color" d="M39.5,18.9L21.1,0.5C20.8,0.2,20.4,0,20,0l0,0c-0.4,0-0.8,0.2-1.1,0.5L0.5,18.9
+	c-0.6,0.6-0.6,1.6,0,2.2l18.4,18.4c0.3,0.3,0.7,0.5,1.1,0.5l0,0c0.4,0,0.8-0.2,1.1-0.5l18.4-18.4l0,0C40.2,20.5,40.2,19.5,39.5,18.9
+	z M25.2,24.5c-1,2.7-3.9,3.6-6.3,3.3c-3.2-0.4-5.2-3-4.5-7.3c0.5-3.4,3.3-8,6.1-9.9c-0.2,3.1,0.8,5,2.7,7.1
+	C26,20.8,25.8,22.9,25.2,24.5z"></path>
+</svg></a></li><li><a class="media email" href="mailto:contact@rubyconf.tw"><?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 40 40" style="enable-background:new 0 0 40 40;" xml:space="preserve">
+	<title>Social Button/Email</title>
+	<path class="social_btn_color" d="M39.5,18.9c0.7,0.6,0.7,1.6,0,2.2L21.1,39.5C20.8,39.8,20.4,40,20,40s-0.8-0.2-1.1-0.5L0.5,21.1
+		c-0.6-0.6-0.6-1.6,0-2.2L18.9,0.5C19.2,0.2,19.6,0,20,0s0.8,0.2,1.1,0.5L39.5,18.9z M28,17.8c-0.3,0.3-0.6,0.6-0.9,0.8
+		c-1.5,1-3,2-4.4,3.1c-0.8,0.6-1.7,1.2-2.7,1.2h0c-1,0-1.9-0.7-2.7-1.2c-1.5-1.1-3-2.1-4.4-3.1c-0.3-0.2-0.6-0.5-0.9-0.8v7.1
+		c0,0.8,0.6,1.4,1.4,1.4h13.1c0.8,0,1.4-0.6,1.4-1.4V17.8z M28,15.1c0-0.8-0.7-1.4-1.4-1.4H13.4c-1,0-1.4,0.8-1.4,1.6
+		c0,0.8,0.9,1.8,1.5,2.2c1.4,1,2.8,1.9,4.2,2.9c0.6,0.4,1.6,1.2,2.3,1.2h0c0.7,0,1.7-0.8,2.3-1.2c1.4-1,2.8-1.9,4.2-2.9
+		C27.3,17,28,16.1,28,15.1z"/>
+</svg>
+</a></li></ul></div></section><section id="news"><h2 class="section-title">News</h2><div class="news-list"><div class="news"><div class="post modaled " data-target="#first-round-of-cfp-result-has-been-sent" data-toggle="modal"><div class="news-date"><span>Jan. 17. 2018</span></div><div class="news-title"><span>First round of CFP result has been sent</span></div><?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" class="main-deco" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20 12" style="enable-background:new 0 0 20 12;" xml:space="preserve">
+  <title>Main Deco</title>
+  <path class="deco-color" d="M0,6c0-0.1,0-0.3,0.1-0.4l5.2-5.5C5.4,0.1,5.5,0,5.7,0C5.8,0,5.9,0.1,6,0.1l4,4.2l4-4.2
+	C14.1,0.1,14.2,0,14.3,0c0.1,0,0.3,0.1,0.4,0.1l5.2,5.5c0.2,0.2,0.2,0.6,0,0.7l-5.2,5.5C14.6,12,14.5,12,14.3,12s-0.3-0.1-0.4-0.1
+	l-4-4.2l-4,4.2C5.9,12,5.8,12,5.7,12s-0.3-0.1-0.4-0.1L0.1,6.4C0,6.3,0,6.1,0,6z"></path>
+</svg></div><div class="modal" id="first-round-of-cfp-result-has-been-sent" role="dialog" tabindex="-1"><div class="modal-dialog" role="document"><div class="modal-content"><div class="modal-header"><button aria-label="Close" class="close" data-dismiss="modal" type="button"><span aria-hidden="true"> &times;</span></button></div><div class="modal-body"><article class="content"><div class="news-date"><span>Jan. 17. 2018</span></div><h3 class="news-title">First round of CFP result has been sent</h3><?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" class="main-deco" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20 12" style="enable-background:new 0 0 20 12;" xml:space="preserve">
+  <title>Main Deco</title>
+  <path class="deco-color" d="M0,6c0-0.1,0-0.3,0.1-0.4l5.2-5.5C5.4,0.1,5.5,0,5.7,0C5.8,0,5.9,0.1,6,0.1l4,4.2l4-4.2
+	C14.1,0.1,14.2,0,14.3,0c0.1,0,0.3,0.1,0.4,0.1l5.2,5.5c0.2,0.2,0.2,0.6,0,0.7l-5.2,5.5C14.6,12,14.5,12,14.3,12s-0.3-0.1-0.4-0.1
+	l-4-4.2l-4,4.2C5.9,12,5.8,12,5.7,12s-0.3-0.1-0.4-0.1L0.1,6.4C0,6.3,0,6.1,0,6z"></path>
+</svg><div class="news-content"><p>We are pleased to announce the session committee has already reviewed all 72 proposals and sent the first round of the CFP result.</p>
+
+<p>我們很高興宣布 72 份稿件已審查完畢，並於今日個別發送第一波入選名單。</p>
+</div></article></div><div class="modal-footer"><button class="btn btn-close" data-dismiss="modal" type="button"><span>Close</span></button></div></div></div></div></div><div class="news"><div class="post modaled " data-target="#calling-for-speaker" data-toggle="modal"><div class="news-date"><span>Dec. 07. 2017</span></div><div class="news-title"><span>Calling for Speaker</span></div><?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" class="main-deco" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20 12" style="enable-background:new 0 0 20 12;" xml:space="preserve">
+  <title>Main Deco</title>
+  <path class="deco-color" d="M0,6c0-0.1,0-0.3,0.1-0.4l5.2-5.5C5.4,0.1,5.5,0,5.7,0C5.8,0,5.9,0.1,6,0.1l4,4.2l4-4.2
+	C14.1,0.1,14.2,0,14.3,0c0.1,0,0.3,0.1,0.4,0.1l5.2,5.5c0.2,0.2,0.2,0.6,0,0.7l-5.2,5.5C14.6,12,14.5,12,14.3,12s-0.3-0.1-0.4-0.1
+	l-4-4.2l-4,4.2C5.9,12,5.8,12,5.7,12s-0.3-0.1-0.4-0.1L0.1,6.4C0,6.3,0,6.1,0,6z"></path>
+</svg></div><div class="modal" id="calling-for-speaker" role="dialog" tabindex="-1"><div class="modal-dialog" role="document"><div class="modal-content"><div class="modal-header"><button aria-label="Close" class="close" data-dismiss="modal" type="button"><span aria-hidden="true"> &times;</span></button></div><div class="modal-body"><article class="content"><div class="news-date"><span>Dec. 07. 2017</span></div><h3 class="news-title">Calling for Speaker</h3><?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" class="main-deco" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20 12" style="enable-background:new 0 0 20 12;" xml:space="preserve">
+  <title>Main Deco</title>
+  <path class="deco-color" d="M0,6c0-0.1,0-0.3,0.1-0.4l5.2-5.5C5.4,0.1,5.5,0,5.7,0C5.8,0,5.9,0.1,6,0.1l4,4.2l4-4.2
+	C14.1,0.1,14.2,0,14.3,0c0.1,0,0.3,0.1,0.4,0.1l5.2,5.5c0.2,0.2,0.2,0.6,0,0.7l-5.2,5.5C14.6,12,14.5,12,14.3,12s-0.3-0.1-0.4-0.1
+	l-4-4.2l-4,4.2C5.9,12,5.8,12,5.7,12s-0.3-0.1-0.4-0.1L0.1,6.4C0,6.3,0,6.1,0,6z"></path>
+</svg><div class="news-content"><p>We are calling for speaker now, send you proposals at <a href="https://cfp.rubyconf.tw/activities/2018" target="_blank">https://cfp.rubyconf.tw/activities/2018</a></p>
+</div></article></div><div class="modal-footer"><button class="btn btn-close" data-dismiss="modal" type="button"><span>Close</span></button></div></div></div></div></div></div></section><section id="features"><h2 class="section-title hidden">Features</h2><div class="features reveal"><a href="../program" class="feature program"><div class="feature-bg"><?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" class="deco_wave bg-deco" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 150 65" style="enable-background:new 0 0 300 65;" xml:space="preserve">
+	<path class="deco-line sinewave" d="M0,22.5c16.7,0,16.7,20,33.3,20c16.7,0,16.7-20,33.3-20c16.7,0,16.7,20,33.3,20c16.7,0,16.7-20,33.3-20
+		c16.7,0,16.7,20,33.3,20c16.7,0,16.7-20,33.3-20c16.7,0,16.7,20,33.3,20c16.7,0,16.7-20,33.3-20s16.7,20,33.3,20 M0,2.5
+		c16.7,0,16.7,20,33.3,20c16.7,0,16.7-20,33.3-20c16.7,0,16.7,20,33.3,20c16.7,0,16.7-20,33.3-20c16.7,0,16.7,20,33.3,20
+		c16.7,0,16.7-20,33.3-20c16.7,0,16.7,20,33.3,20c16.7,0,16.7-20,33.3-20s16.7,20,33.3,20 M0,42.5c16.7,0,16.7,20,33.3,20
+		c16.7,0,16.7-20,33.3-20c16.7,0,16.7,20,33.3,20c16.7,0,16.7-20,33.3-20c16.7,0,16.7,20,33.3,20c16.7,0,16.7-20,33.3-20
+		c16.7,0,16.7,20,33.3,20c16.7,0,16.7-20,33.3-20s16.7,20,33.3,20"/>
+</svg>
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" class="deco_cross bg-deco" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+		viewBox="0 0 34 34" style="enable-background:new 0 0 34 34;" xml:space="preserve">
+	<title>Deco/Cross</title>
+	<path class="deco-line" d="M1.6,17h30.7 M17,1.6v30.7"/>
+</svg>
+</div><div class="feature-card"><div class="feature-icon"><?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" class="icon_program" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve">
+	<style type="text/css">
+		.icon_gradient{fill:url(#icon_gradient);}
+	</style>
+	<title>Icon/Program</title>
+	<linearGradient id="icon_gradient" gradientUnits="userSpaceOnUse" x1="-555.0833" y1="443.3733" x2="-555.0833" y2="444.3733" gradientTransform="matrix(60 0 0 -60 33335 26662.4004)">
+		<stop  offset="0" style="stop-color:#652F8B"/>
+		<stop  offset="1" style="stop-color:#CC1D23"/>
+	</linearGradient>
+	<path class="icon_gradient" d="M1.4,60c-0.2,0-0.4,0-0.6-0.1C0.4,59.7,0,59.1,0,58.6V7.8C0,3.5,3.5,0,7.8,0h44.5
+		C56.5,0,60,3.5,60,7.8v31.7c0,4.3-3.5,7.8-7.8,7.8H14.8L2.5,59.6C2.2,59.8,1.8,60,1.4,60z M7.8,2.9c-2.8,0-5,2.2-5,5v47.3l10.3-10.3
+		c0.3-0.3,0.7-0.4,1-0.4h38.1c2.7,0,5-2.2,5-5V7.8c-0.1-2.8-2.3-5-5-5H7.8z"/>
+</svg>
+</div><div class="feature-title"><span class="assist">Browse the</span><span class="main">Program<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" class="icon_arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 18 14" style="enable-background:new 0 0 18 14;" xml:space="preserve">
+	<path class="deco-line dark" d="M1,7h16 M11,1l6,6l-6,6"/>
+</svg>
+</span><span class="slash">/</span><span class="cht">瀏覽議程</span></div></div></a><a href="../speakers" class="feature speakers"><div class="feature-bg"><?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" class="deco_wave bg-deco" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 150 65" style="enable-background:new 0 0 300 65;" xml:space="preserve">
+	<path class="deco-line sinewave" d="M0,22.5c16.7,0,16.7,20,33.3,20c16.7,0,16.7-20,33.3-20c16.7,0,16.7,20,33.3,20c16.7,0,16.7-20,33.3-20
+		c16.7,0,16.7,20,33.3,20c16.7,0,16.7-20,33.3-20c16.7,0,16.7,20,33.3,20c16.7,0,16.7-20,33.3-20s16.7,20,33.3,20 M0,2.5
+		c16.7,0,16.7,20,33.3,20c16.7,0,16.7-20,33.3-20c16.7,0,16.7,20,33.3,20c16.7,0,16.7-20,33.3-20c16.7,0,16.7,20,33.3,20
+		c16.7,0,16.7-20,33.3-20c16.7,0,16.7,20,33.3,20c16.7,0,16.7-20,33.3-20s16.7,20,33.3,20 M0,42.5c16.7,0,16.7,20,33.3,20
+		c16.7,0,16.7-20,33.3-20c16.7,0,16.7,20,33.3,20c16.7,0,16.7-20,33.3-20c16.7,0,16.7,20,33.3,20c16.7,0,16.7-20,33.3-20
+		c16.7,0,16.7,20,33.3,20c16.7,0,16.7-20,33.3-20s16.7,20,33.3,20"/>
+</svg>
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" class="deco_cross bg-deco" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+		viewBox="0 0 34 34" style="enable-background:new 0 0 34 34;" xml:space="preserve">
+	<title>Deco/Cross</title>
+	<path class="deco-line" d="M1.6,17h30.7 M17,1.6v30.7"/>
+</svg>
+</div><div class="feature-card"><div class="feature-icon"><?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" class="icon_users" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 60 50" style="enable-background:new 0 0 60 50;" xml:space="preserve">
+	<style type="text/css">
+		.icon_gradient{fill:url(#icon_gradient);}
+	</style>
+	<title>Icon/Users</title>
+	<linearGradient id="icon_gradient" gradientUnits="userSpaceOnUse" x1="-555.0833" y1="436.97" x2="-555.0833" y2="437.97" gradientTransform="matrix(60 0 0 -50 33335 21898.5)">
+		<stop  offset="0" style="stop-color:#652F8B"/>
+		<stop  offset="1" style="stop-color:#CC1D23"/>
+	</linearGradient>
+	<path class="icon_gradient" d="M58.5,50c-0.8,0-1.4-0.6-1.4-1.4v-5.2c0-4.1-2.8-7.7-6.7-8.8c-0.8-0.2-1.2-1-1-1.7
+		c0.2-0.8,1-1.2,1.7-1c5.2,1.3,8.9,6,8.9,11.5v5.2C59.9,49.4,59.3,50,58.5,50z M42.9,50c-0.8,0-1.4-0.6-1.4-1.4v-5.2
+		c0-4.9-4-9.1-9-9.1H11.8c-4.9,0-9,4-9,9.1v5.2c0,0.8-0.6,1.4-1.4,1.4S0,49.4,0,48.6v-5.2c0-6.6,5.3-11.9,11.8-11.9h20.8
+		c6.5,0,11.8,5.3,11.8,11.9v5.2C44.3,49.4,43.7,50,42.9,50z M22.2,23.8c-6.5,0-11.8-5.3-11.8-11.9S15.7,0,22.2,0s11.8,5.3,11.8,11.9
+		S28.7,23.8,22.2,23.8z M22.2,2.9c-4.9,0-9,4-9,9.1s4,9.1,9,9.1s9-4,9-9.1S27.1,2.9,22.2,2.9z M40.3,23.5c-0.6,0-1.2-0.4-1.4-1.1
+		c-0.2-0.8,0.3-1.5,1-1.7c3.2-0.8,5.6-3.3,6.5-6.6c1.2-4.8-1.7-9.8-6.5-11c-0.8-0.2-1.2-1-1-1.7c0.2-0.8,1-1.2,1.7-1
+		c6.3,1.6,10.1,8.2,8.5,14.5c-1.1,4.2-4.3,7.5-8.5,8.6C40.5,23.5,40.4,23.5,40.3,23.5z"/>
+</svg>
+</div><div class="feature-title"><span class="assist">Meet the</span><span class="main">Speakers<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" class="icon_arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 18 14" style="enable-background:new 0 0 18 14;" xml:space="preserve">
+	<path class="deco-line dark" d="M1,7h16 M11,1l6,6l-6,6"/>
+</svg>
+</span><span class="slash">/</span><span class="cht">講者介紹</span></div></div></a></div></section><section id="keynotes"><h2 class="section-title">Keynote Speakers</h2><div class="keynote-speakers"><div class="modal" id="yukihiro-matsumoto-matz" role="dialog" tabindex="-1"><div class="modal-dialog" role="document"><div class="modal-content"><div class="modal-header"><button aria-label="Close" class="close" data-dismiss="modal" type="button"><span aria-hidden="true"> &times;</span></button></div><div class="modal-body"><div class="content"><div class="speaker-info"><div class="speaker-avatar"><img src="images/speakers/matz.jpg" class="speaker-img" alt="Yukihiro Matsumoto (Matz)" title="Yukihiro Matsumoto (Matz)" /></div><div class="speaker-name body-title text-center">Yukihiro Matsumoto (Matz)</div><div class="speaker-title body-content text-center">Creator of Ruby, Heroku</div><?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" class="main-deco" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20 12" style="enable-background:new 0 0 20 12;" xml:space="preserve">
+  <title>Main Deco</title>
+  <path class="deco-color" d="M0,6c0-0.1,0-0.3,0.1-0.4l5.2-5.5C5.4,0.1,5.5,0,5.7,0C5.8,0,5.9,0.1,6,0.1l4,4.2l4-4.2
+	C14.1,0.1,14.2,0,14.3,0c0.1,0,0.3,0.1,0.4,0.1l5.2,5.5c0.2,0.2,0.2,0.6,0,0.7l-5.2,5.5C14.6,12,14.5,12,14.3,12s-0.3-0.1-0.4-0.1
+	l-4-4.2l-4,4.2C5.9,12,5.8,12,5.7,12s-0.3-0.1-0.4-0.1L0.1,6.4C0,6.3,0,6.1,0,6z"></path>
+</svg><div class="speaker-bio body-content text-center"><p>The creator of Ruby, Matz works for Heroku and the Ruby Assocation to improve everything Ruby.</p>
+</div><ul class="speaker-socials list-inline"><li><a href="https://twitter.com/yukihiro_matz" target="_blank" rel="noopener noreferrer" class="media twitter"><?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 40 40" style="enable-background:new 0 0 40 40;" xml:space="preserve">
+	<title>Social Button/Twitter</title>
+	<path class="social_btn_color" d="M39.5,18.9c0.7,0.6,0.7,1.6,0,2.2L21.1,39.5C20.8,39.8,20.4,40,20,40c-0.4,0-0.8-0.2-1.1-0.5
+		L0.5,21.1c-0.6-0.6-0.6-1.6,0-2.2L18.9,0.5C19.2,0.2,19.6,0,20,0c0.4,0,0.8,0.2,1.1,0.5L39.5,18.9z M29.3,14.2
+		c-0.7,0.3-1.4,0.5-2.2,0.6c0.8-0.5,1.4-1.2,1.7-2.1c-0.7,0.4-1.6,0.8-2.4,0.9c-0.7-0.7-1.7-1.2-2.8-1.2c-2.1,0-3.8,1.7-3.8,3.8
+		c0,0.3,0,0.6,0.1,0.9c-3.2-0.2-6-1.7-7.9-4c-0.3,0.6-0.5,1.2-0.5,1.9c0,1.3,0.7,2.5,1.7,3.2c-0.6,0-1.2-0.2-1.7-0.5v0
+		c0,1.9,1.3,3.4,3.1,3.8c-0.3,0.1-0.7,0.1-1,0.1c-0.2,0-0.5,0-0.7-0.1c0.5,1.5,1.9,2.6,3.6,2.7c-1.3,1-3,1.6-4.7,1.6
+		c-0.3,0-0.6,0-0.9,0c1.7,1.1,3.7,1.7,5.9,1.7c7,0,10.9-5.8,10.9-10.9c0-0.2,0-0.3,0-0.5C28.2,15.7,28.8,15,29.3,14.2z"></path>
+</svg></a></li><li><a href="https://github.com/matz" target="_blank" rel="noopener noreferrer" class="media github"><?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" viewBox="0 0 40 40" style="enable-background:new 0 0 40 40;" xml:space="preserve">
+	<title>Social Button/GitHub</title>
+	<path class="social_btn_color" d="M39.5,18.9L21.1,0.5C20.8,0.2,20.4,0,20,0s-0.8,0.2-1.1,0.5L0.5,18.9c-0.6,0.6-0.6,1.6,0,2.2l18.4,18.4
+		c0.3,0.3,0.7,0.5,1.1,0.5s0.8-0.2,1.1-0.5l18.4-18.4C40.2,20.5,40.2,19.5,39.5,18.9z M23.6,31c-0.6,0.1-0.8-0.3-0.8-0.5
+		c0-0.4,0-1.6,0-3.1c0-1.1-0.4-1.7-0.8-2.1c2.5-0.3,5.2-1.2,5.2-5.6c0-1.2-0.4-2.2-1.2-3c0.1-0.3,0.5-1.4-0.1-3
+		c-0.9-0.3-3.1,1.2-3.1,1.2c-0.9-0.3-1.9-0.4-2.8-0.4s-1.9,0.1-2.8,0.4c0,0-2.2-1.5-3.1-1.2c-0.6,1.6-0.2,2.7-0.1,3
+		c-0.7,0.8-1.2,1.8-1.2,3c0,4.3,2.6,5.3,5.2,5.6c-0.3,0.3-0.6,0.8-0.7,1.5c-0.6,0.3-2.3,0.8-3.3-0.9c-0.6-1.1-1.7-1.2-1.7-1.2
+		c-1.1,0-0.1,0.7-0.1,0.7c0.7,0.3,1.3,1.7,1.3,1.7c0.7,2,3.8,1.3,3.8,1.3c0,0.9,0,1.8,0,2.1c0,0.3-0.2,0.6-0.8,0.5
+		c-4.5-1.5-7.8-5.8-7.8-10.8C8.7,14,13.7,8.9,20,8.9S31.3,14,31.3,20.3C31.3,25.3,28.1,29.5,23.6,31z M17.1,27.3
+		c0,0.1-0.1,0.2-0.2,0.2c-0.1,0-0.3,0-0.3-0.1c0-0.1,0.1-0.2,0.2-0.2C17,27.2,17.1,27.2,17.1,27.3z M16.2,27.5c0,0.1-0.1,0.2-0.2,0.2
+		c-0.1,0-0.3-0.1-0.3-0.2c0-0.1,0.1-0.2,0.2-0.2C16.1,27.3,16.2,27.4,16.2,27.5z M15.3,27.4c0,0.1-0.2,0.1-0.3,0.1
+		c-0.1,0-0.2-0.1-0.2-0.2c0-0.1,0.2-0.1,0.3-0.1C15.3,27.2,15.3,27.3,15.3,27.4z M14.5,27c-0.1,0.1-0.2,0.1-0.3,0
+		c-0.1-0.1-0.1-0.2-0.1-0.3c0.1-0.1,0.2-0.1,0.3,0C14.5,26.8,14.5,27,14.5,27z M13.9,26.4c-0.1,0-0.2,0-0.3-0.1
+		c-0.1-0.1-0.1-0.2,0-0.3c0.1-0.1,0.2,0,0.3,0.1C13.9,26.2,13.9,26.3,13.9,26.4z M13.4,25.7c-0.1,0.1-0.2,0-0.2,0
+		c-0.1-0.1-0.1-0.2,0-0.2c0.1-0.1,0.2,0,0.2,0C13.5,25.6,13.5,25.7,13.4,25.7z M13,25.2c0,0.1-0.1,0.1-0.2,0c-0.1,0-0.1-0.1-0.1-0.2
+		c0,0,0.1-0.1,0.2,0C12.9,25.1,13,25.2,13,25.2z"/>
+	</svg>
+</a></li></ul></div><div class="speaker-program ruby"><div class="speaker-subject body-title text-center">TBD</div><?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" class="main-deco" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20 12" style="enable-background:new 0 0 20 12;" xml:space="preserve">
+  <title>Main Deco</title>
+  <path class="deco-color" d="M0,6c0-0.1,0-0.3,0.1-0.4l5.2-5.5C5.4,0.1,5.5,0,5.7,0C5.8,0,5.9,0.1,6,0.1l4,4.2l4-4.2
+	C14.1,0.1,14.2,0,14.3,0c0.1,0,0.3,0.1,0.4,0.1l5.2,5.5c0.2,0.2,0.2,0.6,0,0.7l-5.2,5.5C14.6,12,14.5,12,14.3,12s-0.3-0.1-0.4-0.1
+	l-4-4.2l-4,4.2C5.9,12,5.8,12,5.7,12s-0.3-0.1-0.4-0.1L0.1,6.4C0,6.3,0,6.1,0,6z"></path>
+</svg><div class="speaker-summery body-content"></div><div class="assests"></div></div></div><div class="modal-footer"><button class="btn btn-close" data-dismiss="modal" type="button"><span>Close</span></button></div></div></div></div></div><div class="modal" id="jose-valim" role="dialog" tabindex="-1"><div class="modal-dialog" role="document"><div class="modal-content"><div class="modal-header"><button aria-label="Close" class="close" data-dismiss="modal" type="button"><span aria-hidden="true"> &times;</span></button></div><div class="modal-body"><div class="content"><div class="speaker-info"><div class="speaker-avatar"><img src="images/speakers/jose-valim.jpg" class="speaker-img" alt="José Valim" title="José Valim" /></div><div class="speaker-name body-title text-center">José Valim</div><div class="speaker-title body-content text-center">Creator of Elixir, Plataformatec</div><?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" class="main-deco" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20 12" style="enable-background:new 0 0 20 12;" xml:space="preserve">
+  <title>Main Deco</title>
+  <path class="deco-color" d="M0,6c0-0.1,0-0.3,0.1-0.4l5.2-5.5C5.4,0.1,5.5,0,5.7,0C5.8,0,5.9,0.1,6,0.1l4,4.2l4-4.2
+	C14.1,0.1,14.2,0,14.3,0c0.1,0,0.3,0.1,0.4,0.1l5.2,5.5c0.2,0.2,0.2,0.6,0,0.7l-5.2,5.5C14.6,12,14.5,12,14.3,12s-0.3-0.1-0.4-0.1
+	l-4-4.2l-4,4.2C5.9,12,5.8,12,5.7,12s-0.3-0.1-0.4-0.1L0.1,6.4C0,6.3,0,6.1,0,6z"></path>
+</svg><div class="speaker-bio body-content text-center"><p>Plataformatec co-founder and creator of Elixir Lang. I have signed off from Twitter indefinitely, RTs are automated.</p>
+</div><ul class="speaker-socials list-inline"><li><a href="https://twitter.com/josevalim" target="_blank" rel="noopener noreferrer" class="media twitter"><?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 40 40" style="enable-background:new 0 0 40 40;" xml:space="preserve">
+	<title>Social Button/Twitter</title>
+	<path class="social_btn_color" d="M39.5,18.9c0.7,0.6,0.7,1.6,0,2.2L21.1,39.5C20.8,39.8,20.4,40,20,40c-0.4,0-0.8-0.2-1.1-0.5
+		L0.5,21.1c-0.6-0.6-0.6-1.6,0-2.2L18.9,0.5C19.2,0.2,19.6,0,20,0c0.4,0,0.8,0.2,1.1,0.5L39.5,18.9z M29.3,14.2
+		c-0.7,0.3-1.4,0.5-2.2,0.6c0.8-0.5,1.4-1.2,1.7-2.1c-0.7,0.4-1.6,0.8-2.4,0.9c-0.7-0.7-1.7-1.2-2.8-1.2c-2.1,0-3.8,1.7-3.8,3.8
+		c0,0.3,0,0.6,0.1,0.9c-3.2-0.2-6-1.7-7.9-4c-0.3,0.6-0.5,1.2-0.5,1.9c0,1.3,0.7,2.5,1.7,3.2c-0.6,0-1.2-0.2-1.7-0.5v0
+		c0,1.9,1.3,3.4,3.1,3.8c-0.3,0.1-0.7,0.1-1,0.1c-0.2,0-0.5,0-0.7-0.1c0.5,1.5,1.9,2.6,3.6,2.7c-1.3,1-3,1.6-4.7,1.6
+		c-0.3,0-0.6,0-0.9,0c1.7,1.1,3.7,1.7,5.9,1.7c7,0,10.9-5.8,10.9-10.9c0-0.2,0-0.3,0-0.5C28.2,15.7,28.8,15,29.3,14.2z"></path>
+</svg></a></li><li><a href="https://github.com/josevalim" target="_blank" rel="noopener noreferrer" class="media github"><?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" viewBox="0 0 40 40" style="enable-background:new 0 0 40 40;" xml:space="preserve">
+	<title>Social Button/GitHub</title>
+	<path class="social_btn_color" d="M39.5,18.9L21.1,0.5C20.8,0.2,20.4,0,20,0s-0.8,0.2-1.1,0.5L0.5,18.9c-0.6,0.6-0.6,1.6,0,2.2l18.4,18.4
+		c0.3,0.3,0.7,0.5,1.1,0.5s0.8-0.2,1.1-0.5l18.4-18.4C40.2,20.5,40.2,19.5,39.5,18.9z M23.6,31c-0.6,0.1-0.8-0.3-0.8-0.5
+		c0-0.4,0-1.6,0-3.1c0-1.1-0.4-1.7-0.8-2.1c2.5-0.3,5.2-1.2,5.2-5.6c0-1.2-0.4-2.2-1.2-3c0.1-0.3,0.5-1.4-0.1-3
+		c-0.9-0.3-3.1,1.2-3.1,1.2c-0.9-0.3-1.9-0.4-2.8-0.4s-1.9,0.1-2.8,0.4c0,0-2.2-1.5-3.1-1.2c-0.6,1.6-0.2,2.7-0.1,3
+		c-0.7,0.8-1.2,1.8-1.2,3c0,4.3,2.6,5.3,5.2,5.6c-0.3,0.3-0.6,0.8-0.7,1.5c-0.6,0.3-2.3,0.8-3.3-0.9c-0.6-1.1-1.7-1.2-1.7-1.2
+		c-1.1,0-0.1,0.7-0.1,0.7c0.7,0.3,1.3,1.7,1.3,1.7c0.7,2,3.8,1.3,3.8,1.3c0,0.9,0,1.8,0,2.1c0,0.3-0.2,0.6-0.8,0.5
+		c-4.5-1.5-7.8-5.8-7.8-10.8C8.7,14,13.7,8.9,20,8.9S31.3,14,31.3,20.3C31.3,25.3,28.1,29.5,23.6,31z M17.1,27.3
+		c0,0.1-0.1,0.2-0.2,0.2c-0.1,0-0.3,0-0.3-0.1c0-0.1,0.1-0.2,0.2-0.2C17,27.2,17.1,27.2,17.1,27.3z M16.2,27.5c0,0.1-0.1,0.2-0.2,0.2
+		c-0.1,0-0.3-0.1-0.3-0.2c0-0.1,0.1-0.2,0.2-0.2C16.1,27.3,16.2,27.4,16.2,27.5z M15.3,27.4c0,0.1-0.2,0.1-0.3,0.1
+		c-0.1,0-0.2-0.1-0.2-0.2c0-0.1,0.2-0.1,0.3-0.1C15.3,27.2,15.3,27.3,15.3,27.4z M14.5,27c-0.1,0.1-0.2,0.1-0.3,0
+		c-0.1-0.1-0.1-0.2-0.1-0.3c0.1-0.1,0.2-0.1,0.3,0C14.5,26.8,14.5,27,14.5,27z M13.9,26.4c-0.1,0-0.2,0-0.3-0.1
+		c-0.1-0.1-0.1-0.2,0-0.3c0.1-0.1,0.2,0,0.3,0.1C13.9,26.2,13.9,26.3,13.9,26.4z M13.4,25.7c-0.1,0.1-0.2,0-0.2,0
+		c-0.1-0.1-0.1-0.2,0-0.2c0.1-0.1,0.2,0,0.2,0C13.5,25.6,13.5,25.7,13.4,25.7z M13,25.2c0,0.1-0.1,0.1-0.2,0c-0.1,0-0.1-0.1-0.1-0.2
+		c0,0,0.1-0.1,0.2,0C12.9,25.1,13,25.2,13,25.2z"/>
+	</svg>
+</a></li></ul></div><div class="speaker-program elixir"><div class="speaker-subject body-title text-center">TBD</div><?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" class="main-deco" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20 12" style="enable-background:new 0 0 20 12;" xml:space="preserve">
+  <title>Main Deco</title>
+  <path class="deco-color" d="M0,6c0-0.1,0-0.3,0.1-0.4l5.2-5.5C5.4,0.1,5.5,0,5.7,0C5.8,0,5.9,0.1,6,0.1l4,4.2l4-4.2
+	C14.1,0.1,14.2,0,14.3,0c0.1,0,0.3,0.1,0.4,0.1l5.2,5.5c0.2,0.2,0.2,0.6,0,0.7l-5.2,5.5C14.6,12,14.5,12,14.3,12s-0.3-0.1-0.4-0.1
+	l-4-4.2l-4,4.2C5.9,12,5.8,12,5.7,12s-0.3-0.1-0.4-0.1L0.1,6.4C0,6.3,0,6.1,0,6z"></path>
+</svg><div class="speaker-summery body-content"></div><div class="assests"></div></div></div><div class="modal-footer"><button class="btn btn-close" data-dismiss="modal" type="button"><span>Close</span></button></div></div></div></div></div><div class="modal" id="akira-matsuda" role="dialog" tabindex="-1"><div class="modal-dialog" role="document"><div class="modal-content"><div class="modal-header"><button aria-label="Close" class="close" data-dismiss="modal" type="button"><span aria-hidden="true"> &times;</span></button></div><div class="modal-body"><div class="content"><div class="speaker-info"><div class="speaker-avatar"><img src="images/speakers/akira-matsuda.jpg" class="speaker-img" alt="Akira Matsuda" title="Akira Matsuda" /></div><div class="speaker-name body-title text-center">Akira Matsuda</div><div class="speaker-title body-content text-center">Committer of Ruby and Rails</div><?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" class="main-deco" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20 12" style="enable-background:new 0 0 20 12;" xml:space="preserve">
+  <title>Main Deco</title>
+  <path class="deco-color" d="M0,6c0-0.1,0-0.3,0.1-0.4l5.2-5.5C5.4,0.1,5.5,0,5.7,0C5.8,0,5.9,0.1,6,0.1l4,4.2l4-4.2
+	C14.1,0.1,14.2,0,14.3,0c0.1,0,0.3,0.1,0.4,0.1l5.2,5.5c0.2,0.2,0.2,0.6,0,0.7l-5.2,5.5C14.6,12,14.5,12,14.3,12s-0.3-0.1-0.4-0.1
+	l-4-4.2l-4,4.2C5.9,12,5.8,12,5.7,12s-0.3-0.1-0.4-0.1L0.1,6.4C0,6.3,0,6.1,0,6z"></path>
+</svg><div class="speaker-bio body-content text-center"><p>Rails committer. Ruby committer. amatsuda on GitHub. Creator of Kaminari. Founder of Asakusa.rb. Chief organizer of RubyKaigi. A Ruby Hero in Tokyo.</p>
+</div><ul class="speaker-socials list-inline"><li><a href="https://twitter.com/a_matsuda" target="_blank" rel="noopener noreferrer" class="media twitter"><?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 40 40" style="enable-background:new 0 0 40 40;" xml:space="preserve">
+	<title>Social Button/Twitter</title>
+	<path class="social_btn_color" d="M39.5,18.9c0.7,0.6,0.7,1.6,0,2.2L21.1,39.5C20.8,39.8,20.4,40,20,40c-0.4,0-0.8-0.2-1.1-0.5
+		L0.5,21.1c-0.6-0.6-0.6-1.6,0-2.2L18.9,0.5C19.2,0.2,19.6,0,20,0c0.4,0,0.8,0.2,1.1,0.5L39.5,18.9z M29.3,14.2
+		c-0.7,0.3-1.4,0.5-2.2,0.6c0.8-0.5,1.4-1.2,1.7-2.1c-0.7,0.4-1.6,0.8-2.4,0.9c-0.7-0.7-1.7-1.2-2.8-1.2c-2.1,0-3.8,1.7-3.8,3.8
+		c0,0.3,0,0.6,0.1,0.9c-3.2-0.2-6-1.7-7.9-4c-0.3,0.6-0.5,1.2-0.5,1.9c0,1.3,0.7,2.5,1.7,3.2c-0.6,0-1.2-0.2-1.7-0.5v0
+		c0,1.9,1.3,3.4,3.1,3.8c-0.3,0.1-0.7,0.1-1,0.1c-0.2,0-0.5,0-0.7-0.1c0.5,1.5,1.9,2.6,3.6,2.7c-1.3,1-3,1.6-4.7,1.6
+		c-0.3,0-0.6,0-0.9,0c1.7,1.1,3.7,1.7,5.9,1.7c7,0,10.9-5.8,10.9-10.9c0-0.2,0-0.3,0-0.5C28.2,15.7,28.8,15,29.3,14.2z"></path>
+</svg></a></li><li><a href="https://github.com/amatsuda" target="_blank" rel="noopener noreferrer" class="media github"><?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" viewBox="0 0 40 40" style="enable-background:new 0 0 40 40;" xml:space="preserve">
+	<title>Social Button/GitHub</title>
+	<path class="social_btn_color" d="M39.5,18.9L21.1,0.5C20.8,0.2,20.4,0,20,0s-0.8,0.2-1.1,0.5L0.5,18.9c-0.6,0.6-0.6,1.6,0,2.2l18.4,18.4
+		c0.3,0.3,0.7,0.5,1.1,0.5s0.8-0.2,1.1-0.5l18.4-18.4C40.2,20.5,40.2,19.5,39.5,18.9z M23.6,31c-0.6,0.1-0.8-0.3-0.8-0.5
+		c0-0.4,0-1.6,0-3.1c0-1.1-0.4-1.7-0.8-2.1c2.5-0.3,5.2-1.2,5.2-5.6c0-1.2-0.4-2.2-1.2-3c0.1-0.3,0.5-1.4-0.1-3
+		c-0.9-0.3-3.1,1.2-3.1,1.2c-0.9-0.3-1.9-0.4-2.8-0.4s-1.9,0.1-2.8,0.4c0,0-2.2-1.5-3.1-1.2c-0.6,1.6-0.2,2.7-0.1,3
+		c-0.7,0.8-1.2,1.8-1.2,3c0,4.3,2.6,5.3,5.2,5.6c-0.3,0.3-0.6,0.8-0.7,1.5c-0.6,0.3-2.3,0.8-3.3-0.9c-0.6-1.1-1.7-1.2-1.7-1.2
+		c-1.1,0-0.1,0.7-0.1,0.7c0.7,0.3,1.3,1.7,1.3,1.7c0.7,2,3.8,1.3,3.8,1.3c0,0.9,0,1.8,0,2.1c0,0.3-0.2,0.6-0.8,0.5
+		c-4.5-1.5-7.8-5.8-7.8-10.8C8.7,14,13.7,8.9,20,8.9S31.3,14,31.3,20.3C31.3,25.3,28.1,29.5,23.6,31z M17.1,27.3
+		c0,0.1-0.1,0.2-0.2,0.2c-0.1,0-0.3,0-0.3-0.1c0-0.1,0.1-0.2,0.2-0.2C17,27.2,17.1,27.2,17.1,27.3z M16.2,27.5c0,0.1-0.1,0.2-0.2,0.2
+		c-0.1,0-0.3-0.1-0.3-0.2c0-0.1,0.1-0.2,0.2-0.2C16.1,27.3,16.2,27.4,16.2,27.5z M15.3,27.4c0,0.1-0.2,0.1-0.3,0.1
+		c-0.1,0-0.2-0.1-0.2-0.2c0-0.1,0.2-0.1,0.3-0.1C15.3,27.2,15.3,27.3,15.3,27.4z M14.5,27c-0.1,0.1-0.2,0.1-0.3,0
+		c-0.1-0.1-0.1-0.2-0.1-0.3c0.1-0.1,0.2-0.1,0.3,0C14.5,26.8,14.5,27,14.5,27z M13.9,26.4c-0.1,0-0.2,0-0.3-0.1
+		c-0.1-0.1-0.1-0.2,0-0.3c0.1-0.1,0.2,0,0.3,0.1C13.9,26.2,13.9,26.3,13.9,26.4z M13.4,25.7c-0.1,0.1-0.2,0-0.2,0
+		c-0.1-0.1-0.1-0.2,0-0.2c0.1-0.1,0.2,0,0.2,0C13.5,25.6,13.5,25.7,13.4,25.7z M13,25.2c0,0.1-0.1,0.1-0.2,0c-0.1,0-0.1-0.1-0.1-0.2
+		c0,0,0.1-0.1,0.2,0C12.9,25.1,13,25.2,13,25.2z"/>
+	</svg>
+</a></li></ul></div><div class="speaker-program ruby"><div class="speaker-subject body-title text-center">TBD</div><?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" class="main-deco" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20 12" style="enable-background:new 0 0 20 12;" xml:space="preserve">
+  <title>Main Deco</title>
+  <path class="deco-color" d="M0,6c0-0.1,0-0.3,0.1-0.4l5.2-5.5C5.4,0.1,5.5,0,5.7,0C5.8,0,5.9,0.1,6,0.1l4,4.2l4-4.2
+	C14.1,0.1,14.2,0,14.3,0c0.1,0,0.3,0.1,0.4,0.1l5.2,5.5c0.2,0.2,0.2,0.6,0,0.7l-5.2,5.5C14.6,12,14.5,12,14.3,12s-0.3-0.1-0.4-0.1
+	l-4-4.2l-4,4.2C5.9,12,5.8,12,5.7,12s-0.3-0.1-0.4-0.1L0.1,6.4C0,6.3,0,6.1,0,6z"></path>
+</svg><div class="speaker-summery body-content"></div><div class="assests"></div></div></div><div class="modal-footer"><button class="btn btn-close" data-dismiss="modal" type="button"><span>Close</span></button></div></div></div></div></div></div><a href="../speakers" class="btn btn-small speakers-more"><span>All Speakers +</span></a></section><section class="reveal" id="venue"><h2 class="section-title">Venue</h2><div class="venue"><div class="venue-img"><img src="images/venue.jpg" alt="CHANG YUNG-FA FOUNDATION
+International Convention Center
+Taipei, Taiwan
+" title="CHANG YUNG-FA FOUNDATION
+International Convention Center
+Taipei, Taiwan
+" /></div><div class="venue-info"><div class="event-location"><div class="en body-title">CHANG YUNG-FA FOUNDATION
+International Convention Center
+Taipei, Taiwan
+</div><div class="cht body-title smaller"><span class="slash">/</span>張榮發基金會國際會議中心</div></div><div class="event-address"><div class="en body-content">No. 11, Zhongshan South Road, Zhongzheng District, Taipei City</div><div class="cht body-content smaller"><span class="slash">/</span>台北市中正區中山南路11號</div></div><a href="https://www.google.com/maps/place/張榮發基金會/@25.038668,121.5165528,17z" target="_blank" rel="noopener noreferrer" class="btn btn-small google-map"><span>Google Map +</span></a></div></div></section><section class="reveal" id="parties"><h2 class="section-title">Parties</h2><div class="parties"><div class="party-ticket"><div class="ticket-bg"><?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" class="deco_wave_vertical" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" viewBox="0 0 32 81" style="enable-background:new 0 0 31 81;" xml:space="preserve">
+	<title>Deco/Dark Wave</title>
+	<path class="deco-line dark thin" d="M9.1,0.5c0,8-8.6,8-8.6,16s8.6,8,8.6,16s-8.6,8-8.6,16s8.6,8,8.6,16s-8.6,8-8.6,16 M19.8,0.5c0,8-8.6,8-8.6,16
+		s8.6,8,8.6,16s-8.6,8-8.6,16s8.6,8,8.6,16s-8.6,8-8.6,15.9 M30.5,0.5c0,8-8.6,8-8.6,16s8.6,8,8.6,16s-8.6,8-8.6,16s8.6,8,8.6,16
+		s-8.6,8-8.6,15.9"/>
+</svg>
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" class="deco_cross bg-deco" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+		viewBox="0 0 34 34" style="enable-background:new 0 0 34 34;" xml:space="preserve">
+	<title>Deco/Cross</title>
+	<path class="deco-line" d="M1.6,17h30.7 M17,1.6v30.7"/>
+</svg>
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" class="deco_logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 160 282" style="enable-background:new 0 0 160 282;" xml:space="preserve">
+	<path class="deco-color" d="M80,282c-1.8,0-3.6-0.7-5-2.1L2.1,207.1c-1.3-1.3-2.1-3.1-2.1-5c0-1.9,0.7-3.7,2.1-5L58.2,141L2.1,84.9
+		c-1.3-1.3-2.1-3.1-2.1-5c0-1.9,0.7-3.7,2.1-5L75,2.1c2.8-2.8,7.2-2.8,10,0l72.9,72.9c1.3,1.3,2.1,3.1,2.1,5c0,1.9-0.7,3.7-2.1,5
+		L101.8,141l56.1,56.1c1.3,1.3,2.1,3.1,2.1,5c0,1.9-0.7,3.7-2.1,5L85,279.9C83.6,281.3,81.8,282,80,282z M11.4,202.1L80,270.7
+		l68.6-68.6L92.5,146c-1.3-1.3-2.1-3.1-2.1-5c0-1.9,0.7-3.7,2.1-5l56.1-56.1L80,11.3L11.4,79.9L67.5,136c2.8,2.8,2.8,7.2,0,10
+		L11.4,202.1z"/>
+	<path class="deco-color" d="M108,59.5H52L32.8,78.8L80,126l47.2-47.2L108,59.5z M108.1,85.7l-2.2-6.3l-5.9-2.5l5.9-2.5l2.2-6.3l2.2,6.3
+		l5.6,2.5l-5.6,2.5L108.1,85.7z"/>
+	<path class="deco-color" d="M81.8,154c-0.5,9.8,2.6,16.1,8.7,22.8c8.7,9.7,8.2,16.1,6.3,21.6c-3,8.8-12.3,11.6-20.1,10.5
+		c-10.1-1.4-16.6-9.5-14.3-23.2C64.3,174.9,72.9,160.3,81.8,154z M89.9,228.9c-8.8-0.7-12.1-8.8-22.6-8.9
+		c-12.1-0.1-16.3,7.5-16.3,7.5l29,29l28.8-28.8C102.9,223.5,97.6,229.5,89.9,228.9z"/>
+</svg>
+</div><div class="party-cover"><div class="title">Pre Party</div><?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" class="main-deco" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20 12" style="enable-background:new 0 0 20 12;" xml:space="preserve">
+  <title>Main Deco</title>
+  <path class="deco-color" d="M0,6c0-0.1,0-0.3,0.1-0.4l5.2-5.5C5.4,0.1,5.5,0,5.7,0C5.8,0,5.9,0.1,6,0.1l4,4.2l4-4.2
+	C14.1,0.1,14.2,0,14.3,0c0.1,0,0.3,0.1,0.4,0.1l5.2,5.5c0.2,0.2,0.2,0.6,0,0.7l-5.2,5.5C14.6,12,14.5,12,14.3,12s-0.3-0.1-0.4-0.1
+	l-4-4.2l-4,4.2C5.9,12,5.8,12,5.7,12s-0.3-0.1-0.4-0.1L0.1,6.4C0,6.3,0,6.1,0,6z"></path>
+</svg><?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" class="main_logotype" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 142 36" style="enable-background:new 0 0 142 36;" xml:space="preserve">
+	<style type="text/css">
+		.logotype_ruby{fill:url(#logotype_ruby_gradient);}
+		.logotype_elixir{fill:url(#logotype_elixir_gradient);}
+	</style>
+	<title>Main Logotype</title>
+	<g class="conf_taiwan_2018">
+		<g class="conf">
+			<path class="logotype-color" d="M10.7,33.7c-0.6,0.5-1.2,0.9-2,1.1c-0.7,0.3-1.5,0.4-2.2,0.4c-0.6,0-1.2-0.1-1.7-0.2
+				c-0.5-0.2-1.1-0.4-1.5-0.7c-0.5-0.3-0.9-0.6-1.3-1c-0.4-0.4-0.7-0.8-1-1.3c-0.3-0.5-0.5-1-0.7-1.5C0.1,30,0,29.4,0,28.8
+				s0.1-1.2,0.2-1.7c0.2-0.6,0.4-1.1,0.7-1.5c0.3-0.5,0.6-0.9,1-1.3c0.4-0.4,0.8-0.7,1.3-1c0.5-0.3,1-0.5,1.5-0.7
+				c0.6-0.2,1.1-0.2,1.7-0.2c0.8,0,1.5,0.1,2.2,0.4c0.7,0.3,1.4,0.6,2,1.2L9.3,26C9,25.7,8.5,25.3,8,25.1c-0.5-0.2-1-0.3-1.6-0.3
+				c-0.6,0-1.1,0.1-1.6,0.3S4,25.6,3.7,26c-0.4,0.4-0.6,0.8-0.9,1.3c-0.2,0.5-0.3,1-0.3,1.5c0,0.5,0.1,1.1,0.3,1.5
+				c0.2,0.5,0.5,0.9,0.9,1.3c0.4,0.4,0.8,0.6,1.3,0.9c0.5,0.2,1,0.3,1.6,0.3c0.5,0,1.1-0.1,1.6-0.3c0.5-0.2,0.9-0.5,1.3-0.9
+				L10.7,33.7z"/>
+			<path class="logotype-color" d="M20.6,30.2c0,0.7-0.1,1.3-0.4,1.9s-0.6,1.1-1,1.6c-0.4,0.4-0.9,0.8-1.5,1c-0.6,0.3-1.2,0.4-1.9,0.4
+				c-0.7,0-1.3-0.1-1.9-0.4c-0.6-0.3-1.1-0.6-1.5-1c-0.4-0.4-0.8-1-1-1.6c-0.3-0.6-0.4-1.3-0.4-1.9c0-0.7,0.1-1.4,0.4-2
+				c0.3-0.6,0.6-1.1,1-1.6c0.4-0.4,0.9-0.8,1.5-1c0.6-0.2,1.2-0.4,1.9-0.4c0.7,0,1.3,0.1,1.9,0.4c0.6,0.2,1.1,0.6,1.5,1
+				c0.4,0.4,0.8,1,1,1.6C20.5,28.8,20.6,29.5,20.6,30.2z M18.2,30.2c0-0.4-0.1-0.7-0.2-1c-0.1-0.3-0.3-0.6-0.5-0.8
+				c-0.2-0.2-0.5-0.4-0.8-0.5c-0.3-0.1-0.6-0.2-0.9-0.2c-0.3,0-0.6,0.1-0.9,0.2c-0.3,0.1-0.5,0.3-0.8,0.5c-0.2,0.2-0.4,0.5-0.5,0.8
+				c-0.1,0.3-0.2,0.7-0.2,1c0,0.4,0.1,0.7,0.2,1c0.1,0.3,0.3,0.6,0.5,0.8c0.2,0.2,0.5,0.4,0.8,0.5c0.3,0.1,0.6,0.2,0.9,0.2
+				c0.3,0,0.6-0.1,0.9-0.2c0.3-0.1,0.5-0.3,0.8-0.5c0.2-0.2,0.4-0.5,0.5-0.8C18.1,31,18.2,30.6,18.2,30.2z"/>
+			<path class="logotype-color" d="M24,35h-2.4v-9.3h0.6l0.8,0.9c0.4-0.3,0.8-0.6,1.3-0.8c0.5-0.2,1-0.3,1.5-0.3c0.6,0,1.1,0.1,1.6,0.3
+				c0.5,0.2,0.9,0.5,1.3,0.9c0.4,0.4,0.7,0.8,0.9,1.3c0.2,0.5,0.3,1,0.3,1.6V35h-2.4v-5.3c0-0.2,0-0.5-0.1-0.7
+				c-0.1-0.2-0.2-0.4-0.4-0.6c-0.2-0.2-0.4-0.3-0.6-0.4c-0.2-0.1-0.4-0.1-0.7-0.1c-0.3,0-0.5,0-0.7,0.1c-0.2,0.1-0.4,0.2-0.6,0.4
+				c-0.2,0.2-0.3,0.4-0.4,0.6c-0.1,0.2-0.1,0.4-0.1,0.7V35z"/>
+			<path class="logotype-color" d="M34.3,35h-2.4v-7h-1.2v-2.4h1.2v-0.4c0-0.6,0.1-1.1,0.3-1.6c0.2-0.5,0.5-0.9,0.9-1.3
+				c0.4-0.4,0.8-0.7,1.3-0.9s1-0.3,1.6-0.3h1.8v2.4h-1.8c-0.3,0-0.5,0-0.7,0.1c-0.2,0.1-0.4,0.2-0.6,0.4c-0.2,0.2-0.3,0.3-0.4,0.6
+				c-0.1,0.2-0.1,0.5-0.1,0.7v0.4h2.9V28h-2.9V35z"/>
+		</g>
+		<g class="taiwan">
+			<path class="logotype-color" d="M48.8,35h-2.5V25h-3.8v-2.5h10V25h-3.8V35z"/>
+			<path class="logotype-color" d="M61.2,35h-0.6l-0.9-1.3c-0.2,0.2-0.5,0.4-0.7,0.6c-0.3,0.2-0.5,0.3-0.8,0.5c-0.3,0.1-0.6,0.2-0.9,0.3
+				c-0.3,0.1-0.6,0.1-0.9,0.1c-0.7,0-1.3-0.1-1.9-0.3c-0.6-0.2-1.1-0.5-1.5-1c-0.4-0.4-0.8-0.9-1-1.5c-0.3-0.6-0.4-1.3-0.4-2.1
+				c0-0.7,0.1-1.4,0.4-2c0.3-0.6,0.6-1.1,1-1.6c0.4-0.4,0.9-0.8,1.5-1c0.6-0.2,1.2-0.4,1.9-0.4c0.3,0,0.6,0,0.9,0.1
+				c0.3,0.1,0.6,0.2,0.9,0.3c0.3,0.1,0.5,0.3,0.8,0.5c0.3,0.2,0.5,0.4,0.7,0.6l0.9-1.1h0.6V35z M58.8,30.3c0-0.3-0.1-0.6-0.2-0.9
+				c-0.1-0.3-0.3-0.6-0.5-0.8c-0.2-0.2-0.5-0.4-0.8-0.6c-0.3-0.1-0.6-0.2-0.9-0.2s-0.6,0.1-0.9,0.2c-0.3,0.1-0.5,0.3-0.8,0.5
+				c-0.2,0.2-0.4,0.5-0.5,0.8c-0.1,0.3-0.2,0.7-0.2,1.1c0,0.4,0.1,0.8,0.2,1.1c0.1,0.3,0.3,0.6,0.5,0.8c0.2,0.2,0.5,0.4,0.8,0.5
+				c0.3,0.1,0.6,0.2,0.9,0.2s0.6-0.1,0.9-0.2c0.3-0.1,0.5-0.3,0.8-0.6c0.2-0.2,0.4-0.5,0.5-0.8C58.8,30.9,58.8,30.6,58.8,30.3z"/>
+			<path class="logotype-color" d="M65.8,23.2c0,0.2,0,0.4-0.1,0.6c-0.1,0.2-0.2,0.4-0.3,0.5c-0.1,0.1-0.3,0.3-0.5,0.3
+				c-0.2,0.1-0.4,0.1-0.6,0.1s-0.4,0-0.6-0.1c-0.2-0.1-0.4-0.2-0.5-0.3c-0.1-0.1-0.3-0.3-0.3-0.5c-0.1-0.2-0.1-0.4-0.1-0.6
+				c0-0.2,0-0.4,0.1-0.6c0.1-0.2,0.2-0.4,0.3-0.5c0.1-0.1,0.3-0.3,0.5-0.3c0.2-0.1,0.4-0.1,0.6-0.1s0.4,0,0.6,0.1
+				c0.2,0.1,0.4,0.2,0.5,0.3c0.1,0.1,0.3,0.3,0.3,0.5C65.8,22.7,65.8,23,65.8,23.2z M65.4,35H63v-9.3h2.4V35z"/>
+			<path class="logotype-color" d="M79,31.7c0,0.5-0.1,0.9-0.3,1.4c-0.2,0.4-0.4,0.8-0.8,1.1c-0.3,0.3-0.7,0.6-1.1,0.8
+				c-0.4,0.2-0.9,0.3-1.4,0.3c-0.4,0-0.9-0.1-1.3-0.2c-0.4-0.2-0.8-0.4-1.1-0.7c-0.3,0.3-0.7,0.5-1.1,0.7c-0.4,0.2-0.8,0.2-1.3,0.2
+				c-0.5,0-1-0.1-1.4-0.3s-0.8-0.4-1.1-0.8c-0.3-0.3-0.6-0.7-0.8-1.1c-0.2-0.4-0.3-0.9-0.3-1.4v-5.9h2.4v5.9c0,0.2,0,0.3,0.1,0.5
+				c0.1,0.1,0.1,0.3,0.3,0.4c0.1,0.1,0.2,0.2,0.4,0.3c0.1,0.1,0.3,0.1,0.5,0.1s0.3,0,0.5-0.1c0.1-0.1,0.3-0.1,0.4-0.3
+				c0.1-0.1,0.2-0.2,0.3-0.4c0.1-0.1,0.1-0.3,0.1-0.5v-5.9h2.4v5.9c0,0.2,0,0.3,0.1,0.5c0.1,0.1,0.1,0.3,0.3,0.4
+				c0.1,0.1,0.2,0.2,0.4,0.3c0.1,0.1,0.3,0.1,0.5,0.1c0.2,0,0.3,0,0.5-0.1c0.1-0.1,0.3-0.1,0.4-0.3c0.1-0.1,0.2-0.2,0.3-0.4
+				c0.1-0.1,0.1-0.3,0.1-0.5v-5.9H79V31.7z"/>
+			<path class="logotype-color" d="M89.8,35h-0.6l-0.9-1.3c-0.2,0.2-0.5,0.4-0.7,0.6c-0.3,0.2-0.5,0.3-0.8,0.5c-0.3,0.1-0.6,0.2-0.9,0.3
+				c-0.3,0.1-0.6,0.1-0.9,0.1c-0.7,0-1.3-0.1-1.9-0.3c-0.6-0.2-1.1-0.5-1.5-1c-0.4-0.4-0.8-0.9-1-1.5c-0.3-0.6-0.4-1.3-0.4-2.1
+				c0-0.7,0.1-1.4,0.4-2c0.3-0.6,0.6-1.1,1-1.6c0.4-0.4,0.9-0.8,1.5-1c0.6-0.2,1.2-0.4,1.9-0.4c0.3,0,0.6,0,0.9,0.1
+				c0.3,0.1,0.6,0.2,0.9,0.3c0.3,0.1,0.5,0.3,0.8,0.5c0.3,0.2,0.5,0.4,0.7,0.6l0.9-1.1h0.6V35z M87.4,30.3c0-0.3-0.1-0.6-0.2-0.9
+				c-0.1-0.3-0.3-0.6-0.5-0.8c-0.2-0.2-0.5-0.4-0.8-0.6c-0.3-0.1-0.6-0.2-0.9-0.2s-0.6,0.1-0.9,0.2c-0.3,0.1-0.5,0.3-0.8,0.5
+				c-0.2,0.2-0.4,0.5-0.5,0.8c-0.1,0.3-0.2,0.7-0.2,1.1c0,0.4,0.1,0.8,0.2,1.1c0.1,0.3,0.3,0.6,0.5,0.8c0.2,0.2,0.5,0.4,0.8,0.5
+				c0.3,0.1,0.6,0.2,0.9,0.2s0.6-0.1,0.9-0.2c0.3-0.1,0.5-0.3,0.8-0.6c0.2-0.2,0.4-0.5,0.5-0.8C87.4,30.9,87.4,30.6,87.4,30.3z"/>
+			<path class="logotype-color" d="M93.6,35h-2.4v-9.3h0.6l0.8,0.9c0.4-0.3,0.8-0.6,1.3-0.8c0.5-0.2,1-0.3,1.5-0.3c0.6,0,1.1,0.1,1.6,0.3
+				c0.5,0.2,0.9,0.5,1.3,0.9c0.4,0.4,0.7,0.8,0.9,1.3c0.2,0.5,0.3,1,0.3,1.6V35h-2.4v-5.3c0-0.2,0-0.5-0.1-0.7
+				c-0.1-0.2-0.2-0.4-0.4-0.6c-0.2-0.2-0.4-0.3-0.6-0.4s-0.4-0.1-0.7-0.1c-0.3,0-0.5,0-0.7,0.1s-0.4,0.2-0.6,0.4
+				c-0.2,0.2-0.3,0.4-0.4,0.6c-0.1,0.2-0.1,0.4-0.1,0.7V35z"/>
+		</g>
+		<g class="year">
+			<path class="logotype-color" d="M113.9,26.3c0,0.5-0.1,1-0.3,1.5c-0.2,0.5-0.5,0.9-0.8,1.2c-0.3,0.3-0.7,0.6-1.2,0.8
+				c-0.5,0.2-0.9,0.3-1.5,0.3h-1.3c-0.2,0-0.3,0-0.5,0.1c-0.2,0.1-0.3,0.2-0.4,0.3c-0.1,0.1-0.2,0.2-0.3,0.4
+				c-0.1,0.2-0.1,0.3-0.1,0.5v1.2h5.9V35h-8.4v-3.7c0-0.5,0.1-1,0.3-1.5c0.2-0.5,0.5-0.9,0.8-1.2c0.3-0.3,0.7-0.6,1.2-0.8
+				c0.5-0.2,0.9-0.3,1.5-0.3h1.3c0.2,0,0.3,0,0.5-0.1c0.2-0.1,0.3-0.2,0.4-0.3c0.1-0.1,0.2-0.2,0.3-0.4c0.1-0.2,0.1-0.3,0.1-0.5
+				c0-0.2,0-0.3-0.1-0.5c-0.1-0.2-0.2-0.3-0.3-0.4c-0.1-0.1-0.2-0.2-0.4-0.3c-0.2-0.1-0.3-0.1-0.5-0.1h-4.5v-2.5h4.5
+				c0.5,0,1,0.1,1.5,0.3c0.5,0.2,0.9,0.5,1.2,0.8c0.3,0.3,0.6,0.7,0.8,1.2C113.8,25.3,113.9,25.8,113.9,26.3z"/>
+			<path class="logotype-color" d="M125.3,28.8c0,1.2-0.1,2.2-0.4,3c-0.3,0.8-0.6,1.5-1.1,2s-1,0.9-1.6,1.1c-0.6,0.2-1.3,0.3-2,0.3
+				c-0.7,0-1.3-0.1-2-0.3c-0.6-0.2-1.1-0.6-1.6-1.1c-0.5-0.5-0.8-1.2-1.1-2c-0.3-0.8-0.4-1.8-0.4-3c0-1.2,0.1-2.2,0.4-3
+				c0.3-0.8,0.6-1.5,1.1-2c0.5-0.5,1-0.9,1.6-1.1c0.6-0.2,1.3-0.3,2-0.3c0.7,0,1.3,0.1,2,0.3c0.6,0.2,1.1,0.6,1.6,1.1
+				c0.5,0.5,0.8,1.2,1.1,2C125.2,26.6,125.3,27.6,125.3,28.8z M123,28.8c0-1.4-0.2-2.4-0.7-3.1c-0.5-0.7-1.1-1-1.9-1
+				c-0.8,0-1.5,0.3-1.9,1c-0.5,0.7-0.7,1.7-0.7,3.1c0,1.4,0.2,2.4,0.7,3.1c0.5,0.7,1.1,1,1.9,1c0.4,0,0.8-0.1,1.1-0.2
+				c0.3-0.2,0.6-0.4,0.8-0.8c0.2-0.3,0.4-0.8,0.5-1.3C122.9,30.1,123,29.5,123,28.8z"/>
+			<path class="logotype-color" d="M130.5,35H128V25h-1.2v-2.5h3.8V35z"/>
+			<path class="logotype-color" d="M139.7,28.8l2-2c0.2-0.2,0.3-0.5,0.3-0.8c0-0.3-0.1-0.6-0.3-0.8l-3.3-3.3c-0.2-0.2-0.5-0.3-0.8-0.3
+				c-0.3,0-0.6,0.1-0.8,0.3l-3.3,3.3c-0.2,0.2-0.3,0.5-0.3,0.8c0,0.3,0.1,0.6,0.3,0.8l2,2l-2,2c-0.2,0.2-0.3,0.5-0.3,0.8
+				c0,0.3,0.1,0.6,0.3,0.8l3.3,3.3c0.2,0.2,0.5,0.3,0.8,0.3c0.3,0,0.6-0.1,0.8-0.3l3.3-3.3c0.2-0.2,0.3-0.5,0.3-0.8
+				c0-0.3-0.1-0.6-0.3-0.8L139.7,28.8z M135.6,26l2-2l2,2l-2,2L135.6,26z M137.6,29.6l2,2l-2,2l-2-2L137.6,29.6z"/>
+		</g>
+	</g>
+	<linearGradient id="logotype_ruby_gradient" gradientUnits="userSpaceOnUse" x1="21.673" y1="18.1525" x2="21.673" y2="1.5399">
+		<stop  offset="0" style="stop-color:#CB1D23"/>
+		<stop  offset="0.194" style="stop-color:#CC2126"/>
+		<stop  offset="0.3949" style="stop-color:#D02E30"/>
+		<stop  offset="0.5991" style="stop-color:#D64240"/>
+		<stop  offset="0.8042" style="stop-color:#DE5F56"/>
+		<stop  offset="1" style="stop-color:#E88271"/>
+	</linearGradient>
+	<path class="logotype_ruby logotype_ruby" d="M4,14.6H1.5V2.1h5c0.5,0,0.9,0.1,1.3,0.2C8.2,2.4,8.6,2.6,9,2.8C9.4,3,9.7,3.3,10,3.6
+		c0.3,0.3,0.6,0.6,0.8,1c0.2,0.4,0.4,0.8,0.5,1.2c0.1,0.4,0.2,0.9,0.2,1.3c0,0.4-0.1,0.8-0.2,1.3c-0.1,0.4-0.3,0.8-0.5,1.2
+		c-0.2,0.4-0.4,0.7-0.7,1c-0.3,0.3-0.6,0.6-1,0.8l1.4,3.3H7.9l-1.1-2.5l-2.8,0V14.6z M4,4.6v5h2.5c0.3,0,0.7-0.1,1-0.2
+		C7.8,9.3,8,9.1,8.3,8.9c0.2-0.2,0.4-0.5,0.5-0.8C8.9,7.8,9,7.4,9,7.1c0-0.3-0.1-0.7-0.2-1C8.7,5.8,8.5,5.5,8.3,5.3
+		C8,5.1,7.8,4.9,7.5,4.8c-0.3-0.1-0.6-0.2-1-0.2H4z M19.8,13.5c-0.2,0.2-0.4,0.3-0.6,0.5c-0.2,0.2-0.4,0.3-0.7,0.4
+		c-0.2,0.1-0.5,0.2-0.7,0.3c-0.3,0.1-0.5,0.1-0.8,0.1c-0.6,0-1.1-0.1-1.6-0.3c-0.5-0.2-0.9-0.5-1.3-0.9c-0.4-0.4-0.7-0.8-0.9-1.4
+		c-0.2-0.5-0.3-1.1-0.3-1.8V5.3h2.4v5.2c0,0.3,0,0.6,0.1,0.8c0.1,0.2,0.2,0.5,0.4,0.6c0.2,0.2,0.4,0.3,0.6,0.4
+		c0.2,0.1,0.5,0.1,0.7,0.1c0.2,0,0.5-0.1,0.7-0.2c0.2-0.1,0.4-0.3,0.6-0.4c0.2-0.2,0.3-0.4,0.4-0.6c0.1-0.2,0.1-0.5,0.1-0.7V5.3h2.4
+		v9.3h-0.6L19.8,13.5z M35.9,18.1v-2.4l1.3,0c0.2,0,0.5,0,0.7-0.1c0.2-0.1,0.4-0.2,0.6-0.3c0.2-0.1,0.3-0.3,0.5-0.5
+		c0.1-0.2,0.3-0.4,0.3-0.6c-0.3,0.1-0.5,0.2-0.8,0.3c-0.3,0.1-0.5,0.2-0.8,0.2c-0.6,0-1.1-0.1-1.6-0.3c-0.5-0.2-0.9-0.5-1.3-0.9
+		c-0.4-0.4-0.7-0.8-0.9-1.4c-0.2-0.5-0.3-1.1-0.3-1.8V5.3h2.4v5.2c0,0.3,0,0.6,0.1,0.9c0.1,0.2,0.2,0.5,0.4,0.6
+		c0.2,0.2,0.4,0.3,0.6,0.4c0.2,0.1,0.5,0.1,0.7,0.1c0.2,0,0.5-0.1,0.7-0.2c0.2-0.1,0.4-0.3,0.6-0.4c0.2-0.2,0.3-0.4,0.4-0.6
+		c0.1-0.2,0.1-0.5,0.1-0.7V5.3h2.4v8.2c0,0.7-0.1,1.3-0.4,1.8c-0.3,0.6-0.6,1.1-1,1.5c-0.4,0.4-0.9,0.8-1.5,1
+		c-0.6,0.2-1.2,0.4-1.9,0.4L35.9,18.1z M31.9,7.9c-0.3-0.6-0.6-1.1-1-1.6c-0.4-0.4-0.9-0.8-1.5-1c-0.6-0.2-1.2-0.4-1.9-0.4
+		c-0.2,0-0.4,0-0.7,0.1c-0.2,0-0.4,0.1-0.7,0.2c-0.2,0.1-0.4,0.2-0.6,0.3c-0.2,0.1-0.3,0.3-0.5,0.4V1.5h-2.4v8.3
+		c0,0.7,0.1,1.4,0.4,2s0.6,1.1,1,1.6c0.4,0.4,0.9,0.8,1.5,1c0.6,0.2,1.2,0.4,1.9,0.4c0.7,0,1.3-0.1,1.9-0.4c0.6-0.2,1.1-0.6,1.5-1
+		c0.4-0.4,0.8-1,1-1.6c0.3-0.6,0.4-1.3,0.4-2C32.2,9.1,32.1,8.5,31.9,7.9z M27.5,12.3l-2.7-2.9L26,8h2.8l1.3,1.5L27.5,12.3z"/>
+	<linearGradient id="logotype_elixir_gradient" gradientUnits="userSpaceOnUse" x1="75.6567" y1="14.5305" x2="75.6567" y2="0">
+		<stop  offset="0" style="stop-color:#65308A"/>
+		<stop  offset="0.1991" style="stop-color:#68348C"/>
+		<stop  offset="0.4054" style="stop-color:#714194"/>
+		<stop  offset="0.615" style="stop-color:#7F55A0"/>
+		<stop  offset="0.8255" style="stop-color:#9472B1"/>
+		<stop  offset="1" style="stop-color:#A990C2"/>
+	</linearGradient>
+	<path class="logotype_elixir logotype_elixir" d="M65.4,14.5h-8.6V2h8.6v2.5h-6.1V7h4.1v2.5h-4.1V12h6.1V14.5z M69.3,14.5h-2.4v-13h2.4V14.5z
+		M73.9,2.7c0,0.2,0,0.4-0.1,0.6c-0.1,0.2-0.2,0.4-0.3,0.5c-0.1,0.1-0.3,0.3-0.5,0.3c-0.2,0.1-0.4,0.1-0.6,0.1s-0.4,0-0.6-0.1
+		c-0.2-0.1-0.4-0.2-0.5-0.3c-0.1-0.1-0.3-0.3-0.3-0.5c-0.1-0.2-0.1-0.4-0.1-0.6c0-0.2,0-0.4,0.1-0.6c0.1-0.2,0.2-0.4,0.3-0.5
+		c0.1-0.1,0.3-0.3,0.5-0.3c0.2-0.1,0.4-0.1,0.6-0.1s0.4,0,0.6,0.1c0.2,0.1,0.4,0.2,0.5,0.3c0.1,0.1,0.3,0.3,0.3,0.5
+		C73.8,2.2,73.9,2.5,73.9,2.7z M73.5,14.5h-2.4V5.2h2.4V14.5z M86.8,1.8c0.7,0.7,0.6,1.2,0.5,1.7c-0.2,0.7-1,0.9-1.6,0.8
+		c-0.8-0.1-1.3-0.7-1.1-1.8c0.1-0.8,0.8-2,1.5-2.4C86,0.8,86.3,1.2,86.8,1.8z M83.9,14.5H81l-1.9-2.9l-1.9,2.9h-2.9l3.4-4.8
+		l-3.4-4.6h2.9l1.9,2.7L81,5.1h2.9l-3.4,4.6L83.9,14.5z M87.1,14.5h-2.4V5.2h2.4V14.5z M90.6,14.5h-2.4V5.2h0.6l0.8,1.1
+		C90,6,90.4,5.7,90.9,5.5c0.5-0.2,1-0.3,1.5-0.3h2.1v2.4h-2.1c-0.3,0-0.5,0-0.7,0.1c-0.2,0.1-0.4,0.2-0.6,0.4
+		c-0.2,0.2-0.3,0.4-0.4,0.6c-0.1,0.2-0.1,0.5-0.1,0.7V14.5z"/>
+	<path class="deco-color" d="M49.6,13.9c-0.1,0-0.1,0-0.2-0.1l-2.9-2.9c-0.1-0.1-0.1-0.1-0.1-0.2c0-0.1,0-0.1,0.1-0.2l2.2-2.2l-2.2-2.2
+		c-0.1-0.1-0.1-0.1-0.1-0.2c0-0.1,0-0.1,0.1-0.2l2.9-2.9c0.1-0.1,0.3-0.1,0.4,0l2.9,2.9c0.1,0.1,0.1,0.1,0.1,0.2
+		c0,0.1,0,0.1-0.1,0.2l-2.2,2.2l2.2,2.2c0.1,0.1,0.1,0.1,0.1,0.2c0,0.1,0,0.1-0.1,0.2l-2.9,2.9C49.7,13.9,49.7,13.9,49.6,13.9z"/>
+</svg>
+</div><div class="party-info ruby"><div class="date">APR 26, 2018</div><div class="time small">19:00 - 21:00</div><a href="https://www.google.com/maps/place/五倍紅寶石台北出礦坑/@25.0548853,121.5353707,14.81z" target="_blank" rel="noopener noreferrer" class="location">@<span>五倍紅寶石</span></a><div class="btn-minimal inactive" data-balloon="Coming Soon ✨" data-balloon-pos="up"><span>Register Now</span></div></div></div><div class="party-ticket"><div class="ticket-bg"><?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" class="deco_wave_vertical" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" viewBox="0 0 32 81" style="enable-background:new 0 0 31 81;" xml:space="preserve">
+	<title>Deco/Dark Wave</title>
+	<path class="deco-line dark thin" d="M9.1,0.5c0,8-8.6,8-8.6,16s8.6,8,8.6,16s-8.6,8-8.6,16s8.6,8,8.6,16s-8.6,8-8.6,16 M19.8,0.5c0,8-8.6,8-8.6,16
+		s8.6,8,8.6,16s-8.6,8-8.6,16s8.6,8,8.6,16s-8.6,8-8.6,15.9 M30.5,0.5c0,8-8.6,8-8.6,16s8.6,8,8.6,16s-8.6,8-8.6,16s8.6,8,8.6,16
+		s-8.6,8-8.6,15.9"/>
+</svg>
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" class="deco_cross bg-deco" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+		viewBox="0 0 34 34" style="enable-background:new 0 0 34 34;" xml:space="preserve">
+	<title>Deco/Cross</title>
+	<path class="deco-line" d="M1.6,17h30.7 M17,1.6v30.7"/>
+</svg>
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" class="deco_logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 160 282" style="enable-background:new 0 0 160 282;" xml:space="preserve">
+	<path class="deco-color" d="M80,282c-1.8,0-3.6-0.7-5-2.1L2.1,207.1c-1.3-1.3-2.1-3.1-2.1-5c0-1.9,0.7-3.7,2.1-5L58.2,141L2.1,84.9
+		c-1.3-1.3-2.1-3.1-2.1-5c0-1.9,0.7-3.7,2.1-5L75,2.1c2.8-2.8,7.2-2.8,10,0l72.9,72.9c1.3,1.3,2.1,3.1,2.1,5c0,1.9-0.7,3.7-2.1,5
+		L101.8,141l56.1,56.1c1.3,1.3,2.1,3.1,2.1,5c0,1.9-0.7,3.7-2.1,5L85,279.9C83.6,281.3,81.8,282,80,282z M11.4,202.1L80,270.7
+		l68.6-68.6L92.5,146c-1.3-1.3-2.1-3.1-2.1-5c0-1.9,0.7-3.7,2.1-5l56.1-56.1L80,11.3L11.4,79.9L67.5,136c2.8,2.8,2.8,7.2,0,10
+		L11.4,202.1z"/>
+	<path class="deco-color" d="M108,59.5H52L32.8,78.8L80,126l47.2-47.2L108,59.5z M108.1,85.7l-2.2-6.3l-5.9-2.5l5.9-2.5l2.2-6.3l2.2,6.3
+		l5.6,2.5l-5.6,2.5L108.1,85.7z"/>
+	<path class="deco-color" d="M81.8,154c-0.5,9.8,2.6,16.1,8.7,22.8c8.7,9.7,8.2,16.1,6.3,21.6c-3,8.8-12.3,11.6-20.1,10.5
+		c-10.1-1.4-16.6-9.5-14.3-23.2C64.3,174.9,72.9,160.3,81.8,154z M89.9,228.9c-8.8-0.7-12.1-8.8-22.6-8.9
+		c-12.1-0.1-16.3,7.5-16.3,7.5l29,29l28.8-28.8C102.9,223.5,97.6,229.5,89.9,228.9z"/>
+</svg>
+</div><div class="party-cover"><div class="title">The Official Party</div><?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" class="main-deco" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20 12" style="enable-background:new 0 0 20 12;" xml:space="preserve">
+  <title>Main Deco</title>
+  <path class="deco-color" d="M0,6c0-0.1,0-0.3,0.1-0.4l5.2-5.5C5.4,0.1,5.5,0,5.7,0C5.8,0,5.9,0.1,6,0.1l4,4.2l4-4.2
+	C14.1,0.1,14.2,0,14.3,0c0.1,0,0.3,0.1,0.4,0.1l5.2,5.5c0.2,0.2,0.2,0.6,0,0.7l-5.2,5.5C14.6,12,14.5,12,14.3,12s-0.3-0.1-0.4-0.1
+	l-4-4.2l-4,4.2C5.9,12,5.8,12,5.7,12s-0.3-0.1-0.4-0.1L0.1,6.4C0,6.3,0,6.1,0,6z"></path>
+</svg><?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" class="main_logotype" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 142 36" style="enable-background:new 0 0 142 36;" xml:space="preserve">
+	<style type="text/css">
+		.logotype_ruby{fill:url(#logotype_ruby_gradient);}
+		.logotype_elixir{fill:url(#logotype_elixir_gradient);}
+	</style>
+	<title>Main Logotype</title>
+	<g class="conf_taiwan_2018">
+		<g class="conf">
+			<path class="logotype-color" d="M10.7,33.7c-0.6,0.5-1.2,0.9-2,1.1c-0.7,0.3-1.5,0.4-2.2,0.4c-0.6,0-1.2-0.1-1.7-0.2
+				c-0.5-0.2-1.1-0.4-1.5-0.7c-0.5-0.3-0.9-0.6-1.3-1c-0.4-0.4-0.7-0.8-1-1.3c-0.3-0.5-0.5-1-0.7-1.5C0.1,30,0,29.4,0,28.8
+				s0.1-1.2,0.2-1.7c0.2-0.6,0.4-1.1,0.7-1.5c0.3-0.5,0.6-0.9,1-1.3c0.4-0.4,0.8-0.7,1.3-1c0.5-0.3,1-0.5,1.5-0.7
+				c0.6-0.2,1.1-0.2,1.7-0.2c0.8,0,1.5,0.1,2.2,0.4c0.7,0.3,1.4,0.6,2,1.2L9.3,26C9,25.7,8.5,25.3,8,25.1c-0.5-0.2-1-0.3-1.6-0.3
+				c-0.6,0-1.1,0.1-1.6,0.3S4,25.6,3.7,26c-0.4,0.4-0.6,0.8-0.9,1.3c-0.2,0.5-0.3,1-0.3,1.5c0,0.5,0.1,1.1,0.3,1.5
+				c0.2,0.5,0.5,0.9,0.9,1.3c0.4,0.4,0.8,0.6,1.3,0.9c0.5,0.2,1,0.3,1.6,0.3c0.5,0,1.1-0.1,1.6-0.3c0.5-0.2,0.9-0.5,1.3-0.9
+				L10.7,33.7z"/>
+			<path class="logotype-color" d="M20.6,30.2c0,0.7-0.1,1.3-0.4,1.9s-0.6,1.1-1,1.6c-0.4,0.4-0.9,0.8-1.5,1c-0.6,0.3-1.2,0.4-1.9,0.4
+				c-0.7,0-1.3-0.1-1.9-0.4c-0.6-0.3-1.1-0.6-1.5-1c-0.4-0.4-0.8-1-1-1.6c-0.3-0.6-0.4-1.3-0.4-1.9c0-0.7,0.1-1.4,0.4-2
+				c0.3-0.6,0.6-1.1,1-1.6c0.4-0.4,0.9-0.8,1.5-1c0.6-0.2,1.2-0.4,1.9-0.4c0.7,0,1.3,0.1,1.9,0.4c0.6,0.2,1.1,0.6,1.5,1
+				c0.4,0.4,0.8,1,1,1.6C20.5,28.8,20.6,29.5,20.6,30.2z M18.2,30.2c0-0.4-0.1-0.7-0.2-1c-0.1-0.3-0.3-0.6-0.5-0.8
+				c-0.2-0.2-0.5-0.4-0.8-0.5c-0.3-0.1-0.6-0.2-0.9-0.2c-0.3,0-0.6,0.1-0.9,0.2c-0.3,0.1-0.5,0.3-0.8,0.5c-0.2,0.2-0.4,0.5-0.5,0.8
+				c-0.1,0.3-0.2,0.7-0.2,1c0,0.4,0.1,0.7,0.2,1c0.1,0.3,0.3,0.6,0.5,0.8c0.2,0.2,0.5,0.4,0.8,0.5c0.3,0.1,0.6,0.2,0.9,0.2
+				c0.3,0,0.6-0.1,0.9-0.2c0.3-0.1,0.5-0.3,0.8-0.5c0.2-0.2,0.4-0.5,0.5-0.8C18.1,31,18.2,30.6,18.2,30.2z"/>
+			<path class="logotype-color" d="M24,35h-2.4v-9.3h0.6l0.8,0.9c0.4-0.3,0.8-0.6,1.3-0.8c0.5-0.2,1-0.3,1.5-0.3c0.6,0,1.1,0.1,1.6,0.3
+				c0.5,0.2,0.9,0.5,1.3,0.9c0.4,0.4,0.7,0.8,0.9,1.3c0.2,0.5,0.3,1,0.3,1.6V35h-2.4v-5.3c0-0.2,0-0.5-0.1-0.7
+				c-0.1-0.2-0.2-0.4-0.4-0.6c-0.2-0.2-0.4-0.3-0.6-0.4c-0.2-0.1-0.4-0.1-0.7-0.1c-0.3,0-0.5,0-0.7,0.1c-0.2,0.1-0.4,0.2-0.6,0.4
+				c-0.2,0.2-0.3,0.4-0.4,0.6c-0.1,0.2-0.1,0.4-0.1,0.7V35z"/>
+			<path class="logotype-color" d="M34.3,35h-2.4v-7h-1.2v-2.4h1.2v-0.4c0-0.6,0.1-1.1,0.3-1.6c0.2-0.5,0.5-0.9,0.9-1.3
+				c0.4-0.4,0.8-0.7,1.3-0.9s1-0.3,1.6-0.3h1.8v2.4h-1.8c-0.3,0-0.5,0-0.7,0.1c-0.2,0.1-0.4,0.2-0.6,0.4c-0.2,0.2-0.3,0.3-0.4,0.6
+				c-0.1,0.2-0.1,0.5-0.1,0.7v0.4h2.9V28h-2.9V35z"/>
+		</g>
+		<g class="taiwan">
+			<path class="logotype-color" d="M48.8,35h-2.5V25h-3.8v-2.5h10V25h-3.8V35z"/>
+			<path class="logotype-color" d="M61.2,35h-0.6l-0.9-1.3c-0.2,0.2-0.5,0.4-0.7,0.6c-0.3,0.2-0.5,0.3-0.8,0.5c-0.3,0.1-0.6,0.2-0.9,0.3
+				c-0.3,0.1-0.6,0.1-0.9,0.1c-0.7,0-1.3-0.1-1.9-0.3c-0.6-0.2-1.1-0.5-1.5-1c-0.4-0.4-0.8-0.9-1-1.5c-0.3-0.6-0.4-1.3-0.4-2.1
+				c0-0.7,0.1-1.4,0.4-2c0.3-0.6,0.6-1.1,1-1.6c0.4-0.4,0.9-0.8,1.5-1c0.6-0.2,1.2-0.4,1.9-0.4c0.3,0,0.6,0,0.9,0.1
+				c0.3,0.1,0.6,0.2,0.9,0.3c0.3,0.1,0.5,0.3,0.8,0.5c0.3,0.2,0.5,0.4,0.7,0.6l0.9-1.1h0.6V35z M58.8,30.3c0-0.3-0.1-0.6-0.2-0.9
+				c-0.1-0.3-0.3-0.6-0.5-0.8c-0.2-0.2-0.5-0.4-0.8-0.6c-0.3-0.1-0.6-0.2-0.9-0.2s-0.6,0.1-0.9,0.2c-0.3,0.1-0.5,0.3-0.8,0.5
+				c-0.2,0.2-0.4,0.5-0.5,0.8c-0.1,0.3-0.2,0.7-0.2,1.1c0,0.4,0.1,0.8,0.2,1.1c0.1,0.3,0.3,0.6,0.5,0.8c0.2,0.2,0.5,0.4,0.8,0.5
+				c0.3,0.1,0.6,0.2,0.9,0.2s0.6-0.1,0.9-0.2c0.3-0.1,0.5-0.3,0.8-0.6c0.2-0.2,0.4-0.5,0.5-0.8C58.8,30.9,58.8,30.6,58.8,30.3z"/>
+			<path class="logotype-color" d="M65.8,23.2c0,0.2,0,0.4-0.1,0.6c-0.1,0.2-0.2,0.4-0.3,0.5c-0.1,0.1-0.3,0.3-0.5,0.3
+				c-0.2,0.1-0.4,0.1-0.6,0.1s-0.4,0-0.6-0.1c-0.2-0.1-0.4-0.2-0.5-0.3c-0.1-0.1-0.3-0.3-0.3-0.5c-0.1-0.2-0.1-0.4-0.1-0.6
+				c0-0.2,0-0.4,0.1-0.6c0.1-0.2,0.2-0.4,0.3-0.5c0.1-0.1,0.3-0.3,0.5-0.3c0.2-0.1,0.4-0.1,0.6-0.1s0.4,0,0.6,0.1
+				c0.2,0.1,0.4,0.2,0.5,0.3c0.1,0.1,0.3,0.3,0.3,0.5C65.8,22.7,65.8,23,65.8,23.2z M65.4,35H63v-9.3h2.4V35z"/>
+			<path class="logotype-color" d="M79,31.7c0,0.5-0.1,0.9-0.3,1.4c-0.2,0.4-0.4,0.8-0.8,1.1c-0.3,0.3-0.7,0.6-1.1,0.8
+				c-0.4,0.2-0.9,0.3-1.4,0.3c-0.4,0-0.9-0.1-1.3-0.2c-0.4-0.2-0.8-0.4-1.1-0.7c-0.3,0.3-0.7,0.5-1.1,0.7c-0.4,0.2-0.8,0.2-1.3,0.2
+				c-0.5,0-1-0.1-1.4-0.3s-0.8-0.4-1.1-0.8c-0.3-0.3-0.6-0.7-0.8-1.1c-0.2-0.4-0.3-0.9-0.3-1.4v-5.9h2.4v5.9c0,0.2,0,0.3,0.1,0.5
+				c0.1,0.1,0.1,0.3,0.3,0.4c0.1,0.1,0.2,0.2,0.4,0.3c0.1,0.1,0.3,0.1,0.5,0.1s0.3,0,0.5-0.1c0.1-0.1,0.3-0.1,0.4-0.3
+				c0.1-0.1,0.2-0.2,0.3-0.4c0.1-0.1,0.1-0.3,0.1-0.5v-5.9h2.4v5.9c0,0.2,0,0.3,0.1,0.5c0.1,0.1,0.1,0.3,0.3,0.4
+				c0.1,0.1,0.2,0.2,0.4,0.3c0.1,0.1,0.3,0.1,0.5,0.1c0.2,0,0.3,0,0.5-0.1c0.1-0.1,0.3-0.1,0.4-0.3c0.1-0.1,0.2-0.2,0.3-0.4
+				c0.1-0.1,0.1-0.3,0.1-0.5v-5.9H79V31.7z"/>
+			<path class="logotype-color" d="M89.8,35h-0.6l-0.9-1.3c-0.2,0.2-0.5,0.4-0.7,0.6c-0.3,0.2-0.5,0.3-0.8,0.5c-0.3,0.1-0.6,0.2-0.9,0.3
+				c-0.3,0.1-0.6,0.1-0.9,0.1c-0.7,0-1.3-0.1-1.9-0.3c-0.6-0.2-1.1-0.5-1.5-1c-0.4-0.4-0.8-0.9-1-1.5c-0.3-0.6-0.4-1.3-0.4-2.1
+				c0-0.7,0.1-1.4,0.4-2c0.3-0.6,0.6-1.1,1-1.6c0.4-0.4,0.9-0.8,1.5-1c0.6-0.2,1.2-0.4,1.9-0.4c0.3,0,0.6,0,0.9,0.1
+				c0.3,0.1,0.6,0.2,0.9,0.3c0.3,0.1,0.5,0.3,0.8,0.5c0.3,0.2,0.5,0.4,0.7,0.6l0.9-1.1h0.6V35z M87.4,30.3c0-0.3-0.1-0.6-0.2-0.9
+				c-0.1-0.3-0.3-0.6-0.5-0.8c-0.2-0.2-0.5-0.4-0.8-0.6c-0.3-0.1-0.6-0.2-0.9-0.2s-0.6,0.1-0.9,0.2c-0.3,0.1-0.5,0.3-0.8,0.5
+				c-0.2,0.2-0.4,0.5-0.5,0.8c-0.1,0.3-0.2,0.7-0.2,1.1c0,0.4,0.1,0.8,0.2,1.1c0.1,0.3,0.3,0.6,0.5,0.8c0.2,0.2,0.5,0.4,0.8,0.5
+				c0.3,0.1,0.6,0.2,0.9,0.2s0.6-0.1,0.9-0.2c0.3-0.1,0.5-0.3,0.8-0.6c0.2-0.2,0.4-0.5,0.5-0.8C87.4,30.9,87.4,30.6,87.4,30.3z"/>
+			<path class="logotype-color" d="M93.6,35h-2.4v-9.3h0.6l0.8,0.9c0.4-0.3,0.8-0.6,1.3-0.8c0.5-0.2,1-0.3,1.5-0.3c0.6,0,1.1,0.1,1.6,0.3
+				c0.5,0.2,0.9,0.5,1.3,0.9c0.4,0.4,0.7,0.8,0.9,1.3c0.2,0.5,0.3,1,0.3,1.6V35h-2.4v-5.3c0-0.2,0-0.5-0.1-0.7
+				c-0.1-0.2-0.2-0.4-0.4-0.6c-0.2-0.2-0.4-0.3-0.6-0.4s-0.4-0.1-0.7-0.1c-0.3,0-0.5,0-0.7,0.1s-0.4,0.2-0.6,0.4
+				c-0.2,0.2-0.3,0.4-0.4,0.6c-0.1,0.2-0.1,0.4-0.1,0.7V35z"/>
+		</g>
+		<g class="year">
+			<path class="logotype-color" d="M113.9,26.3c0,0.5-0.1,1-0.3,1.5c-0.2,0.5-0.5,0.9-0.8,1.2c-0.3,0.3-0.7,0.6-1.2,0.8
+				c-0.5,0.2-0.9,0.3-1.5,0.3h-1.3c-0.2,0-0.3,0-0.5,0.1c-0.2,0.1-0.3,0.2-0.4,0.3c-0.1,0.1-0.2,0.2-0.3,0.4
+				c-0.1,0.2-0.1,0.3-0.1,0.5v1.2h5.9V35h-8.4v-3.7c0-0.5,0.1-1,0.3-1.5c0.2-0.5,0.5-0.9,0.8-1.2c0.3-0.3,0.7-0.6,1.2-0.8
+				c0.5-0.2,0.9-0.3,1.5-0.3h1.3c0.2,0,0.3,0,0.5-0.1c0.2-0.1,0.3-0.2,0.4-0.3c0.1-0.1,0.2-0.2,0.3-0.4c0.1-0.2,0.1-0.3,0.1-0.5
+				c0-0.2,0-0.3-0.1-0.5c-0.1-0.2-0.2-0.3-0.3-0.4c-0.1-0.1-0.2-0.2-0.4-0.3c-0.2-0.1-0.3-0.1-0.5-0.1h-4.5v-2.5h4.5
+				c0.5,0,1,0.1,1.5,0.3c0.5,0.2,0.9,0.5,1.2,0.8c0.3,0.3,0.6,0.7,0.8,1.2C113.8,25.3,113.9,25.8,113.9,26.3z"/>
+			<path class="logotype-color" d="M125.3,28.8c0,1.2-0.1,2.2-0.4,3c-0.3,0.8-0.6,1.5-1.1,2s-1,0.9-1.6,1.1c-0.6,0.2-1.3,0.3-2,0.3
+				c-0.7,0-1.3-0.1-2-0.3c-0.6-0.2-1.1-0.6-1.6-1.1c-0.5-0.5-0.8-1.2-1.1-2c-0.3-0.8-0.4-1.8-0.4-3c0-1.2,0.1-2.2,0.4-3
+				c0.3-0.8,0.6-1.5,1.1-2c0.5-0.5,1-0.9,1.6-1.1c0.6-0.2,1.3-0.3,2-0.3c0.7,0,1.3,0.1,2,0.3c0.6,0.2,1.1,0.6,1.6,1.1
+				c0.5,0.5,0.8,1.2,1.1,2C125.2,26.6,125.3,27.6,125.3,28.8z M123,28.8c0-1.4-0.2-2.4-0.7-3.1c-0.5-0.7-1.1-1-1.9-1
+				c-0.8,0-1.5,0.3-1.9,1c-0.5,0.7-0.7,1.7-0.7,3.1c0,1.4,0.2,2.4,0.7,3.1c0.5,0.7,1.1,1,1.9,1c0.4,0,0.8-0.1,1.1-0.2
+				c0.3-0.2,0.6-0.4,0.8-0.8c0.2-0.3,0.4-0.8,0.5-1.3C122.9,30.1,123,29.5,123,28.8z"/>
+			<path class="logotype-color" d="M130.5,35H128V25h-1.2v-2.5h3.8V35z"/>
+			<path class="logotype-color" d="M139.7,28.8l2-2c0.2-0.2,0.3-0.5,0.3-0.8c0-0.3-0.1-0.6-0.3-0.8l-3.3-3.3c-0.2-0.2-0.5-0.3-0.8-0.3
+				c-0.3,0-0.6,0.1-0.8,0.3l-3.3,3.3c-0.2,0.2-0.3,0.5-0.3,0.8c0,0.3,0.1,0.6,0.3,0.8l2,2l-2,2c-0.2,0.2-0.3,0.5-0.3,0.8
+				c0,0.3,0.1,0.6,0.3,0.8l3.3,3.3c0.2,0.2,0.5,0.3,0.8,0.3c0.3,0,0.6-0.1,0.8-0.3l3.3-3.3c0.2-0.2,0.3-0.5,0.3-0.8
+				c0-0.3-0.1-0.6-0.3-0.8L139.7,28.8z M135.6,26l2-2l2,2l-2,2L135.6,26z M137.6,29.6l2,2l-2,2l-2-2L137.6,29.6z"/>
+		</g>
+	</g>
+	<linearGradient id="logotype_ruby_gradient" gradientUnits="userSpaceOnUse" x1="21.673" y1="18.1525" x2="21.673" y2="1.5399">
+		<stop  offset="0" style="stop-color:#CB1D23"/>
+		<stop  offset="0.194" style="stop-color:#CC2126"/>
+		<stop  offset="0.3949" style="stop-color:#D02E30"/>
+		<stop  offset="0.5991" style="stop-color:#D64240"/>
+		<stop  offset="0.8042" style="stop-color:#DE5F56"/>
+		<stop  offset="1" style="stop-color:#E88271"/>
+	</linearGradient>
+	<path class="logotype_ruby logotype_ruby" d="M4,14.6H1.5V2.1h5c0.5,0,0.9,0.1,1.3,0.2C8.2,2.4,8.6,2.6,9,2.8C9.4,3,9.7,3.3,10,3.6
+		c0.3,0.3,0.6,0.6,0.8,1c0.2,0.4,0.4,0.8,0.5,1.2c0.1,0.4,0.2,0.9,0.2,1.3c0,0.4-0.1,0.8-0.2,1.3c-0.1,0.4-0.3,0.8-0.5,1.2
+		c-0.2,0.4-0.4,0.7-0.7,1c-0.3,0.3-0.6,0.6-1,0.8l1.4,3.3H7.9l-1.1-2.5l-2.8,0V14.6z M4,4.6v5h2.5c0.3,0,0.7-0.1,1-0.2
+		C7.8,9.3,8,9.1,8.3,8.9c0.2-0.2,0.4-0.5,0.5-0.8C8.9,7.8,9,7.4,9,7.1c0-0.3-0.1-0.7-0.2-1C8.7,5.8,8.5,5.5,8.3,5.3
+		C8,5.1,7.8,4.9,7.5,4.8c-0.3-0.1-0.6-0.2-1-0.2H4z M19.8,13.5c-0.2,0.2-0.4,0.3-0.6,0.5c-0.2,0.2-0.4,0.3-0.7,0.4
+		c-0.2,0.1-0.5,0.2-0.7,0.3c-0.3,0.1-0.5,0.1-0.8,0.1c-0.6,0-1.1-0.1-1.6-0.3c-0.5-0.2-0.9-0.5-1.3-0.9c-0.4-0.4-0.7-0.8-0.9-1.4
+		c-0.2-0.5-0.3-1.1-0.3-1.8V5.3h2.4v5.2c0,0.3,0,0.6,0.1,0.8c0.1,0.2,0.2,0.5,0.4,0.6c0.2,0.2,0.4,0.3,0.6,0.4
+		c0.2,0.1,0.5,0.1,0.7,0.1c0.2,0,0.5-0.1,0.7-0.2c0.2-0.1,0.4-0.3,0.6-0.4c0.2-0.2,0.3-0.4,0.4-0.6c0.1-0.2,0.1-0.5,0.1-0.7V5.3h2.4
+		v9.3h-0.6L19.8,13.5z M35.9,18.1v-2.4l1.3,0c0.2,0,0.5,0,0.7-0.1c0.2-0.1,0.4-0.2,0.6-0.3c0.2-0.1,0.3-0.3,0.5-0.5
+		c0.1-0.2,0.3-0.4,0.3-0.6c-0.3,0.1-0.5,0.2-0.8,0.3c-0.3,0.1-0.5,0.2-0.8,0.2c-0.6,0-1.1-0.1-1.6-0.3c-0.5-0.2-0.9-0.5-1.3-0.9
+		c-0.4-0.4-0.7-0.8-0.9-1.4c-0.2-0.5-0.3-1.1-0.3-1.8V5.3h2.4v5.2c0,0.3,0,0.6,0.1,0.9c0.1,0.2,0.2,0.5,0.4,0.6
+		c0.2,0.2,0.4,0.3,0.6,0.4c0.2,0.1,0.5,0.1,0.7,0.1c0.2,0,0.5-0.1,0.7-0.2c0.2-0.1,0.4-0.3,0.6-0.4c0.2-0.2,0.3-0.4,0.4-0.6
+		c0.1-0.2,0.1-0.5,0.1-0.7V5.3h2.4v8.2c0,0.7-0.1,1.3-0.4,1.8c-0.3,0.6-0.6,1.1-1,1.5c-0.4,0.4-0.9,0.8-1.5,1
+		c-0.6,0.2-1.2,0.4-1.9,0.4L35.9,18.1z M31.9,7.9c-0.3-0.6-0.6-1.1-1-1.6c-0.4-0.4-0.9-0.8-1.5-1c-0.6-0.2-1.2-0.4-1.9-0.4
+		c-0.2,0-0.4,0-0.7,0.1c-0.2,0-0.4,0.1-0.7,0.2c-0.2,0.1-0.4,0.2-0.6,0.3c-0.2,0.1-0.3,0.3-0.5,0.4V1.5h-2.4v8.3
+		c0,0.7,0.1,1.4,0.4,2s0.6,1.1,1,1.6c0.4,0.4,0.9,0.8,1.5,1c0.6,0.2,1.2,0.4,1.9,0.4c0.7,0,1.3-0.1,1.9-0.4c0.6-0.2,1.1-0.6,1.5-1
+		c0.4-0.4,0.8-1,1-1.6c0.3-0.6,0.4-1.3,0.4-2C32.2,9.1,32.1,8.5,31.9,7.9z M27.5,12.3l-2.7-2.9L26,8h2.8l1.3,1.5L27.5,12.3z"/>
+	<linearGradient id="logotype_elixir_gradient" gradientUnits="userSpaceOnUse" x1="75.6567" y1="14.5305" x2="75.6567" y2="0">
+		<stop  offset="0" style="stop-color:#65308A"/>
+		<stop  offset="0.1991" style="stop-color:#68348C"/>
+		<stop  offset="0.4054" style="stop-color:#714194"/>
+		<stop  offset="0.615" style="stop-color:#7F55A0"/>
+		<stop  offset="0.8255" style="stop-color:#9472B1"/>
+		<stop  offset="1" style="stop-color:#A990C2"/>
+	</linearGradient>
+	<path class="logotype_elixir logotype_elixir" d="M65.4,14.5h-8.6V2h8.6v2.5h-6.1V7h4.1v2.5h-4.1V12h6.1V14.5z M69.3,14.5h-2.4v-13h2.4V14.5z
+		M73.9,2.7c0,0.2,0,0.4-0.1,0.6c-0.1,0.2-0.2,0.4-0.3,0.5c-0.1,0.1-0.3,0.3-0.5,0.3c-0.2,0.1-0.4,0.1-0.6,0.1s-0.4,0-0.6-0.1
+		c-0.2-0.1-0.4-0.2-0.5-0.3c-0.1-0.1-0.3-0.3-0.3-0.5c-0.1-0.2-0.1-0.4-0.1-0.6c0-0.2,0-0.4,0.1-0.6c0.1-0.2,0.2-0.4,0.3-0.5
+		c0.1-0.1,0.3-0.3,0.5-0.3c0.2-0.1,0.4-0.1,0.6-0.1s0.4,0,0.6,0.1c0.2,0.1,0.4,0.2,0.5,0.3c0.1,0.1,0.3,0.3,0.3,0.5
+		C73.8,2.2,73.9,2.5,73.9,2.7z M73.5,14.5h-2.4V5.2h2.4V14.5z M86.8,1.8c0.7,0.7,0.6,1.2,0.5,1.7c-0.2,0.7-1,0.9-1.6,0.8
+		c-0.8-0.1-1.3-0.7-1.1-1.8c0.1-0.8,0.8-2,1.5-2.4C86,0.8,86.3,1.2,86.8,1.8z M83.9,14.5H81l-1.9-2.9l-1.9,2.9h-2.9l3.4-4.8
+		l-3.4-4.6h2.9l1.9,2.7L81,5.1h2.9l-3.4,4.6L83.9,14.5z M87.1,14.5h-2.4V5.2h2.4V14.5z M90.6,14.5h-2.4V5.2h0.6l0.8,1.1
+		C90,6,90.4,5.7,90.9,5.5c0.5-0.2,1-0.3,1.5-0.3h2.1v2.4h-2.1c-0.3,0-0.5,0-0.7,0.1c-0.2,0.1-0.4,0.2-0.6,0.4
+		c-0.2,0.2-0.3,0.4-0.4,0.6c-0.1,0.2-0.1,0.5-0.1,0.7V14.5z"/>
+	<path class="deco-color" d="M49.6,13.9c-0.1,0-0.1,0-0.2-0.1l-2.9-2.9c-0.1-0.1-0.1-0.1-0.1-0.2c0-0.1,0-0.1,0.1-0.2l2.2-2.2l-2.2-2.2
+		c-0.1-0.1-0.1-0.1-0.1-0.2c0-0.1,0-0.1,0.1-0.2l2.9-2.9c0.1-0.1,0.3-0.1,0.4,0l2.9,2.9c0.1,0.1,0.1,0.1,0.1,0.2
+		c0,0.1,0,0.1-0.1,0.2l-2.2,2.2l2.2,2.2c0.1,0.1,0.1,0.1,0.1,0.2c0,0.1,0,0.1-0.1,0.2l-2.9,2.9C49.7,13.9,49.7,13.9,49.6,13.9z"/>
+</svg>
+</div><div class="party-info elixir"><div class="date">APR 27, 2018</div><div class="time small">18:30 - 21:00</div><a href="https://www.google.com/maps/place/張榮發基金會/@25.038668,121.5165528,17z" target="_blank" rel="noopener noreferrer" class="location">@<span>張榮發基金會國際會議中心 8F</span></a><div class="btn-minimal inactive" data-balloon="Coming Soon ✨" data-balloon-pos="up"><span>Free for Attendee</span></div></div></div></div></section><section class="reveal support"><h2 class="section-title">Sponsors</h2><div class="support-list partial"><div class="support-block ruby"><div class="level-title ruby">Ruby</div><a href="https://www.honestbee.tw/" target="_blank" rel="noopener noreferrer" class="supporter"><img src="images/sponsors/honestbee.svg" class="logo" alt="honestbee" title="honestbee誠實蜜蜂的總部位於新加坡，已在亞洲八個國家（日本、香港、新加坡、馬來西亞、印尼、泰國、台灣、菲律賓）推出生鮮熟食外送服務，是目前亞洲最大的生鮮雜貨線上代採購與熟食快送平台，台灣服務範圍已經涵蓋雙北地區、新竹市及竹北地區、台中、高雄。 
+
+自2015年進入台灣以來，透過在亞洲八個國家的服務經驗，不斷與消費者溝通聽取意見，希望能夠不斷進步，為消費者帶來更好的使用體驗，致力成為消費者生活最好的幫手。" /></a></div><div class="support-block platinum"><div class="level-title platinum">Platinum</div><a href="https://www.cyberbiz.co" target="_blank" rel="noopener noreferrer" class="supporter"><img src="images/sponsors/cyberbiz.svg" class="logo" alt="Cyberbiz" title="Cyberbiz 提供一站式［新零售］解決方案，協助店家快速架設品牌官網，並提供智慧倉儲以及實體店面O2O服務，全面整合［線上+線下+物流］。" /></a><a href="https://shopline.tw/" target="_blank" rel="noopener noreferrer" class="supporter"><img src="images/sponsors/shopline.svg" class="logo" alt="SHOPLINE" title="SHOPLINE 主要產品為電商自助平台，整合網站設計、商品管理和金物流系統，為電商賣家提供簡單上手的架站工具。自 2013 年創辦以來，已經有超過 80,000 名來自香港、台灣、東南亞等地的商家使用 SHOPLINE 的服務，讓 SHOPLINE 成為在亞洲市場的行業領軍者。
+SHOPLINE 提供了一個功能齊全的品牌開店配套，讓商家可以輕鬆架設功能完善的個人化網路商店，並專注提供用戶體驗。店主不僅在短時間內就可以獲得對應所有流動裝置的獨立網店，更可以同時擁有專業的訂單管理系統、多元化的物流及支付網關、風格多樣的店舖設計、強大的增值服務模式、本地語言及客戶服務支持與數據流量分析等後台管理工具。
+2014 美國 500 Startups 第十屆新創團隊
+2015 香港資訊及通訊科技獎--最佳資訊科技初創企業（商業市場）優異證書
+2016 阿里巴巴集團「香港創業者基金」首批名單
+2017 成為Google大中華區第一個電商合作夥伴" /></a></div><div class="support-block gold"><div class="level-title gold">Gold</div><a href="https://www.diing.com/" target="_blank" rel="noopener noreferrer" class="supporter"><img src="images/sponsors/diing.svg" class="logo" alt="Diing Inc." title="我們是科技狂熱份子，希望能夠重新塑造人們與這世界互動的方式，如果你對物聯網與區塊鏈感興趣，歡迎加入我們！ join@diing.com
+
+Fascinated by the IoT and blockchain-based technologies? Interested in building great products to reshaped the way we interact with the world around us? If so, we want you. 💪 join@diing.com" /></a><a href="http://incubit.co.jp/" target="_blank" rel="noopener noreferrer" class="supporter"><img src="images/sponsors/incubit.svg" class="logo" alt="Incubit, Inc." title="來自日本並擁有國際化團隊的 AI 新創公司。在 2016 年於 IBM Watson 駭客松獲頒優勝後，陸續與醫療 / 農業 / 機器人 / 教育以及電商等產業合作整合人工智慧並替客戶創造商業價值。
+自 2017 年已成為 Nvidia 合作夥伴並將投入更多於 IoT 及影像的開發專案。
+
+A Japanese startup focusing in AI solution integration. Our members came from globally, and after won the first price in 2016 IBM Watson hackathon, Incubit already cooperated with companies from several industries such as medical / agriculture / robotics / education and E-commerce to integrate AI solutions to create new value to their business.
+In 2017, Incubit became a partner with Nvidia and will contribute more in IoT and video solutions." /></a></div><div class="support-block silver"><div class="level-title silver">Silver</div><a href="https://www.mysql.com/" target="_blank" rel="noopener noreferrer" class="supporter"><img src="images/sponsors/mysql.svg" class="logo" alt="MySQL" title="MySQL is the world's most popular OS database. With its proven performance, reliability and ease-of-use, MySQL has become the leading database choice for web-based applications, used by high profile web properties including Facebook, Twitter, YouTube, Yahoo! and more. Additionally, it is an extremely popular choice as embedded database, distributed by over 3,000 ISVs &amp; OEMs. To organizations in need of an open source, ACID-compliant transactional database delivering real-time in-memory performance and 99.999 percent availability, Oracle offers MySQL Cluster.
+Oracle drives MySQL innovation, constantly improving MySQL solutions and delivering new capabilities to power next generation web, cloud, mobile and embedded applications. " /></a><a href="http://goldenio.com/" target="_blank" rel="noopener noreferrer" class="supporter"><img src="images/sponsors/goldenio.svg" class="logo" alt="黃碼科技有限公司 Goldenio Technology" title="黃碼科技致力於開發好維護的網站系統，提供網站系統規劃與開發，網站中長期維護，多團隊專案合作等服務。在生物資料處理方面，也提供資料庫規劃與維護，分析系統規劃與開發，客製化分析程式等服務。" /></a><a href="http://piccollage.com/" target="_blank" rel="noopener noreferrer" class="supporter"><img src="images/sponsors/piccollage.svg" class="logo" alt="Cardinal Blue Software, Inc." title="Party with your photos! PicCollage is a top photo app for iOS and Android with over 150 million downloads. It lets you make collages with images, text, stickers, GIFs, and videos, and share with friends and followers. We are building a community of millions of people who create, remix and share visual content in fun and novel ways. PicCollage brings photos and people together." /></a><a href="https://skymizer.com/" target="_blank" rel="noopener noreferrer" class="supporter"><img src="images/sponsors/skymizer.svg" class="logo" alt="Skymizer" title="Skymizer 是頂尖的編譯與虛擬化技術團隊，幫助深度學習與數位貨幣應用的客戶建立各式的虛擬機器與編譯器，縮短 time-to-market 時間；產品為 C/C++ Intelligent Compiler，藉由獨到的編譯器與機器學習技術，幫助軟體團隊自動化的強化軟體品質、增加軟體效能。" /></a><a href="https://speee.jp/" target="_blank" rel="noopener noreferrer" class="supporter"><img src="images/sponsors/speee.svg" class="logo" alt="Speee, Inc." title="Speee has a mission to &quot;Contribute to growth of society by creating new service which has an impact on our world&quot; and deliver high added value through both Business-to-Business and Business-to-Consumer services.
+We invited Mr.Yukihiro Matsumoto, who invented Ruby, as an engineering adviser and Mr.Masahiro Ihara, who had been working for Cookpad as an engineering manager, to reform our engineering department's system and organization structure.
+We are now aiming to become &quot;Speee as a technology company&quot;." /></a></div><div class="support-block party"><div class="level-title party">Party</div><a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="supporter"><img src="images/sponsors/github.svg" class="logo" alt="GitHub" title="GitHub is how people build software. With a community of more than 10 million people, developers can discover, use, and contribute to over 25 million projects using a powerful collaborative development workflow." /></a></div><div class="support-block partner"><div class="level-title partner">Partner</div><a href="https://5xruby.tw/" target="_blank" rel="noopener noreferrer" class="supporter"><img src="images/sponsors/5xruby.svg" class="logo" alt="五倍紅寶石股份有限公司" title="「五倍紅寶石」是由幾位台灣 Ruby 社群的朋友共同成立的一家公司，希望透過教育訓練、企業培訓等講座，將 Ruby 推廣到校園、企業、開發者。提供的服務包括：程式教育訓練、企業技術培訓與諮詢、活動場地租借與專案委托製作。" /></a></div></div><a href="https://rubyelixirconftw.typeform.com/to/zOjJhK" target="_blank" rel="noopener noreferrer" class="btn btn-small"><span>Support Us +</span></a></section></div><footer id="footer"><div class="footer"><div class="footer-logo"><?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" class="main_logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 183 50" style="enable-background:new 0 0 183 50;" xml:space="preserve">
+	<style type="text/css">
+		.logotype_ruby{fill:url(#logotype_ruby_gradient);}
+		.logotype_elixir{fill:url(#logotype_elixir_gradient);}
+		.logo_frame{fill:url(#logo_frame_gradient);}
+	</style>
+	<title>Main Logo</title>
+	<g class="logotype">
+		<g class="conf_taiwan_2018">
+			<g class="conf">
+				<path class="logotype-color" d="M51.8,40.5c-0.6,0.5-1.2,0.9-2,1.1c-0.7,0.3-1.5,0.4-2.2,0.4c-0.6,0-1.2-0.1-1.7-0.2
+					c-0.5-0.2-1.1-0.4-1.5-0.7c-0.5-0.3-0.9-0.6-1.3-1c-0.4-0.4-0.7-0.8-1-1.3c-0.3-0.5-0.5-1-0.7-1.5c-0.2-0.5-0.2-1.1-0.2-1.7
+					c0-0.6,0.1-1.2,0.2-1.7c0.2-0.6,0.4-1.1,0.7-1.5c0.3-0.5,0.6-0.9,1-1.3c0.4-0.4,0.8-0.7,1.3-1c0.5-0.3,1-0.5,1.5-0.7
+					c0.5-0.2,1.1-0.2,1.7-0.2c0.8,0,1.5,0.1,2.2,0.4c0.7,0.3,1.4,0.6,2,1.2l-1.3,2.2c-0.4-0.4-0.8-0.7-1.3-0.9
+					c-0.5-0.2-1-0.3-1.6-0.3c-0.6,0-1.1,0.1-1.6,0.3c-0.5,0.2-0.9,0.5-1.3,0.8c-0.4,0.4-0.6,0.8-0.9,1.3c-0.2,0.5-0.3,1-0.3,1.5
+					c0,0.5,0.1,1.1,0.3,1.5c0.2,0.5,0.5,0.9,0.9,1.3c0.4,0.4,0.8,0.6,1.3,0.9c0.5,0.2,1,0.3,1.6,0.3c0.5,0,1.1-0.1,1.6-0.3
+					c0.5-0.2,0.9-0.5,1.3-0.9L51.8,40.5z"/>
+				<path class="logotype-color" d="M61.7,37.1c0,0.7-0.1,1.3-0.4,1.9c-0.2,0.6-0.6,1.1-1,1.6c-0.4,0.4-0.9,0.8-1.5,1c-0.6,0.3-1.2,0.4-1.9,0.4
+					c-0.7,0-1.3-0.1-1.9-0.4c-0.6-0.3-1.1-0.6-1.5-1c-0.4-0.4-0.8-1-1-1.6c-0.2-0.6-0.4-1.3-0.4-1.9c0-0.7,0.1-1.4,0.4-2
+					c0.2-0.6,0.6-1.1,1-1.6c0.4-0.4,0.9-0.8,1.5-1c0.6-0.2,1.2-0.4,1.9-0.4c0.7,0,1.3,0.1,1.9,0.4c0.6,0.2,1.1,0.6,1.5,1
+					c0.4,0.4,0.8,1,1,1.6C61.6,35.7,61.7,36.3,61.7,37.1z M59.3,37.1c0-0.4-0.1-0.7-0.2-1c-0.1-0.3-0.3-0.6-0.5-0.8
+					c-0.2-0.2-0.5-0.4-0.8-0.5c-0.3-0.1-0.6-0.2-0.9-0.2s-0.6,0.1-0.9,0.2c-0.3,0.1-0.5,0.3-0.7,0.5c-0.2,0.2-0.4,0.5-0.5,0.8
+					c-0.1,0.3-0.2,0.7-0.2,1c0,0.4,0.1,0.7,0.2,1c0.1,0.3,0.3,0.6,0.5,0.8c0.2,0.2,0.5,0.4,0.7,0.5c0.3,0.1,0.6,0.2,0.9,0.2
+					s0.6-0.1,0.9-0.2c0.3-0.1,0.5-0.3,0.8-0.5c0.2-0.2,0.4-0.5,0.5-0.8C59.2,37.8,59.3,37.5,59.3,37.1z"/>
+				<path class="logotype-color" d="M65.1,41.8h-2.4v-9.3h0.6l0.8,0.9c0.4-0.3,0.8-0.6,1.3-0.8c0.5-0.2,1-0.3,1.5-0.3c0.6,0,1.1,0.1,1.6,0.3
+					s0.9,0.5,1.3,0.9c0.4,0.4,0.7,0.8,0.9,1.3c0.2,0.5,0.3,1,0.3,1.6v5.3h-2.4v-5.3c0-0.2,0-0.5-0.1-0.7c-0.1-0.2-0.2-0.4-0.4-0.6
+					c-0.2-0.2-0.4-0.3-0.6-0.4c-0.2-0.1-0.4-0.1-0.7-0.1c-0.2,0-0.5,0-0.7,0.1c-0.2,0.1-0.4,0.2-0.6,0.4c-0.2,0.2-0.3,0.4-0.4,0.6
+					c-0.1,0.2-0.1,0.4-0.1,0.7V41.8z"/>
+				<path class="logotype-color" d="M75.4,41.8h-2.4v-7h-1.2v-2.4h1.2V32c0-0.6,0.1-1.1,0.3-1.6c0.2-0.5,0.5-0.9,0.9-1.3
+					c0.4-0.4,0.8-0.7,1.3-0.9s1-0.3,1.6-0.3H79v2.4h-1.8c-0.3,0-0.5,0-0.7,0.1c-0.2,0.1-0.4,0.2-0.6,0.4c-0.2,0.2-0.3,0.3-0.4,0.6
+					c-0.1,0.2-0.1,0.5-0.1,0.7v0.4h2.9v2.4h-2.9V41.8z"/>
+			</g>
+			<g class="taiwan">
+				<path class="logotype-color" d="M89.9,41.9h-2.5v-10h-3.8v-2.5h10v2.5h-3.7V41.9z"/>
+				<path class="logotype-color" d="M102.3,41.9h-0.6l-0.9-1.3c-0.2,0.2-0.5,0.4-0.7,0.6c-0.3,0.2-0.5,0.3-0.8,0.5c-0.3,0.1-0.6,0.2-0.9,0.3
+					C98.1,42,97.8,42,97.5,42c-0.7,0-1.3-0.1-1.9-0.3c-0.6-0.2-1.1-0.5-1.5-1c-0.4-0.4-0.8-0.9-1-1.5c-0.2-0.6-0.4-1.3-0.4-2.1
+					c0-0.7,0.1-1.4,0.4-2c0.2-0.6,0.6-1.1,1-1.6c0.4-0.4,0.9-0.8,1.5-1c0.6-0.2,1.2-0.4,1.9-0.4c0.3,0,0.6,0,0.9,0.1
+					c0.3,0.1,0.6,0.2,0.9,0.3c0.3,0.1,0.5,0.3,0.8,0.5c0.3,0.2,0.5,0.4,0.7,0.6l0.9-1.1h0.6V41.9z M99.9,37.1c0-0.3-0.1-0.6-0.2-0.9
+					c-0.1-0.3-0.3-0.6-0.5-0.8c-0.2-0.2-0.5-0.4-0.8-0.6c-0.3-0.1-0.6-0.2-0.9-0.2s-0.6,0.1-0.9,0.2c-0.3,0.1-0.5,0.3-0.7,0.5
+					c-0.2,0.2-0.4,0.5-0.5,0.8c-0.1,0.3-0.2,0.7-0.2,1.1s0.1,0.8,0.2,1.1c0.1,0.3,0.3,0.6,0.5,0.8c0.2,0.2,0.5,0.4,0.7,0.5
+					c0.3,0.1,0.6,0.2,0.9,0.2s0.6-0.1,0.9-0.2c0.3-0.1,0.5-0.3,0.8-0.6c0.2-0.2,0.4-0.5,0.5-0.8C99.8,37.8,99.9,37.4,99.9,37.1z"/>
+				<path class="logotype-color" d="M106.9,30c0,0.2,0,0.4-0.1,0.6c-0.1,0.2-0.2,0.4-0.3,0.5c-0.1,0.1-0.3,0.3-0.5,0.3c-0.2,0.1-0.4,0.1-0.6,0.1
+					c-0.2,0-0.4,0-0.6-0.1c-0.2-0.1-0.4-0.2-0.5-0.3c-0.1-0.1-0.3-0.3-0.3-0.5c-0.1-0.2-0.1-0.4-0.1-0.6c0-0.2,0-0.4,0.1-0.6
+					c0.1-0.2,0.2-0.4,0.3-0.5c0.1-0.1,0.3-0.3,0.5-0.3c0.2-0.1,0.4-0.1,0.6-0.1c0.2,0,0.4,0,0.6,0.1c0.2,0.1,0.4,0.2,0.5,0.3
+					c0.1,0.1,0.3,0.3,0.3,0.5C106.9,29.6,106.9,29.8,106.9,30z M106.5,41.9h-2.4v-9.3h2.4V41.9z"/>
+				<path class="logotype-color" d="M120.1,38.5c0,0.5-0.1,0.9-0.3,1.4c-0.2,0.4-0.4,0.8-0.8,1.1c-0.3,0.3-0.7,0.6-1.1,0.8
+					c-0.4,0.2-0.9,0.3-1.4,0.3c-0.4,0-0.9-0.1-1.3-0.2c-0.4-0.2-0.8-0.4-1.1-0.7c-0.3,0.3-0.7,0.5-1.1,0.7c-0.4,0.2-0.8,0.2-1.3,0.2
+					c-0.5,0-1-0.1-1.4-0.3c-0.4-0.2-0.8-0.4-1.1-0.8c-0.3-0.3-0.6-0.7-0.8-1.1c-0.2-0.4-0.3-0.9-0.3-1.4v-5.9h2.4v5.9
+					c0,0.2,0,0.3,0.1,0.5c0.1,0.1,0.1,0.3,0.3,0.4c0.1,0.1,0.2,0.2,0.4,0.3c0.1,0.1,0.3,0.1,0.5,0.1c0.2,0,0.3,0,0.5-0.1
+					c0.1-0.1,0.3-0.1,0.4-0.3c0.1-0.1,0.2-0.2,0.3-0.4c0.1-0.1,0.1-0.3,0.1-0.5v-5.9h2.4v5.9c0,0.2,0,0.3,0.1,0.5
+					c0.1,0.1,0.1,0.3,0.3,0.4c0.1,0.1,0.2,0.2,0.4,0.3c0.1,0.1,0.3,0.1,0.5,0.1s0.3,0,0.5-0.1c0.1-0.1,0.3-0.1,0.4-0.3
+					c0.1-0.1,0.2-0.2,0.3-0.4c0.1-0.1,0.1-0.3,0.1-0.5v-5.9h2.4V38.5z"/>
+				<path class="logotype-color" d="M130.9,41.9h-0.6l-0.9-1.3c-0.2,0.2-0.5,0.4-0.7,0.6c-0.3,0.2-0.5,0.3-0.8,0.5c-0.3,0.1-0.6,0.2-0.9,0.3
+					c-0.3,0.1-0.6,0.1-0.9,0.1c-0.7,0-1.3-0.1-1.9-0.3c-0.6-0.2-1.1-0.5-1.5-1c-0.4-0.4-0.8-0.9-1-1.5s-0.4-1.3-0.4-2.1
+					c0-0.7,0.1-1.4,0.4-2c0.2-0.6,0.6-1.1,1-1.6c0.4-0.4,0.9-0.8,1.5-1c0.6-0.2,1.2-0.4,1.9-0.4c0.3,0,0.6,0,0.9,0.1
+					c0.3,0.1,0.6,0.2,0.9,0.3c0.3,0.1,0.5,0.3,0.8,0.5c0.3,0.2,0.5,0.4,0.7,0.6l0.9-1.1h0.6V41.9z M128.5,37.1c0-0.3-0.1-0.6-0.2-0.9
+					c-0.1-0.3-0.3-0.6-0.5-0.8c-0.2-0.2-0.5-0.4-0.8-0.6c-0.3-0.1-0.6-0.2-0.9-0.2s-0.6,0.1-0.9,0.2c-0.3,0.1-0.5,0.3-0.7,0.5
+					c-0.2,0.2-0.4,0.5-0.5,0.8c-0.1,0.3-0.2,0.7-0.2,1.1s0.1,0.8,0.2,1.1c0.1,0.3,0.3,0.6,0.5,0.8c0.2,0.2,0.5,0.4,0.7,0.5
+					c0.3,0.1,0.6,0.2,0.9,0.2s0.6-0.1,0.9-0.2c0.3-0.1,0.5-0.3,0.8-0.6c0.2-0.2,0.4-0.5,0.5-0.8C128.4,37.8,128.5,37.4,128.5,37.1z"
+					/>
+				<path class="logotype-color" d="M134.7,41.9h-2.4v-9.3h0.6l0.8,0.9c0.4-0.3,0.8-0.6,1.3-0.8c0.5-0.2,1-0.3,1.5-0.3c0.6,0,1.1,0.1,1.6,0.3
+					c0.5,0.2,0.9,0.5,1.3,0.9c0.4,0.4,0.7,0.8,0.9,1.3c0.2,0.5,0.3,1,0.3,1.6v5.3h-2.4v-5.3c0-0.2,0-0.5-0.1-0.7
+					c-0.1-0.2-0.2-0.4-0.4-0.6c-0.2-0.2-0.4-0.3-0.6-0.4c-0.2-0.1-0.4-0.1-0.7-0.1c-0.2,0-0.5,0-0.7,0.1c-0.2,0.1-0.4,0.2-0.6,0.4
+					s-0.3,0.4-0.4,0.6c-0.1,0.2-0.1,0.4-0.1,0.7V41.9z"/>
+			</g>
+			<g class="year">
+				<path class="logotype-color" d="M155,33.1c0,0.5-0.1,1-0.3,1.5c-0.2,0.5-0.5,0.9-0.8,1.2c-0.3,0.3-0.7,0.6-1.2,0.8s-0.9,0.3-1.5,0.3H150
+					c-0.2,0-0.3,0-0.5,0.1s-0.3,0.2-0.4,0.3c-0.1,0.1-0.2,0.2-0.3,0.4c-0.1,0.2-0.1,0.3-0.1,0.5v1.2h5.9v2.5h-8.4v-3.7
+					c0-0.5,0.1-1,0.3-1.5c0.2-0.5,0.5-0.9,0.8-1.2c0.3-0.3,0.7-0.6,1.2-0.8c0.5-0.2,0.9-0.3,1.5-0.3h1.3c0.2,0,0.3,0,0.5-0.1
+					s0.3-0.2,0.4-0.3c0.1-0.1,0.2-0.2,0.3-0.4c0.1-0.2,0.1-0.3,0.1-0.5s0-0.3-0.1-0.5c-0.1-0.2-0.2-0.3-0.3-0.4
+					c-0.1-0.1-0.2-0.2-0.4-0.3c-0.2-0.1-0.3-0.1-0.5-0.1h-4.5v-2.5h4.5c0.5,0,1,0.1,1.5,0.3c0.5,0.2,0.9,0.5,1.2,0.8
+					c0.3,0.3,0.6,0.7,0.8,1.2C154.9,32.1,155,32.6,155,33.1z"/>
+				<path class="logotype-color" d="M166.4,35.6c0,1.2-0.1,2.2-0.4,3s-0.6,1.5-1.1,2s-1,0.9-1.6,1.1c-0.6,0.2-1.3,0.3-1.9,0.3
+					c-0.7,0-1.3-0.1-1.9-0.3c-0.6-0.2-1.1-0.6-1.6-1.1c-0.5-0.5-0.8-1.2-1.1-2c-0.3-0.8-0.4-1.8-0.4-3c0-1.2,0.1-2.2,0.4-3
+					c0.3-0.8,0.6-1.5,1.1-2c0.5-0.5,1-0.9,1.6-1.1c0.6-0.2,1.3-0.3,1.9-0.3c0.7,0,1.3,0.1,1.9,0.3c0.6,0.2,1.1,0.6,1.6,1.1
+					c0.5,0.5,0.8,1.2,1.1,2S166.4,34.5,166.4,35.6z M164,35.6c0-1.4-0.2-2.4-0.7-3.1c-0.5-0.7-1.1-1-1.9-1c-0.8,0-1.5,0.3-1.9,1
+					c-0.5,0.7-0.7,1.7-0.7,3.1c0,1.4,0.2,2.4,0.7,3.1c0.5,0.7,1.1,1,1.9,1c0.4,0,0.8-0.1,1.1-0.2c0.3-0.2,0.6-0.4,0.8-0.8
+					c0.2-0.3,0.4-0.8,0.5-1.3C163.9,36.9,164,36.3,164,35.6z"/>
+				<path class="logotype-color" d="M171.5,41.9H169v-10h-1.2v-2.5h3.7V41.9z"/>
+				<path class="logotype-color" d="M180.7,35.6l2-2c0.2-0.2,0.3-0.5,0.3-0.8c0-0.3-0.1-0.6-0.3-0.8l-3.3-3.3c-0.2-0.2-0.5-0.3-0.8-0.3
+					c-0.3,0-0.6,0.1-0.8,0.3l-3.3,3.3c-0.2,0.2-0.3,0.5-0.3,0.8c0,0.3,0.1,0.6,0.3,0.8l2,2l-2,2c-0.2,0.2-0.3,0.5-0.3,0.8
+					c0,0.3,0.1,0.6,0.3,0.8l3.3,3.3c0.2,0.2,0.5,0.3,0.8,0.3c0.3,0,0.6-0.1,0.8-0.3l3.3-3.3c0.2-0.2,0.3-0.5,0.3-0.8
+					c0-0.3-0.1-0.6-0.3-0.8L180.7,35.6z M176.6,32.9l2-2l2,2l-2,2L176.6,32.9z M178.6,36.4l2,2l-2,2l-2-2L178.6,36.4z"/>
+			</g>
+		</g>
+		<linearGradient id="logotype_ruby_gradient" gradientUnits="userSpaceOnUse" x1="62.7912" y1="24.9891" x2="62.7912" y2="8.3764">
+			<stop  offset="0" style="stop-color:#CB1D23"/>
+			<stop  offset="0.194" style="stop-color:#CC2126"/>
+			<stop  offset="0.3949" style="stop-color:#D02E30"/>
+			<stop  offset="0.5991" style="stop-color:#D64240"/>
+			<stop  offset="0.8042" style="stop-color:#DE5F56"/>
+			<stop  offset="1" style="stop-color:#E88271"/>
+		</linearGradient>
+		<path class="logotype_ruby logotype_ruby" d="M45.1,21.4h-2.5V8.9h5c0.5,0,0.9,0.1,1.3,0.2c0.4,0.1,0.8,0.3,1.2,0.5c0.4,0.2,0.7,0.5,1,0.8
+			c0.3,0.3,0.6,0.6,0.8,1c0.2,0.4,0.4,0.8,0.5,1.2c0.1,0.4,0.2,0.9,0.2,1.3c0,0.4-0.1,0.8-0.2,1.3c-0.1,0.4-0.3,0.8-0.5,1.2
+			c-0.2,0.4-0.4,0.7-0.7,1c-0.3,0.3-0.6,0.6-1,0.8l1.4,3.3H49l-1.1-2.5l-2.8,0V21.4z M45.1,11.4v5h2.5c0.3,0,0.7-0.1,1-0.2
+			s0.6-0.3,0.8-0.5c0.2-0.2,0.4-0.5,0.5-0.8c0.1-0.3,0.2-0.6,0.2-1c0-0.3-0.1-0.7-0.2-1c-0.1-0.3-0.3-0.6-0.5-0.8
+			c-0.2-0.2-0.5-0.4-0.8-0.5c-0.3-0.1-0.6-0.2-1-0.2H45.1z M61,20.3c-0.2,0.2-0.4,0.3-0.6,0.5c-0.2,0.2-0.4,0.3-0.7,0.4
+			c-0.2,0.1-0.5,0.2-0.7,0.3c-0.3,0.1-0.5,0.1-0.8,0.1c-0.6,0-1.1-0.1-1.6-0.3s-0.9-0.5-1.3-0.9c-0.4-0.4-0.7-0.8-0.9-1.4
+			c-0.2-0.5-0.3-1.1-0.3-1.8v-5.2h2.4v5.2c0,0.3,0,0.6,0.1,0.8c0.1,0.2,0.2,0.5,0.4,0.6c0.2,0.2,0.4,0.3,0.6,0.4
+			c0.2,0.1,0.5,0.1,0.7,0.1c0.2,0,0.5-0.1,0.7-0.2c0.2-0.1,0.4-0.3,0.6-0.4c0.2-0.2,0.3-0.4,0.4-0.6c0.1-0.2,0.1-0.5,0.1-0.7v-5.2
+			h2.4v9.3h-0.6L61,20.3z M77,25v-2.4l1.3,0c0.2,0,0.5,0,0.7-0.1c0.2-0.1,0.4-0.2,0.6-0.3c0.2-0.1,0.3-0.3,0.5-0.5
+			c0.1-0.2,0.3-0.4,0.3-0.6c-0.3,0.1-0.5,0.2-0.8,0.3c-0.3,0.1-0.5,0.2-0.8,0.2c-0.6,0-1.1-0.1-1.6-0.3s-0.9-0.5-1.3-0.9
+			c-0.4-0.4-0.7-0.8-0.9-1.4c-0.2-0.5-0.3-1.1-0.3-1.8v-5.2H77v5.2c0,0.3,0,0.6,0.1,0.9c0.1,0.2,0.2,0.5,0.4,0.6
+			c0.2,0.2,0.4,0.3,0.6,0.4c0.2,0.1,0.5,0.1,0.7,0.1c0.2,0,0.5-0.1,0.7-0.2c0.2-0.1,0.4-0.3,0.6-0.4c0.2-0.2,0.3-0.4,0.4-0.6
+			c0.1-0.2,0.1-0.5,0.1-0.7v-5.2H83v8.2c0,0.7-0.1,1.3-0.4,1.8c-0.2,0.6-0.6,1.1-1,1.5c-0.4,0.4-0.9,0.8-1.5,1
+			c-0.6,0.2-1.2,0.4-1.8,0.4L77,25z M73,14.7c-0.2-0.6-0.6-1.1-1-1.6c-0.4-0.4-0.9-0.8-1.5-1c-0.6-0.2-1.2-0.4-1.9-0.4
+			c-0.2,0-0.4,0-0.7,0.1c-0.2,0-0.4,0.1-0.7,0.2c-0.2,0.1-0.4,0.2-0.6,0.3c-0.2,0.1-0.3,0.3-0.5,0.4V8.4h-2.4v8.3
+			c0,0.7,0.1,1.4,0.4,2c0.2,0.6,0.6,1.1,1,1.6c0.4,0.4,0.9,0.8,1.5,1c0.6,0.2,1.2,0.4,1.9,0.4c0.7,0,1.3-0.1,1.9-0.4
+			c0.6-0.2,1.1-0.6,1.5-1c0.4-0.4,0.8-1,1-1.6c0.2-0.6,0.4-1.3,0.4-2C73.3,16,73.2,15.3,73,14.7z M68.6,19.2l-2.7-2.9l1.3-1.5H70
+			l1.3,1.5L68.6,19.2z"/>
+		<linearGradient id="logotype_elixir_gradient" gradientUnits="userSpaceOnUse" x1="116.7219" y1="21.3671" x2="116.7219" y2="6.8366">
+			<stop  offset="0" style="stop-color:#65308A"/>
+			<stop  offset="0.1991" style="stop-color:#68348C"/>
+			<stop  offset="0.4054" style="stop-color:#714194"/>
+			<stop  offset="0.615" style="stop-color:#7F55A0"/>
+			<stop  offset="0.8255" style="stop-color:#9472B1"/>
+			<stop  offset="1" style="stop-color:#A990C2"/>
+		</linearGradient>
+		<path class="logotype_elixir logotype_elixir" d="M106.4,21.4h-8.6V8.9h8.6v2.5h-6.1v2.5h4.1v2.5h-4.1v2.5h6.1V21.4z M110.3,21.4h-2.4v-13h2.4
+			V21.4z M114.9,9.5c0,0.2,0,0.4-0.1,0.6c-0.1,0.2-0.2,0.4-0.3,0.5c-0.1,0.1-0.3,0.3-0.5,0.3c-0.2,0.1-0.4,0.1-0.6,0.1
+			s-0.4,0-0.6-0.1c-0.2-0.1-0.4-0.2-0.5-0.3c-0.1-0.1-0.3-0.3-0.3-0.5c-0.1-0.2-0.1-0.4-0.1-0.6c0-0.2,0-0.4,0.1-0.6
+			c0.1-0.2,0.2-0.4,0.3-0.5c0.1-0.1,0.3-0.3,0.5-0.3c0.2-0.1,0.4-0.1,0.6-0.1s0.4,0,0.6,0.1c0.2,0.1,0.4,0.2,0.5,0.3
+			c0.1,0.1,0.3,0.3,0.3,0.5C114.9,9.1,114.9,9.3,114.9,9.5z M114.5,21.4h-2.4V12h2.4V21.4z M127.8,8.6c0.7,0.7,0.6,1.2,0.5,1.7
+			c-0.2,0.7-0.9,0.9-1.5,0.8c-0.8-0.1-1.3-0.7-1.1-1.8c0.1-0.8,0.8-2,1.5-2.4C127.1,7.6,127.3,8.1,127.8,8.6z M125,21.4H122l-1.9-2.9
+			l-1.9,2.9h-2.9l3.4-4.8l-3.4-4.6h2.9l1.9,2.7L122,12h2.9l-3.4,4.6L125,21.4z M128.2,21.4h-2.4V12h2.4V21.4z M131.7,21.4h-2.4V12
+			h0.6l0.8,1.1c0.4-0.3,0.8-0.6,1.3-0.8c0.5-0.2,1-0.3,1.5-0.3h2.1v2.4h-2.1c-0.2,0-0.5,0-0.7,0.1c-0.2,0.1-0.4,0.2-0.6,0.4
+			c-0.2,0.2-0.3,0.4-0.4,0.6c-0.1,0.2-0.1,0.5-0.1,0.7V21.4z"/>
+		<path class="deco-color" d="M90.7,20.7c-0.1,0-0.1,0-0.2-0.1l-2.9-2.9c-0.1-0.1-0.1-0.1-0.1-0.2c0-0.1,0-0.1,0.1-0.2l2.2-2.2L87.6,13
+			c-0.1-0.1-0.1-0.1-0.1-0.2c0-0.1,0-0.1,0.1-0.2l2.9-2.9c0.1-0.1,0.3-0.1,0.4,0l2.9,2.9c0.1,0.1,0.1,0.1,0.1,0.2
+			c0,0.1,0,0.1-0.1,0.2l-2.2,2.2l2.2,2.2c0.1,0.1,0.1,0.1,0.1,0.2c0,0.1,0,0.1-0.1,0.2l-2.9,2.9C90.8,20.7,90.8,20.7,90.7,20.7z"/>
+	</g>
+	<g class="logo">
+		<linearGradient id="logo_frame_gradient" gradientUnits="userSpaceOnUse" x1="14.186" y1="50" x2="14.186" y2="-1.818989e-12">
+			<stop  offset="0" style="stop-color:#3B4A69"/>
+			<stop  offset="1" style="stop-color:#606B85"/>
+		</linearGradient>
+		<path class="logo_frame" d="M14.2,50c-0.3,0-0.6-0.1-0.9-0.4L0.4,36.7C0.1,36.5,0,36.2,0,35.8c0-0.3,0.1-0.6,0.4-0.9l10-9.9l-10-9.9
+			C0.1,14.8,0,14.5,0,14.2c0-0.3,0.1-0.6,0.4-0.9L13.3,0.4c0.5-0.5,1.3-0.5,1.8,0L28,13.3c0.2,0.2,0.4,0.6,0.4,0.9
+			c0,0.3-0.1,0.6-0.4,0.9L18,25l10,9.9c0.2,0.2,0.4,0.6,0.4,0.9c0,0.3-0.1,0.6-0.4,0.9L15.1,49.6C14.8,49.9,14.5,50,14.2,50z
+			M2,35.8L14.2,48l12.2-12.2l-10-9.9C16.2,25.6,16,25.3,16,25c0-0.3,0.1-0.6,0.4-0.9l10-9.9L14.2,2L2,14.2l10,9.9
+			c0.5,0.5,0.5,1.3,0,1.8L2,35.8z"/>
+		<path class="logo_ruby logotype_ruby" d="M19.1,10.6H9.2L5.8,14l8.4,8.4l8.4-8.4L19.1,10.6z M19.2,15.2l-0.4-1.1l-1-0.4l1-0.4l0.4-1.1
+			l0.4,1.1l1,0.4l-1,0.4L19.2,15.2z"/>
+		<path class="logo_elixir logotype_elixir" d="M14.5,27.3c-0.1,1.7,0.5,2.9,1.5,4c1.5,1.7,1.5,2.9,1.1,3.8c-0.5,1.6-2.2,2.1-3.6,1.9
+			c-1.8-0.3-2.9-1.7-2.5-4.1C11.4,31,12.9,28.4,14.5,27.3z M15.9,40.6c-1.6-0.1-2.1-1.6-4-1.6c-2.1,0-2.9,1.3-2.9,1.3l5.1,5.1
+			l5.1-5.1C18.2,39.6,17.3,40.7,15.9,40.6z"/>
+	</g>
+</svg>
+</div><div class="footer-list"><ul class="nav main"><li class="modaled" data-target="#code-of-conduct" data-toggle="modal">Code of Conduct</li><li class="modaled" data-target="#team-members" data-toggle="modal">Team Members</li><li><a href="https://ruby.tw/" target="_blank" rel="noopener noreferrer">Ruby Taiwan</a></li><li><a href="https://elixir.tw/" target="_blank" rel="noopener noreferrer">Elixir Taiwan</a></li></ul><ul class="nav social"><li>Twiter<a href="https://twitter.com/rubyconftw" target="_blank" rel="noopener noreferrer">@rubyconftw</a></li><li>Facebook<a href="https://www.facebook.com/rubyconftw/" target="_blank" rel="noopener noreferrer">RubyConf Taiwan</a></li><li>E-mail<a href="mailto:contact@rubyconf.tw">contact@rubyconf.tw</a></li></ul><div class="modal" id="code-of-conduct" role="dialog" tabindex="-1"><div class="modal-dialog" role="document"><div class="modal-content"><div class="modal-header"><button aria-label="Close" class="close" data-dismiss="modal" type="button"><span aria-hidden="true"> &times;</span></button></div><div class="modal-body"><div class="content"><div class="coc-title body-title text-center">Code of Conduct</div><?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" class="main-deco" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20 12" style="enable-background:new 0 0 20 12;" xml:space="preserve">
+  <title>Main Deco</title>
+  <path class="deco-color" d="M0,6c0-0.1,0-0.3,0.1-0.4l5.2-5.5C5.4,0.1,5.5,0,5.7,0C5.8,0,5.9,0.1,6,0.1l4,4.2l4-4.2
+	C14.1,0.1,14.2,0,14.3,0c0.1,0,0.3,0.1,0.4,0.1l5.2,5.5c0.2,0.2,0.2,0.6,0,0.7l-5.2,5.5C14.6,12,14.5,12,14.3,12s-0.3-0.1-0.4-0.1
+	l-4-4.2l-4,4.2C5.9,12,5.8,12,5.7,12s-0.3-0.1-0.4-0.1L0.1,6.4C0,6.3,0,6.1,0,6z"></path>
+</svg><div class="coc-content body-content"><p>All attendees, speakers, sponsors and volunteers at our conference are required to agree to follow the Code of Conduct. Organizers will enforce this Code of Conduct throughout the event. We are expecting cooperation from all participants to help ensure a safe environment for everybody.
+Harassment includes offensive verbal comments related to gender, gender identity and expression, age, sexual orientation, disability, physical appearance, body size, race, religion, sexual images in public spaces, deliberate intimidation, stalking, following, harassing photography or recording, sustained disruption of talks or other events, inappropriate physical contact, and unwelcome sexual attention.
+Participants asked to stop any harassing behavior are expected to comply immediately. Sponsors are also subject to the anti-harassment policy. In particular, sponsors should not use sexualized images, activities, or other material. Booth staff (including volunteers) should not use sexualized clothing/uniforms/customes, or otherwise create a sexualized environment.
+If a participant engages in harassing behavior, the conference organizers may take any action they deem appropriate, including warning the offender or expulsion from the conference with no refund. If you are being harassed, notice that someone else is being harassed, or have any other concerns, please contact a member of conference staff immediately. Conference staff will be visible by their special badges and clothing.
+Conference staff will be happy to help participants contact hotel/venue security or local law enforcement, provide escort, or otherwise assist those experiencing harassment to feel safe for the duration of the conference. We value your attendance. We expect participants to follow these rules at all conference venues and conference-related social events.
+This Code of Conduct is based off the work done at <a href="http://confcodeofconduct.com/" target="_blank">Conference Code of Conduct</a>.</p>
+
+<p>所有此次活動的聽眾、演講者、贊助商和志工，都必須同意遵守下列行為準則。而主辦單位也將嚴格地執行這些準則，我們期待所有參加者的合作，以確保大家能有一個安全友善的環境。
+騷擾包括有關性別，性別認同、年齡、性向、殘疾、外貌、體型、種族、宗教的攻擊性言語，或是在公共場合散播色情圖片、蓄意恐嚇、跟踪、騷擾性的攝影或錄影、多次打斷活動、不恰當的身體接觸，和讓人感到不舒服的性關注。
+參與者必須停止任何騷擾行為並且立即遵守行為準則。
+贊助商也必須遵守行為準則。贊助商不應該使用帶有性意味的圖像、活動，或其它材料。工作人員（包括志工）不該穿著帶有性意味的衣服/制服/裝扮，或是建立一個具有性意味的環境。
+如果參與者從事騷擾行為，工作人員會採取其認為適當的任何手段，包括警告或是請離會場，並且不會退費。
+如果你被騷擾、看到別人受到騷擾，或有任何其他問題，請立即聯繫會議工作人員，工作人員身上會穿戴可以識別身份的特殊徽章或衣服。
+工作人員會很樂意幫助參與者聯繫酒店/場地警衛或當地警察、提供護送，或以其他方式幫助那些遇到騷擾的參與者感到安全。我們非常重視您的參與。
+我們希望參與者在各活動場合、會議有關的社群活動都能遵循這些規則。
+此行為準則是基於 <a href="http://confcodeofconduct.com/" target="_blank">Conference Code of Conduct</a> 而訂定。</p>
+</div></div></div><div class="modal-footer"><button class="btn btn-close" data-dismiss="modal" type="button"><span>Close</span></button></div></div></div></div><div class="modal" id="team-members" role="dialog" tabindex="-1"><div class="modal-dialog" role="document"><div class="modal-content"><div class="modal-header"><button aria-label="Close" class="close" data-dismiss="modal" type="button"><span aria-hidden="true"> &times;</span></button></div><div class="modal-body"><div class="content"><div class="team-title body-title text-center">Team Members</div><?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" class="main-deco" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20 12" style="enable-background:new 0 0 20 12;" xml:space="preserve">
+  <title>Main Deco</title>
+  <path class="deco-color" d="M0,6c0-0.1,0-0.3,0.1-0.4l5.2-5.5C5.4,0.1,5.5,0,5.7,0C5.8,0,5.9,0.1,6,0.1l4,4.2l4-4.2
+	C14.1,0.1,14.2,0,14.3,0c0.1,0,0.3,0.1,0.4,0.1l5.2,5.5c0.2,0.2,0.2,0.6,0,0.7l-5.2,5.5C14.6,12,14.5,12,14.3,12s-0.3-0.1-0.4-0.1
+	l-4-4.2l-4,4.2C5.9,12,5.8,12,5.7,12s-0.3-0.1-0.4-0.1L0.1,6.4C0,6.3,0,6.1,0,6z"></path>
+</svg><div class="team-members"><div class="member"><div class="member-name body-title text-center">Mu-Fan Teng</div><div class="member-title body-content text-center">Chief Organizer</div><ul class="member-socials list-inline"><li><a href="https://twitter.com/ryudoawaru" target="_blank" rel="noopener noreferrer" class="media twitter"><?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 40 40" style="enable-background:new 0 0 40 40;" xml:space="preserve">
+	<title>Social Button/Twitter</title>
+	<path class="social_btn_color" d="M39.5,18.9c0.7,0.6,0.7,1.6,0,2.2L21.1,39.5C20.8,39.8,20.4,40,20,40c-0.4,0-0.8-0.2-1.1-0.5
+		L0.5,21.1c-0.6-0.6-0.6-1.6,0-2.2L18.9,0.5C19.2,0.2,19.6,0,20,0c0.4,0,0.8,0.2,1.1,0.5L39.5,18.9z M29.3,14.2
+		c-0.7,0.3-1.4,0.5-2.2,0.6c0.8-0.5,1.4-1.2,1.7-2.1c-0.7,0.4-1.6,0.8-2.4,0.9c-0.7-0.7-1.7-1.2-2.8-1.2c-2.1,0-3.8,1.7-3.8,3.8
+		c0,0.3,0,0.6,0.1,0.9c-3.2-0.2-6-1.7-7.9-4c-0.3,0.6-0.5,1.2-0.5,1.9c0,1.3,0.7,2.5,1.7,3.2c-0.6,0-1.2-0.2-1.7-0.5v0
+		c0,1.9,1.3,3.4,3.1,3.8c-0.3,0.1-0.7,0.1-1,0.1c-0.2,0-0.5,0-0.7-0.1c0.5,1.5,1.9,2.6,3.6,2.7c-1.3,1-3,1.6-4.7,1.6
+		c-0.3,0-0.6,0-0.9,0c1.7,1.1,3.7,1.7,5.9,1.7c7,0,10.9-5.8,10.9-10.9c0-0.2,0-0.3,0-0.5C28.2,15.7,28.8,15,29.3,14.2z"></path>
+</svg></a></li><li><a href="https://github.com/ryudoawaru" target="_blank" rel="noopener noreferrer" class="media github"><?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" viewBox="0 0 40 40" style="enable-background:new 0 0 40 40;" xml:space="preserve">
+	<title>Social Button/GitHub</title>
+	<path class="social_btn_color" d="M39.5,18.9L21.1,0.5C20.8,0.2,20.4,0,20,0s-0.8,0.2-1.1,0.5L0.5,18.9c-0.6,0.6-0.6,1.6,0,2.2l18.4,18.4
+		c0.3,0.3,0.7,0.5,1.1,0.5s0.8-0.2,1.1-0.5l18.4-18.4C40.2,20.5,40.2,19.5,39.5,18.9z M23.6,31c-0.6,0.1-0.8-0.3-0.8-0.5
+		c0-0.4,0-1.6,0-3.1c0-1.1-0.4-1.7-0.8-2.1c2.5-0.3,5.2-1.2,5.2-5.6c0-1.2-0.4-2.2-1.2-3c0.1-0.3,0.5-1.4-0.1-3
+		c-0.9-0.3-3.1,1.2-3.1,1.2c-0.9-0.3-1.9-0.4-2.8-0.4s-1.9,0.1-2.8,0.4c0,0-2.2-1.5-3.1-1.2c-0.6,1.6-0.2,2.7-0.1,3
+		c-0.7,0.8-1.2,1.8-1.2,3c0,4.3,2.6,5.3,5.2,5.6c-0.3,0.3-0.6,0.8-0.7,1.5c-0.6,0.3-2.3,0.8-3.3-0.9c-0.6-1.1-1.7-1.2-1.7-1.2
+		c-1.1,0-0.1,0.7-0.1,0.7c0.7,0.3,1.3,1.7,1.3,1.7c0.7,2,3.8,1.3,3.8,1.3c0,0.9,0,1.8,0,2.1c0,0.3-0.2,0.6-0.8,0.5
+		c-4.5-1.5-7.8-5.8-7.8-10.8C8.7,14,13.7,8.9,20,8.9S31.3,14,31.3,20.3C31.3,25.3,28.1,29.5,23.6,31z M17.1,27.3
+		c0,0.1-0.1,0.2-0.2,0.2c-0.1,0-0.3,0-0.3-0.1c0-0.1,0.1-0.2,0.2-0.2C17,27.2,17.1,27.2,17.1,27.3z M16.2,27.5c0,0.1-0.1,0.2-0.2,0.2
+		c-0.1,0-0.3-0.1-0.3-0.2c0-0.1,0.1-0.2,0.2-0.2C16.1,27.3,16.2,27.4,16.2,27.5z M15.3,27.4c0,0.1-0.2,0.1-0.3,0.1
+		c-0.1,0-0.2-0.1-0.2-0.2c0-0.1,0.2-0.1,0.3-0.1C15.3,27.2,15.3,27.3,15.3,27.4z M14.5,27c-0.1,0.1-0.2,0.1-0.3,0
+		c-0.1-0.1-0.1-0.2-0.1-0.3c0.1-0.1,0.2-0.1,0.3,0C14.5,26.8,14.5,27,14.5,27z M13.9,26.4c-0.1,0-0.2,0-0.3-0.1
+		c-0.1-0.1-0.1-0.2,0-0.3c0.1-0.1,0.2,0,0.3,0.1C13.9,26.2,13.9,26.3,13.9,26.4z M13.4,25.7c-0.1,0.1-0.2,0-0.2,0
+		c-0.1-0.1-0.1-0.2,0-0.2c0.1-0.1,0.2,0,0.2,0C13.5,25.6,13.5,25.7,13.4,25.7z M13,25.2c0,0.1-0.1,0.1-0.2,0c-0.1,0-0.1-0.1-0.1-0.2
+		c0,0,0.1-0.1,0.2,0C12.9,25.1,13,25.2,13,25.2z"/>
+	</svg>
+</a></li></ul></div><div class="member"><div class="member-name body-title text-center">Sabrina Chiang</div><div class="member-title body-content text-center">Organizer</div><ul class="member-socials list-inline"><li><a href="https://twitter.com/sabrina_chiang" target="_blank" rel="noopener noreferrer" class="media twitter"><?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 40 40" style="enable-background:new 0 0 40 40;" xml:space="preserve">
+	<title>Social Button/Twitter</title>
+	<path class="social_btn_color" d="M39.5,18.9c0.7,0.6,0.7,1.6,0,2.2L21.1,39.5C20.8,39.8,20.4,40,20,40c-0.4,0-0.8-0.2-1.1-0.5
+		L0.5,21.1c-0.6-0.6-0.6-1.6,0-2.2L18.9,0.5C19.2,0.2,19.6,0,20,0c0.4,0,0.8,0.2,1.1,0.5L39.5,18.9z M29.3,14.2
+		c-0.7,0.3-1.4,0.5-2.2,0.6c0.8-0.5,1.4-1.2,1.7-2.1c-0.7,0.4-1.6,0.8-2.4,0.9c-0.7-0.7-1.7-1.2-2.8-1.2c-2.1,0-3.8,1.7-3.8,3.8
+		c0,0.3,0,0.6,0.1,0.9c-3.2-0.2-6-1.7-7.9-4c-0.3,0.6-0.5,1.2-0.5,1.9c0,1.3,0.7,2.5,1.7,3.2c-0.6,0-1.2-0.2-1.7-0.5v0
+		c0,1.9,1.3,3.4,3.1,3.8c-0.3,0.1-0.7,0.1-1,0.1c-0.2,0-0.5,0-0.7-0.1c0.5,1.5,1.9,2.6,3.6,2.7c-1.3,1-3,1.6-4.7,1.6
+		c-0.3,0-0.6,0-0.9,0c1.7,1.1,3.7,1.7,5.9,1.7c7,0,10.9-5.8,10.9-10.9c0-0.2,0-0.3,0-0.5C28.2,15.7,28.8,15,29.3,14.2z"></path>
+</svg></a></li></ul></div><div class="member"><div class="member-name body-title text-center">Tse-Hau Chao</div><div class="member-title body-content text-center">Organizer</div><ul class="member-socials list-inline"><li><a href="https://twitter.com/thchao" target="_blank" rel="noopener noreferrer" class="media twitter"><?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 40 40" style="enable-background:new 0 0 40 40;" xml:space="preserve">
+	<title>Social Button/Twitter</title>
+	<path class="social_btn_color" d="M39.5,18.9c0.7,0.6,0.7,1.6,0,2.2L21.1,39.5C20.8,39.8,20.4,40,20,40c-0.4,0-0.8-0.2-1.1-0.5
+		L0.5,21.1c-0.6-0.6-0.6-1.6,0-2.2L18.9,0.5C19.2,0.2,19.6,0,20,0c0.4,0,0.8,0.2,1.1,0.5L39.5,18.9z M29.3,14.2
+		c-0.7,0.3-1.4,0.5-2.2,0.6c0.8-0.5,1.4-1.2,1.7-2.1c-0.7,0.4-1.6,0.8-2.4,0.9c-0.7-0.7-1.7-1.2-2.8-1.2c-2.1,0-3.8,1.7-3.8,3.8
+		c0,0.3,0,0.6,0.1,0.9c-3.2-0.2-6-1.7-7.9-4c-0.3,0.6-0.5,1.2-0.5,1.9c0,1.3,0.7,2.5,1.7,3.2c-0.6,0-1.2-0.2-1.7-0.5v0
+		c0,1.9,1.3,3.4,3.1,3.8c-0.3,0.1-0.7,0.1-1,0.1c-0.2,0-0.5,0-0.7-0.1c0.5,1.5,1.9,2.6,3.6,2.7c-1.3,1-3,1.6-4.7,1.6
+		c-0.3,0-0.6,0-0.9,0c1.7,1.1,3.7,1.7,5.9,1.7c7,0,10.9-5.8,10.9-10.9c0-0.2,0-0.3,0-0.5C28.2,15.7,28.8,15,29.3,14.2z"></path>
+</svg></a></li><li><a href="https://github.com/jodeci" target="_blank" rel="noopener noreferrer" class="media github"><?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" viewBox="0 0 40 40" style="enable-background:new 0 0 40 40;" xml:space="preserve">
+	<title>Social Button/GitHub</title>
+	<path class="social_btn_color" d="M39.5,18.9L21.1,0.5C20.8,0.2,20.4,0,20,0s-0.8,0.2-1.1,0.5L0.5,18.9c-0.6,0.6-0.6,1.6,0,2.2l18.4,18.4
+		c0.3,0.3,0.7,0.5,1.1,0.5s0.8-0.2,1.1-0.5l18.4-18.4C40.2,20.5,40.2,19.5,39.5,18.9z M23.6,31c-0.6,0.1-0.8-0.3-0.8-0.5
+		c0-0.4,0-1.6,0-3.1c0-1.1-0.4-1.7-0.8-2.1c2.5-0.3,5.2-1.2,5.2-5.6c0-1.2-0.4-2.2-1.2-3c0.1-0.3,0.5-1.4-0.1-3
+		c-0.9-0.3-3.1,1.2-3.1,1.2c-0.9-0.3-1.9-0.4-2.8-0.4s-1.9,0.1-2.8,0.4c0,0-2.2-1.5-3.1-1.2c-0.6,1.6-0.2,2.7-0.1,3
+		c-0.7,0.8-1.2,1.8-1.2,3c0,4.3,2.6,5.3,5.2,5.6c-0.3,0.3-0.6,0.8-0.7,1.5c-0.6,0.3-2.3,0.8-3.3-0.9c-0.6-1.1-1.7-1.2-1.7-1.2
+		c-1.1,0-0.1,0.7-0.1,0.7c0.7,0.3,1.3,1.7,1.3,1.7c0.7,2,3.8,1.3,3.8,1.3c0,0.9,0,1.8,0,2.1c0,0.3-0.2,0.6-0.8,0.5
+		c-4.5-1.5-7.8-5.8-7.8-10.8C8.7,14,13.7,8.9,20,8.9S31.3,14,31.3,20.3C31.3,25.3,28.1,29.5,23.6,31z M17.1,27.3
+		c0,0.1-0.1,0.2-0.2,0.2c-0.1,0-0.3,0-0.3-0.1c0-0.1,0.1-0.2,0.2-0.2C17,27.2,17.1,27.2,17.1,27.3z M16.2,27.5c0,0.1-0.1,0.2-0.2,0.2
+		c-0.1,0-0.3-0.1-0.3-0.2c0-0.1,0.1-0.2,0.2-0.2C16.1,27.3,16.2,27.4,16.2,27.5z M15.3,27.4c0,0.1-0.2,0.1-0.3,0.1
+		c-0.1,0-0.2-0.1-0.2-0.2c0-0.1,0.2-0.1,0.3-0.1C15.3,27.2,15.3,27.3,15.3,27.4z M14.5,27c-0.1,0.1-0.2,0.1-0.3,0
+		c-0.1-0.1-0.1-0.2-0.1-0.3c0.1-0.1,0.2-0.1,0.3,0C14.5,26.8,14.5,27,14.5,27z M13.9,26.4c-0.1,0-0.2,0-0.3-0.1
+		c-0.1-0.1-0.1-0.2,0-0.3c0.1-0.1,0.2,0,0.3,0.1C13.9,26.2,13.9,26.3,13.9,26.4z M13.4,25.7c-0.1,0.1-0.2,0-0.2,0
+		c-0.1-0.1-0.1-0.2,0-0.2c0.1-0.1,0.2,0,0.2,0C13.5,25.6,13.5,25.7,13.4,25.7z M13,25.2c0,0.1-0.1,0.1-0.2,0c-0.1,0-0.1-0.1-0.1-0.2
+		c0,0,0.1-0.1,0.2,0C12.9,25.1,13,25.2,13,25.2z"/>
+	</svg>
+</a></li></ul></div><div class="member"><div class="member-name body-title text-center">Chien-Lung Kao</div><div class="member-title body-content text-center">Organizer</div><ul class="member-socials list-inline"><li><a href="https://kaochenlong.com/" target="_blank" rel="noopener noreferrer" class="media homepage"><?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" viewBox="0 0 40 40" style="enable-background:new 0 0 40 40;" xml:space="preserve">
+	<title>Social Button/Homepage</title>
+	<path class="social_btn_color" d="M39.5,18.9L21,0.5C20.8,0.2,20.4,0,20,0s-0.8,0.2-1.1,0.5L0.5,18.9c-0.6,0.6-0.6,1.6,0,2.2l18.4,18.4
+		c0.3,0.3,0.7,0.5,1.1,0.5s0.8-0.2,1.1-0.5l18.4-18.4C40.2,20.5,40.2,19.5,39.5,18.9z M27.1,27.1c0,0.4-0.4,0.8-0.8,0.8h-4.7v-4.7
+		h-3.2v4.7h-4.7c-0.4,0-0.8-0.4-0.8-0.8v-5.9c0,0,0,0,0-0.1l7.1-5.8l7.1,5.8c0,0,0,0,0,0.1V27.1z M29.8,20.4l-0.8,0.9
+		c-0.1,0.1-0.2,0.1-0.3,0.1h0c-0.1,0-0.2,0-0.3-0.1L20,14.2l-8.5,7.1c-0.1,0.1-0.2,0.1-0.3,0.1c-0.1,0-0.2-0.1-0.3-0.1l-0.8-0.9
+		c-0.1-0.2-0.1-0.4,0-0.6l8.8-7.4c0.5-0.4,1.4-0.4,1.9,0l3,2.5v-2.4c0-0.2,0.2-0.4,0.4-0.4h2.4c0.2,0,0.4,0.2,0.4,0.4v5l2.7,2.2
+		C29.9,19.9,30,20.2,29.8,20.4z"/>
+</svg>
+</a></li><li><a href="https://twitter.com/eddiekao" target="_blank" rel="noopener noreferrer" class="media twitter"><?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 40 40" style="enable-background:new 0 0 40 40;" xml:space="preserve">
+	<title>Social Button/Twitter</title>
+	<path class="social_btn_color" d="M39.5,18.9c0.7,0.6,0.7,1.6,0,2.2L21.1,39.5C20.8,39.8,20.4,40,20,40c-0.4,0-0.8-0.2-1.1-0.5
+		L0.5,21.1c-0.6-0.6-0.6-1.6,0-2.2L18.9,0.5C19.2,0.2,19.6,0,20,0c0.4,0,0.8,0.2,1.1,0.5L39.5,18.9z M29.3,14.2
+		c-0.7,0.3-1.4,0.5-2.2,0.6c0.8-0.5,1.4-1.2,1.7-2.1c-0.7,0.4-1.6,0.8-2.4,0.9c-0.7-0.7-1.7-1.2-2.8-1.2c-2.1,0-3.8,1.7-3.8,3.8
+		c0,0.3,0,0.6,0.1,0.9c-3.2-0.2-6-1.7-7.9-4c-0.3,0.6-0.5,1.2-0.5,1.9c0,1.3,0.7,2.5,1.7,3.2c-0.6,0-1.2-0.2-1.7-0.5v0
+		c0,1.9,1.3,3.4,3.1,3.8c-0.3,0.1-0.7,0.1-1,0.1c-0.2,0-0.5,0-0.7-0.1c0.5,1.5,1.9,2.6,3.6,2.7c-1.3,1-3,1.6-4.7,1.6
+		c-0.3,0-0.6,0-0.9,0c1.7,1.1,3.7,1.7,5.9,1.7c7,0,10.9-5.8,10.9-10.9c0-0.2,0-0.3,0-0.5C28.2,15.7,28.8,15,29.3,14.2z"></path>
+</svg></a></li><li><a href="https://github.com/kaochenlong" target="_blank" rel="noopener noreferrer" class="media github"><?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" viewBox="0 0 40 40" style="enable-background:new 0 0 40 40;" xml:space="preserve">
+	<title>Social Button/GitHub</title>
+	<path class="social_btn_color" d="M39.5,18.9L21.1,0.5C20.8,0.2,20.4,0,20,0s-0.8,0.2-1.1,0.5L0.5,18.9c-0.6,0.6-0.6,1.6,0,2.2l18.4,18.4
+		c0.3,0.3,0.7,0.5,1.1,0.5s0.8-0.2,1.1-0.5l18.4-18.4C40.2,20.5,40.2,19.5,39.5,18.9z M23.6,31c-0.6,0.1-0.8-0.3-0.8-0.5
+		c0-0.4,0-1.6,0-3.1c0-1.1-0.4-1.7-0.8-2.1c2.5-0.3,5.2-1.2,5.2-5.6c0-1.2-0.4-2.2-1.2-3c0.1-0.3,0.5-1.4-0.1-3
+		c-0.9-0.3-3.1,1.2-3.1,1.2c-0.9-0.3-1.9-0.4-2.8-0.4s-1.9,0.1-2.8,0.4c0,0-2.2-1.5-3.1-1.2c-0.6,1.6-0.2,2.7-0.1,3
+		c-0.7,0.8-1.2,1.8-1.2,3c0,4.3,2.6,5.3,5.2,5.6c-0.3,0.3-0.6,0.8-0.7,1.5c-0.6,0.3-2.3,0.8-3.3-0.9c-0.6-1.1-1.7-1.2-1.7-1.2
+		c-1.1,0-0.1,0.7-0.1,0.7c0.7,0.3,1.3,1.7,1.3,1.7c0.7,2,3.8,1.3,3.8,1.3c0,0.9,0,1.8,0,2.1c0,0.3-0.2,0.6-0.8,0.5
+		c-4.5-1.5-7.8-5.8-7.8-10.8C8.7,14,13.7,8.9,20,8.9S31.3,14,31.3,20.3C31.3,25.3,28.1,29.5,23.6,31z M17.1,27.3
+		c0,0.1-0.1,0.2-0.2,0.2c-0.1,0-0.3,0-0.3-0.1c0-0.1,0.1-0.2,0.2-0.2C17,27.2,17.1,27.2,17.1,27.3z M16.2,27.5c0,0.1-0.1,0.2-0.2,0.2
+		c-0.1,0-0.3-0.1-0.3-0.2c0-0.1,0.1-0.2,0.2-0.2C16.1,27.3,16.2,27.4,16.2,27.5z M15.3,27.4c0,0.1-0.2,0.1-0.3,0.1
+		c-0.1,0-0.2-0.1-0.2-0.2c0-0.1,0.2-0.1,0.3-0.1C15.3,27.2,15.3,27.3,15.3,27.4z M14.5,27c-0.1,0.1-0.2,0.1-0.3,0
+		c-0.1-0.1-0.1-0.2-0.1-0.3c0.1-0.1,0.2-0.1,0.3,0C14.5,26.8,14.5,27,14.5,27z M13.9,26.4c-0.1,0-0.2,0-0.3-0.1
+		c-0.1-0.1-0.1-0.2,0-0.3c0.1-0.1,0.2,0,0.3,0.1C13.9,26.2,13.9,26.3,13.9,26.4z M13.4,25.7c-0.1,0.1-0.2,0-0.2,0
+		c-0.1-0.1-0.1-0.2,0-0.2c0.1-0.1,0.2,0,0.2,0C13.5,25.6,13.5,25.7,13.4,25.7z M13,25.2c0,0.1-0.1,0.1-0.2,0c-0.1,0-0.1-0.1-0.1-0.2
+		c0,0,0.1-0.1,0.2,0C12.9,25.1,13,25.2,13,25.2z"/>
+	</svg>
+</a></li></ul></div><div class="member"><div class="member-name body-title text-center">Tai-An Su</div><div class="member-title body-content text-center">Organizer</div><ul class="member-socials list-inline"><li><a href="https://taian.su/" target="_blank" rel="noopener noreferrer" class="media homepage"><?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" viewBox="0 0 40 40" style="enable-background:new 0 0 40 40;" xml:space="preserve">
+	<title>Social Button/Homepage</title>
+	<path class="social_btn_color" d="M39.5,18.9L21,0.5C20.8,0.2,20.4,0,20,0s-0.8,0.2-1.1,0.5L0.5,18.9c-0.6,0.6-0.6,1.6,0,2.2l18.4,18.4
+		c0.3,0.3,0.7,0.5,1.1,0.5s0.8-0.2,1.1-0.5l18.4-18.4C40.2,20.5,40.2,19.5,39.5,18.9z M27.1,27.1c0,0.4-0.4,0.8-0.8,0.8h-4.7v-4.7
+		h-3.2v4.7h-4.7c-0.4,0-0.8-0.4-0.8-0.8v-5.9c0,0,0,0,0-0.1l7.1-5.8l7.1,5.8c0,0,0,0,0,0.1V27.1z M29.8,20.4l-0.8,0.9
+		c-0.1,0.1-0.2,0.1-0.3,0.1h0c-0.1,0-0.2,0-0.3-0.1L20,14.2l-8.5,7.1c-0.1,0.1-0.2,0.1-0.3,0.1c-0.1,0-0.2-0.1-0.3-0.1l-0.8-0.9
+		c-0.1-0.2-0.1-0.4,0-0.6l8.8-7.4c0.5-0.4,1.4-0.4,1.9,0l3,2.5v-2.4c0-0.2,0.2-0.4,0.4-0.4h2.4c0.2,0,0.4,0.2,0.4,0.4v5l2.7,2.2
+		C29.9,19.9,30,20.2,29.8,20.4z"/>
+</svg>
+</a></li><li><a href="https://twitter.com/taiansu" target="_blank" rel="noopener noreferrer" class="media twitter"><?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 40 40" style="enable-background:new 0 0 40 40;" xml:space="preserve">
+	<title>Social Button/Twitter</title>
+	<path class="social_btn_color" d="M39.5,18.9c0.7,0.6,0.7,1.6,0,2.2L21.1,39.5C20.8,39.8,20.4,40,20,40c-0.4,0-0.8-0.2-1.1-0.5
+		L0.5,21.1c-0.6-0.6-0.6-1.6,0-2.2L18.9,0.5C19.2,0.2,19.6,0,20,0c0.4,0,0.8,0.2,1.1,0.5L39.5,18.9z M29.3,14.2
+		c-0.7,0.3-1.4,0.5-2.2,0.6c0.8-0.5,1.4-1.2,1.7-2.1c-0.7,0.4-1.6,0.8-2.4,0.9c-0.7-0.7-1.7-1.2-2.8-1.2c-2.1,0-3.8,1.7-3.8,3.8
+		c0,0.3,0,0.6,0.1,0.9c-3.2-0.2-6-1.7-7.9-4c-0.3,0.6-0.5,1.2-0.5,1.9c0,1.3,0.7,2.5,1.7,3.2c-0.6,0-1.2-0.2-1.7-0.5v0
+		c0,1.9,1.3,3.4,3.1,3.8c-0.3,0.1-0.7,0.1-1,0.1c-0.2,0-0.5,0-0.7-0.1c0.5,1.5,1.9,2.6,3.6,2.7c-1.3,1-3,1.6-4.7,1.6
+		c-0.3,0-0.6,0-0.9,0c1.7,1.1,3.7,1.7,5.9,1.7c7,0,10.9-5.8,10.9-10.9c0-0.2,0-0.3,0-0.5C28.2,15.7,28.8,15,29.3,14.2z"></path>
+</svg></a></li><li><a href="https://github.com/taiansu" target="_blank" rel="noopener noreferrer" class="media github"><?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" viewBox="0 0 40 40" style="enable-background:new 0 0 40 40;" xml:space="preserve">
+	<title>Social Button/GitHub</title>
+	<path class="social_btn_color" d="M39.5,18.9L21.1,0.5C20.8,0.2,20.4,0,20,0s-0.8,0.2-1.1,0.5L0.5,18.9c-0.6,0.6-0.6,1.6,0,2.2l18.4,18.4
+		c0.3,0.3,0.7,0.5,1.1,0.5s0.8-0.2,1.1-0.5l18.4-18.4C40.2,20.5,40.2,19.5,39.5,18.9z M23.6,31c-0.6,0.1-0.8-0.3-0.8-0.5
+		c0-0.4,0-1.6,0-3.1c0-1.1-0.4-1.7-0.8-2.1c2.5-0.3,5.2-1.2,5.2-5.6c0-1.2-0.4-2.2-1.2-3c0.1-0.3,0.5-1.4-0.1-3
+		c-0.9-0.3-3.1,1.2-3.1,1.2c-0.9-0.3-1.9-0.4-2.8-0.4s-1.9,0.1-2.8,0.4c0,0-2.2-1.5-3.1-1.2c-0.6,1.6-0.2,2.7-0.1,3
+		c-0.7,0.8-1.2,1.8-1.2,3c0,4.3,2.6,5.3,5.2,5.6c-0.3,0.3-0.6,0.8-0.7,1.5c-0.6,0.3-2.3,0.8-3.3-0.9c-0.6-1.1-1.7-1.2-1.7-1.2
+		c-1.1,0-0.1,0.7-0.1,0.7c0.7,0.3,1.3,1.7,1.3,1.7c0.7,2,3.8,1.3,3.8,1.3c0,0.9,0,1.8,0,2.1c0,0.3-0.2,0.6-0.8,0.5
+		c-4.5-1.5-7.8-5.8-7.8-10.8C8.7,14,13.7,8.9,20,8.9S31.3,14,31.3,20.3C31.3,25.3,28.1,29.5,23.6,31z M17.1,27.3
+		c0,0.1-0.1,0.2-0.2,0.2c-0.1,0-0.3,0-0.3-0.1c0-0.1,0.1-0.2,0.2-0.2C17,27.2,17.1,27.2,17.1,27.3z M16.2,27.5c0,0.1-0.1,0.2-0.2,0.2
+		c-0.1,0-0.3-0.1-0.3-0.2c0-0.1,0.1-0.2,0.2-0.2C16.1,27.3,16.2,27.4,16.2,27.5z M15.3,27.4c0,0.1-0.2,0.1-0.3,0.1
+		c-0.1,0-0.2-0.1-0.2-0.2c0-0.1,0.2-0.1,0.3-0.1C15.3,27.2,15.3,27.3,15.3,27.4z M14.5,27c-0.1,0.1-0.2,0.1-0.3,0
+		c-0.1-0.1-0.1-0.2-0.1-0.3c0.1-0.1,0.2-0.1,0.3,0C14.5,26.8,14.5,27,14.5,27z M13.9,26.4c-0.1,0-0.2,0-0.3-0.1
+		c-0.1-0.1-0.1-0.2,0-0.3c0.1-0.1,0.2,0,0.3,0.1C13.9,26.2,13.9,26.3,13.9,26.4z M13.4,25.7c-0.1,0.1-0.2,0-0.2,0
+		c-0.1-0.1-0.1-0.2,0-0.2c0.1-0.1,0.2,0,0.2,0C13.5,25.6,13.5,25.7,13.4,25.7z M13,25.2c0,0.1-0.1,0.1-0.2,0c-0.1,0-0.1-0.1-0.1-0.2
+		c0,0,0.1-0.1,0.2,0C12.9,25.1,13,25.2,13,25.2z"/>
+	</svg>
+</a></li></ul></div><div class="member"><div class="member-name body-title text-center">Mickey Chen</div><div class="member-title body-content text-center">Organizer</div><ul class="member-socials list-inline"><li><a href="http://yuchunc.github.io/resume/" target="_blank" rel="noopener noreferrer" class="media homepage"><?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" viewBox="0 0 40 40" style="enable-background:new 0 0 40 40;" xml:space="preserve">
+	<title>Social Button/Homepage</title>
+	<path class="social_btn_color" d="M39.5,18.9L21,0.5C20.8,0.2,20.4,0,20,0s-0.8,0.2-1.1,0.5L0.5,18.9c-0.6,0.6-0.6,1.6,0,2.2l18.4,18.4
+		c0.3,0.3,0.7,0.5,1.1,0.5s0.8-0.2,1.1-0.5l18.4-18.4C40.2,20.5,40.2,19.5,39.5,18.9z M27.1,27.1c0,0.4-0.4,0.8-0.8,0.8h-4.7v-4.7
+		h-3.2v4.7h-4.7c-0.4,0-0.8-0.4-0.8-0.8v-5.9c0,0,0,0,0-0.1l7.1-5.8l7.1,5.8c0,0,0,0,0,0.1V27.1z M29.8,20.4l-0.8,0.9
+		c-0.1,0.1-0.2,0.1-0.3,0.1h0c-0.1,0-0.2,0-0.3-0.1L20,14.2l-8.5,7.1c-0.1,0.1-0.2,0.1-0.3,0.1c-0.1,0-0.2-0.1-0.3-0.1l-0.8-0.9
+		c-0.1-0.2-0.1-0.4,0-0.6l8.8-7.4c0.5-0.4,1.4-0.4,1.9,0l3,2.5v-2.4c0-0.2,0.2-0.4,0.4-0.4h2.4c0.2,0,0.4,0.2,0.4,0.4v5l2.7,2.2
+		C29.9,19.9,30,20.2,29.8,20.4z"/>
+</svg>
+</a></li><li><a href="https://twitter.com/yuchunc" target="_blank" rel="noopener noreferrer" class="media twitter"><?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 40 40" style="enable-background:new 0 0 40 40;" xml:space="preserve">
+	<title>Social Button/Twitter</title>
+	<path class="social_btn_color" d="M39.5,18.9c0.7,0.6,0.7,1.6,0,2.2L21.1,39.5C20.8,39.8,20.4,40,20,40c-0.4,0-0.8-0.2-1.1-0.5
+		L0.5,21.1c-0.6-0.6-0.6-1.6,0-2.2L18.9,0.5C19.2,0.2,19.6,0,20,0c0.4,0,0.8,0.2,1.1,0.5L39.5,18.9z M29.3,14.2
+		c-0.7,0.3-1.4,0.5-2.2,0.6c0.8-0.5,1.4-1.2,1.7-2.1c-0.7,0.4-1.6,0.8-2.4,0.9c-0.7-0.7-1.7-1.2-2.8-1.2c-2.1,0-3.8,1.7-3.8,3.8
+		c0,0.3,0,0.6,0.1,0.9c-3.2-0.2-6-1.7-7.9-4c-0.3,0.6-0.5,1.2-0.5,1.9c0,1.3,0.7,2.5,1.7,3.2c-0.6,0-1.2-0.2-1.7-0.5v0
+		c0,1.9,1.3,3.4,3.1,3.8c-0.3,0.1-0.7,0.1-1,0.1c-0.2,0-0.5,0-0.7-0.1c0.5,1.5,1.9,2.6,3.6,2.7c-1.3,1-3,1.6-4.7,1.6
+		c-0.3,0-0.6,0-0.9,0c1.7,1.1,3.7,1.7,5.9,1.7c7,0,10.9-5.8,10.9-10.9c0-0.2,0-0.3,0-0.5C28.2,15.7,28.8,15,29.3,14.2z"></path>
+</svg></a></li><li><a href="https://github.com/yuchunc" target="_blank" rel="noopener noreferrer" class="media github"><?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" viewBox="0 0 40 40" style="enable-background:new 0 0 40 40;" xml:space="preserve">
+	<title>Social Button/GitHub</title>
+	<path class="social_btn_color" d="M39.5,18.9L21.1,0.5C20.8,0.2,20.4,0,20,0s-0.8,0.2-1.1,0.5L0.5,18.9c-0.6,0.6-0.6,1.6,0,2.2l18.4,18.4
+		c0.3,0.3,0.7,0.5,1.1,0.5s0.8-0.2,1.1-0.5l18.4-18.4C40.2,20.5,40.2,19.5,39.5,18.9z M23.6,31c-0.6,0.1-0.8-0.3-0.8-0.5
+		c0-0.4,0-1.6,0-3.1c0-1.1-0.4-1.7-0.8-2.1c2.5-0.3,5.2-1.2,5.2-5.6c0-1.2-0.4-2.2-1.2-3c0.1-0.3,0.5-1.4-0.1-3
+		c-0.9-0.3-3.1,1.2-3.1,1.2c-0.9-0.3-1.9-0.4-2.8-0.4s-1.9,0.1-2.8,0.4c0,0-2.2-1.5-3.1-1.2c-0.6,1.6-0.2,2.7-0.1,3
+		c-0.7,0.8-1.2,1.8-1.2,3c0,4.3,2.6,5.3,5.2,5.6c-0.3,0.3-0.6,0.8-0.7,1.5c-0.6,0.3-2.3,0.8-3.3-0.9c-0.6-1.1-1.7-1.2-1.7-1.2
+		c-1.1,0-0.1,0.7-0.1,0.7c0.7,0.3,1.3,1.7,1.3,1.7c0.7,2,3.8,1.3,3.8,1.3c0,0.9,0,1.8,0,2.1c0,0.3-0.2,0.6-0.8,0.5
+		c-4.5-1.5-7.8-5.8-7.8-10.8C8.7,14,13.7,8.9,20,8.9S31.3,14,31.3,20.3C31.3,25.3,28.1,29.5,23.6,31z M17.1,27.3
+		c0,0.1-0.1,0.2-0.2,0.2c-0.1,0-0.3,0-0.3-0.1c0-0.1,0.1-0.2,0.2-0.2C17,27.2,17.1,27.2,17.1,27.3z M16.2,27.5c0,0.1-0.1,0.2-0.2,0.2
+		c-0.1,0-0.3-0.1-0.3-0.2c0-0.1,0.1-0.2,0.2-0.2C16.1,27.3,16.2,27.4,16.2,27.5z M15.3,27.4c0,0.1-0.2,0.1-0.3,0.1
+		c-0.1,0-0.2-0.1-0.2-0.2c0-0.1,0.2-0.1,0.3-0.1C15.3,27.2,15.3,27.3,15.3,27.4z M14.5,27c-0.1,0.1-0.2,0.1-0.3,0
+		c-0.1-0.1-0.1-0.2-0.1-0.3c0.1-0.1,0.2-0.1,0.3,0C14.5,26.8,14.5,27,14.5,27z M13.9,26.4c-0.1,0-0.2,0-0.3-0.1
+		c-0.1-0.1-0.1-0.2,0-0.3c0.1-0.1,0.2,0,0.3,0.1C13.9,26.2,13.9,26.3,13.9,26.4z M13.4,25.7c-0.1,0.1-0.2,0-0.2,0
+		c-0.1-0.1-0.1-0.2,0-0.2c0.1-0.1,0.2,0,0.2,0C13.5,25.6,13.5,25.7,13.4,25.7z M13,25.2c0,0.1-0.1,0.1-0.2,0c-0.1,0-0.1-0.1-0.1-0.2
+		c0,0,0.1-0.1,0.2,0C12.9,25.1,13,25.2,13,25.2z"/>
+	</svg>
+</a></li></ul></div><div class="member"><div class="member-name body-title text-center">Keddie Huang</div><div class="member-title body-content text-center">Event Producer</div><ul class="member-socials list-inline"><li><a href="https://twitter.com/Huang_Keddie" target="_blank" rel="noopener noreferrer" class="media twitter"><?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 40 40" style="enable-background:new 0 0 40 40;" xml:space="preserve">
+	<title>Social Button/Twitter</title>
+	<path class="social_btn_color" d="M39.5,18.9c0.7,0.6,0.7,1.6,0,2.2L21.1,39.5C20.8,39.8,20.4,40,20,40c-0.4,0-0.8-0.2-1.1-0.5
+		L0.5,21.1c-0.6-0.6-0.6-1.6,0-2.2L18.9,0.5C19.2,0.2,19.6,0,20,0c0.4,0,0.8,0.2,1.1,0.5L39.5,18.9z M29.3,14.2
+		c-0.7,0.3-1.4,0.5-2.2,0.6c0.8-0.5,1.4-1.2,1.7-2.1c-0.7,0.4-1.6,0.8-2.4,0.9c-0.7-0.7-1.7-1.2-2.8-1.2c-2.1,0-3.8,1.7-3.8,3.8
+		c0,0.3,0,0.6,0.1,0.9c-3.2-0.2-6-1.7-7.9-4c-0.3,0.6-0.5,1.2-0.5,1.9c0,1.3,0.7,2.5,1.7,3.2c-0.6,0-1.2-0.2-1.7-0.5v0
+		c0,1.9,1.3,3.4,3.1,3.8c-0.3,0.1-0.7,0.1-1,0.1c-0.2,0-0.5,0-0.7-0.1c0.5,1.5,1.9,2.6,3.6,2.7c-1.3,1-3,1.6-4.7,1.6
+		c-0.3,0-0.6,0-0.9,0c1.7,1.1,3.7,1.7,5.9,1.7c7,0,10.9-5.8,10.9-10.9c0-0.2,0-0.3,0-0.5C28.2,15.7,28.8,15,29.3,14.2z"></path>
+</svg></a></li></ul></div><div class="member"><div class="member-name body-title text-center">Irene Chang</div><div class="member-title body-content text-center">Designer</div><ul class="member-socials list-inline"><li><a href="https://twitter.com/irene841111" target="_blank" rel="noopener noreferrer" class="media twitter"><?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 40 40" style="enable-background:new 0 0 40 40;" xml:space="preserve">
+	<title>Social Button/Twitter</title>
+	<path class="social_btn_color" d="M39.5,18.9c0.7,0.6,0.7,1.6,0,2.2L21.1,39.5C20.8,39.8,20.4,40,20,40c-0.4,0-0.8-0.2-1.1-0.5
+		L0.5,21.1c-0.6-0.6-0.6-1.6,0-2.2L18.9,0.5C19.2,0.2,19.6,0,20,0c0.4,0,0.8,0.2,1.1,0.5L39.5,18.9z M29.3,14.2
+		c-0.7,0.3-1.4,0.5-2.2,0.6c0.8-0.5,1.4-1.2,1.7-2.1c-0.7,0.4-1.6,0.8-2.4,0.9c-0.7-0.7-1.7-1.2-2.8-1.2c-2.1,0-3.8,1.7-3.8,3.8
+		c0,0.3,0,0.6,0.1,0.9c-3.2-0.2-6-1.7-7.9-4c-0.3,0.6-0.5,1.2-0.5,1.9c0,1.3,0.7,2.5,1.7,3.2c-0.6,0-1.2-0.2-1.7-0.5v0
+		c0,1.9,1.3,3.4,3.1,3.8c-0.3,0.1-0.7,0.1-1,0.1c-0.2,0-0.5,0-0.7-0.1c0.5,1.5,1.9,2.6,3.6,2.7c-1.3,1-3,1.6-4.7,1.6
+		c-0.3,0-0.6,0-0.9,0c1.7,1.1,3.7,1.7,5.9,1.7c7,0,10.9-5.8,10.9-10.9c0-0.2,0-0.3,0-0.5C28.2,15.7,28.8,15,29.3,14.2z"></path>
+</svg></a></li><li><a href="https://github.com/irene84111" target="_blank" rel="noopener noreferrer" class="media github"><?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" viewBox="0 0 40 40" style="enable-background:new 0 0 40 40;" xml:space="preserve">
+	<title>Social Button/GitHub</title>
+	<path class="social_btn_color" d="M39.5,18.9L21.1,0.5C20.8,0.2,20.4,0,20,0s-0.8,0.2-1.1,0.5L0.5,18.9c-0.6,0.6-0.6,1.6,0,2.2l18.4,18.4
+		c0.3,0.3,0.7,0.5,1.1,0.5s0.8-0.2,1.1-0.5l18.4-18.4C40.2,20.5,40.2,19.5,39.5,18.9z M23.6,31c-0.6,0.1-0.8-0.3-0.8-0.5
+		c0-0.4,0-1.6,0-3.1c0-1.1-0.4-1.7-0.8-2.1c2.5-0.3,5.2-1.2,5.2-5.6c0-1.2-0.4-2.2-1.2-3c0.1-0.3,0.5-1.4-0.1-3
+		c-0.9-0.3-3.1,1.2-3.1,1.2c-0.9-0.3-1.9-0.4-2.8-0.4s-1.9,0.1-2.8,0.4c0,0-2.2-1.5-3.1-1.2c-0.6,1.6-0.2,2.7-0.1,3
+		c-0.7,0.8-1.2,1.8-1.2,3c0,4.3,2.6,5.3,5.2,5.6c-0.3,0.3-0.6,0.8-0.7,1.5c-0.6,0.3-2.3,0.8-3.3-0.9c-0.6-1.1-1.7-1.2-1.7-1.2
+		c-1.1,0-0.1,0.7-0.1,0.7c0.7,0.3,1.3,1.7,1.3,1.7c0.7,2,3.8,1.3,3.8,1.3c0,0.9,0,1.8,0,2.1c0,0.3-0.2,0.6-0.8,0.5
+		c-4.5-1.5-7.8-5.8-7.8-10.8C8.7,14,13.7,8.9,20,8.9S31.3,14,31.3,20.3C31.3,25.3,28.1,29.5,23.6,31z M17.1,27.3
+		c0,0.1-0.1,0.2-0.2,0.2c-0.1,0-0.3,0-0.3-0.1c0-0.1,0.1-0.2,0.2-0.2C17,27.2,17.1,27.2,17.1,27.3z M16.2,27.5c0,0.1-0.1,0.2-0.2,0.2
+		c-0.1,0-0.3-0.1-0.3-0.2c0-0.1,0.1-0.2,0.2-0.2C16.1,27.3,16.2,27.4,16.2,27.5z M15.3,27.4c0,0.1-0.2,0.1-0.3,0.1
+		c-0.1,0-0.2-0.1-0.2-0.2c0-0.1,0.2-0.1,0.3-0.1C15.3,27.2,15.3,27.3,15.3,27.4z M14.5,27c-0.1,0.1-0.2,0.1-0.3,0
+		c-0.1-0.1-0.1-0.2-0.1-0.3c0.1-0.1,0.2-0.1,0.3,0C14.5,26.8,14.5,27,14.5,27z M13.9,26.4c-0.1,0-0.2,0-0.3-0.1
+		c-0.1-0.1-0.1-0.2,0-0.3c0.1-0.1,0.2,0,0.3,0.1C13.9,26.2,13.9,26.3,13.9,26.4z M13.4,25.7c-0.1,0.1-0.2,0-0.2,0
+		c-0.1-0.1-0.1-0.2,0-0.2c0.1-0.1,0.2,0,0.2,0C13.5,25.6,13.5,25.7,13.4,25.7z M13,25.2c0,0.1-0.1,0.1-0.2,0c-0.1,0-0.1-0.1-0.1-0.2
+		c0,0,0.1-0.1,0.2,0C12.9,25.1,13,25.2,13,25.2z"/>
+	</svg>
+</a></li></ul></div></div></div></div><div class="modal-footer"><button class="btn btn-close" data-dismiss="modal" type="button"><span>Close</span></button></div></div></div></div></div><div class="subscription input-group" id="mc_embed_signup"><div class="title">Sign Up For Updates</div><form action="https://rubyconf.us14.list-manage.com/subscribe/post?u=f8697172394cf1829922f9d1e&amp;id=406c3aa7c5" class="subscription-form" id="mc-embedded-subscribe-form" method="post"><input class="required form-control" id="mce-EMAIL" name="EMAIL" placeholder="Your Email Address" required="required" type="email" /><div aria-hidden="true" style="position: absolute; left: -5000px;"><input name="b_f8697172394cf1829922f9d1e_406c3aa7c5" tabindex="-1" type="text" value="" /></div><span class="input-group-btn"><button class="btn" id="mc-embedded-subscribe" name="subscribe" type="submit">SIGN UP</button></span></form></div></div><a class="scrollup" href="#"><?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" class="icon_arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 18 14" style="enable-background:new 0 0 18 14;" xml:space="preserve">
+	<path class="deco-line dark" d="M1,7h16 M11,1l6,6l-6,6"/>
+</svg>
+</a><div class="footer-copyright"><div class="copyright text-center">© Ruby X Elixir Conf Taiwan 2018</div></div></footer><!--Facebook Pixel Code--><script>!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+
+fbq('init', '830887570405616');
+fbq('track', "PageView");</script><noscript><img height="1" src="https://www.facebook.com/tr?id=<FB_PIXEL_ID>&ev=PageView&noscript=1" style="display:none" width="1" /></noscript><!--End Facebook Pixel Code--></body></html>
