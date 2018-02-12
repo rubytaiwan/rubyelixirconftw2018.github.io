@@ -2,6 +2,72 @@
 title: Program | Ruby X Elixir Conf Taiwan 2018
 ---
 .main
-  h1.hidden = current_page.data.title
-  = partial 'layouts/coming'
+  section#program
+    h1.section-title Program
+
+    .schedule.sidepage
+
+      ul.schedule-header.nav.navbar-nav
+        li.active
+          a.btn-large href="#dayOne"
+            span Day 1 @ Fri, Apr. 27
+        li
+          a.btn-large href="#dayTwo"
+            span Day 2 @ Sat, Apr. 28
+
+      .schedule-table
+      
+        .table-header.hidden-xs.hidden-sm
+          .period
+            p.body-content PERIOD
+          .agenda
+            p.body-title
+              | 1001 Auditorium
+          .agenda
+            p.body-title
+              | 1002 Auditorium
+          .agenda
+            p.body-title
+              | 1003 Auditorium
+
+        - ['dayOne', 'dayTwo'].each_with_index do |day, index|
+          .table-body id="#{day}" class="#{index == 0 ? "active" : ""}"
+            - data.program.send(day).each do |item|
+              .session class="#{item.type == "event" ? "merge" : ""}#{item.type == "break" ? "merge break" : ""}"
+                .period
+                  p
+                    = item.period
+                / Agenda /
+                - if item.agenda ?
+                  .agenda
+                    p.body-content.event = item.agenda
+                / Speakers /
+                - else
+                  .agenda
+                    .venue
+                      span.main 1001
+                    - find_speaker_by(item.speakerOne) do |speaker|
+                      = partial('layouts/_programBlock', locals: { speaker: speaker } )
+                      = partial('layouts/_speakerBlock', locals: { speaker: speaker } )
+                  - if item.speakerTwo ?
+                    .agenda
+                      .venue
+                        span.sub 1002
+                      - find_speaker_by(item.speakerTwo) do |speaker|
+                        = partial('layouts/_programBlock', locals: { speaker: speaker } )
+                        = partial('layouts/_speakerBlock', locals: { speaker: speaker } )
+                  - if item.speakerThree ?
+                    .agenda
+                      .venue
+                        span.sub 1003
+                      - find_speaker_by(item.speakerThree) do |speaker|
+                        = partial('layouts/_programBlock', locals: { speaker: speaker } )
+                        = partial('layouts/_speakerBlock', locals: { speaker: speaker } )
+      
+        - if data.site.site.interpretationLink ?
+          .interpretation.body-content 
+            | We offer&nbsp;
+            = link_to "Simultaneous Interpretation Service", data.site.site.interpretationLink, target: '_blank', rel:'noopener noreferrer', class:"service-link"
+            | &nbsp;(Chinese to English) on all Chinese sessions.
+
   = partial 'layouts/sponsors'

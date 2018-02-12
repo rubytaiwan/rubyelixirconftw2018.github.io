@@ -3,6 +3,7 @@
 //= require bootstrap-sass/assets/javascripts/bootstrap/modal.js
 //= require bootstrap-sass/assets/javascripts/bootstrap/collapse.js
 //= require bootstrap-sass/assets/javascripts/bootstrap/transition.js
+//= require bootstrap-sass/assets/javascripts/bootstrap/tab.js
 //= require jquery.easing/js/jquery.easing.min.js
 //= require fastclick/lib/fastclick.js
 //= require scrollreveal/dist/scrollreveal.min.js
@@ -95,4 +96,9 @@ $document.ready(function () {
       $(this).hide();
     }
   });
+
+  $('.schedule-header a').click(function (e) {
+    e.preventDefault()
+    $(this).tab('show')
+  })
 })
