@@ -6,23 +6,104 @@ dayOne:
     type: event
     agenda: Opening
   - period: 10:00 am
-    speakerOne: Yukihiro Matsumoto (Matz)
-    speakerTwo: José Valim
-    speakerThree: Akira Matsuda
-  - period: 11:00 pm
+    type: event
+    speakerOne: 'Yukihiro Matsumoto (Matz)'
+  - period: 11:00 am
     type: break
     agenda: Break
+  - period: 11:05 am
+    speakerOne: 'Kevin Kimball'
+    speakerTwo: 'Hiroshi SHIBATA'
+    speakerThree: 'ohr486'
+  - period: 11:45 am
+    type: break
+    agenda: Break
+  - period: 11:50 am
+    speakerOne: 'Aotoki Tsuruya'
+    speakerTwo: 'Tetsushi Awano'
+    speakerThree: 'Christopher Adams'
+  - period: 12:30 pm
+    type: event
+    agenda: Lunch
+  - period: 2:00 pm
+    speakerOne: 'Sihui Huang'
+    speakerTwo: 'Emma Haruka Iwao'
+    speakerThree: 'Yevhenii Kurtov'
+  - period: 2:40 pm
+    type: break
+    agenda: Break
+  - period: 2:45 pm
+    speakerOne: 'Liang-Chi Tseng'
+    speakerTwo: 'Sakura ITOYANAGI'
+    speakerThree: 'lulalala'
+  - period: 3:15 pm
+    type: event
+    agenda: Tea Break
+  - period: 3:45 pm
+    speakerOne: 'Takashi Kokubun'
+    speakerTwo: 'Eric Hodel'
+    speakerThree: 'Soutaro Matsumoto'
+  - period: 4:25 pm
+    type: break
+    agenda: Break
+  - period: 4:30 pm
+    speakerOne: 'PastLeo'
+    speakerTwo: 'vzvu3k6k'
+    speakerThree: 'Michael Kohl'
+  - period: 5:10 pm
+    type: break
+    agenda: Break
+  - period: 5:20 pm
+    type: event
+    agenda: Lightning talk
+  - period: 6:30 pm
+    type: event
+    agenda: After Party
 dayTwo:
   - period: 9:00 am
     type: event
-    agenda: Registration 2
-  - period: 9:50 am
+    agenda: Registration
+  - period: 9:30 am
     type: event
-    agenda: Opening 2
-  - period: 10:00 am
-    speakerOne: Yukihiro Matsumoto (Matz)
-    speakerTwo: José Valim
-    speakerThree: Akira Matsuda
-  - period: 11:00 pm
+    speakerOne: 'Akira Matsuda'
+  - period: 10:30 am
     type: break
     agenda: Break
+  - period: 10:35 am
+    speakerOne: 'Delton Ding'
+    speakerTwo: 'Stan Lo'
+    speakerThree: 'Hsuancheng Chen'
+  - period: 11:15 am
+    type: break
+    agenda: Break
+  - period: 11:20 am
+    speakerOne: 'Kelsey Pedersen'
+    speakerTwo: 'Damir Svrtan'
+    speakerThree: 'Jake Morrison'
+  - period: 12:00 pm
+    type: event
+    agenda: Lunch
+  - period: 1:30 pm
+    speakerOne: 'Faust Dehng'
+    speakerTwo: 'Manic Chuang'
+  - period: 2:10 pm
+    type: break
+    agenda: Break
+  - period: 2:15 pm
+    speakerOne: 'Koichi Sasada'
+    speakerTwo: 'Harisankar P S'
+  - period: 2:55 pm
+    type: event
+    agenda: Tea Break
+  - period: 3:25 pm
+    speakerOne: 'John Lin'
+    speakerTwo: 'Yuichiro MASUI'
+  - period: 4:05 pm
+    type: break
+    agenda: Break
+  - period: 4:15 pm
+    type: event
+    speakerOne: 'José Valim'
+  - period: 5:15 pm
+    type: event
+    agenda: Closing

@@ -8,7 +8,7 @@
   title: 'Creator of Ruby, Heroku'
   bio: |-
     The creator of Ruby, Matz works for Heroku and the Ruby Assocation to improve everything Ruby.
-  subject:
+  subject: 'TBD'
   summary: |-
 - name: 'José Valim'
   avatar: 'speakers/jose-valim.jpg'
@@ -20,7 +20,7 @@
   title: 'Creator of Elixir, Plataformatec'
   bio: |-
     Plataformatec co-founder and creator of Elixir Lang. I have signed off from Twitter indefinitely, RTs are automated.
-  subject:
+  subject: 'TBD'
   summary: |-
 - name: 'Akira Matsuda'
   avatar: 'speakers/akira-matsuda.jpg'
@@ -32,14 +32,14 @@
   title: 'Committer of Ruby and Rails'
   bio: |-
     Rails committer. Ruby committer. amatsuda on GitHub. Creator of Kaminari. Founder of Asakusa.rb. Chief organizer of RubyKaigi. A Ruby Hero in Tokyo.
-  subject:
+  subject: 'TBD'
   summary: |-
 - name: 'Aotoki Tsuruya'
   avatar: https://cfp.rubyconf.tw/uploads/user/photo/7/icon-256.png
   urltwitter: https://twitter.com/elct9620
   urlGithub: https://github.com/elct9620
   type: ruby
-  lang: en
+  lang: cht
   title: 'Rails Developer, 5xruby.tw'
   bio: |-
     五倍紅寶石的 Ruby 開發者，特技是挖坑。
@@ -218,7 +218,7 @@
 - name: 'Kevin Kimball'
   avatar: https://avatars.githubusercontent.com/u/6886483?v=3
   urlGithub: https://github.com/kevinkimball
-  type: elixir
+  type: ruby
   lang: en
   bio: |-
     I&#39;ve worked at Le Tote for several years as a full stack engineer, before leading our Growth Team and then our i18n Team, which launched Le Tote China in less than 3 months.
@@ -262,7 +262,7 @@
   subject: 'ActiveModel::Errors and AdequateErrors'
   summary: |-
     There are many use cases where the ActiveModel::Errors interface is tedious to use, such as message formatting and testing. This talk presents these cases, and explains why the limitation can be simply solved by taking an object-oriented approach, which results in the AdequateErrors gem. The gem&#39;s implementation is explained, and the talk will showcase examples on how it can make your coding life easier.
-- name: Manic Chuang
+- name: 'Manic Chuang'
   avatar: https://cfp.rubyconf.tw/uploads/user/photo/184/Avatar.jpg
   urlGithub: https://github.com/manic
   urltwitter: https://twitter.com/maniclf
@@ -363,6 +363,20 @@
 
     As some of you may know, I created a language called Goby about a year ago. It&#39;s largely inspired by Ruby, and looks very similar to it. But it also have some design choices different than Ruby or have some unique features that Ruby doesn&#39;t have.
     In this talk I&#39;m going to discuss some important things we should focus on when designing a language. And I will also share the design choices made when developing Goby, as well as the philosophy behind these choices.
+- name: 'Soutaro Matsumoto'
+  avatar: https://cfp.rubyconf.tw/uploads/user/photo/183/OfmGpuBY_400x400.jpg
+  urlGithub: https://github.com/soutaro
+  urltwitter: https://twitter.com/soutaro
+  type: ruby
+  lang: en
+  title: 'CTO, SideCI'
+  bio: |-
+    CTO at SideCI. Interested in program analysis including type system and flow analysis.
+  subject: "Don't Repeat Your Code Review Suggestion"
+  summary: |-
+    In software engineering, repeating things is usually considered harmful. We start our projects with a testing framework to keep running tests without repeating manually. Instead of copy and paste a code snippet, we define a method to make our code structured. When we find ourselves repeating a code review suggestion several times, we try some automation!
+
+    This talk will cover the design and implementation of our review assistant tool, comparison with other LINT tools, and how our reviewing workflow has been changed.
 - name: 'Takashi Kokubun'
   avatar: https://avatars.githubusercontent.com/u/3138447?v=3"
   urlGithub: https://github.com/k0kubun
@@ -409,7 +423,7 @@
 - name: 'Yevhenii Kurtov'
   avatar: https://avatars.githubusercontent.com/u/1539532?v=3
   urlGithub: https://github.com/lessless
-  type: ruby
+  type: elixir
   lang: en
   bio: |-
     Involved in software development and computer networks since 2002, including PHP, Perl, Ruby and now Elixir.

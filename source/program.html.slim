@@ -48,18 +48,21 @@ title: Program | Ruby X Elixir Conf Taiwan 2018
                       span.main 1001
                     - find_speaker_by(item.speakerOne) do |speaker|
                       = partial('layouts/_programBlock', locals: { speaker: speaker } )
+                      = partial('layouts/_speakerBlock', locals: { speaker: speaker } )
                   - if item.speakerTwo ?
                     .agenda
                       .venue
                         span.sub 1002
                       - find_speaker_by(item.speakerTwo) do |speaker|
                         = partial('layouts/_programBlock', locals: { speaker: speaker } )
+                        = partial('layouts/_speakerBlock', locals: { speaker: speaker } )
                   - if item.speakerThree ?
                     .agenda
                       .venue
                         span.sub 1003
                       - find_speaker_by(item.speakerThree) do |speaker|
                         = partial('layouts/_programBlock', locals: { speaker: speaker } )
+                        = partial('layouts/_speakerBlock', locals: { speaker: speaker } )
       
         - if data.site.site.interpretationLink ?
           .interpretation.body-content 

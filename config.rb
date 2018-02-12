@@ -75,7 +75,7 @@ helpers do
   end
 
   def find_speaker_by(name, &block)
-    yield data.speaker.general.find { |speaker| speaker['name'] == name }
+    yield data.speaker.find { |speaker| speaker['name'] == name }
   end
 
 end
