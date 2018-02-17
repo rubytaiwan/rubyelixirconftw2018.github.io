@@ -265,9 +265,9 @@
   title: 'Engineer, 5xruby.tw'
   bio: |-
     五倍紅寶石的 Rails 工程師兼系統工程師，不折不扣的橘貓派，除了工作外的興趣是使用最擅長的 Ruby 語言製作遊戲，目前製作中最大的遊戲專案「[白色十一月：軍官之歌](https://www.facebook.com/white2012november/)」已經超過十萬行程式碼，在臉書上擁有數千的粉絲。
-  subject: 'Never use Apartment gem on a large-scale project: how to merge hundreds of schemas on production servers.'
+  subject: 'Never use Apartment gem on a large-scale project: how to merge 130000 database schemas on production servers.'
   summary: |-
-    There are more and more web applications with multi-tenant features these days. Such as online forums and e-commerce stores. To accelerate the development, major web frameworks often have multi-tenant plugins for fast-developing prototypes. The gem "Apartment" is the most representative one for Rails applications. It provides fast and isolated multi-tenant environments by making use of PostgreSQL schema functionality. However, when the number of schemas is too large, the drawbacks of using multi-schema database often outweigh the advantages it brings. In this talk, I will share my experience on using Apartment on a production project with hundreds of schemas, and how I save the system from being paralyzed by the huge number of schemas.
+    There are more and more web applications with multi-tenant features these days. Such as online forums and e-commerce stores. To accelerate the development, major web frameworks often have multi-tenant plugins for fast-developing prototypes. The gem "Apartment" is the most representative one for Rails applications. It provides fast and isolated multi-tenant environments by making use of PostgreSQL schema functionality. However, when the number of schemas is too large, the drawbacks of using multi-schema database often outweigh the advantages it brings. In this talk, I will share my experience on using Apartment in a production project with over 130000 database schemas, and how I save the system from being paralyzed by the huge number of schemas.
 - name: 'lulalala'
   avatar: https://avatars.githubusercontent.com/u/366910?v=3
   urlGithub: https://github.com/lulalala
