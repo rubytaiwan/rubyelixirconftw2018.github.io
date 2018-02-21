@@ -445,7 +445,7 @@
   bio: |-
     Involved in software development and computer networks since 2002, including PHP, Perl, Ruby and now Elixir.
     Worked for a big companies, outsourcing shops and small startups with eventually starting an own one.
-    Found of currencies and believe that even small teams can achieve splendid results.
+    Found of cryptocurrencies and believe that even small teams can achieve splendid results.
   subject: 'Practical High-Level Architecture: How to build the software that everyone will love'
   summary: |-
     Practical software engineering involves much more than just a technical framework – it encompasses processes, company culture, and individual team members’ technical abilities. In that sense, every company is like a living organism that is constantly changing under influence of internal and external factors. Due to the small size of our team and limited resources as a technical co-founder, I was forced to look for an optimal architecture and workflow which will allow implementing features according to the CEO’s vision with minimum friction and will distract the team on fixing bugs later on as less as possible at the same time.
@@ -453,7 +453,7 @@
     The journey began with using Trailblazer with Rails on the Ave88.com and continued with using DDD-Lite with the Phoenix on the Flowmail.com where it undergone a series of transformations.
 
     Our experience made us recognize that:
-    - Any even moderate-size can’t be based solely on MVC and Service Objects.
+    - Any even moderate-size project can’t be based solely on MVC and Service Objects.
     - It’s possible to implement the practical and reliable architecture in both Rails and Phoenix framework, though some Rails conventions make process a little more tedious.
     - Having a right architecture is a long, time and resource consuming journey that will eventually pay off.
     - Changes should be supported at the management level since the governance style may be severely affected in the software development companies.
