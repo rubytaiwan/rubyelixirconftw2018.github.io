@@ -39,6 +39,15 @@ gold:
       
       A Japanese startup focusing in AI solution integration. Our members came from globally, and after won the first price in 2016 IBM Watson hackathon, Incubit already cooperated with companies from several industries such as medical / agriculture / robotics / education and E-commerce to integrate AI solutions to create new value to their business.
       In 2017, Incubit became a partner with Nvidia and will contribute more in IoT and video solutions.
+  - name: 'mit.Jobs'
+    logo: 'mitjobs.svg'
+    link: https://mit.jobs/
+    desc: |-
+      mit.Jobs 是一個面向全球的社交求職網站，由一群具備豐富海外經驗的年輕人創辦。自 2015 年創業以來，企業、工作機會和求職用戶，已遍及17個不同國家和地區。
+      社群分享、資訊透明，是 mit.Jobs 的堅持。「mit」在德語中，即是「和⋯一起」的意思。透過人與人之間的推薦與連結，mit.Jobs 能為企業在全球找到最合適的人選，也為人才找到能發揮自身最大價值的舞台。
+
+      mit.Jobs is a social job platform that focusing on international and IT talents and has currently launched in 17 different countries and economies.
+      mit.Jobs’ core values are Community Sharing and Information Transparency. mit.Jobs is leveraging on the Referral Model, through people’s connections, to link employers to the most appropriate candidates and to find talents the best stages to maximize their value in the world!
 silver:
   - name: 'MySQL'
     logo: 'mysql.svg'
