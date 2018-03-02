@@ -18,6 +18,11 @@ platinum:
       ★ Honeycomb 峰潮智慧倉儲
       
       我們協助店家用最短時間、最少力氣完成 OMO 線上線下融合與數位轉型，並致力於提供最棒的購物體驗！
+  - name: 'Gandi.net'
+    logo: 'gandi.svg'
+    link: https://gandi.net/
+    desc: |-
+      Gandi.net 是域名註冊商、SSL 驗證機構與雲端主機提供者，成立於 1996 年，可提供超過 700 種域名。在台灣成立管地有限公司已超過三年，提供台灣發票與中文客服。支持 Open Source 軟體與社群。
   - name: 'SHOPLINE'
     logo: 'shopline.svg'
     link: https://shopline.tw/
