@@ -60,6 +60,15 @@ gold:
       mit.Jobs is a social job platform that focusing on international and IT talents and has currently launched in 17 different countries and economies.
       mit.Jobs’ core values are Community Sharing and Information Transparency. mit.Jobs is leveraging on the Referral Model, through people’s connections, to link employers to the most appropriate candidates and to find talents the best stages to maximize their value in the world!
 silver:
+  - name: 'Kaligo Solutions'
+    logo: 'kaligo_solutions.svg'
+    link: http://www.kaligosolutions.com/
+    desc: |-
+      Kaligo Solutions is a global leader in driving customer engagement for major financial services and travel brands.
+
+      We deliver beautifully functional, easy-to-deploy loyalty solutions that enable your valuable customers to earn & redeem rewards more easily and at greater value than ever before.
+
+      Our focus on innovative technology and rapid implementation means clients spend less time solving IT & process challenges, and more time creating delightful experiences that build lasting customer loyalty.
   - name: 'MySQL'
     logo: 'mysql.svg'
     link: https://www.mysql.com/
