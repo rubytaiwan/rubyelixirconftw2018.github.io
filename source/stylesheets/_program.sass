@@ -4,25 +4,32 @@
 
     .interpretation
       letter-spacing: 0.5px
-      line-height: 2
+      line-height: 1.8
       padding: 20px 0 15px
-      border-top: 3px solid $marble
+      border-top: 1px solid $marble
+
+      .coming-soon
+        display: inline-block
+        cursor: default
 
       .service-link
-        display: block
+        position: relative
+        display: inline-block
         color: $midnight
-        background: rgba($marble, 0.5)
-        border-radius: 4px
-        padding: 6px 12px
         margin: 0 5px
         transition: all 0.2s ease-out
+        +hover-effect(0.2s, -3px)
+        pointer-events: none
 
-        @media (min-width: $screen-sm)
-          display: inline-block
+        &:after
+          content: ''
+          position: absolute
+          bottom: -2px
+          left: 50%
+          transform: translateX(-50%) translateY(-50%)
+          +size(100%, 2px)
+          background: linear-gradient(to left, $elixir-dark, $ruby-dark)
 
-        &:hover
-          background: $midnight
-          color: #fff
 
     /** Days Tab **/
     .schedule-header
@@ -162,6 +169,15 @@
 
           .agenda
             padding: 20px
+
+            /** Lightning-talk Registeration BTN**/
+            .lightning-talk
+              +size(160px, 40px)
+              margin: 10px 0 0
+              justify-self: center
+              span
+                font-size: 14px
+                line-height: 26px
 
           .venue
             align-self: center

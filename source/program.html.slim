@@ -41,6 +41,10 @@ title: Program | Ruby X Elixir Conf Taiwan 2018
                 - if item.agenda ?
                   .agenda
                     p.body-content.event = item.agenda
+                    - if item.agenda == "Lightning talk"
+                      = link_to data.site.site.lightningTalk, target: '_blank', rel:'noopener noreferrer', class:"btn btn-small lightning-talk" do
+                        span Register Now
+
                 / Speakers /
                 - else
                   .agenda
@@ -64,10 +68,10 @@ title: Program | Ruby X Elixir Conf Taiwan 2018
                         = partial('layouts/_programBlock', locals: { speaker: speaker } )
                         = partial('layouts/_speakerBlock', locals: { speaker: speaker } )
       
-        - if data.site.site.interpretationLink ?
-          .interpretation.body-content 
+        .interpretation.body-content.smaller
             | We offer&nbsp;
-            = link_to "Simultaneous Interpretation Service", data.site.site.interpretationLink, target: '_blank', rel:'noopener noreferrer', class:"service-link"
+            .coming-soon data-balloon="Coming Soon ✨" data-balloon-pos="up"
+              = link_to "Simultaneous Interpretation Service", data.site.site.interpretationLink, target: '_blank', rel:'noopener noreferrer', class:"service-link"
             | &nbsp;(Chinese to English) on all Chinese sessions.
 
   = partial 'layouts/sponsors'
