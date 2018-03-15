@@ -20,8 +20,9 @@
   title: 'Creator of Elixir, Plataformatec'
   bio: |-
     Plataformatec co-founder and creator of Elixir Lang. I have signed off from Twitter indefinitely, RTs are automated.
-  subject: 'TBD'
+  subject: 'Idioms for building distributed fault-tolerant applications with Elixir'
   summary: |-
+    This talk will introduce developers to Elixir and the underlying Erlang VM and show how they provide a new vocabulary which shapes how developers design and build concurrent, distributed and fault-tolerant applications. The talk will also focus on the design goals behind Elixir and include some live demos.
 - name: 'Akira Matsuda'
   avatar: 'speakers/akira-matsuda.jpg'
   urltwitter: https://twitter.com/a_matsuda
