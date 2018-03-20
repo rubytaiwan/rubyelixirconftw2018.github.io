@@ -20,7 +20,7 @@ dayOne:
     agenda: Break
   - period: 11:50 am
     speakerOne: 'Aotoki Tsuruya'
-    speakerTwo: 'Tetsushi Awano'
+    speakerTwo: 'Harisankar P S'
     speakerThree: 'Christopher Adams'
   - period: 12:30 pm
     type: event
@@ -92,7 +92,7 @@ dayTwo:
     agenda: Break
   - period: 2:15 pm
     speakerOne: 'Koichi Sasada'
-    speakerTwo: 'Harisankar P S'
+    speakerTwo: 'Tetsushi Awano'
     speakerThree: 'Kenta Murata'
   - period: 2:55 pm
     type: event
