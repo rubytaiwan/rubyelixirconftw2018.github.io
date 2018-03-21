@@ -17,6 +17,8 @@ site:
   lightningTalk: https://cfp.rubyconf.tw/activities/2018-lt
   cfpLink: https://cfp.rubyconf.tw/activities/2018
   supportLink: https://rubyelixirconftw.typeform.com/to/zOjJhK
+  rejectConf: https://5xruby.kktix.cc/events/rejectconf2018
+  elixirWorkshop: https://rubytaiwan.kktix.cc/events/elixirinstallparty
   socialMedia:
     - name: twitter
       title: '@rubyconftw'

@@ -1,0 +1,100 @@
+#events
+  .events
+    @media (min-width: $screen-md) and (max-width: 1024px)
+      margin: 0 40px
+
+  .event
+    display: block
+    position: relative
+    +size(260px, 360px)
+    margin: 0 auto
+    box-shadow: 0 2px 8px 0 rgba($midnight,0.50)
+    +hover-effect(0.3s, -5px)
+
+    &.reject-conf, &.reject-conf .main
+      background: linear-gradient(to right, $ruby-light, $ruby-dark)
+
+    &.elixir-workshop, &.elixir-workshop .main
+      background: linear-gradient(to right, $elixir-light, $elixir-dark)
+
+    + .event
+      margin-top: 40px
+
+    @media (min-width: $screen-sm)
+      +size(482px, 280px)
+
+    @media (min-width: 1104px)
+      display: inline-block
+      vertical-align: top
+
+      + .event
+        margin-top: 0
+        margin-left: 60px
+
+    .feature-card
+      +size(100%, 345px)
+      background: #fff
+      position: relative
+      padding: 20px 30px
+      margin: 0 auto
+
+      @media (min-width: $screen-sm)
+        height: 265px
+        padding: 30px 40px
+
+      .deco_wave
+        position: absolute
+        width: 106px
+        bottom: 60px
+        right: 0
+
+        @media (min-width: $screen-sm)
+          bottom: 20px
+
+      .feature-title
+        position: relative
+
+        span
+          display: block
+          color: $midnight
+
+        .assist, .slash
+          font-size: 20px
+
+        .assist
+          display: inline-block
+          letter-spacing: 0.5px
+
+        .slash
+          display: inline-block
+          color: $marble
+          padding-right: 10px
+
+        .main-deco
+          fill: $midnight
+          margin: 20px 0 15px 
+
+        .main
+          position: relative
+          font-family: 'Righteous'
+          font-size: 32px
+          margin-bottom: 10px
+          background-clip: text
+          -webkit-background-clip: text
+          -webkit-text-fill-color: transparent
+
+        .cfa
+          position: absolute
+          font-weight: bold
+          font-size: 20px
+          text-transform: uppercase
+          top: 280px
+
+          @media (min-width: $screen-sm)
+            top: 180px
+
+          .icon_arrow
+            position: absolute
+            width: 16px
+            top: 8px
+            left: 170px
