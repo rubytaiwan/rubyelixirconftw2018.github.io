@@ -150,12 +150,6 @@
         &.silver
           border: 1px solid $silver
 
-        &.party
-          border: 1px solid $ruby-light
-
-        &.partner
-          border: 1px solid $elixir-light
-
         &.gold, &.silver
 
           @media (min-width: $screen-sm)
@@ -163,6 +157,15 @@
 
           @media (min-width: $screen-md)
             width: calc(100% / 3 - 40px)
+
+        &.party
+          border: 1px solid $ruby-light
+
+        &.partner
+          border: 1px solid $elixir-light
+
+          @media (min-width: $screen-md)
+            width: calc(50% - 40px)
 
         .supporter
           width: 100%
