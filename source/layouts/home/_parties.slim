@@ -20,8 +20,8 @@ section.reveal#parties
           = link_to party.locationLink, target: '_blank', rel:'noopener noreferrer', class:"location" do
             | @
             span = party.location
-          - if data.site.site.registerLink
-            = link_to data.site.site.registerLink, target: '_blank', rel:'noopener noreferrer', class:"btn-minimal" do
+          - if party.registerLink ?
+            = link_to party.registerLink, target: '_blank', rel:'noopener noreferrer', class:"btn-minimal" do
               = party.cfaBtn
           - else
             .btn-minimal.inactive data-balloon="Coming Soon ✨" data-balloon-pos="up"
