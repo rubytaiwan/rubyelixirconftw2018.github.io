@@ -23,6 +23,13 @@ platinum:
     link: https://gandi.net/
     desc: |-
       Gandi.net 是域名註冊商、SSL 驗證機構與雲端主機提供者，成立於 1996 年，可提供超過 700 種域名。在台灣成立管地有限公司已超過三年，提供台灣發票與中文客服。支持 Open Source 軟體與社群。
+  - name: '錠嵂保險經紀人SARAcares'
+    logo: 'saracares.svg'
+    link: https://www.saracares.com.tw/
+    desc: |-
+      SARAcares是一個全新的網路公司，由國內最大的保險經紀人公司錠嵂出資設立。目的就是讓消費者可以有一個自主選擇保險的網路平台。
+      
+      我們先從網路直接投保開始，也是國內第一家用開放架構設計的平台。未來將朝向fintech的群募投保與浮動費率的精準投保方向發展，開放，中立，多樣化是我們的核心價值。
   - name: 'SHOPLINE'
     logo: 'shopline.svg'
     link: https://shopline.tw/
@@ -97,6 +104,17 @@ silver:
       Speee has a mission to "Contribute to growth of society by creating new service which has an impact on our world" and deliver high added value through both Business-to-Business and Business-to-Consumer services.
       We invited Mr.Yukihiro Matsumoto, who invented Ruby, as an engineering adviser and Mr.Masahiro Ihara, who had been working for Cookpad as an engineering manager, to reform our engineering department's system and organization structure.
       We are now aiming to become "Speee as a technology company".
+  - name: 'Ticketsolve'
+    logo: 'ticketsolve.svg'
+    link: https://www.ticketsolve.com/
+    desc: |-
+      Ticketsolve is a cloud-based box office and ticketing platform working with over 270 arts and culture organisations, theatres and festivals across the UK and Ireland. We are focused on helping arts organisations and festivals reach their goals whether that means increasing sales, improving marketing, expanding audience development, kickstarting fundraising and everything in between.
+
+      What makes Ticketsolve different is simple: our software, our people, and our purpose. We are passionate about the arts which is why our mission is to create the best all-round box office platform; one that is dynamic, easy to use, and helps our customers in every aspect of their organisation. Our feature-rich software has everything arts and culture organisations need from smart marketing integrations and automations to in-depth analytical tools.
+
+      Founded 11 years ago on the principals of collaboration, Ticketsolve works closely with customers to really understand their needs, now and into the future - and in ways that go way beyond just ticketing.
+
+      We want to ensure all our customers achieve their goals and get the most out of Ticketsolve.
 party:
   - name: 'GitHub'
     logo: 'github.svg'
