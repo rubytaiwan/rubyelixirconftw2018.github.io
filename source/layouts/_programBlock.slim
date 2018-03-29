@@ -1,4 +1,4 @@
-.speaker.modaled data-toggle="modal" data-target="##{speaker.name.gsub(/[\s()]+/, '-').gsub(/[-]$/, '').downcase.unicode_normalize(:nfkd).encode('ASCII', replace: '')}"
+.speaker.modaled data-toggle="modal" data-target="##{speaker.name.gsub(/[\s(), ]+/, '-').gsub(/[-]$/, '').downcase.unicode_normalize(:nfkd).encode('ASCII', replace: '')}"
   .speaker-avatar
     = image_tag speaker.avatar, class:'speaker-img', alt: speaker.name, title: speaker.name
   .speaker-agenda

@@ -99,7 +99,7 @@
     The Twelve-Factor App is a guideline for modern web app development. Kubernetes is an open-source project for container management that gives you great flexibility around application deployments. With containers and Kubernetes, you can deploy and rollback a version, scale out to hundreds of nodes, copy the same configuration to multiple prod, staging, and dev environments, manage deployments through API, and so on.
 
     This talk will review each of the twelve factors using a simple Rails application as an example and see how Kubernetes helps you run your Rails application. Experience with containers is not required.
-- name: 'Eric Hodel'
+- name: 'Eric Hodel, Ezekiel Templin'
   avatar: https://avatars.githubusercontent.com/u/9831?v=3
   urlGithub: https://github.com/drbrain
   type: ruby

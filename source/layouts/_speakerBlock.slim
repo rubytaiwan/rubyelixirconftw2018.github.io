@@ -1,5 +1,5 @@
 /** Speaker Info (Modal) **/
-.modal role="dialog" tabindex="-1" id= speaker.name.gsub(/[\s()]+/, '-').gsub(/[-]$/, '').downcase.unicode_normalize(:nfkd).encode('ASCII', replace: '')
+.modal role="dialog" tabindex="-1" id= speaker.name.gsub(/[\s(), ]+/, '-').gsub(/[-]$/, '').downcase.unicode_normalize(:nfkd).encode('ASCII', replace: '')
   .modal-dialog role="document"
     .modal-content
       .modal-header
