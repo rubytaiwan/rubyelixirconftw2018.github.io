@@ -69,7 +69,7 @@
   type: ruby
   lang: en
   bio:
-    Damir is a Rails Team Lead at Infinum, a software agency based in Croatia. He is a strong advocate of clean coding, automated testing and passionate about constant improvement. On top of that, he is an organizer of Ruby Meetups in Zagreb, a regular blogger, conference speaker, open source lover and contributor.
+    Damir is a Senior Software Engineer at Netflix. He is a strong advocate of clean coding, automated testing and passionate about constant improvement. On top of that, he is an organizer of Ruby Meetups in Zagreb, a regular blogger, conference speaker, open source lover and contributor.
   subject: 'Building Serverless Ruby Bots'
   summary: |-
     Want to build a Bot without the hassle of provisioning and managing servers? Amazon’s got a service for that and it’s called AWS Lambda - it executes your code only when needed, scales automatically and you pay only for the compute time you consume.
