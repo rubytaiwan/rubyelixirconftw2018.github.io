@@ -141,3 +141,34 @@ partner:
     link: https://www.kkco.com.tw/
     desc: |-
       提供專業的有線與無線網路服務，使人與人間的通訊落差降到最低。團隊已服務上百場活動，包含台灣地區最大的線上遊戲、網路直播、資訊社群、產品發表會、演唱會、會場展覽與電音派對等。整合網路監控、系統交叉備援、即時廣告互動，量身為客戶打造優質的網路服務體驗。
+speakers:
+  - name: 'Cookpad Inc.'
+    logo: 'cookpad.svg'
+    link: https://cookpad.com/
+  - name: 'Flowmail'
+    logo: 'flowmail.svg'
+    link: https://flowmail.com/
+  - name: 'GMO Pepabo, Inc.'
+    logo: 'gmo_pepabo.svg'
+    link: https://pepabo.com/
+  - name: 'Gusto'
+    logo: 'gusto.svg'
+    link: https://gusto.com/
+  - name: 'Le Tote'
+    logo: 'le_tote.svg'
+    link: https://www.letote.com/
+  - name: 'Lockstep Labs'
+    logo: 'lockstep.svg'
+    link: https://www.locksteplabs.com/
+  - name: 'Netflix'
+    logo: 'netflix.svg'
+    link: https://netflix.com/
+  - name: 'Red Panthers'
+    logo: 'red_panthers.svg'
+    link: https://redpanthers.co/
+  - name: 'Space Pirates, LLC.'
+    logo: 'space_pirates.svg'
+    link: https://space-pirates.co.jp/
+  - name: 'Stitch Fix'
+    logo: 'stitch_fix.svg'
+    link: https://www.stitchfix.com/

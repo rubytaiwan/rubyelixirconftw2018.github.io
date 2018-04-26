@@ -7,6 +7,10 @@
   @media (min-width: $screen-md)
     padding-bottom: 120px
 
+  .partial
+    padding: 20px
+    text-align: center
+
   .level-title
     display: block
     width: 100%
@@ -34,6 +38,9 @@
 
     &.partner
       color: $elixir-light
+
+    &.speakers
+      @extend .font-gradient
 
   .btn-small
     margin-top: 40px
@@ -68,7 +75,7 @@
           .logo
             max-width: 320px
             
-      &.platinum .supporter, &.partner .supporter
+      &.platinum .supporter
 
         .logo
           max-width: 100%
@@ -79,7 +86,7 @@
           .logo
             max-width: 280px
 
-      &.gold .supporter
+      &.gold .supporter, &.partner .supporter
 
         @media (min-width: $screen-sm)
           width: 50%
@@ -90,7 +97,7 @@
         .logo
           max-width: 240px
 
-      &.silver .supporter, &.party .supporter
+      &.silver .supporter, &.party .supporter, &.speakers .supporter
 
         .logo
           max-width: 180px
@@ -131,7 +138,7 @@
         &.elixir
           border: 1px solid $elixir-light
 
-        &.platinum
+        &.platinum, &.gold
           border: 1px solid $platinum
 
           .logo
@@ -150,7 +157,7 @@
         &.silver
           border: 1px solid $silver
 
-        &.gold, &.silver
+        &.silver
 
           @media (min-width: $screen-sm)
             width: calc(50% - 40px)

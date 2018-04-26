@@ -7,7 +7,7 @@ cfaLink: https://rubyelixirconftw.typeform.com/to/zOjJhK
     h1.section-title Sponsors
 
     .support-list.sidepage
-      - data.sponsor.each do |level|
+      - data.sponsor.take(6).each do |level|
         - level.take(1).each do |title|
           .level-title class="#{title}" #{title.capitalize}
           - level.drop(1).each do |supporter|
@@ -19,6 +19,16 @@ cfaLink: https://rubyelixirconftw.typeform.com/to/zOjJhK
                   h3.supporter-name = sponsor.name
                   = link_to sponsor.link, sponsor.link, target: '_blank', rel:'noopener noreferrer', class:"supporter-link smaller"
                   p.supporter-desc.smaller = sponsor.desc
+
+    .support-list.partial
+      - data.sponsor.drop(6).each do |level|
+        - level.take(1).each do |title|
+          .support-block class="#{title}"
+            .level-title class="#{title}" #{title.capitalize}
+            - level.drop(1).each do |supporter|
+              - supporter.each do |sponsor|
+                = link_to sponsor.link, target: '_blank', rel:'noopener noreferrer', class:"supporter" do
+                  = image_tag 'sponsors/' + sponsor.logo, class:'logo', alt: sponsor.name, title: sponsor.desc
 
     = link_to data.site.site.supportLink, target: '_blank', rel:'noopener noreferrer', class:"btn btn-small" do
       span Support Us +
