@@ -49,7 +49,7 @@ dayOne:
   - period: 4:30 pm
     speakerOne: 'PastLeo'
     speakerTwo: 'vzvu3k6k'
-    speakerThree: 'Michael Kohl'
+    speakerThree: 'Hsuancheng Chen'
   - period: 5:10 pm
     type: break
     agenda: Break
@@ -72,7 +72,7 @@ dayTwo:
   - period: 10:35 am
     speakerOne: 'Delton Ding'
     speakerTwo: 'Stan Lo'
-    speakerThree: 'Hsuancheng Chen'
+    speakerThree: 'Michael Kohl'
   - period: 11:15 am
     type: break
     agenda: Break
